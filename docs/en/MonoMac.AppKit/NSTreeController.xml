@@ -392,8 +392,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Content">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTreeController Content { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSTreeController Content" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSObject Content" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -407,7 +407,7 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.AppKit.NSTreeController</ReturnType>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
