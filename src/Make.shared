@@ -48,11 +48,13 @@ SHARED_SOURCE = \
 	./CoreFoundation/CFBoolean.cs                   \
 	./CoreFoundation/CFDictionary.cs                \
 	./CoreFoundation/CFException.cs                 \
+	./CoreFoundation/CFPluginCOM.cs                 \
 	./CoreFoundation/CFSocket.cs			\
 	./CoreFoundation/CFStream.cs			\
 	./CoreFoundation/CFReadStream.cs		\
 	./CoreFoundation/CFWriteStream.cs		\
 	./CoreFoundation/CFType.cs			\
+	./CoreFoundation/CFUUID.cs                      \
 	./CoreGraphics/CGContextPDF.cs			\
 	./CoreGraphics/CGDataProvider-2.cs		\
 	./CoreGraphics/CGFunction.cs			\
@@ -144,6 +146,30 @@ SHARED_SOURCE = \
 	./Foundation/ToString.cs			\
 	./ImageIO/CGImageSource.cs			\
 	./ImageIO/CGImageDestination.cs			\
+	./IOKit/Enums.cs                                \
+	./IOKit/IOCFPlugin.cs                           \
+	./IOKit/IOConnection.cs                         \
+	./IOKit/IOIterator.cs                           \
+	./IOKit/IOKit.cs                                \
+	./IOKit/IOKitException.cs                       \
+	./IOKit/IOMasterPort.cs                         \
+	./IOKit/IOMessage.cs                            \
+	./IOKit/IONotificationPort.cs                   \
+	./IOKit/IOObject.cs                             \
+	./IOKit/IOReceivePort.cs                        \
+	./IOKit/IORegistryEntry.cs                      \
+	./IOKit/IORegistryIterator.cs                   \
+	./IOKit/IOReturn.cs                             \
+	./IOKit/IOService.cs                            \
+	./IOKit/USB/Enums.cs                            \
+	./IOKit/USB/IOUSB.cs                            \
+	./IOKit/USB/IOUSBDevice.cs                      \
+	./IOKit/USB/IOUSBInterface.cs                   \
+	./IOKit/USB/IOUSBNub.cs                         \
+	./Mach/MessageHeader.cs                         \
+	./Mach/Port.cs                                  \
+	./Mach/Task.cs                                  \
+	./Mach/TimeSpec.cs                              \
 	./ObjCRuntime/CompileFlagsAttribute.cs		\
 	./QuickLook/Thumbnail.cs			\
 	./Security/Enums.cs				\
