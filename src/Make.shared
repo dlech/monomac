@@ -165,10 +165,11 @@ SHARED_SOURCE = \
 	./IOKit/USB/IOUSBDevice.cs                      \
 	./IOKit/USB/IOUSBInterface.cs                   \
 	./IOKit/USB/IOUSBNub.cs                         \
-	./Mach/MessageHeader.cs                         \
-	./Mach/Port.cs                                  \
-	./Mach/Task.cs                                  \
-	./Mach/TimeSpec.cs                              \
+	./Kernel/Mach/MessageHeader.cs                  \
+	./Kernel/Mach/Port.cs                           \
+	./Kernel/Mach/Task.cs                           \
+	./Kernel/Mach/Time.cs                           \
+	./Kernel/Mach/TimeSpec.cs                       \
 	./ObjCRuntime/CompileFlagsAttribute.cs		\
 	./QuickLook/Thumbnail.cs			\
 	./Security/Enums.cs				\
