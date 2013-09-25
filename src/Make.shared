@@ -49,6 +49,7 @@ SHARED_SOURCE = \
 	./CoreFoundation/CFDictionary.cs                \
 	./CoreFoundation/CFException.cs                 \
 	./CoreFoundation/CFPluginCOM.cs                 \
+	./CoreFoundation/CFSet.cs                       \
 	./CoreFoundation/CFSocket.cs			\
 	./CoreFoundation/CFStream.cs			\
 	./CoreFoundation/CFReadStream.cs		\
@@ -160,6 +161,16 @@ SHARED_SOURCE = \
 	./IOKit/IORegistryIterator.cs                   \
 	./IOKit/IOReturn.cs                             \
 	./IOKit/IOService.cs                            \
+	./IOKit/HID/Enums.cs                            \
+	./IOKit/HID/IOHID.cs                            \
+	./IOKit/HID/IOHIDDevice.cs                      \
+	./IOKit/HID/IOHIDDeviceEventArgs.cs             \
+	./IOKit/HID/IOHIDElement.cs                     \
+	./IOKit/HID/IOHIDEventArgs.cs                   \
+	./IOKit/HID/IOHIDManager.cs                     \
+	./IOKit/HID/IOHIDReportEventArgs.cs             \
+	./IOKit/HID/IOHIDValue.cs                       \
+	./IOKit/HID/IOHIDValueEventArgs.cs              \
 	./IOKit/USB/Enums.cs                            \
 	./IOKit/USB/IOUSB.cs                            \
 	./IOKit/USB/IOUSBDevice.cs                      \
