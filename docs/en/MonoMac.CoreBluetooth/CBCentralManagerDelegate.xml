@@ -1,0 +1,315 @@
+<Type Name="CBCentralManagerDelegate" FullName="MonoMac.CoreBluetooth.CBCentralManagerDelegate">
+  <TypeSignature Language="C#" Value="public abstract class CBCentralManagerDelegate : MonoMac.Foundation.NSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CBCentralManagerDelegate extends MonoMac.Foundation.NSObject" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.Foundation.NSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Model</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Register("CBCentralManagerDelegate", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CBCentralManagerDelegate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CBCentralManagerDelegate (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithCoder:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CBCentralManagerDelegate (MonoMac.Foundation.NSObjectFlag t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="t" Type="MonoMac.Foundation.NSObjectFlag" />
+      </Parameters>
+      <Docs>
+        <param name="t">Unused sentinel value, pass NSObjectFlag.Empty.</param>
+        <summary>Constructor to call on derived classes when the derived class has an [Export] constructor.</summary>
+        <remarks>
+          <para>This constructor should be called by derived classes when they are initialized using an [Export] attribute. The argument value is ignore, typically the chaining would look like this:</para>
+          <example>
+            <code lang="C#">
+public class MyClass : BaseClass {
+    [Export ("initWithFoo:")]
+    public MyClass (string foo) : base (NSObjectFlag.Empty)
+    {
+        ...
+    }
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CBCentralManagerDelegate (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Pointer (handle) to the unmanaged object.</param>
+        <summary>A constructor used when creating managed representations of unmanaged objects;  Called by the runtime.</summary>
+        <remarks>
+          <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DidConnectPeripheral">
+      <MemberSignature Language="C#" Value="public virtual void DidConnectPeripheral (MonoMac.CoreBluetooth.CBCentralManager central, MonoMac.CoreBluetooth.CBPeripheral peripheral);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DidConnectPeripheral(class MonoMac.CoreBluetooth.CBCentralManager central, class MonoMac.CoreBluetooth.CBPeripheral peripheral) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("centralManager:didConnectPeripheral:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="central" Type="MonoMac.CoreBluetooth.CBCentralManager" />
+        <Parameter Name="peripheral" Type="MonoMac.CoreBluetooth.CBPeripheral" />
+      </Parameters>
+      <Docs>
+        <param name="central">To be added.</param>
+        <param name="peripheral">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DidDisconnectPeripheral">
+      <MemberSignature Language="C#" Value="public virtual void DidDisconnectPeripheral (MonoMac.CoreBluetooth.CBCentralManager central, MonoMac.CoreBluetooth.CBPeripheral peripheral, MonoMac.Foundation.NSError error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DidDisconnectPeripheral(class MonoMac.CoreBluetooth.CBCentralManager central, class MonoMac.CoreBluetooth.CBPeripheral peripheral, class MonoMac.Foundation.NSError error) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("centralManager:didDisconnectPeripheral:error:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="central" Type="MonoMac.CoreBluetooth.CBCentralManager" />
+        <Parameter Name="peripheral" Type="MonoMac.CoreBluetooth.CBPeripheral" />
+        <Parameter Name="error" Type="MonoMac.Foundation.NSError" />
+      </Parameters>
+      <Docs>
+        <param name="central">To be added.</param>
+        <param name="peripheral">To be added.</param>
+        <param name="error">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DidDiscoverPeripheral">
+      <MemberSignature Language="C#" Value="public virtual void DidDiscoverPeripheral (MonoMac.CoreBluetooth.CBCentralManager central, MonoMac.CoreBluetooth.CBPeripheral peripheral, MonoMac.Foundation.NSDictionary advertisementData, MonoMac.Foundation.NSNumber RSSI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DidDiscoverPeripheral(class MonoMac.CoreBluetooth.CBCentralManager central, class MonoMac.CoreBluetooth.CBPeripheral peripheral, class MonoMac.Foundation.NSDictionary advertisementData, class MonoMac.Foundation.NSNumber RSSI) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("centralManager:didDiscoverPeripheral:advertisementData:RSSI:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="central" Type="MonoMac.CoreBluetooth.CBCentralManager" />
+        <Parameter Name="peripheral" Type="MonoMac.CoreBluetooth.CBPeripheral" />
+        <Parameter Name="advertisementData" Type="MonoMac.Foundation.NSDictionary" />
+        <Parameter Name="RSSI" Type="MonoMac.Foundation.NSNumber" />
+      </Parameters>
+      <Docs>
+        <param name="central">To be added.</param>
+        <param name="peripheral">To be added.</param>
+        <param name="advertisementData">To be added.</param>
+        <param name="RSSI">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DidFailToConnectPeripheral">
+      <MemberSignature Language="C#" Value="public virtual void DidFailToConnectPeripheral (MonoMac.CoreBluetooth.CBCentralManager central, MonoMac.CoreBluetooth.CBPeripheral peripheral, MonoMac.Foundation.NSError error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DidFailToConnectPeripheral(class MonoMac.CoreBluetooth.CBCentralManager central, class MonoMac.CoreBluetooth.CBPeripheral peripheral, class MonoMac.Foundation.NSError error) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("centralManager:didFailToConnectPeripheral:error:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="central" Type="MonoMac.CoreBluetooth.CBCentralManager" />
+        <Parameter Name="peripheral" Type="MonoMac.CoreBluetooth.CBPeripheral" />
+        <Parameter Name="error" Type="MonoMac.Foundation.NSError" />
+      </Parameters>
+      <Docs>
+        <param name="central">To be added.</param>
+        <param name="peripheral">To be added.</param>
+        <param name="error">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DidRetrieveConnectedPeripherals">
+      <MemberSignature Language="C#" Value="public virtual void DidRetrieveConnectedPeripherals (MonoMac.CoreBluetooth.CBCentralManager central, MonoMac.CoreBluetooth.CBPeripheral[] peripherals);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DidRetrieveConnectedPeripherals(class MonoMac.CoreBluetooth.CBCentralManager central, class MonoMac.CoreBluetooth.CBPeripheral[] peripherals) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("centralManager:didRetrieveConnectedPeripherals:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="central" Type="MonoMac.CoreBluetooth.CBCentralManager" />
+        <Parameter Name="peripherals" Type="MonoMac.CoreBluetooth.CBPeripheral[]" />
+      </Parameters>
+      <Docs>
+        <param name="central">To be added.</param>
+        <param name="peripherals">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DidRetrievePeripherals">
+      <MemberSignature Language="C#" Value="public virtual void DidRetrievePeripherals (MonoMac.CoreBluetooth.CBCentralManager central, MonoMac.CoreBluetooth.CBPeripheral[] peripherals);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DidRetrievePeripherals(class MonoMac.CoreBluetooth.CBCentralManager central, class MonoMac.CoreBluetooth.CBPeripheral[] peripherals) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("centralManager:didRetrievePeripherals:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="central" Type="MonoMac.CoreBluetooth.CBCentralManager" />
+        <Parameter Name="peripherals" Type="MonoMac.CoreBluetooth.CBPeripheral[]" />
+      </Parameters>
+      <Docs>
+        <param name="central">To be added.</param>
+        <param name="peripherals">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DidUpdateState">
+      <MemberSignature Language="C#" Value="public abstract void DidUpdateState (MonoMac.CoreBluetooth.CBCentralManager central);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DidUpdateState(class MonoMac.CoreBluetooth.CBCentralManager central) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("centralManagerDidUpdateState:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="central" Type="MonoMac.CoreBluetooth.CBCentralManager" />
+      </Parameters>
+      <Docs>
+        <param name="central">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

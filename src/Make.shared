@@ -44,6 +44,9 @@ SHARED_SOURCE = \
 	./CoreAnimation/CALayer.cs			\
 	./CoreAnimation/CATextLayer.cs			\
 	./CoreAnimation/CAMediaTimingFunction.cs	\
+	./CoreBluetooth/CBCentralManager.cs             \
+	./CoreBluetooth/CBPeripheral.cs                 \
+	./CoreBluetooth/CBUUID.cs                       \
 	./CoreFoundation/CFArray.cs                     \
 	./CoreFoundation/CFBoolean.cs                   \
 	./CoreFoundation/CFDictionary.cs                \
@@ -200,6 +203,7 @@ SHARED_CORE_SOURCE = \
 	./AudioToolbox/AudioType.cs			\
 	./CoreAnimation/CATransform3D.cs		\
 	./CoreAnimation/CAEnums.cs			\
+	./CoreBluetooth/Enums.cs                        \
 	./CoreData/Enums.cs				\
 	./CoreFoundation/CFAllocator.cs			\
 	./CoreFoundation/CFString.cs                    \

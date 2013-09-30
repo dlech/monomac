@@ -176,6 +176,7 @@ SHARED_API = \
 	./avfoundation.cs	\
 	./foundation.cs		\
 	./coreanimation.cs	\
+	./corebluetooth.cs	\
 	./coredata.cs		\
 	./coreimage.cs		\
 	./coremidi.cs		\

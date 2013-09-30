@@ -57,5 +57,6 @@ namespace MonoMac {
 		public const string QuickLookLibrary = "/System/Library/Frameworks/QuickLook.framework/QuickLook";
 		public const string AVFoundationLibrary = "/System/Library/Frameworks/AVFoundation.framework/AVFoundation";
 		public const string IOKitLibrary = "/System/Library/Frameworks/IOKit.framework/IOKit";
+		public const string CoreBluetoothLibrary = "/System/Library/Frameworks/IOBluetooth.framework/Frameworks/CoreBluetooth.framework/CoreBluetooth";
 	}
 }

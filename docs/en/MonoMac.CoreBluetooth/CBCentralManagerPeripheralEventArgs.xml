@@ -1,0 +1,50 @@
+<Type Name="CBCentralManagerPeripheralEventArgs" FullName="MonoMac.CoreBluetooth.CBCentralManagerPeripheralEventArgs">
+  <TypeSignature Language="C#" Value="public class CBCentralManagerPeripheralEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CBCentralManagerPeripheralEventArgs extends System.EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CBCentralManagerPeripheralEventArgs (MonoMac.CoreBluetooth.CBPeripheral peripheral);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.CoreBluetooth.CBPeripheral peripheral) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="peripheral" Type="MonoMac.CoreBluetooth.CBPeripheral" />
+      </Parameters>
+      <Docs>
+        <param name="peripheral">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Peripheral">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreBluetooth.CBPeripheral Peripheral { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.CoreBluetooth.CBPeripheral Peripheral" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreBluetooth.CBPeripheral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -138,6 +138,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CoreBluetoothLibrary">
+      <MemberSignature Language="C#" Value="public const string CoreBluetoothLibrary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CoreBluetoothLibrary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Path to the CoreBluetooth shared library for use with the DllImport attribute.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CoreDataLibrary">
       <MemberSignature Language="C#" Value="public const string CoreDataLibrary;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string CoreDataLibrary" />
