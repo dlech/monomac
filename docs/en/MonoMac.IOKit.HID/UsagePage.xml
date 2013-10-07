@@ -1,0 +1,367 @@
+<Type Name="UsagePage" FullName="MonoMac.IOKit.HID.UsagePage">
+  <TypeSignature Language="C#" Value="public enum UsagePage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UsagePage extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AlphanumericDisplay">
+      <MemberSignature Language="C#" Value="AlphanumericDisplay" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage AlphanumericDisplay = unsigned int16(20)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Arcade">
+      <MemberSignature Language="C#" Value="Arcade" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Arcade = unsigned int16(145)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BarCodeScanner">
+      <MemberSignature Language="C#" Value="BarCodeScanner" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage BarCodeScanner = unsigned int16(140)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BatterySystem">
+      <MemberSignature Language="C#" Value="BatterySystem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage BatterySystem = unsigned int16(133)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Button">
+      <MemberSignature Language="C#" Value="Button" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Button = unsigned int16(9)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CameraControl">
+      <MemberSignature Language="C#" Value="CameraControl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage CameraControl = unsigned int16(144)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Consumer">
+      <MemberSignature Language="C#" Value="Consumer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Consumer = unsigned int16(12)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Digitizer">
+      <MemberSignature Language="C#" Value="Digitizer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Digitizer = unsigned int16(13)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Game">
+      <MemberSignature Language="C#" Value="Game" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Game = unsigned int16(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericDesktop">
+      <MemberSignature Language="C#" Value="GenericDesktop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage GenericDesktop = unsigned int16(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyboardOrKeypad">
+      <MemberSignature Language="C#" Value="KeyboardOrKeypad" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage KeyboardOrKeypad = unsigned int16(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LEDs">
+      <MemberSignature Language="C#" Value="LEDs" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage LEDs = unsigned int16(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MagneticStripeReader">
+      <MemberSignature Language="C#" Value="MagneticStripeReader" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage MagneticStripeReader = unsigned int16(142)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ordinal">
+      <MemberSignature Language="C#" Value="Ordinal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Ordinal = unsigned int16(10)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PID">
+      <MemberSignature Language="C#" Value="PID" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage PID = unsigned int16(15)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PowerDevice">
+      <MemberSignature Language="C#" Value="PowerDevice" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage PowerDevice = unsigned int16(132)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scale">
+      <MemberSignature Language="C#" Value="Scale" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Scale = unsigned int16(141)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Simulation">
+      <MemberSignature Language="C#" Value="Simulation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Simulation = unsigned int16(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sport">
+      <MemberSignature Language="C#" Value="Sport" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Sport = unsigned int16(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Telephony">
+      <MemberSignature Language="C#" Value="Telephony" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Telephony = unsigned int16(11)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Undefined">
+      <MemberSignature Language="C#" Value="Undefined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Undefined = unsigned int16(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unicode">
+      <MemberSignature Language="C#" Value="Unicode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage Unicode = unsigned int16(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VendorDefinedStart">
+      <MemberSignature Language="C#" Value="VendorDefinedStart" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage VendorDefinedStart = unsigned int16(65280)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VR">
+      <MemberSignature Language="C#" Value="VR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage VR = unsigned int16(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WeighingDevice">
+      <MemberSignature Language="C#" Value="WeighingDevice" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage WeighingDevice = unsigned int16(141)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,24 @@
+<Type Name="IOAsyncCallback0" FullName="MonoMac.IOKit.IOAsyncCallback0">
+  <TypeSignature Language="C#" Value="public delegate void IOAsyncCallback0(IntPtr refcon, IOReturn result);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOAsyncCallback0 extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="refcon" Type="System.IntPtr" />
+    <Parameter Name="result" Type="MonoMac.IOKit.IOReturn" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="refcon">To be added.</param>
+    <param name="result">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

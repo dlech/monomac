@@ -1,0 +1,115 @@
+<Type Name="IOHIDElementType" FullName="MonoMac.IOKit.HID.IOHIDElementType">
+  <TypeSignature Language="C#" Value="public enum IOHIDElementType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOHIDElementType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Collection">
+      <MemberSignature Language="C#" Value="Collection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType Collection = int32(513)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Feature">
+      <MemberSignature Language="C#" Value="Feature" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType Feature = int32(257)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Input_Axis">
+      <MemberSignature Language="C#" Value="Input_Axis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType Input_Axis = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Input_Button">
+      <MemberSignature Language="C#" Value="Input_Button" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType Input_Button = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Input_Misc">
+      <MemberSignature Language="C#" Value="Input_Misc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType Input_Misc = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Input_ScanCodes">
+      <MemberSignature Language="C#" Value="Input_ScanCodes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType Input_ScanCodes = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Output">
+      <MemberSignature Language="C#" Value="Output" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType Output = int32(129)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

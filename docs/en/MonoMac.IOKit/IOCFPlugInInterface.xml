@@ -1,0 +1,111 @@
+<Type Name="IOCFPlugInInterface" FullName="MonoMac.IOKit.IOCFPlugInInterface">
+  <TypeSignature Language="C#" Value="public class IOCFPlugInInterface : MonoMac.CoreFoundation.IUnknown" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit IOCFPlugInInterface extends MonoMac.CoreFoundation.IUnknown" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.CoreFoundation.IUnknown</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("C244E858-109C-11D4-91D4-0050E4C6426F")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOCFPlugInInterface ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="probe">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IOCFPlugInInterface.Probe probe;" />
+      <MemberSignature Language="ILAsm" Value=".field public class MonoMac.IOKit.IOCFPlugInInterface/Probe probe" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOCFPlugInInterface+Probe</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="revision">
+      <MemberSignature Language="C#" Value="public ushort revision;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int16 revision" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="start">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IOCFPlugInInterface.Start start;" />
+      <MemberSignature Language="ILAsm" Value=".field public class MonoMac.IOKit.IOCFPlugInInterface/Start start" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOCFPlugInInterface+Start</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="stop">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IOCFPlugInInterface.Stop stop;" />
+      <MemberSignature Language="ILAsm" Value=".field public class MonoMac.IOKit.IOCFPlugInInterface/Stop stop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOCFPlugInInterface+Stop</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="version">
+      <MemberSignature Language="C#" Value="public ushort version;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int16 version" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

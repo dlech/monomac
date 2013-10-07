@@ -1,0 +1,1249 @@
+<Type Name="IOReturn" FullName="MonoMac.IOKit.IOReturn">
+  <TypeSignature Language="C#" Value="public enum IOReturn" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOReturn extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aborted">
+      <MemberSignature Language="C#" Value="Aborted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn Aborted = int32(-536870165)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadArgument">
+      <MemberSignature Language="C#" Value="BadArgument" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn BadArgument = int32(-536870206)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadMedia">
+      <MemberSignature Language="C#" Value="BadMedia" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn BadMedia = int32(-536870191)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadMessageID">
+      <MemberSignature Language="C#" Value="BadMessageID" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn BadMessageID = int32(-536870202)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Busy">
+      <MemberSignature Language="C#" Value="Busy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn Busy = int32(-536870187)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotLock">
+      <MemberSignature Language="C#" Value="CannotLock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn CannotLock = int32(-536870196)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotWire">
+      <MemberSignature Language="C#" Value="CannotWire" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn CannotWire = int32(-536870178)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceError">
+      <MemberSignature Language="C#" Value="DeviceError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn DeviceError = int32(-536870167)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DMAError">
+      <MemberSignature Language="C#" Value="DMAError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn DMAError = int32(-536870188)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn Error = int32(-536870212)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExclusiveAccess">
+      <MemberSignature Language="C#" Value="ExclusiveAccess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn ExclusiveAccess = int32(-536870203)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalError">
+      <MemberSignature Language="C#" Value="InternalError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn InternalError = int32(-536870199)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn Invalid = int32(-536870911)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IOError">
+      <MemberSignature Language="C#" Value="IOError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn IOError = int32(-536870198)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IPCError">
+      <MemberSignature Language="C#" Value="IPCError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn IPCError = int32(-536870209)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsoTooNew">
+      <MemberSignature Language="C#" Value="IsoTooNew" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn IsoTooNew = int32(-536870161)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsoTooOld">
+      <MemberSignature Language="C#" Value="IsoTooOld" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn IsoTooOld = int32(-536870162)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LockedRead">
+      <MemberSignature Language="C#" Value="LockedRead" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn LockedRead = int32(-536870205)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LockedWrite">
+      <MemberSignature Language="C#" Value="LockedWrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn LockedWrite = int32(-536870204)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageTooLarge">
+      <MemberSignature Language="C#" Value="MessageTooLarge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn MessageTooLarge = int32(-536870175)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoBandwidth">
+      <MemberSignature Language="C#" Value="NoBandwidth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NoBandwidth = int32(-536870164)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoChannels">
+      <MemberSignature Language="C#" Value="NoChannels" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NoChannels = int32(-536870182)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoCompletion">
+      <MemberSignature Language="C#" Value="NoCompletion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NoCompletion = int32(-536870166)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoDevice">
+      <MemberSignature Language="C#" Value="NoDevice" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NoDevice = int32(-536870208)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoFrames">
+      <MemberSignature Language="C#" Value="NoFrames" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NoFrames = int32(-536870176)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoInterrupt">
+      <MemberSignature Language="C#" Value="NoInterrupt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NoInterrupt = int32(-536870177)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMedia">
+      <MemberSignature Language="C#" Value="NoMedia" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NoMedia = int32(-536870172)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMemory">
+      <MemberSignature Language="C#" Value="NoMemory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NoMemory = int32(-536870211)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoPower">
+      <MemberSignature Language="C#" Value="NoPower" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NoPower = int32(-536870173)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoResources">
+      <MemberSignature Language="C#" Value="NoResources" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NoResources = int32(-536870210)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSpace">
+      <MemberSignature Language="C#" Value="NoSpace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NoSpace = int32(-536870181)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAligned">
+      <MemberSignature Language="C#" Value="NotAligned" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NotAligned = int32(-536870192)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAttached">
+      <MemberSignature Language="C#" Value="NotAttached" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NotAttached = int32(-536870183)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotFound">
+      <MemberSignature Language="C#" Value="NotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NotFound = int32(-536870160)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotOpen">
+      <MemberSignature Language="C#" Value="NotOpen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NotOpen = int32(-536870195)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotPermitted">
+      <MemberSignature Language="C#" Value="NotPermitted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NotPermitted = int32(-536870174)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotPrivileged">
+      <MemberSignature Language="C#" Value="NotPrivileged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NotPrivileged = int32(-536870207)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotReadable">
+      <MemberSignature Language="C#" Value="NotReadable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NotReadable = int32(-536870194)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotReady">
+      <MemberSignature Language="C#" Value="NotReady" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NotReady = int32(-536870184)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotResponding">
+      <MemberSignature Language="C#" Value="NotResponding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NotResponding = int32(-536870163)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotWritable">
+      <MemberSignature Language="C#" Value="NotWritable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn NotWritable = int32(-536870193)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Offline">
+      <MemberSignature Language="C#" Value="Offline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn Offline = int32(-536870185)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Overrun">
+      <MemberSignature Language="C#" Value="Overrun" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn Overrun = int32(-536870168)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PortExists">
+      <MemberSignature Language="C#" Value="PortExists" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn PortExists = int32(-536870179)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RLDError">
+      <MemberSignature Language="C#" Value="RLDError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn RLDError = int32(-536870189)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StillOpen">
+      <MemberSignature Language="C#" Value="StillOpen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn StillOpen = int32(-536870190)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="Success" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn Success = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="Timeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn Timeout = int32(-536870186)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Underrun">
+      <MemberSignature Language="C#" Value="Underrun" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn Underrun = int32(-536870169)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnformattedMedia">
+      <MemberSignature Language="C#" Value="UnformattedMedia" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn UnformattedMedia = int32(-536870171)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unsupported">
+      <MemberSignature Language="C#" Value="Unsupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn Unsupported = int32(-536870201)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsupportedMode">
+      <MemberSignature Language="C#" Value="UnsupportedMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn UnsupportedMode = int32(-536870170)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBBitstufErr">
+      <MemberSignature Language="C#" Value="USBBitstufErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBBitstufErr = int32(-536854526)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBBufferOverrunErr">
+      <MemberSignature Language="C#" Value="USBBufferOverrunErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBBufferOverrunErr = int32(-536854516)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBBufferUnderrunErr">
+      <MemberSignature Language="C#" Value="USBBufferUnderrunErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBBufferUnderrunErr = int32(-536854515)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBClearPipeStallNotRecursive">
+      <MemberSignature Language="C#" Value="USBClearPipeStallNotRecursive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBClearPipeStallNotRecursive = int32(-536854456)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBConfigNotFound">
+      <MemberSignature Language="C#" Value="USBConfigNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBConfigNotFound = int32(-536854442)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBCRCErr">
+      <MemberSignature Language="C#" Value="USBCRCErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBCRCErr = int32(-536854527)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDataToggleErr">
+      <MemberSignature Language="C#" Value="USBDataToggleErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBDataToggleErr = int32(-536854525)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDeviceCountExceeded">
+      <MemberSignature Language="C#" Value="USBDeviceCountExceeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBDeviceCountExceeded = int32(-536854459)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDeviceNotHighSpeed">
+      <MemberSignature Language="C#" Value="USBDeviceNotHighSpeed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBDeviceNotHighSpeed = int32(-536854455)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDevicePortWasNotSuspended">
+      <MemberSignature Language="C#" Value="USBDevicePortWasNotSuspended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBDevicePortWasNotSuspended = int32(-536854457)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDeviceTransferredToCompanion">
+      <MemberSignature Language="C#" Value="USBDeviceTransferredToCompanion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBDeviceTransferredToCompanion = int32(-536854455)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBEndpointCountExceeded">
+      <MemberSignature Language="C#" Value="USBEndpointCountExceeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBEndpointCountExceeded = int32(-536854458)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBEndpointNotFound">
+      <MemberSignature Language="C#" Value="USBEndpointNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBEndpointNotFound = int32(-536854441)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBHighSpeedSplitError">
+      <MemberSignature Language="C#" Value="USBHighSpeedSplitError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBHighSpeedSplitError = int32(-536854453)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBInterfaceNotFound">
+      <MemberSignature Language="C#" Value="USBInterfaceNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBInterfaceNotFound = int32(-536854450)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBInvalidSSEndpoint">
+      <MemberSignature Language="C#" Value="USBInvalidSSEndpoint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBInvalidSSEndpoint = int32(-536854461)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBLinkErr">
+      <MemberSignature Language="C#" Value="USBLinkErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBLinkErr = int32(-536854512)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBLowLatencyBufferNotPreviouslyAllocated">
+      <MemberSignature Language="C#" Value="USBLowLatencyBufferNotPreviouslyAllocated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBLowLatencyBufferNotPreviouslyAllocated = int32(-536854451)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBLowLatencyFrameListNotPreviouslyAllocated">
+      <MemberSignature Language="C#" Value="USBLowLatencyFrameListNotPreviouslyAllocated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBLowLatencyFrameListNotPreviouslyAllocated = int32(-536854452)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBNoAsyncPortErr">
+      <MemberSignature Language="C#" Value="USBNoAsyncPortErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBNoAsyncPortErr = int32(-536854433)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBNotEnoughPipesErr">
+      <MemberSignature Language="C#" Value="USBNotEnoughPipesErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBNotEnoughPipesErr = int32(-536854434)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBNotEnoughPowerErr">
+      <MemberSignature Language="C#" Value="USBNotEnoughPowerErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBNotEnoughPowerErr = int32(-536854435)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBNotSent1Err">
+      <MemberSignature Language="C#" Value="USBNotSent1Err" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBNotSent1Err = int32(-536854514)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBNotSent2Err">
+      <MemberSignature Language="C#" Value="USBNotSent2Err" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBNotSent2Err = int32(-536854513)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBPIDCheckErr">
+      <MemberSignature Language="C#" Value="USBPIDCheckErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBPIDCheckErr = int32(-536854522)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBPipeStalled">
+      <MemberSignature Language="C#" Value="USBPipeStalled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBPipeStalled = int32(-536854449)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBReserved1Err">
+      <MemberSignature Language="C#" Value="USBReserved1Err" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBReserved1Err = int32(-536854518)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBReserved2Err">
+      <MemberSignature Language="C#" Value="USBReserved2Err" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBReserved2Err = int32(-536854517)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBStreamsNotSupported">
+      <MemberSignature Language="C#" Value="USBStreamsNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBStreamsNotSupported = int32(-536854460)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBSyncRequestOnWLThread">
+      <MemberSignature Language="C#" Value="USBSyncRequestOnWLThread" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBSyncRequestOnWLThread = int32(-536854454)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBTooManyPipesErr">
+      <MemberSignature Language="C#" Value="USBTooManyPipesErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBTooManyPipesErr = int32(-536854432)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBTransactionReturned">
+      <MemberSignature Language="C#" Value="USBTransactionReturned" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBTransactionReturned = int32(-536854448)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBTransactionTimeout">
+      <MemberSignature Language="C#" Value="USBTransactionTimeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBTransactionTimeout = int32(-536854447)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBUnknownPipeErr">
+      <MemberSignature Language="C#" Value="USBUnknownPipeErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBUnknownPipeErr = int32(-536854431)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBWrongPIDErr">
+      <MemberSignature Language="C#" Value="USBWrongPIDErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn USBWrongPIDErr = int32(-536854521)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VMError">
+      <MemberSignature Language="C#" Value="VMError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn VMError = int32(-536870200)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

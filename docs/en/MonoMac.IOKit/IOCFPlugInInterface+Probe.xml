@@ -1,0 +1,29 @@
+<Type Name="IOCFPlugInInterface+Probe" FullName="MonoMac.IOKit.IOCFPlugInInterface+Probe">
+  <TypeSignature Language="C#" Value="public delegate MonoMac.IOKit.IOReturn IOCFPlugInInterface.Probe(IntPtr thisPointer, IntPtr propertyTable, IntPtr service, out int order);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed IOCFPlugInInterface/Probe extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="thisPointer" Type="System.IntPtr" />
+    <Parameter Name="propertyTable" Type="System.IntPtr" />
+    <Parameter Name="service" Type="System.IntPtr" />
+    <Parameter Name="order" Type="System.Int32&amp;" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="thisPointer">To be added.</param>
+    <param name="propertyTable">To be added.</param>
+    <param name="service">To be added.</param>
+    <param name="order">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,227 @@
+<Type Name="RequestType" FullName="MonoMac.IOKit.USB.RequestType">
+  <TypeSignature Language="C#" Value="public enum RequestType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RequestType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RqClearFeature">
+      <MemberSignature Language="C#" Value="RqClearFeature" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqClearFeature = unsigned int8(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqGetConfig">
+      <MemberSignature Language="C#" Value="RqGetConfig" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqGetConfig = unsigned int8(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqGetDescriptor">
+      <MemberSignature Language="C#" Value="RqGetDescriptor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqGetDescriptor = unsigned int8(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqGetInterface">
+      <MemberSignature Language="C#" Value="RqGetInterface" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqGetInterface = unsigned int8(10)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqGetState">
+      <MemberSignature Language="C#" Value="RqGetState" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqGetState = unsigned int8(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqGetStatus">
+      <MemberSignature Language="C#" Value="RqGetStatus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqGetStatus = unsigned int8(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqReserved2">
+      <MemberSignature Language="C#" Value="RqReserved2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqReserved2 = unsigned int8(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqSetAddress">
+      <MemberSignature Language="C#" Value="RqSetAddress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqSetAddress = unsigned int8(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqSetConfig">
+      <MemberSignature Language="C#" Value="RqSetConfig" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqSetConfig = unsigned int8(9)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqSetDescriptor">
+      <MemberSignature Language="C#" Value="RqSetDescriptor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqSetDescriptor = unsigned int8(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqSetFeature">
+      <MemberSignature Language="C#" Value="RqSetFeature" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqSetFeature = unsigned int8(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqSetInterface">
+      <MemberSignature Language="C#" Value="RqSetInterface" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqSetInterface = unsigned int8(11)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RqSyncFrame">
+      <MemberSignature Language="C#" Value="RqSyncFrame" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType RqSyncFrame = unsigned int8(12)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsochDelay">
+      <MemberSignature Language="C#" Value="SetIsochDelay" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType SetIsochDelay = unsigned int8(49)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSel">
+      <MemberSignature Language="C#" Value="SetSel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.RequestType SetSel = unsigned int8(48)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.RequestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,418 @@
+<Type Name="IOService" FullName="MonoMac.IOKit.IOService">
+  <TypeSignature Language="C#" Value="public class IOService : MonoMac.IOKit.IORegistryEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi IOService extends MonoMac.IOKit.IORegistryEntry" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.IOKit.IORegistryEntry</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddInterestNotification">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IOObject AddInterestNotification (MonoMac.IOKit.IONotificationPort notifyPort, MonoMac.IOKit.InterestType interestType, MonoMac.IOKit.IOService.InterestCallback callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.IOObject AddInterestNotification(class MonoMac.IOKit.IONotificationPort notifyPort, valuetype MonoMac.IOKit.InterestType interestType, class MonoMac.IOKit.IOService/InterestCallback callback) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="notifyPort" Type="MonoMac.IOKit.IONotificationPort" />
+        <Parameter Name="interestType" Type="MonoMac.IOKit.InterestType" />
+        <Parameter Name="callback" Type="MonoMac.IOKit.IOService+InterestCallback" />
+      </Parameters>
+      <Docs>
+        <param name="notifyPort">To be added.</param>
+        <param name="interestType">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMatchingNotification&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOKit.IOIterator&lt;T&gt; AddMatchingNotification&lt;T&gt; (MonoMac.IOKit.IONotificationPort notifyPort, MonoMac.IOKit.NotificationType notificationType, MonoMac.Foundation.NSDictionary matchingDictionary, MonoMac.IOKit.IOService.MatchingCallback&lt;T&gt; callback) where T : MonoMac.IOKit.IOService;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOKit.IOIterator`1&lt;!!T&gt; AddMatchingNotification&lt;(class MonoMac.IOKit.IOService) T&gt;(class MonoMac.IOKit.IONotificationPort notifyPort, valuetype MonoMac.IOKit.NotificationType notificationType, class MonoMac.Foundation.NSDictionary matchingDictionary, class MonoMac.IOKit.IOService/MatchingCallback`1&lt;!!T&gt; callback) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOIterator&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>MonoMac.IOKit.IOService</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="notifyPort" Type="MonoMac.IOKit.IONotificationPort" />
+        <Parameter Name="notificationType" Type="MonoMac.IOKit.NotificationType" />
+        <Parameter Name="matchingDictionary" Type="MonoMac.Foundation.NSDictionary" />
+        <Parameter Name="callback" Type="MonoMac.IOKit.IOService+MatchingCallback&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="notifyPort">To be added.</param>
+        <param name="notificationType">To be added.</param>
+        <param name="matchingDictionary">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllBusyState">
+      <MemberSignature Language="C#" Value="public static uint AllBusyState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property unsigned int32 AllBusyState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusyState">
+      <MemberSignature Language="C#" Value="public uint BusyState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 BusyState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMatchingDictionaryForBSDName">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSMutableDictionary CreateMatchingDictionaryForBSDName (string bsdName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSMutableDictionary CreateMatchingDictionaryForBSDName(string bsdName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSMutableDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bsdName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="bsdName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMatchingDictionaryForClass&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSMutableDictionary CreateMatchingDictionaryForClass&lt;T&gt; () where T : MonoMac.IOKit.IOService;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSMutableDictionary CreateMatchingDictionaryForClass&lt;(class MonoMac.IOKit.IOService) T&gt;() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSMutableDictionary</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>MonoMac.IOKit.IOService</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMatchingDictionaryForName">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSMutableDictionary CreateMatchingDictionaryForName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSMutableDictionary CreateMatchingDictionaryForName(string name) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSMutableDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMatchingDictionaryForName">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSMutableDictionary CreateMatchingDictionaryForName (ulong entryId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSMutableDictionary CreateMatchingDictionaryForName(unsigned int64 entryId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSMutableDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entryId" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="entryId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMatchingService">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOKit.IOService GetMatchingService (MonoMac.Foundation.NSDictionary matchingDictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOKit.IOService GetMatchingService(class MonoMac.Foundation.NSDictionary matchingDictionary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matchingDictionary" Type="MonoMac.Foundation.NSDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="matchingDictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMatchingServices&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOKit.IOIterator&lt;T&gt; GetMatchingServices&lt;T&gt; (MonoMac.Foundation.NSDictionary matchingDictionary) where T : MonoMac.IOKit.IOService;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOKit.IOIterator`1&lt;!!T&gt; GetMatchingServices&lt;(class MonoMac.IOKit.IOService) T&gt;(class MonoMac.Foundation.NSDictionary matchingDictionary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOIterator&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>MonoMac.IOKit.IOService</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="matchingDictionary" Type="MonoMac.Foundation.NSDictionary" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="matchingDictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAnyBusy">
+      <MemberSignature Language="C#" Value="public static bool IsAnyBusy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsAnyBusy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBusy">
+      <MemberSignature Language="C#" Value="public bool IsBusy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBusy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchPropertyTable">
+      <MemberSignature Language="C#" Value="public bool MatchPropertyTable (MonoMac.Foundation.NSDictionary matchingDictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MatchPropertyTable(class MonoMac.Foundation.NSDictionary matchingDictionary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matchingDictionary" Type="MonoMac.Foundation.NSDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="matchingDictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IOConnection Open (MonoMac.Kernel.Mach.Task owningTask, uint type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.IOConnection Open(class MonoMac.Kernel.Mach.Task owningTask, unsigned int32 type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOConnection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owningTask" Type="MonoMac.Kernel.Mach.Task" />
+        <Parameter Name="type" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="owningTask">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestProbe">
+      <MemberSignature Language="C#" Value="public void RequestProbe (uint options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RequestProbe(unsigned int32 options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Wait">
+      <MemberSignature Language="C#" Value="public bool Wait (MonoMac.Kernel.Mach.TimeSpec waitTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(valuetype MonoMac.Kernel.Mach.TimeSpec waitTime) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitTime" Type="MonoMac.Kernel.Mach.TimeSpec" />
+      </Parameters>
+      <Docs>
+        <param name="waitTime">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Wait">
+      <MemberSignature Language="C#" Value="public bool Wait (int seconds, int nanoseconds = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(int32 seconds, int32 nanoseconds) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seconds" Type="System.Int32" />
+        <Parameter Name="nanoseconds" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="seconds">To be added.</param>
+        <param name="nanoseconds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitAll">
+      <MemberSignature Language="C#" Value="public static bool WaitAll (MonoMac.Kernel.Mach.TimeSpec waitTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool WaitAll(valuetype MonoMac.Kernel.Mach.TimeSpec waitTime) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitTime" Type="MonoMac.Kernel.Mach.TimeSpec" />
+      </Parameters>
+      <Docs>
+        <param name="waitTime">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitAll">
+      <MemberSignature Language="C#" Value="public static bool WaitAll (int seconds, int nanoseconds = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool WaitAll(int32 seconds, int32 nanoseconds) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="seconds" Type="System.Int32" />
+        <Parameter Name="nanoseconds" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="seconds">To be added.</param>
+        <param name="nanoseconds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

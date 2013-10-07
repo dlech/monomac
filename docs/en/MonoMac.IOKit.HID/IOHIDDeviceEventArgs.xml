@@ -1,0 +1,52 @@
+<Type Name="IOHIDDeviceEventArgs" FullName="MonoMac.IOKit.HID.IOHIDDeviceEventArgs">
+  <TypeSignature Language="C#" Value="public class IOHIDDeviceEventArgs : MonoMac.IOKit.HID.IOHIDEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOHIDDeviceEventArgs extends MonoMac.IOKit.HID.IOHIDEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.IOKit.HID.IOHIDEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOHIDDeviceEventArgs (MonoMac.IOKit.IOReturn result, MonoMac.IOKit.HID.IOHIDDevice device);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype MonoMac.IOKit.IOReturn result, class MonoMac.IOKit.HID.IOHIDDevice device) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="result" Type="MonoMac.IOKit.IOReturn" />
+        <Parameter Name="device" Type="MonoMac.IOKit.HID.IOHIDDevice" />
+      </Parameters>
+      <Docs>
+        <param name="result">To be added.</param>
+        <param name="device">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Device">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.HID.IOHIDDevice Device { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOKit.HID.IOHIDDevice Device" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDDevice</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

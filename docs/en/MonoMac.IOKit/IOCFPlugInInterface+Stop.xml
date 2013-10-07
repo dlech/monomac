@@ -1,0 +1,23 @@
+<Type Name="IOCFPlugInInterface+Stop" FullName="MonoMac.IOKit.IOCFPlugInInterface+Stop">
+  <TypeSignature Language="C#" Value="public delegate MonoMac.IOKit.IOReturn IOCFPlugInInterface.Stop(IntPtr thisPointer);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed IOCFPlugInInterface/Stop extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="thisPointer" Type="System.IntPtr" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="thisPointer">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

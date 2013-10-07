@@ -1,0 +1,112 @@
+<Type Name="IOCFPlugin" FullName="MonoMac.IOKit.IOCFPlugin">
+  <TypeSignature Language="C#" Value="public class IOCFPlugin : MonoMac.IOKit.IOCFPlugin&lt;MonoMac.IOKit.IOCFPlugInInterface&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOCFPlugin extends MonoMac.IOKit.IOCFPlugin`1&lt;class MonoMac.IOKit.IOCFPlugInInterface&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.IOKit.IOCFPlugin&lt;MonoMac.IOKit.IOCFPlugInInterface&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">MonoMac.IOKit.IOCFPlugInInterface</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Probe">
+      <MemberSignature Language="C#" Value="public int Probe (MonoMac.Foundation.NSDictionary propertyTable, MonoMac.IOKit.IOService service);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Probe(class MonoMac.Foundation.NSDictionary propertyTable, class MonoMac.IOKit.IOService service) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyTable" Type="MonoMac.Foundation.NSDictionary" />
+        <Parameter Name="service" Type="MonoMac.IOKit.IOService" />
+      </Parameters>
+      <Docs>
+        <param name="propertyTable">To be added.</param>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revision">
+      <MemberSignature Language="C#" Value="public ushort Revision { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 Revision" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start (MonoMac.Foundation.NSDictionary propertyTable, MonoMac.IOKit.IOService service);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start(class MonoMac.Foundation.NSDictionary propertyTable, class MonoMac.IOKit.IOService service) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyTable" Type="MonoMac.Foundation.NSDictionary" />
+        <Parameter Name="service" Type="MonoMac.IOKit.IOService" />
+      </Parameters>
+      <Docs>
+        <param name="propertyTable">To be added.</param>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public ushort Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

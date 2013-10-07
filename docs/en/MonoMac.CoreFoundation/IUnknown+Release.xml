@@ -1,0 +1,23 @@
+<Type Name="IUnknown+Release" FullName="MonoMac.CoreFoundation.IUnknown+Release">
+  <TypeSignature Language="C#" Value="public delegate uint IUnknown.Release(IntPtr thisPointer);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed IUnknown/Release extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="thisPointer" Type="System.IntPtr" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.UInt32</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="thisPointer">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

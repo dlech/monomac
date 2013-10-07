@@ -1,0 +1,27 @@
+<Type Name="IUnknown+QueryInterface" FullName="MonoMac.CoreFoundation.IUnknown+QueryInterface">
+  <TypeSignature Language="C#" Value="public delegate MonoMac.CoreFoundation.HRESULT IUnknown.QueryInterface(IntPtr thisPointer, CFUUID.CFUUIDBytes iid, out IntPtr ppv);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed IUnknown/QueryInterface extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="thisPointer" Type="System.IntPtr" />
+    <Parameter Name="iid" Type="MonoMac.CoreFoundation.CFUUID+CFUUIDBytes" />
+    <Parameter Name="ppv" Type="System.IntPtr&amp;" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="thisPointer">To be added.</param>
+    <param name="iid">To be added.</param>
+    <param name="ppv">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

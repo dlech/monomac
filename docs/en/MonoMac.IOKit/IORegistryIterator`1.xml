@@ -1,0 +1,28 @@
+<Type Name="IORegistryIterator&lt;T&gt;" FullName="MonoMac.IOKit.IORegistryIterator&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class IORegistryIterator&lt;T&gt; : MonoMac.IOKit.IOIterator&lt;T&gt; where T : IOObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IORegistryIterator`1&lt;(class MonoMac.IOKit.IOObject) T&gt; extends MonoMac.IOKit.IOIterator`1&lt;!T&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <BaseTypeName>MonoMac.IOKit.IOObject</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>MonoMac.IOKit.IOIterator&lt;T&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">T</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

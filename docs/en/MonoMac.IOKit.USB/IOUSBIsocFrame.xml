@@ -1,0 +1,63 @@
+<Type Name="IOUSBIsocFrame" FullName="MonoMac.IOKit.USB.IOUSBIsocFrame">
+  <TypeSignature Language="C#" Value="public struct IOUSBIsocFrame" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit IOUSBIsocFrame extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActualCount">
+      <MemberSignature Language="C#" Value="public ushort ActualCount;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int16 ActualCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestedCount">
+      <MemberSignature Language="C#" Value="public ushort RequestedCount;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int16 RequestedCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IOReturn Status;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype MonoMac.IOKit.IOReturn Status" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

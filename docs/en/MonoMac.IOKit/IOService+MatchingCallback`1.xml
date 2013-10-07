@@ -1,0 +1,30 @@
+<Type Name="IOService+MatchingCallback&lt;T&gt;" FullName="MonoMac.IOKit.IOService+MatchingCallback&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate void IOService.MatchingCallback&lt;T&gt;(IOIterator&lt;T&gt; matchingServices) where T : IOService;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed IOService/MatchingCallback`1&lt;(class MonoMac.IOKit.IOService) T&gt; extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <BaseTypeName>MonoMac.IOKit.IOService</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="matchingServices" Type="MonoMac.IOKit.IOIterator&lt;T&gt;" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <param name="matchingServices">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

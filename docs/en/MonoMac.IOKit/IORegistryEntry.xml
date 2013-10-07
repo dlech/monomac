@@ -1,0 +1,367 @@
+<Type Name="IORegistryEntry" FullName="MonoMac.IOKit.IORegistryEntry">
+  <TypeSignature Language="C#" Value="public class IORegistryEntry : MonoMac.IOKit.IOObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi IORegistryEntry extends MonoMac.IOKit.IOObject" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.IOKit.IOObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateCFProperties">
+      <MemberSignature Language="C#" Value="public MonoMac.Foundation.NSMutableDictionary CreateCFProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.Foundation.NSMutableDictionary CreateCFProperties() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSMutableDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCFProperty">
+      <MemberSignature Language="C#" Value="public IntPtr CreateCFProperty (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int CreateCFProperty(string key) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIterator">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IORegistryIterator&lt;MonoMac.IOKit.IOObject&gt; CreateIterator (MonoMac.IOKit.RegistryPlane plane, MonoMac.IOKit.RegistryIteratorOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.IORegistryIterator`1&lt;class MonoMac.IOKit.IOObject&gt; CreateIterator(valuetype MonoMac.IOKit.RegistryPlane plane, valuetype MonoMac.IOKit.RegistryIteratorOptions options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IORegistryIterator&lt;MonoMac.IOKit.IOObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
+        <Parameter Name="options" Type="MonoMac.IOKit.RegistryIteratorOptions" />
+      </Parameters>
+      <Docs>
+        <param name="plane">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRootIterator">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOKit.IORegistryIterator&lt;MonoMac.IOKit.IOObject&gt; CreateRootIterator (MonoMac.IOKit.RegistryPlane plane, MonoMac.IOKit.RegistryIteratorOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOKit.IORegistryIterator`1&lt;class MonoMac.IOKit.IOObject&gt; CreateRootIterator(valuetype MonoMac.IOKit.RegistryPlane plane, valuetype MonoMac.IOKit.RegistryIteratorOptions options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IORegistryIterator&lt;MonoMac.IOKit.IOObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
+        <Parameter Name="options" Type="MonoMac.IOKit.RegistryIteratorOptions" />
+      </Parameters>
+      <Docs>
+        <param name="plane">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromPath">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOKit.IORegistryEntry FromPath (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOKit.IORegistryEntry FromPath(string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IORegistryEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildEntry">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IORegistryEntry GetChildEntry (MonoMac.IOKit.RegistryPlane plane);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.IORegistryEntry GetChildEntry(valuetype MonoMac.IOKit.RegistryPlane plane) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IORegistryEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
+      </Parameters>
+      <Docs>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildIterator">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IORegistryIterator&lt;MonoMac.IOKit.IOObject&gt; GetChildIterator (MonoMac.IOKit.RegistryPlane plane);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.IORegistryIterator`1&lt;class MonoMac.IOKit.IOObject&gt; GetChildIterator(valuetype MonoMac.IOKit.RegistryPlane plane) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IORegistryIterator&lt;MonoMac.IOKit.IOObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
+      </Parameters>
+      <Docs>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocationInPlane">
+      <MemberSignature Language="C#" Value="public string GetLocationInPlane (MonoMac.IOKit.RegistryPlane plane);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetLocationInPlane(valuetype MonoMac.IOKit.RegistryPlane plane) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
+      </Parameters>
+      <Docs>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNameInPlane">
+      <MemberSignature Language="C#" Value="public string GetNameInPlane (MonoMac.IOKit.RegistryPlane plane);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetNameInPlane(valuetype MonoMac.IOKit.RegistryPlane plane) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
+      </Parameters>
+      <Docs>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParentEntry">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IORegistryEntry GetParentEntry (MonoMac.IOKit.RegistryPlane plane);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.IORegistryEntry GetParentEntry(valuetype MonoMac.IOKit.RegistryPlane plane) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IORegistryEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
+      </Parameters>
+      <Docs>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParentIterator">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IORegistryIterator&lt;MonoMac.IOKit.IOObject&gt; GetParentIterator (MonoMac.IOKit.RegistryPlane plane);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.IORegistryIterator`1&lt;class MonoMac.IOKit.IOObject&gt; GetParentIterator(valuetype MonoMac.IOKit.RegistryPlane plane) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IORegistryIterator&lt;MonoMac.IOKit.IOObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
+      </Parameters>
+      <Docs>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathInPlane">
+      <MemberSignature Language="C#" Value="public string GetPathInPlane (MonoMac.IOKit.RegistryPlane plane);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPathInPlane(valuetype MonoMac.IOKit.RegistryPlane plane) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
+      </Parameters>
+      <Docs>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public ulong ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInPlane">
+      <MemberSignature Language="C#" Value="public bool IsInPlane (MonoMac.IOKit.RegistryPlane plane);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsInPlane(valuetype MonoMac.IOKit.RegistryPlane plane) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
+      </Parameters>
+      <Docs>
+        <param name="plane">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootEntry">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOKit.IORegistryEntry RootEntry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.IOKit.IORegistryEntry RootEntry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IORegistryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCFProperties">
+      <MemberSignature Language="C#" Value="public void SetCFProperties (MonoMac.ObjCRuntime.INativeObject properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCFProperties(class MonoMac.ObjCRuntime.INativeObject properties) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="MonoMac.ObjCRuntime.INativeObject" />
+      </Parameters>
+      <Docs>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCFProperty">
+      <MemberSignature Language="C#" Value="public void SetCFProperty (string propertyName, MonoMac.ObjCRuntime.INativeObject properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCFProperty(string propertyName, class MonoMac.ObjCRuntime.INativeObject properties) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="properties" Type="MonoMac.ObjCRuntime.INativeObject" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

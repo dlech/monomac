@@ -1,0 +1,146 @@
+<Type Name="IOUSBConfigurationDescriptor" FullName="MonoMac.IOKit.USB.IOUSBConfigurationDescriptor">
+  <TypeSignature Language="C#" Value="public struct IOUSBConfigurationDescriptor : MonoMac.IOKit.USB.IIOUSBDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit IOUSBConfigurationDescriptor extends System.ValueType implements class MonoMac.IOKit.USB.IIOUSBDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>MonoMac.IOKit.USB.IIOUSBDescriptor</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConfigurationIndex">
+      <MemberSignature Language="C#" Value="public byte ConfigurationIndex;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 ConfigurationIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationValue">
+      <MemberSignature Language="C#" Value="public byte ConfigurationValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 ConfigurationValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DescriptorType">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.DescriptorType DescriptorType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOKit.USB.DescriptorType DescriptorType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DescriptorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterfaceCount">
+      <MemberSignature Language="C#" Value="public byte InterfaceCount;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 InterfaceCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public byte Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPower">
+      <MemberSignature Language="C#" Value="public int MaxPower { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPower" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowerAttributes">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.PowerAttributes PowerAttributes;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype MonoMac.IOKit.USB.PowerAttributes PowerAttributes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.PowerAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalLength">
+      <MemberSignature Language="C#" Value="public ushort TotalLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 TotalLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

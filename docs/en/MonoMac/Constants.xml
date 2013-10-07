@@ -338,6 +338,20 @@
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
+    </Member>    <Member MemberName="IOKitLibrary">
+      <MemberSignature Language="C#" Value="public const string IOKitLibrary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IOKitLibrary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
     </Member>
     <Member MemberName="ObjectiveCLibrary">
       <MemberSignature Language="C#" Value="public const string ObjectiveCLibrary;" />

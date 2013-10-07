@@ -1,0 +1,185 @@
+<Type Name="HRESULT" FullName="MonoMac.CoreFoundation.HRESULT">
+  <TypeSignature Language="C#" Value="public enum HRESULT" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HRESULT extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="E_ABORT">
+      <MemberSignature Language="C#" Value="E_ABORT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT E_ABORT = unsigned int32(2147483655)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="E_ACCESSDENIED">
+      <MemberSignature Language="C#" Value="E_ACCESSDENIED" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT E_ACCESSDENIED = unsigned int32(2147483657)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="E_FAIL">
+      <MemberSignature Language="C#" Value="E_FAIL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT E_FAIL = unsigned int32(2147483656)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="E_HANDLE">
+      <MemberSignature Language="C#" Value="E_HANDLE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT E_HANDLE = unsigned int32(2147483654)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="E_INVALIDARG">
+      <MemberSignature Language="C#" Value="E_INVALIDARG" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT E_INVALIDARG = unsigned int32(2147483651)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="E_NOINTERFACE">
+      <MemberSignature Language="C#" Value="E_NOINTERFACE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT E_NOINTERFACE = unsigned int32(2147483652)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="E_NOTIMPL">
+      <MemberSignature Language="C#" Value="E_NOTIMPL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT E_NOTIMPL = unsigned int32(2147483649)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="E_OUTOFMEMORY">
+      <MemberSignature Language="C#" Value="E_OUTOFMEMORY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT E_OUTOFMEMORY = unsigned int32(2147483650)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="E_POINTER">
+      <MemberSignature Language="C#" Value="E_POINTER" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT E_POINTER = unsigned int32(2147483653)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="E_UNEXPECTED">
+      <MemberSignature Language="C#" Value="E_UNEXPECTED" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT E_UNEXPECTED = unsigned int32(2147549183)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="S_FALSE">
+      <MemberSignature Language="C#" Value="S_FALSE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT S_FALSE = unsigned int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="S_OK">
+      <MemberSignature Language="C#" Value="S_OK" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.CoreFoundation.HRESULT S_OK = unsigned int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.HRESULT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
