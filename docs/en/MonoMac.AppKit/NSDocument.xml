@@ -299,8 +299,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="AutosavesInPlace">
-      <MemberSignature Language="C#" Value="public virtual bool AutosavesInPlace ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AutosavesInPlace() cil managed" />
+      <MemberSignature Language="C#" Value="public static bool AutosavesInPlace ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AutosavesInPlace() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -391,8 +391,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CanConcurrentlyReadDocumentsOfType">
-      <MemberSignature Language="C#" Value="public virtual bool CanConcurrentlyReadDocumentsOfType (string typeName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanConcurrentlyReadDocumentsOfType(string typeName) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool CanConcurrentlyReadDocumentsOfType (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanConcurrentlyReadDocumentsOfType(string typeName) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -580,7 +580,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
-      <MemberSignature Language="C#" Value="public virtual string DisplayName { get; }" />
+      <MemberSignature Language="C#" Value="public virtual string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -589,6 +589,9 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("displayName")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setDisplayName:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -648,6 +651,25 @@ public class MyClass : BaseClass {
         <param name="outError">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateDocument">
+      <MemberSignature Language="C#" Value="public void DuplicateDocument (MonoMac.AppKit.NSDocument.DuplicateCallback callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DuplicateDocument(class MonoMac.AppKit.NSDocument/DuplicateCallback callback) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="MonoMac.AppKit.NSDocument+DuplicateCallback" />
+      </Parameters>
+      <Docs>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

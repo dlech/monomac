@@ -14,6 +14,9 @@
       <AttributeName>MonoMac.Foundation.Model</AttributeName>
     </Attribute>
     <Attribute>
+      <AttributeName>MonoMac.Foundation.Protocol</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName>MonoMac.Foundation.Register("NSFileManagerDelegate", true)</AttributeName>
     </Attribute>
   </Attributes>

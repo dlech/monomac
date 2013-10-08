@@ -14,7 +14,7 @@
       <AttributeName>MonoMac.Foundation.Model</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>MonoMac.Foundation.Register("CAAnimationDelegate", true)</AttributeName>
+      <AttributeName>MonoMac.Foundation.Register("CAAnimationDelegate", false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

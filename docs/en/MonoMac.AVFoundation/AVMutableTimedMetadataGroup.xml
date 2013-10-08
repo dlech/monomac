@@ -164,7 +164,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Items">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AVFoundation.AVMetadataItem[] Items { get; set; }" />
+      <MemberSignature Language="C#" Value="public override MonoMac.AVFoundation.AVMetadataItem[] Items { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AVFoundation.AVMetadataItem[] Items" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -187,9 +187,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Timerange">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreMedia.CMTimeRange Timerange { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.CoreMedia.CMTimeRange Timerange" />
+    <Member MemberName="TimeRange">
+      <MemberSignature Language="C#" Value="public override MonoMac.CoreMedia.CMTimeRange TimeRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.CoreMedia.CMTimeRange TimeRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

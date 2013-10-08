@@ -242,7 +242,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Cell">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSDatePickerCell Cell { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSDatePickerCell Cell { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSDatePickerCell Cell" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -251,6 +251,9 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("cell")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setCell:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

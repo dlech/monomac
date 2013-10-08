@@ -128,6 +128,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileAppendOnly", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -145,6 +150,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileBusy", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -152,6 +162,31 @@ public class MyClass : BaseClass {
         <summary>Represents the value associated with the constant NSFileBusy</summary>
         <value>
         </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeCurrentDirectory">
+      <MemberSignature Language="C#" Value="public virtual bool ChangeCurrentDirectory (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ChangeCurrentDirectory(string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("changeCurrentDirectoryPath:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -536,6 +571,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileCreationDate", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -547,20 +587,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CurrentDirectory">
-      <MemberSignature Language="C#" Value="public virtual string CurrentDirectory { get; set; }" />
+      <MemberSignature Language="C#" Value="public string CurrentDirectory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CurrentDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("currentDirectoryPath")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("changeCurrentDirectoryPath:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -618,6 +650,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileDeviceIdentifier", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -713,6 +750,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileExtensionHidden", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -749,7 +791,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="FileExists">
-      <MemberSignature Language="C#" Value="public virtual bool FileExists (string path, bool isDirectory);" />
+      <MemberSignature Language="C#" Value="public virtual bool FileExists (string path, ref bool isDirectory);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool FileExists(string path, bool isDirectory) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -765,98 +807,13 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="path" Type="System.String" />
-        <Parameter Name="isDirectory" Type="System.Boolean" />
+        <Parameter Name="isDirectory" Type="System.Boolean&amp;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="path">To be added.</param>
         <param name="isDirectory">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FileProtectionComplete">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString FileProtectionComplete { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString FileProtectionComplete" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Represents the value associated with the constant NSFileProtectionComplete</summary>
-        <value>
-        </value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FileProtectionCompleteUnlessOpen">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString FileProtectionCompleteUnlessOpen { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString FileProtectionCompleteUnlessOpen" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Represents the value associated with the constant NSFileProtectionCompleteUnlessOpen</summary>
-        <value>
-        </value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FileProtectionCompleteUntilFirstUserAuthentication">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString FileProtectionCompleteUntilFirstUserAuthentication { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString FileProtectionCompleteUntilFirstUserAuthentication" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Represents the value associated with the constant NSFileProtectionCompleteUntilFirstUserAuthentication</summary>
-        <value>
-        </value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FileProtectionKey">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString FileProtectionKey { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString FileProtectionKey" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Represents the value associated with the constant NSFileProtectionKey</summary>
-        <value>
-        </value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FileProtectionNone">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString FileProtectionNone { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString FileProtectionNone" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Represents the value associated with the constant NSFileProtectionNone</summary>
-        <value>
-        </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -897,6 +854,28 @@ public class MyClass : BaseClass {
       <Docs>
         <param name="path">To be added.</param>
         <param name="error">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentDirectory">
+      <MemberSignature Language="C#" Value="public virtual string GetCurrentDirectory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCurrentDirectory() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("currentDirectoryPath")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1013,8 +992,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDirectoryEnumerator GetEnumerator (MonoMac.Foundation.NSUrl url, MonoMac.Foundation.NSArray properties, MonoMac.Foundation.NSDirectoryEnumerationOptions options, out MonoMac.Foundation.NSError error);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDirectoryEnumerator GetEnumerator(class MonoMac.Foundation.NSUrl url, class MonoMac.Foundation.NSArray properties, valuetype MonoMac.Foundation.NSDirectoryEnumerationOptions options, class MonoMac.Foundation.NSError error) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDirectoryEnumerator GetEnumerator (MonoMac.Foundation.NSUrl url, MonoMac.Foundation.NSArray properties, MonoMac.Foundation.NSDirectoryEnumerationOptions options, MonoMac.Foundation.NSEnumerateErrorHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDirectoryEnumerator GetEnumerator(class MonoMac.Foundation.NSUrl url, class MonoMac.Foundation.NSArray properties, valuetype MonoMac.Foundation.NSDirectoryEnumerationOptions options, class MonoMac.Foundation.NSEnumerateErrorHandler handler) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1031,13 +1010,13 @@ public class MyClass : BaseClass {
         <Parameter Name="url" Type="MonoMac.Foundation.NSUrl" />
         <Parameter Name="properties" Type="MonoMac.Foundation.NSArray" />
         <Parameter Name="options" Type="MonoMac.Foundation.NSDirectoryEnumerationOptions" />
-        <Parameter Name="error" Type="MonoMac.Foundation.NSError&amp;" RefType="out" />
+        <Parameter Name="handler" Type="MonoMac.Foundation.NSEnumerateErrorHandler" />
       </Parameters>
       <Docs>
         <param name="url">To be added.</param>
         <param name="properties">To be added.</param>
         <param name="options">To be added.</param>
-        <param name="error">To be added.</param>
+        <param name="handler">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1267,6 +1246,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileGroupOwnerAccountID", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1284,6 +1268,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileGroupOwnerAccountName", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1301,6 +1290,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileHFSCreatorCode", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1318,6 +1312,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileHFSTypeCode", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1335,6 +1334,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileImmutable", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1535,6 +1539,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileModificationDate", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1610,6 +1619,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileType", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1627,6 +1641,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileOwnerAccountID", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1644,6 +1663,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileOwnerAccountName", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1661,6 +1685,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFilePosixPermissions", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1678,6 +1707,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileReferenceCount", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1890,6 +1924,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileSize", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1959,6 +1998,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileSystemFileNumber", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1976,6 +2020,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileSystemFreeNodes", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1993,6 +2042,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileSystemFreeSize", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2010,6 +2064,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileSystemNodes", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2027,6 +2086,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileSystemNumber", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2044,6 +2108,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileSystemSize", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2061,6 +2130,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileTypeBlockSpecial", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2078,6 +2152,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileTypeCharacterSpecial", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2095,6 +2174,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileTypeDirectory", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2112,6 +2196,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileTypeRegular", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2129,6 +2218,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileTypeSocket", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2146,6 +2240,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileTypeSymbolicLink", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2163,6 +2262,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFileTypeUnknown", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2180,6 +2284,17 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSUbiquityIdentityDidChangeNotification", "Foundation")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.MountainLion</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: MonoMac.ObjCRuntime.MountainLion</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -2198,10 +2313,16 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.MountainLion</AttributeName>
+        </Attribute>
+        <Attribute>
           <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("ubiquityIdentityToken")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: MonoMac.ObjCRuntime.MountainLion</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -561,6 +561,72 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetSelectedObjects">
+      <MemberSignature Language="C#" Value="protected virtual MonoMac.Foundation.NSObject[] GetSelectedObjects ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class MonoMac.Foundation.NSObject[] GetSelectedObjects() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("selectedObjects")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelectionIndex">
+      <MemberSignature Language="C#" Value="protected virtual uint GetSelectionIndex ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int32 GetSelectionIndex() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("selectionIndex")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelectionIndexes">
+      <MemberSignature Language="C#" Value="protected virtual MonoMac.Foundation.NSIndexSet GetSelectionIndexes ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class MonoMac.Foundation.NSIndexSet GetSelectionIndexes() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("selectionIndexes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSIndexSet</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Insert">
       <MemberSignature Language="C#" Value="public virtual void Insert (MonoMac.Foundation.NSObject sender);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(class MonoMac.Foundation.NSObject sender) cil managed" />
@@ -853,20 +919,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SelectedObjects">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject[] SelectedObjects { get; set; }" />
+      <MemberSignature Language="C#" Value="public MonoMac.Foundation.NSObject[] SelectedObjects { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSObject[] SelectedObjects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("selectedObjects")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setSelectedObjects:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSObject[]</ReturnType>
       </ReturnValue>
@@ -877,20 +935,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SelectionIndex">
-      <MemberSignature Language="C#" Value="public virtual int SelectionIndex { get; set; }" />
+      <MemberSignature Language="C#" Value="public int SelectionIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("selectionIndex")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setSelectionIndex:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -901,20 +951,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SelectionIndexes">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSIndexSet SelectionIndexes { get; set; }" />
+      <MemberSignature Language="C#" Value="public MonoMac.Foundation.NSIndexSet SelectionIndexes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSIndexSet SelectionIndexes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("selectionIndexes")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setSelectionIndexes:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSIndexSet</ReturnType>
       </ReturnValue>
@@ -993,6 +1035,81 @@ public class MyClass : BaseClass {
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSelectedObjects">
+      <MemberSignature Language="C#" Value="protected virtual bool SetSelectedObjects (MonoMac.Foundation.NSObject[] objects);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool SetSelectedObjects(class MonoMac.Foundation.NSObject[] objects) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setSelectedObjects:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objects" Type="MonoMac.Foundation.NSObject[]" />
+      </Parameters>
+      <Docs>
+        <param name="objects">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSelectionIndex">
+      <MemberSignature Language="C#" Value="protected virtual bool SetSelectionIndex (uint index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool SetSelectionIndex(unsigned int32 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setSelectionIndex:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSelectionIndexes">
+      <MemberSignature Language="C#" Value="protected virtual bool SetSelectionIndexes (MonoMac.Foundation.NSIndexSet indexes);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool SetSelectionIndexes(class MonoMac.Foundation.NSIndexSet indexes) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setSelectionIndexes:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="indexes" Type="MonoMac.Foundation.NSIndexSet" />
+      </Parameters>
+      <Docs>
+        <param name="indexes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

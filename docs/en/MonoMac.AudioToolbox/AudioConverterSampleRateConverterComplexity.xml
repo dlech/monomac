@@ -1,0 +1,59 @@
+<Type Name="AudioConverterSampleRateConverterComplexity" FullName="MonoMac.AudioToolbox.AudioConverterSampleRateConverterComplexity">
+  <TypeSignature Language="C#" Value="public enum AudioConverterSampleRateConverterComplexity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AudioConverterSampleRateConverterComplexity extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Linear">
+      <MemberSignature Language="C#" Value="Linear" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioConverterSampleRateConverterComplexity Linear = int32(1818848869)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioConverterSampleRateConverterComplexity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mastering">
+      <MemberSignature Language="C#" Value="Mastering" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioConverterSampleRateConverterComplexity Mastering = int32(1650553971)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioConverterSampleRateConverterComplexity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioConverterSampleRateConverterComplexity Normal = int32(1852797549)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioConverterSampleRateConverterComplexity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -92,7 +92,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use FeatureWeak instead")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use FeatureWeak or FeatureGroup instead")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -113,7 +113,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use Type")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use FeatureGroup property instead")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

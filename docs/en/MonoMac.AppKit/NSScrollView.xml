@@ -617,7 +617,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("frameSizeForContentSize:horizontalScrollerClass:verticalScrollerClass:borderType:controlSize:scrollerStyle")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("frameSizeForContentSize:horizontalScrollerClass:verticalScrollerClass:borderType:controlSize:scrollerStyle:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

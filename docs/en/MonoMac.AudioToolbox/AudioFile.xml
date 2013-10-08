@@ -125,6 +125,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ChunkIDs">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioFileChunkType[] ChunkIDs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AudioToolbox.AudioFileChunkType[] ChunkIDs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFileChunkType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CountUserData">
       <MemberSignature Language="C#" Value="public int CountUserData (uint userData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CountUserData(unsigned int32 userData) cil managed" />
@@ -224,6 +240,22 @@
         <returns>The initialized audio file, or null if there is an error creating the file</returns>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFormat">
+      <MemberSignature Language="C#" Value="public Nullable&lt;MonoMac.AudioToolbox.AudioStreamBasicDescription&gt; DataFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype MonoMac.AudioToolbox.AudioStreamBasicDescription&gt; DataFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;MonoMac.AudioToolbox.AudioStreamBasicDescription&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DataOffset">
@@ -539,6 +571,38 @@
         <remarks>This IntPtr is a handle to the underlying unmanaged representation for this object.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ID3Tag">
+      <MemberSignature Language="C#" Value="public byte[] ID3Tag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] ID3Tag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InfoDictionary">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioFileInfoDictionary InfoDictionary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AudioToolbox.AudioFileInfoDictionary InfoDictionary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFileInfoDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsOptimized">
       <MemberSignature Language="C#" Value="public bool IsOptimized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOptimized" />
@@ -552,6 +616,26 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPropertyWritable">
+      <MemberSignature Language="C#" Value="public bool IsPropertyWritable (MonoMac.AudioToolbox.AudioFileProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsPropertyWritable(valuetype MonoMac.AudioToolbox.AudioFileProperty property) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="MonoMac.AudioToolbox.AudioFileProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -587,6 +671,22 @@
         <remarks>Certain files require the magic cookie to be set before they can be written to.   Set this property before you write packets from your source (AudioQueue).</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MarkerList">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioFileMarkerList MarkerList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AudioToolbox.AudioFileMarkerList MarkerList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFileMarkerList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MaximumPacketSize">
       <MemberSignature Language="C#" Value="public int MaximumPacketSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumPacketSize" />
@@ -604,7 +704,7 @@
       </Docs>
     </Member>
     <Member MemberName="Open">
-      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile Open (MonoMac.CoreFoundation.CFUrl url, MonoMac.AudioToolbox.AudioFilePermission permissions, MonoMac.AudioToolbox.AudioFileType fileTypeHint);" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile Open (MonoMac.CoreFoundation.CFUrl url, MonoMac.AudioToolbox.AudioFilePermission permissions, MonoMac.AudioToolbox.AudioFileType fileTypeHint = (MonoMac.AudioToolbox.AudioFileType) 0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AudioToolbox.AudioFile Open(class MonoMac.CoreFoundation.CFUrl url, valuetype MonoMac.AudioToolbox.AudioFilePermission permissions, valuetype MonoMac.AudioToolbox.AudioFileType fileTypeHint) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -628,7 +728,7 @@
       </Docs>
     </Member>
     <Member MemberName="Open">
-      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile Open (MonoMac.Foundation.NSUrl url, MonoMac.AudioToolbox.AudioFilePermission permissions, MonoMac.AudioToolbox.AudioFileType fileTypeHint);" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile Open (MonoMac.Foundation.NSUrl url, MonoMac.AudioToolbox.AudioFilePermission permissions, MonoMac.AudioToolbox.AudioFileType fileTypeHint = (MonoMac.AudioToolbox.AudioFileType) 0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AudioToolbox.AudioFile Open(class MonoMac.Foundation.NSUrl url, valuetype MonoMac.AudioToolbox.AudioFilePermission permissions, valuetype MonoMac.AudioToolbox.AudioFileType fileTypeHint) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -652,7 +752,7 @@
       </Docs>
     </Member>
     <Member MemberName="Open">
-      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile Open (string url, MonoMac.AudioToolbox.AudioFilePermission permissions, MonoMac.AudioToolbox.AudioFileType fileTypeHint);" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile Open (string url, MonoMac.AudioToolbox.AudioFilePermission permissions, MonoMac.AudioToolbox.AudioFileType fileTypeHint = (MonoMac.AudioToolbox.AudioFileType) 0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AudioToolbox.AudioFile Open(string url, valuetype MonoMac.AudioToolbox.AudioFilePermission permissions, valuetype MonoMac.AudioToolbox.AudioFileType fileTypeHint) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -676,7 +776,7 @@
       </Docs>
     </Member>
     <Member MemberName="OpenRead">
-      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile OpenRead (MonoMac.CoreFoundation.CFUrl url, MonoMac.AudioToolbox.AudioFileType fileTypeHint);" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile OpenRead (MonoMac.CoreFoundation.CFUrl url, MonoMac.AudioToolbox.AudioFileType fileTypeHint = (MonoMac.AudioToolbox.AudioFileType) 0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AudioToolbox.AudioFile OpenRead(class MonoMac.CoreFoundation.CFUrl url, valuetype MonoMac.AudioToolbox.AudioFileType fileTypeHint) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -698,7 +798,7 @@
       </Docs>
     </Member>
     <Member MemberName="OpenRead">
-      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile OpenRead (MonoMac.Foundation.NSUrl url, MonoMac.AudioToolbox.AudioFileType fileTypeHint);" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile OpenRead (MonoMac.Foundation.NSUrl url, MonoMac.AudioToolbox.AudioFileType fileTypeHint = (MonoMac.AudioToolbox.AudioFileType) 0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AudioToolbox.AudioFile OpenRead(class MonoMac.Foundation.NSUrl url, valuetype MonoMac.AudioToolbox.AudioFileType fileTypeHint) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -720,7 +820,7 @@
       </Docs>
     </Member>
     <Member MemberName="OpenRead">
-      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile OpenRead (string url, MonoMac.AudioToolbox.AudioFileType fileTypeHint);" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFile OpenRead (string url, MonoMac.AudioToolbox.AudioFileType fileTypeHint = (MonoMac.AudioToolbox.AudioFileType) 0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AudioToolbox.AudioFile OpenRead(string url, valuetype MonoMac.AudioToolbox.AudioFileType fileTypeHint) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -767,6 +867,22 @@
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PacketTableInfo">
+      <MemberSignature Language="C#" Value="public Nullable&lt;MonoMac.AudioToolbox.AudioFilePacketTableInfo&gt; PacketTableInfo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype MonoMac.AudioToolbox.AudioFilePacketTableInfo&gt; PacketTableInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;MonoMac.AudioToolbox.AudioFilePacketTableInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -1014,6 +1130,52 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="ReadPackets">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioFileError ReadPackets (bool useCache, out int numBytes, MonoMac.AudioToolbox.AudioStreamPacketDescription[] packetDescriptions, long startingPacket, ref int numPackets, IntPtr buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.AudioToolbox.AudioFileError ReadPackets(bool useCache, int32 numBytes, valuetype MonoMac.AudioToolbox.AudioStreamPacketDescription[] packetDescriptions, int64 startingPacket, int32 numPackets, native int buffer) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFileError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="useCache" Type="System.Boolean" />
+        <Parameter Name="numBytes" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="packetDescriptions" Type="MonoMac.AudioToolbox.AudioStreamPacketDescription[]" />
+        <Parameter Name="startingPacket" Type="System.Int64" />
+        <Parameter Name="numPackets" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="buffer" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="useCache">To be added.</param>
+        <param name="numBytes">To be added.</param>
+        <param name="packetDescriptions">To be added.</param>
+        <param name="startingPacket">To be added.</param>
+        <param name="numPackets">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegionList">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioFileRegionList RegionList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AudioToolbox.AudioFileRegionList RegionList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFileRegionList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RemoveUserData">
       <MemberSignature Language="C#" Value="public int RemoveUserData (int userDataId, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 RemoveUserData(int32 userDataId, int32 index) cil managed" />
@@ -1033,6 +1195,22 @@
         <param name="index">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReserveDuration">
+      <MemberSignature Language="C#" Value="public double ReserveDuration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ReserveDuration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1093,6 +1271,11 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Advice("Use DataFormat instead")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AudioToolbox.AudioStreamBasicDescription</ReturnType>
       </ReturnValue>
@@ -1161,8 +1344,8 @@
       </Docs>
     </Member>
     <Member MemberName="WritePackets">
-      <MemberSignature Language="C#" Value="public int WritePackets (bool useCache, long inStartingPacket, MonoMac.AudioToolbox.AudioStreamPacketDescription[] inPacketDescriptions, IntPtr buffer, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 WritePackets(bool useCache, int64 inStartingPacket, valuetype MonoMac.AudioToolbox.AudioStreamPacketDescription[] inPacketDescriptions, native int buffer, int32 count) cil managed" />
+      <MemberSignature Language="C#" Value="public int WritePackets (bool useCache, long startingPacket, MonoMac.AudioToolbox.AudioStreamPacketDescription[] packetDescriptions, IntPtr buffer, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 WritePackets(bool useCache, int64 startingPacket, valuetype MonoMac.AudioToolbox.AudioStreamPacketDescription[] packetDescriptions, native int buffer, int32 count) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1172,15 +1355,15 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="useCache" Type="System.Boolean" />
-        <Parameter Name="inStartingPacket" Type="System.Int64" />
-        <Parameter Name="inPacketDescriptions" Type="MonoMac.AudioToolbox.AudioStreamPacketDescription[]" />
+        <Parameter Name="startingPacket" Type="System.Int64" />
+        <Parameter Name="packetDescriptions" Type="MonoMac.AudioToolbox.AudioStreamPacketDescription[]" />
         <Parameter Name="buffer" Type="System.IntPtr" />
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="useCache">Whether the data should be kept in the cache.</param>
-        <param name="inStartingPacket">The starting packet in the packetDescriptions that should be written.</param>
-        <param name="inPacketDescriptions">An array of packet descriptions that describe the contents of the buffer.</param>
+        <param name="startingPacket">To be added.</param>
+        <param name="packetDescriptions">To be added.</param>
         <param name="buffer">The buffer containing the audio data.</param>
         <param name="count">The number of bytes to write.</param>
         <summary>Write audio packets to the audio file.</summary>
@@ -1189,8 +1372,8 @@
       </Docs>
     </Member>
     <Member MemberName="WritePackets">
-      <MemberSignature Language="C#" Value="public int WritePackets (bool useCache, long inStartingPacket, int numPackets, IntPtr buffer, int count);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 WritePackets(bool useCache, int64 inStartingPacket, int32 numPackets, native int buffer, int32 count) cil managed" />
+      <MemberSignature Language="C#" Value="public int WritePackets (bool useCache, long startingPacket, int numPackets, IntPtr buffer, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 WritePackets(bool useCache, int64 startingPacket, int32 numPackets, native int buffer, int32 count) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1200,17 +1383,47 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="useCache" Type="System.Boolean" />
-        <Parameter Name="inStartingPacket" Type="System.Int64" />
+        <Parameter Name="startingPacket" Type="System.Int64" />
         <Parameter Name="numPackets" Type="System.Int32" />
         <Parameter Name="buffer" Type="System.IntPtr" />
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="useCache">To be added.</param>
-        <param name="inStartingPacket">To be added.</param>
+        <param name="startingPacket">To be added.</param>
         <param name="numPackets">To be added.</param>
         <param name="buffer">To be added.</param>
         <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WritePackets">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioFileError WritePackets (bool useCache, int numBytes, MonoMac.AudioToolbox.AudioStreamPacketDescription[] packetDescriptions, long startingPacket, ref int numPackets, IntPtr buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.AudioToolbox.AudioFileError WritePackets(bool useCache, int32 numBytes, valuetype MonoMac.AudioToolbox.AudioStreamPacketDescription[] packetDescriptions, int64 startingPacket, int32 numPackets, native int buffer) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFileError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="useCache" Type="System.Boolean" />
+        <Parameter Name="numBytes" Type="System.Int32" />
+        <Parameter Name="packetDescriptions" Type="MonoMac.AudioToolbox.AudioStreamPacketDescription[]" />
+        <Parameter Name="startingPacket" Type="System.Int64" />
+        <Parameter Name="numPackets" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="buffer" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="useCache">To be added.</param>
+        <param name="numBytes">To be added.</param>
+        <param name="packetDescriptions">To be added.</param>
+        <param name="startingPacket">To be added.</param>
+        <param name="numPackets">To be added.</param>
+        <param name="buffer">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1247,8 +1460,8 @@
       </Docs>
     </Member>
     <Member MemberName="WritePackets">
-      <MemberSignature Language="C#" Value="public int WritePackets (bool useCache, long inStartingPacket, MonoMac.AudioToolbox.AudioStreamPacketDescription[] inPacketDescriptions, IntPtr buffer, int count, out int errorCode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 WritePackets(bool useCache, int64 inStartingPacket, valuetype MonoMac.AudioToolbox.AudioStreamPacketDescription[] inPacketDescriptions, native int buffer, int32 count, int32 errorCode) cil managed" />
+      <MemberSignature Language="C#" Value="public int WritePackets (bool useCache, long startingPacket, MonoMac.AudioToolbox.AudioStreamPacketDescription[] packetDescriptions, IntPtr buffer, int count, out int errorCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 WritePackets(bool useCache, int64 startingPacket, valuetype MonoMac.AudioToolbox.AudioStreamPacketDescription[] packetDescriptions, native int buffer, int32 count, int32 errorCode) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1258,16 +1471,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="useCache" Type="System.Boolean" />
-        <Parameter Name="inStartingPacket" Type="System.Int64" />
-        <Parameter Name="inPacketDescriptions" Type="MonoMac.AudioToolbox.AudioStreamPacketDescription[]" />
+        <Parameter Name="startingPacket" Type="System.Int64" />
+        <Parameter Name="packetDescriptions" Type="MonoMac.AudioToolbox.AudioStreamPacketDescription[]" />
         <Parameter Name="buffer" Type="System.IntPtr" />
         <Parameter Name="count" Type="System.Int32" />
         <Parameter Name="errorCode" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="useCache">To be added.</param>
-        <param name="inStartingPacket">To be added.</param>
-        <param name="inPacketDescriptions">To be added.</param>
+        <param name="startingPacket">To be added.</param>
+        <param name="packetDescriptions">To be added.</param>
         <param name="buffer">To be added.</param>
         <param name="count">To be added.</param>
         <param name="errorCode">To be added.</param>

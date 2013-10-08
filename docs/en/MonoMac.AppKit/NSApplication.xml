@@ -20,28 +20,6 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NSApplication ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <Parameters />
-      <Docs>
-        <summary>Default constructor, initializes a new instance of this class.</summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NSApplication (MonoMac.Foundation.NSCoder coder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
       <MemberType>Constructor</MemberType>
@@ -132,6 +110,9 @@ public class MyClass : BaseClass {
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("abortModal")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.ThreadSafe</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -167,20 +148,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ActivationPolicy">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSApplicationActivationPolicy ActivationPolicy { get; set; }" />
+      <MemberSignature Language="C#" Value="public MonoMac.AppKit.NSApplicationActivationPolicy ActivationPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSApplicationActivationPolicy ActivationPolicy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("activationPolicy")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setActivationPolicy:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AppKit.NSApplicationActivationPolicy</ReturnType>
       </ReturnValue>
@@ -536,6 +509,21 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CheckForIllegalCrossThreadCalls">
+      <MemberSignature Language="C#" Value="public static bool CheckForIllegalCrossThreadCalls;" />
+      <MemberSignature Language="ILAsm" Value=".field public static bool CheckForIllegalCrossThreadCalls" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ClassHandle">
       <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
@@ -724,6 +712,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationDidBecomeActiveNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -761,6 +754,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationDidChangeScreenParametersNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -813,6 +811,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationDidFinishLaunchingNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -850,6 +853,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationDidFinishRestoringWindowsNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -902,6 +910,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationDidHideNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -954,6 +967,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationDidResignActiveNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1006,6 +1024,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationDidUnhideNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1058,6 +1081,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationDidUpdateNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1099,6 +1127,9 @@ void Setup ()
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("disableRelaunchOnLogin")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.ThreadSafe</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1110,8 +1141,29 @@ void Setup ()
       </Docs>
     </Member>
     <Member MemberName="DiscardEvents">
-      <MemberSignature Language="C#" Value="public virtual void DiscardEvents (MonoMac.AppKit.NSEventMask mask, MonoMac.AppKit.NSEvent lastEvent);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DiscardEvents(valuetype MonoMac.AppKit.NSEventMask mask, class MonoMac.AppKit.NSEvent lastEvent) cil managed" />
+      <MemberSignature Language="C#" Value="public void DiscardEvents (MonoMac.AppKit.NSEventMask mask, MonoMac.AppKit.NSEvent lastEvent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DiscardEvents(valuetype MonoMac.AppKit.NSEventMask mask, class MonoMac.AppKit.NSEvent lastEvent) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mask" Type="MonoMac.AppKit.NSEventMask" />
+        <Parameter Name="lastEvent" Type="MonoMac.AppKit.NSEvent" />
+      </Parameters>
+      <Docs>
+        <param name="mask">To be added.</param>
+        <param name="lastEvent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiscardEvents">
+      <MemberSignature Language="C#" Value="protected virtual void DiscardEvents (uint mask, MonoMac.AppKit.NSEvent lastEvent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DiscardEvents(unsigned int32 mask, class MonoMac.AppKit.NSEvent lastEvent) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1125,7 +1177,7 @@ void Setup ()
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mask" Type="MonoMac.AppKit.NSEventMask" />
+        <Parameter Name="mask" Type="System.UInt32" />
         <Parameter Name="lastEvent" Type="MonoMac.AppKit.NSEvent" />
       </Parameters>
       <Docs>
@@ -1215,6 +1267,9 @@ void Setup ()
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("enableRelaunchOnLogin")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.ThreadSafe</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1299,6 +1354,22 @@ void Setup ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EnsureUIThread">
+      <MemberSignature Language="C#" Value="public static void EnsureUIThread ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnsureUIThread() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FailedToRegisterForRemoteNotifications">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;MonoMac.AppKit.NSErrorEventArgs&gt; FailedToRegisterForRemoteNotifications;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class MonoMac.AppKit.NSErrorEventArgs&gt; FailedToRegisterForRemoteNotifications" />
@@ -1356,6 +1427,28 @@ void Setup ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetActivationPolicy">
+      <MemberSignature Language="C#" Value="protected virtual MonoMac.AppKit.NSApplicationActivationPolicy GetActivationPolicy ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype MonoMac.AppKit.NSApplicationActivationPolicy GetActivationPolicy() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("activationPolicy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.AppKit.NSApplicationActivationPolicy</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HelpMenu">
       <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSMenu HelpMenu { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSMenu HelpMenu" />
@@ -1365,10 +1458,10 @@ void Setup ()
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("setHelpMenu:")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("helpMenu")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setSetHelpMenu::")</AttributeName>
+          <AttributeName>set: MonoMac.Foundation.Export("setHelpMenu:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1502,23 +1595,6 @@ void Setup ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LaunchIsDefaultLaunchKe">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString LaunchIsDefaultLaunchKe { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString LaunchIsDefaultLaunchKe" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Represents the value associated with the constant NSApplicationLaunchIsDefaultLaunchKe</summary>
-        <value>
-        </value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="LaunchIsDefaultLaunchKey">
       <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString LaunchIsDefaultLaunchKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString LaunchIsDefaultLaunchKey" />
@@ -1526,6 +1602,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationLaunchIsDefaultLaunchKey", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1536,43 +1617,6 @@ void Setup ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LaunchRemoteNotificationKe">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString LaunchRemoteNotificationKe { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString LaunchRemoteNotificationKe" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Represents the value associated with the constant NSApplicationLaunchRemoteNotificationKe</summary>
-        <value>NSString constant, should be used as a token to NSNotificationCenter.</value>
-        <remarks>
-          <para id="tool-remark">This constant can be used with the <see cref="T:MonoMac.Foundation.NSNotificationCenter" /> to register a listener for this notification.   This is an NSString instead of a string, because these values can be used as tokens in some native libraries instead of being used purely for their actual string content.    The 'notification' parameter to the callback contains extra information that is specific to the notification type.</para>
-          <example>
-            <code lang="c#">
-// Lambda style
-NSNotificationCenter.DefaultCenter.AddObserver (
-        NSApplication.LaunchRemoteNotificationKe, (notification) =&gt; {Console.WriteLine ("Received the notification NSApplication", notification); }
-
-
-// Method style
-void Callback (NSNotification notification)
-{
-    Console.WriteLine ("Received a notification NSApplication", notification);
-}
-
-void Setup ()
-{
-    NSNotificationCenter.DefaultCenter.AddObserver (NSApplication.LaunchRemoteNotificationKe, Callback);
-}
-</code>
-          </example>
-        </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="LaunchRemoteNotificationKey">
       <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString LaunchRemoteNotificationKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString LaunchRemoteNotificationKey" />
@@ -1580,6 +1624,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationLaunchRemoteNotificationKey", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1630,7 +1679,7 @@ void Setup ()
       </Docs>
     </Member>
     <Member MemberName="MainMenu">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSMenu MainMenu { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSMenu MainMenu { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSMenu MainMenu" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -1639,6 +1688,9 @@ void Setup ()
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("mainMenu")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setMainMenu:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1744,8 +1796,34 @@ void Setup ()
       </Docs>
     </Member>
     <Member MemberName="NextEvent">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSEvent NextEvent (MonoMac.AppKit.NSEventMask mask, MonoMac.Foundation.NSDate expiration, string mode, bool deqFlag);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AppKit.NSEvent NextEvent(valuetype MonoMac.AppKit.NSEventMask mask, class MonoMac.Foundation.NSDate expiration, string mode, bool deqFlag) cil managed" />
+      <MemberSignature Language="C#" Value="public MonoMac.AppKit.NSEvent NextEvent (MonoMac.AppKit.NSEventMask mask, MonoMac.Foundation.NSDate expiration, string mode, bool deqFlag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.AppKit.NSEvent NextEvent(valuetype MonoMac.AppKit.NSEventMask mask, class MonoMac.Foundation.NSDate expiration, string mode, bool deqFlag) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AppKit.NSEvent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mask" Type="MonoMac.AppKit.NSEventMask" />
+        <Parameter Name="expiration" Type="MonoMac.Foundation.NSDate" />
+        <Parameter Name="mode" Type="System.String" />
+        <Parameter Name="deqFlag" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="mask">To be added.</param>
+        <param name="expiration">To be added.</param>
+        <param name="mode">To be added.</param>
+        <param name="deqFlag">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextEvent">
+      <MemberSignature Language="C#" Value="protected virtual MonoMac.AppKit.NSEvent NextEvent (uint mask, MonoMac.Foundation.NSDate expiration, string mode, bool deqFlag);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class MonoMac.AppKit.NSEvent NextEvent(unsigned int32 mask, class MonoMac.Foundation.NSDate expiration, string mode, bool deqFlag) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1759,7 +1837,7 @@ void Setup ()
         <ReturnType>MonoMac.AppKit.NSEvent</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mask" Type="MonoMac.AppKit.NSEventMask" />
+        <Parameter Name="mask" Type="System.UInt32" />
         <Parameter Name="expiration" Type="MonoMac.Foundation.NSDate" />
         <Parameter Name="mode" Type="System.String" />
         <Parameter Name="deqFlag" Type="System.Boolean" />
@@ -1926,6 +2004,9 @@ void Setup ()
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("postEvent:atStart:")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.ThreadSafe</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2073,7 +2154,7 @@ void Setup ()
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("registerForRemoteNotificationTypes")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("registerForRemoteNotificationTypes:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2460,6 +2541,31 @@ void Setup ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetActivationPolicy">
+      <MemberSignature Language="C#" Value="protected virtual bool SetActivationPolicy (MonoMac.AppKit.NSApplicationActivationPolicy activationPolicy);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool SetActivationPolicy(valuetype MonoMac.AppKit.NSApplicationActivationPolicy activationPolicy) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setActivationPolicy:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activationPolicy" Type="MonoMac.AppKit.NSApplicationActivationPolicy" />
+      </Parameters>
+      <Docs>
+        <param name="activationPolicy">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetMainMenu">
       <MemberSignature Language="C#" Value="public virtual void SetMainMenu (MonoMac.AppKit.NSMenu aMenu);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMainMenu(class MonoMac.AppKit.NSMenu aMenu) cil managed" />
@@ -2470,6 +2576,9 @@ void Setup ()
       <Attributes>
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("setMainMenu:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use MainMenu property", false)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2516,6 +2625,9 @@ void Setup ()
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.ThreadSafe</AttributeName>
+        </Attribute>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("sharedApplication")</AttributeName>
         </Attribute>
@@ -2939,6 +3051,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationWillBecomeActiveNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -3006,6 +3123,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationWillFinishLaunchingNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -3058,6 +3180,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationWillHideNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -3126,6 +3253,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationWillResignActiveNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -3178,6 +3310,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationWillTerminateNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -3230,6 +3367,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationWillUnhideNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -3282,6 +3424,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSApplicationWillUpdateNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>

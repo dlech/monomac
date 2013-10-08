@@ -409,19 +409,14 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SupportedWindowDepths">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSWindowDepth SupportedWindowDepths { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSWindowDepth SupportedWindowDepths" />
+      <MemberSignature Language="C#" Value="public MonoMac.AppKit.NSWindowDepth[] SupportedWindowDepths { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSWindowDepth[] SupportedWindowDepths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("supportedWindowDepths")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.AppKit.NSWindowDepth</ReturnType>
+        <ReturnType>MonoMac.AppKit.NSWindowDepth[]</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

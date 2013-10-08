@@ -122,7 +122,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="AsCGImage">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreGraphics.CGImage AsCGImage (System.Drawing.RectangleF proposedDestRect, MonoMac.AppKit.NSGraphicsContext context, MonoMac.Foundation.NSDictionary hints);" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreGraphics.CGImage AsCGImage (ref System.Drawing.RectangleF proposedDestRect, MonoMac.AppKit.NSGraphicsContext context, MonoMac.Foundation.NSDictionary hints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.CoreGraphics.CGImage AsCGImage(valuetype System.Drawing.RectangleF proposedDestRect, class MonoMac.AppKit.NSGraphicsContext context, class MonoMac.Foundation.NSDictionary hints) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -137,7 +137,7 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.CoreGraphics.CGImage</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="proposedDestRect" Type="System.Drawing.RectangleF" />
+        <Parameter Name="proposedDestRect" Type="System.Drawing.RectangleF&amp;" RefType="ref" />
         <Parameter Name="context" Type="MonoMac.AppKit.NSGraphicsContext" />
         <Parameter Name="hints" Type="MonoMac.Foundation.NSDictionary" />
       </Parameters>
@@ -175,8 +175,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CanInitWithData">
-      <MemberSignature Language="C#" Value="public virtual bool CanInitWithData (MonoMac.Foundation.NSData data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanInitWithData(class MonoMac.Foundation.NSData data) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool CanInitWithData (MonoMac.Foundation.NSData data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanInitWithData(class MonoMac.Foundation.NSData data) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -200,8 +200,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CanInitWithPasteboard">
-      <MemberSignature Language="C#" Value="public virtual bool CanInitWithPasteboard (MonoMac.AppKit.NSPasteboard pasteboard);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanInitWithPasteboard(class MonoMac.AppKit.NSPasteboard pasteboard) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool CanInitWithPasteboard (MonoMac.AppKit.NSPasteboard pasteboard);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanInitWithPasteboard(class MonoMac.AppKit.NSPasteboard pasteboard) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -221,6 +221,22 @@ public class MyClass : BaseClass {
         <param name="pasteboard">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CGImage">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreGraphics.CGImage CGImage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.CoreGraphics.CGImage CGImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreGraphics.CGImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -435,8 +451,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ImageRepClassForData">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.ObjCRuntime.Class ImageRepClassForData (MonoMac.Foundation.NSData data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.ObjCRuntime.Class ImageRepClassForData(class MonoMac.Foundation.NSData data) cil managed" />
+      <MemberSignature Language="C#" Value="public static MonoMac.ObjCRuntime.Class ImageRepClassForData (MonoMac.Foundation.NSData data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.ObjCRuntime.Class ImageRepClassForData(class MonoMac.Foundation.NSData data) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -510,8 +526,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ImageRepClassForType">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.ObjCRuntime.Class ImageRepClassForType (string type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.ObjCRuntime.Class ImageRepClassForType(string type) cil managed" />
+      <MemberSignature Language="C#" Value="public static MonoMac.ObjCRuntime.Class ImageRepClassForType (string type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.ObjCRuntime.Class ImageRepClassForType(string type) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -748,8 +764,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ImageUnfilteredTypes">
-      <MemberSignature Language="C#" Value="public virtual string[] ImageUnfilteredTypes { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string[] ImageUnfilteredTypes" />
+      <MemberSignature Language="C#" Value="public static string[] ImageUnfilteredTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string[] ImageUnfilteredTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

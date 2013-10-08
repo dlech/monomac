@@ -111,6 +111,20 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="M4B">
+      <MemberSignature Language="C#" Value="M4B" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioFileType M4B = int32(1832149606)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFileType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="MP1">
       <MemberSignature Language="C#" Value="MP1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioFileType MP1 = int32(1297106737)" />

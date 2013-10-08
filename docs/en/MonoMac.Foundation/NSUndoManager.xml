@@ -191,6 +191,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSUndoManagerCheckpointNotification", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -282,6 +287,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSUndoManagerDidCloseUndoGroupNotification", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -361,6 +371,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSUndoManagerDidOpenUndoGroupNotification", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -436,6 +451,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSUndoManagerDidRedoChangeNotification", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -511,6 +531,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSUndoManagerDidUndoChangeNotification", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -670,6 +695,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSUndoManagerGroupIsDiscardableKey", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1213,6 +1243,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSUndoManagerWillCloseUndoGroupNotification", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1292,6 +1327,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSUndoManagerWillRedoChangeNotification", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1367,6 +1407,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSUndoManagerWillUndoChangeNotification", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>

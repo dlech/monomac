@@ -186,7 +186,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CompletionDelay">
-      <MemberSignature Language="C#" Value="public virtual double CompletionDelay { get; }" />
+      <MemberSignature Language="C#" Value="public virtual double CompletionDelay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 CompletionDelay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -195,6 +195,9 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("completionDelay")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setCompletionDelay:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -297,56 +300,8 @@ public class MyClass : BaseClass {
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetCompletionDelaydelay">
-      <MemberSignature Language="C#" Value="public virtual void SetCompletionDelaydelay (double delay);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCompletionDelaydelay(float64 delay) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setCompletionDelay:delay")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="delay" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <param name="delay">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetTokenStylestyle">
-      <MemberSignature Language="C#" Value="public virtual void SetTokenStylestyle (MonoMac.AppKit.NSTokenStyle style);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetTokenStylestyle(valuetype MonoMac.AppKit.NSTokenStyle style) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setTokenStyle:style")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="style" Type="MonoMac.AppKit.NSTokenStyle" />
-      </Parameters>
-      <Docs>
-        <param name="style">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="TokenStyle">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTokenStyle TokenStyle { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTokenStyle TokenStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSTokenStyle TokenStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -355,6 +310,9 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("tokenStyle")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setTokenStyle:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

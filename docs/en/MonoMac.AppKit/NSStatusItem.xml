@@ -268,9 +268,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DrawStatusBarBackgroundInRectwithHighlight">
-      <MemberSignature Language="C#" Value="public virtual void DrawStatusBarBackgroundInRectwithHighlight (System.Drawing.RectangleF rect, bool highlight);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawStatusBarBackgroundInRectwithHighlight(valuetype System.Drawing.RectangleF rect, bool highlight) cil managed" />
+    <Member MemberName="DrawStatusBarBackground">
+      <MemberSignature Language="C#" Value="public virtual void DrawStatusBarBackground (System.Drawing.RectangleF rect, bool highlight);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawStatusBarBackground(valuetype System.Drawing.RectangleF rect, bool highlight) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -439,8 +439,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SendActionOn">
-      <MemberSignature Language="C#" Value="public virtual int SendActionOn (MonoMac.AppKit.NSEventMask mask);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 SendActionOn(valuetype MonoMac.AppKit.NSEventMask mask) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual int SendActionOn (MonoMac.AppKit.NSTouchPhase mask);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 SendActionOn(valuetype MonoMac.AppKit.NSTouchPhase mask) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -454,7 +454,7 @@ public class MyClass : BaseClass {
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mask" Type="MonoMac.AppKit.NSEventMask" />
+        <Parameter Name="mask" Type="MonoMac.AppKit.NSTouchPhase" />
       </Parameters>
       <Docs>
         <param name="mask">To be added.</param>

@@ -314,8 +314,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SharedHelpManager">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSHelpManager SharedHelpManager ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AppKit.NSHelpManager SharedHelpManager() cil managed" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AppKit.NSHelpManager SharedHelpManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AppKit.NSHelpManager SharedHelpManager() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

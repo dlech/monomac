@@ -521,8 +521,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="MultiplyPowerOf10">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDecimalNumber MultiplyPowerOf10 (MonoMac.Foundation.NSDecimalNumber d);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDecimalNumber MultiplyPowerOf10(class MonoMac.Foundation.NSDecimalNumber d) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDecimalNumber MultiplyPowerOf10 (short power);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDecimalNumber MultiplyPowerOf10(int16 power) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -536,18 +536,18 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.Foundation.NSDecimalNumber</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="d" Type="MonoMac.Foundation.NSDecimalNumber" />
+        <Parameter Name="power" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="d">To be added.</param>
+        <param name="power">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiplyPowerOf10">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDecimalNumber MultiplyPowerOf10 (MonoMac.Foundation.NSDecimalNumber d, MonoMac.Foundation.NSObject Behavior);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDecimalNumber MultiplyPowerOf10(class MonoMac.Foundation.NSDecimalNumber d, class MonoMac.Foundation.NSObject Behavior) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDecimalNumber MultiplyPowerOf10 (short power, MonoMac.Foundation.NSObject Behavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDecimalNumber MultiplyPowerOf10(int16 power, class MonoMac.Foundation.NSObject Behavior) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -561,11 +561,11 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.Foundation.NSDecimalNumber</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="d" Type="MonoMac.Foundation.NSDecimalNumber" />
+        <Parameter Name="power" Type="System.Int16" />
         <Parameter Name="Behavior" Type="MonoMac.Foundation.NSObject" />
       </Parameters>
       <Docs>
-        <param name="d">To be added.</param>
+        <param name="power">To be added.</param>
         <param name="Behavior">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -636,8 +636,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="RaiseTo">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDecimalNumber RaiseTo (MonoMac.Foundation.NSDecimalNumber d);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDecimalNumber RaiseTo(class MonoMac.Foundation.NSDecimalNumber d) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDecimalNumber RaiseTo (uint power);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDecimalNumber RaiseTo(unsigned int32 power) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -651,18 +651,18 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.Foundation.NSDecimalNumber</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="d" Type="MonoMac.Foundation.NSDecimalNumber" />
+        <Parameter Name="power" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="d">To be added.</param>
+        <param name="power">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RaiseTo">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDecimalNumber RaiseTo (MonoMac.Foundation.NSDecimalNumber d, MonoMac.Foundation.NSObject Behavior);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDecimalNumber RaiseTo(class MonoMac.Foundation.NSDecimalNumber d, class MonoMac.Foundation.NSObject Behavior) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDecimalNumber RaiseTo (uint power, MonoMac.Foundation.NSObject Behavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDecimalNumber RaiseTo(unsigned int32 power, class MonoMac.Foundation.NSObject Behavior) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -676,11 +676,11 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.Foundation.NSDecimalNumber</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="d" Type="MonoMac.Foundation.NSDecimalNumber" />
+        <Parameter Name="power" Type="System.UInt32" />
         <Parameter Name="Behavior" Type="MonoMac.Foundation.NSObject" />
       </Parameters>
       <Docs>
-        <param name="d">To be added.</param>
+        <param name="power">To be added.</param>
         <param name="Behavior">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>

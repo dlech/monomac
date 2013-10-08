@@ -364,7 +364,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Filenames">
-      <MemberSignature Language="C#" Value="public virtual string[] Filenames { get; set; }" />
+      <MemberSignature Language="C#" Value="public virtual string[] Filenames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] Filenames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -376,9 +376,6 @@ public class MyClass : BaseClass {
         </Attribute>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("filenames")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setFilenames:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

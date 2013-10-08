@@ -122,6 +122,29 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NSCursor (MonoMac.AppKit.NSImage newImage, System.Drawing.PointF aPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.AppKit.NSImage newImage, valuetype System.Drawing.PointF aPoint) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithImage:hotSpot:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="newImage" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="aPoint" Type="System.Drawing.PointF" />
+      </Parameters>
+      <Docs>
+        <param name="newImage">To be added.</param>
+        <param name="aPoint">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NSCursor (MonoMac.AppKit.NSImage newImage, MonoMac.AppKit.NSColor fg, MonoMac.AppKit.NSColor bg, System.Drawing.PointF hotSpot);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.AppKit.NSImage newImage, class MonoMac.AppKit.NSColor fg, class MonoMac.AppKit.NSColor bg, valuetype System.Drawing.PointF hotSpot) cil managed" />
       <MemberType>Constructor</MemberType>
@@ -481,33 +504,6 @@ public class MyClass : BaseClass {
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="InitWithImagehotSpot">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject InitWithImagehotSpot (MonoMac.AppKit.NSImage newImage, System.Drawing.PointF aPoint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject InitWithImagehotSpot(class MonoMac.AppKit.NSImage newImage, valuetype System.Drawing.PointF aPoint) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("initWithImage:hotSpot:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="newImage" Type="MonoMac.AppKit.NSImage" />
-        <Parameter Name="aPoint" Type="System.Drawing.PointF" />
-      </Parameters>
-      <Docs>
-        <param name="newImage">To be added.</param>
-        <param name="aPoint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

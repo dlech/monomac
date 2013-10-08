@@ -145,6 +145,54 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Alignment">
+      <MemberSignature Language="C#" Value="public override MonoMac.AppKit.NSTextAlignment Alignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSTextAlignment Alignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("alignment")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setAlignment:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.AppKit.NSTextAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseWritingDirection">
+      <MemberSignature Language="C#" Value="public override MonoMac.AppKit.NSWritingDirection BaseWritingDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSWritingDirection BaseWritingDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("baseWritingDirection")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setBaseWritingDirection:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.AppKit.NSWritingDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ClassHandle">
       <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
@@ -159,6 +207,313 @@ public class MyClass : BaseClass {
         <summary>The handle for this class.</summary>
         <value>The pointer to the Objective-C class.</value>
         <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTabInterval">
+      <MemberSignature Language="C#" Value="public override float DefaultTabInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 DefaultTabInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("defaultTabInterval")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setDefaultTabInterval:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstLineHeadIndent">
+      <MemberSignature Language="C#" Value="public override float FirstLineHeadIndent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 FirstLineHeadIndent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("firstLineHeadIndent")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setFirstLineHeadIndent:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderLevel">
+      <MemberSignature Language="C#" Value="public override int HeaderLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HeaderLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("headerLevel")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setHeaderLevel:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadIndent">
+      <MemberSignature Language="C#" Value="public override float HeadIndent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 HeadIndent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("headIndent")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setHeadIndent:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HyphenationFactor">
+      <MemberSignature Language="C#" Value="public override float HyphenationFactor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 HyphenationFactor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("hyphenationFactor")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setHyphenationFactor:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineBreakMode">
+      <MemberSignature Language="C#" Value="public override MonoMac.AppKit.NSLineBreakMode LineBreakMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSLineBreakMode LineBreakMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("lineBreakMode")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setLineBreakMode:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.AppKit.NSLineBreakMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineHeightMultiple">
+      <MemberSignature Language="C#" Value="public override float LineHeightMultiple { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 LineHeightMultiple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("lineHeightMultiple")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setLineHeightMultiple:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineSpacing">
+      <MemberSignature Language="C#" Value="public override float LineSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 LineSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("lineSpacing")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setLineSpacing:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumLineHeight">
+      <MemberSignature Language="C#" Value="public override float MaximumLineHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 MaximumLineHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("maximumLineHeight")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setMaximumLineHeight:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumLineHeight">
+      <MemberSignature Language="C#" Value="public override float MinimumLineHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 MinimumLineHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("minimumLineHeight")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setMinimumLineHeight:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParagraphSpacing">
+      <MemberSignature Language="C#" Value="public override float ParagraphSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ParagraphSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("paragraphSpacing")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setParagraphSpacing:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParagraphSpacingBefore">
+      <MemberSignature Language="C#" Value="public override float ParagraphSpacingBefore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ParagraphSpacingBefore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("paragraphSpacingBefore")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setParagraphSpacingBefore:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveTabStop">
@@ -185,318 +540,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetAlignment">
-      <MemberSignature Language="C#" Value="public virtual void SetAlignment (MonoMac.AppKit.NSTextAlignment alignment);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAlignment(valuetype MonoMac.AppKit.NSTextAlignment alignment) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setAlignment:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="alignment" Type="MonoMac.AppKit.NSTextAlignment" />
-      </Parameters>
-      <Docs>
-        <param name="alignment">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetBaseWritingDirection">
-      <MemberSignature Language="C#" Value="public virtual void SetBaseWritingDirection (MonoMac.AppKit.NSWritingDirection writingDirection);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetBaseWritingDirection(valuetype MonoMac.AppKit.NSWritingDirection writingDirection) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setBaseWritingDirection:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="writingDirection" Type="MonoMac.AppKit.NSWritingDirection" />
-      </Parameters>
-      <Docs>
-        <param name="writingDirection">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetDefaultTabInterval">
-      <MemberSignature Language="C#" Value="public virtual void SetDefaultTabInterval (float aFloat);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDefaultTabInterval(float32 aFloat) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setDefaultTabInterval:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="aFloat" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="aFloat">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetFirstLineHeadIndent">
-      <MemberSignature Language="C#" Value="public virtual void SetFirstLineHeadIndent (float aFloat);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFirstLineHeadIndent(float32 aFloat) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setFirstLineHeadIndent:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="aFloat" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="aFloat">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetHeaderLevel">
-      <MemberSignature Language="C#" Value="public virtual void SetHeaderLevel (int level);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHeaderLevel(int32 level) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setHeaderLevel:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="level" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="level">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetHeadIndent">
-      <MemberSignature Language="C#" Value="public virtual void SetHeadIndent (float aFloat);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHeadIndent(float32 aFloat) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setHeadIndent:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="aFloat" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="aFloat">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetHyphenationFactor">
-      <MemberSignature Language="C#" Value="public virtual void SetHyphenationFactor (float aFactor);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHyphenationFactor(float32 aFactor) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setHyphenationFactor:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="aFactor" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="aFactor">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetLineBreakMode">
-      <MemberSignature Language="C#" Value="public virtual void SetLineBreakMode (MonoMac.AppKit.NSLineBreakMode mode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLineBreakMode(valuetype MonoMac.AppKit.NSLineBreakMode mode) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setLineBreakMode:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="mode" Type="MonoMac.AppKit.NSLineBreakMode" />
-      </Parameters>
-      <Docs>
-        <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetLineHeightMultiple">
-      <MemberSignature Language="C#" Value="public virtual void SetLineHeightMultiple (float aFloat);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLineHeightMultiple(float32 aFloat) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setLineHeightMultiple:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="aFloat" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="aFloat">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetMaximumLineHeight">
-      <MemberSignature Language="C#" Value="public virtual void SetMaximumLineHeight (float aFloat);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMaximumLineHeight(float32 aFloat) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setMaximumLineHeight:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="aFloat" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="aFloat">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetMinimumLineHeight">
-      <MemberSignature Language="C#" Value="public virtual void SetMinimumLineHeight (float aFloat);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMinimumLineHeight(float32 aFloat) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setMinimumLineHeight:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="aFloat" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="aFloat">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetParagraphSpacing">
-      <MemberSignature Language="C#" Value="public virtual void SetParagraphSpacing (float aFloat);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetParagraphSpacing(float32 aFloat) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setParagraphSpacing:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="aFloat" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="aFloat">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetParagraphSpacingBefore">
-      <MemberSignature Language="C#" Value="public virtual void SetParagraphSpacingBefore (float aFloat);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetParagraphSpacingBefore(float32 aFloat) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setParagraphSpacingBefore:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="aFloat" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="aFloat">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SetParagraphStyle">
       <MemberSignature Language="C#" Value="public virtual void SetParagraphStyle (MonoMac.AppKit.NSParagraphStyle obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetParagraphStyle(class MonoMac.AppKit.NSParagraphStyle obj) cil managed" />
@@ -517,54 +560,6 @@ public class MyClass : BaseClass {
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetTabStops">
-      <MemberSignature Language="C#" Value="public virtual void SetTabStops (MonoMac.AppKit.NSTextTab[] array);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetTabStops(class MonoMac.AppKit.NSTextTab[] array) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setTabStops:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="array" Type="MonoMac.AppKit.NSTextTab[]" />
-      </Parameters>
-      <Docs>
-        <param name="array">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetTailIndent">
-      <MemberSignature Language="C#" Value="public virtual void SetTailIndent (float aFloat);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetTailIndent(float32 aFloat) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setTailIndent:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="aFloat" Type="System.Single" />
-      </Parameters>
-      <Docs>
-        <param name="aFloat">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -617,27 +612,75 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetTighteningFactorForTruncation">
-      <MemberSignature Language="C#" Value="public virtual void SetTighteningFactorForTruncation (float aFactor);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetTighteningFactorForTruncation(float32 aFactor) cil managed" />
-      <MemberType>Method</MemberType>
+    <Member MemberName="TabStops">
+      <MemberSignature Language="C#" Value="public override MonoMac.AppKit.NSTextTab[] TabStops { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSTextTab[] TabStops" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setTighteningFactorForTruncation:")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("tabStops")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setTabStops:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>MonoMac.AppKit.NSTextTab[]</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="aFactor" Type="System.Single" />
-      </Parameters>
       <Docs>
-        <param name="aFactor">To be added.</param>
         <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailIndent">
+      <MemberSignature Language="C#" Value="public override float TailIndent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 TailIndent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("tailIndent")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setTailIndent:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TighteningFactorForTruncation">
+      <MemberSignature Language="C#" Value="public override float TighteningFactorForTruncation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 TighteningFactorForTruncation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("tighteningFactorForTruncation")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setTighteningFactorForTruncation:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

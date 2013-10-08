@@ -1651,9 +1651,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="TouchesMatchingPhaseinView">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSSet TouchesMatchingPhaseinView (MonoMac.AppKit.NSTouchPhase phase, MonoMac.AppKit.NSView view);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSSet TouchesMatchingPhaseinView(valuetype MonoMac.AppKit.NSTouchPhase phase, class MonoMac.AppKit.NSView view) cil managed" />
+    <Member MemberName="TouchesMatchingPhase">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSSet TouchesMatchingPhase (MonoMac.AppKit.NSTouchPhase phase, MonoMac.AppKit.NSView view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSSet TouchesMatchingPhase(valuetype MonoMac.AppKit.NSTouchPhase phase, class MonoMac.AppKit.NSView view) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

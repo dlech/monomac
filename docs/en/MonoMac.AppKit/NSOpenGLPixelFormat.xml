@@ -218,8 +218,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GetValue">
-      <MemberSignature Language="C#" Value="public virtual IntPtr GetValue (ref int vals, MonoMac.AppKit.NSOpenGLPixelFormatAttribute attrib, int screen);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetValue(int32 vals, valuetype MonoMac.AppKit.NSOpenGLPixelFormatAttribute attrib, int32 screen) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void GetValue (ref int vals, MonoMac.AppKit.NSOpenGLPixelFormatAttribute attrib, int screen);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetValue(int32 vals, valuetype MonoMac.AppKit.NSOpenGLPixelFormatAttribute attrib, int32 screen) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -230,7 +230,7 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="vals" Type="System.Int32&amp;" RefType="ref" />
@@ -242,7 +242,6 @@ public class MyClass : BaseClass {
         <param name="attrib">To be added.</param>
         <param name="screen">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -502,7 +502,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="WeakClient">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject WeakClient { get; set; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject WeakClient { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSObject WeakClient" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -511,9 +511,6 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("client")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setClient:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

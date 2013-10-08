@@ -288,9 +288,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetMaxCoordinateofSubview">
-      <MemberSignature Language="C#" Value="public virtual float SetMaxCoordinateofSubview (MonoMac.AppKit.NSSplitView splitView, float proposedMaximumPosition, int subviewDividerIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 SetMaxCoordinateofSubview(class MonoMac.AppKit.NSSplitView splitView, float32 proposedMaximumPosition, int32 subviewDividerIndex) cil managed" />
+    <Member MemberName="SetMaxCoordinateOfSubview">
+      <MemberSignature Language="C#" Value="public virtual float SetMaxCoordinateOfSubview (MonoMac.AppKit.NSSplitView splitView, float proposedMaximumPosition, int subviewDividerIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 SetMaxCoordinateOfSubview(class MonoMac.AppKit.NSSplitView splitView, float32 proposedMaximumPosition, int32 subviewDividerIndex) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -317,9 +317,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetMinCoordinateofSubview">
-      <MemberSignature Language="C#" Value="public virtual float SetMinCoordinateofSubview (MonoMac.AppKit.NSSplitView splitView, float proposedMinimumPosition, int subviewDividerIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 SetMinCoordinateofSubview(class MonoMac.AppKit.NSSplitView splitView, float32 proposedMinimumPosition, int32 subviewDividerIndex) cil managed" />
+    <Member MemberName="SetMinCoordinateOfSubview">
+      <MemberSignature Language="C#" Value="public virtual float SetMinCoordinateOfSubview (MonoMac.AppKit.NSSplitView splitView, float proposedMinimumPosition, int subviewDividerIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 SetMinCoordinateOfSubview(class MonoMac.AppKit.NSSplitView splitView, float32 proposedMinimumPosition, int32 subviewDividerIndex) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

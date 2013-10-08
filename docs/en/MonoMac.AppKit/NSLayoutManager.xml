@@ -373,7 +373,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CharacterIndexForPoint">
-      <MemberSignature Language="C#" Value="public virtual uint CharacterIndexForPoint (System.Drawing.PointF point, MonoMac.AppKit.NSTextContainer container, float fractionOfDistanceBetweenInsertionPoints);" />
+      <MemberSignature Language="C#" Value="public virtual uint CharacterIndexForPoint (System.Drawing.PointF point, MonoMac.AppKit.NSTextContainer container, ref float fractionOfDistanceBetweenInsertionPoints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 CharacterIndexForPoint(valuetype System.Drawing.PointF point, class MonoMac.AppKit.NSTextContainer container, float32 fractionOfDistanceBetweenInsertionPoints) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -390,7 +390,7 @@ public class MyClass : BaseClass {
       <Parameters>
         <Parameter Name="point" Type="System.Drawing.PointF" />
         <Parameter Name="container" Type="MonoMac.AppKit.NSTextContainer" />
-        <Parameter Name="fractionOfDistanceBetweenInsertionPoints" Type="System.Single" />
+        <Parameter Name="fractionOfDistanceBetweenInsertionPoints" Type="System.Single&amp;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="point">To be added.</param>
@@ -865,8 +865,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GetFirstUnlaidCharacterIndex">
-      <MemberSignature Language="C#" Value="public virtual void GetFirstUnlaidCharacterIndex (int charIndex, int glyphIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetFirstUnlaidCharacterIndex(int32 charIndex, int32 glyphIndex) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void GetFirstUnlaidCharacterIndex (ref uint charIndex, ref uint glyphIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetFirstUnlaidCharacterIndex(unsigned int32 charIndex, unsigned int32 glyphIndex) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -880,8 +880,8 @@ public class MyClass : BaseClass {
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="charIndex" Type="System.Int32" />
-        <Parameter Name="glyphIndex" Type="System.Int32" />
+        <Parameter Name="charIndex" Type="System.UInt32&amp;" RefType="ref" />
+        <Parameter Name="glyphIndex" Type="System.UInt32&amp;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="charIndex">To be added.</param>
@@ -916,8 +916,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GetLineFragmentInsertionPoints">
-      <MemberSignature Language="C#" Value="public virtual uint GetLineFragmentInsertionPoints (int charIndex, bool aFlag, bool dFlag, float positions, uint charIndexes);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 GetLineFragmentInsertionPoints(int32 charIndex, bool aFlag, bool dFlag, float32 positions, unsigned int32 charIndexes) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual uint GetLineFragmentInsertionPoints (uint charIndex, bool aFlag, bool dFlag, IntPtr positions, IntPtr charIndexes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 GetLineFragmentInsertionPoints(unsigned int32 charIndex, bool aFlag, bool dFlag, native int positions, native int charIndexes) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -931,11 +931,11 @@ public class MyClass : BaseClass {
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="charIndex" Type="System.Int32" />
+        <Parameter Name="charIndex" Type="System.UInt32" />
         <Parameter Name="aFlag" Type="System.Boolean" />
         <Parameter Name="dFlag" Type="System.Boolean" />
-        <Parameter Name="positions" Type="System.Single" />
-        <Parameter Name="charIndexes" Type="System.UInt32" />
+        <Parameter Name="positions" Type="System.IntPtr" />
+        <Parameter Name="charIndexes" Type="System.IntPtr" />
       </Parameters>
       <Docs>
         <param name="charIndex">To be added.</param>
@@ -974,8 +974,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GlyphAtIndexisValidIndex">
-      <MemberSignature Language="C#" Value="public virtual uint GlyphAtIndexisValidIndex (int glyphIndex, bool isValidIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 GlyphAtIndexisValidIndex(int32 glyphIndex, bool isValidIndex) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual uint GlyphAtIndexisValidIndex (uint glyphIndex, ref bool isValidIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 GlyphAtIndexisValidIndex(unsigned int32 glyphIndex, bool isValidIndex) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -989,8 +989,8 @@ public class MyClass : BaseClass {
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="glyphIndex" Type="System.Int32" />
-        <Parameter Name="isValidIndex" Type="System.Boolean" />
+        <Parameter Name="glyphIndex" Type="System.UInt32" />
+        <Parameter Name="isValidIndex" Type="System.Boolean&amp;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="glyphIndex">To be added.</param>
@@ -1102,7 +1102,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GlyphIndexForPointInTextContainer">
-      <MemberSignature Language="C#" Value="public virtual uint GlyphIndexForPointInTextContainer (System.Drawing.PointF point, MonoMac.AppKit.NSTextContainer container, float fractionOfDistanceThroughGlyph);" />
+      <MemberSignature Language="C#" Value="public virtual uint GlyphIndexForPointInTextContainer (System.Drawing.PointF point, MonoMac.AppKit.NSTextContainer container, ref float fractionOfDistanceThroughGlyph);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 GlyphIndexForPointInTextContainer(valuetype System.Drawing.PointF point, class MonoMac.AppKit.NSTextContainer container, float32 fractionOfDistanceThroughGlyph) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1119,7 +1119,7 @@ public class MyClass : BaseClass {
       <Parameters>
         <Parameter Name="point" Type="System.Drawing.PointF" />
         <Parameter Name="container" Type="MonoMac.AppKit.NSTextContainer" />
-        <Parameter Name="fractionOfDistanceThroughGlyph" Type="System.Single" />
+        <Parameter Name="fractionOfDistanceThroughGlyph" Type="System.Single&amp;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="point">To be added.</param>

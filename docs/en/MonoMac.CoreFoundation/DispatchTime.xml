@@ -1,0 +1,80 @@
+<Type Name="DispatchTime" FullName="MonoMac.CoreFoundation.DispatchTime">
+  <TypeSignature Language="C#" Value="public struct DispatchTime" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DispatchTime extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DispatchTime (ulong nanoseconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int64 nanoseconds) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="nanoseconds" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="nanoseconds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Forever">
+      <MemberSignature Language="C#" Value="public static readonly MonoMac.CoreFoundation.DispatchTime Forever;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype MonoMac.CoreFoundation.DispatchTime Forever" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.DispatchTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nanoseconds">
+      <MemberSignature Language="C#" Value="public ulong Nanoseconds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int64 Nanoseconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Now">
+      <MemberSignature Language="C#" Value="public static readonly MonoMac.CoreFoundation.DispatchTime Now;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype MonoMac.CoreFoundation.DispatchTime Now" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.DispatchTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

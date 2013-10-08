@@ -843,7 +843,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use AddLineToPoint instead")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use AddLineToPoint instead")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -869,7 +869,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use AddLineToPoint instead")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use AddLineToPoint instead")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

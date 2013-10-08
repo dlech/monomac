@@ -275,9 +275,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DrawArrowhighlight">
-      <MemberSignature Language="C#" Value="public virtual void DrawArrowhighlight (MonoMac.AppKit.NSScrollerArrow whichArrow, bool highlight);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawArrowhighlight(valuetype MonoMac.AppKit.NSScrollerArrow whichArrow, bool highlight) cil managed" />
+    <Member MemberName="DrawArrow">
+      <MemberSignature Language="C#" Value="public virtual void DrawArrow (MonoMac.AppKit.NSScrollerArrow whichArrow, bool highlight);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawArrow(valuetype MonoMac.AppKit.NSScrollerArrow whichArrow, bool highlight) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -492,43 +492,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NSPreferredScrollerStyleDidChangeNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString NSPreferredScrollerStyleDidChangeNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString NSPreferredScrollerStyleDidChangeNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Notification constant for NSPreferredScrollerStyleDidChange</summary>
-        <value>NSString constant, should be used as a token to NSNotificationCenter.</value>
-        <remarks>
-          <para id="tool-remark">This constant can be used with the <see cref="T:MonoMac.Foundation.NSNotificationCenter" /> to register a listener for this notification.   This is an NSString instead of a string, because these values can be used as tokens in some native libraries instead of being used purely for their actual string content.    The 'notification' parameter to the callback contains extra information that is specific to the notification type.</para>
-          <example>
-            <code lang="c#">
-// Lambda style
-NSNotificationCenter.DefaultCenter.AddObserver (
-        NSScroller.NSPreferredScrollerStyleDidChangeNotification, (notification) =&gt; {Console.WriteLine ("Received the notification NSScroller", notification); }
-
-
-// Method style
-void Callback (NSNotification notification)
-{
-    Console.WriteLine ("Received a notification NSScroller", notification);
-}
-
-void Setup ()
-{
-    NSNotificationCenter.DefaultCenter.AddObserver (NSScroller.NSPreferredScrollerStyleDidChangeNotification, Callback);
-}
-</code>
-          </example>
-        </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="PreferredScrollerStyle">
       <MemberSignature Language="C#" Value="public static MonoMac.AppKit.NSScrollerStyle PreferredScrollerStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype MonoMac.AppKit.NSScrollerStyle PreferredScrollerStyle" />
@@ -543,6 +506,27 @@ void Setup ()
       </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AppKit.NSScrollerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferredStyleChangedNotification">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString PreferredStyleChangedNotification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString PreferredStyleChangedNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSPreferredScrollerStyleDidChangeNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

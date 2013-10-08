@@ -138,8 +138,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GenerateGlyphs">
-      <MemberSignature Language="C#" Value="public virtual void GenerateGlyphs (MonoMac.Foundation.NSObject nsGlyphStorageOrNSLayoutManager, int nchars, int glyphIndex, int charIndex);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateGlyphs(class MonoMac.Foundation.NSObject nsGlyphStorageOrNSLayoutManager, int32 nchars, int32 glyphIndex, int32 charIndex) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void GenerateGlyphs (MonoMac.Foundation.NSObject nsGlyphStorageOrNSLayoutManager, uint nchars, ref uint glyphIndex, ref uint charIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateGlyphs(class MonoMac.Foundation.NSObject nsGlyphStorageOrNSLayoutManager, unsigned int32 nchars, unsigned int32 glyphIndex, unsigned int32 charIndex) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -154,9 +154,9 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="nsGlyphStorageOrNSLayoutManager" Type="MonoMac.Foundation.NSObject" />
-        <Parameter Name="nchars" Type="System.Int32" />
-        <Parameter Name="glyphIndex" Type="System.Int32" />
-        <Parameter Name="charIndex" Type="System.Int32" />
+        <Parameter Name="nchars" Type="System.UInt32" />
+        <Parameter Name="glyphIndex" Type="System.UInt32&amp;" RefType="ref" />
+        <Parameter Name="charIndex" Type="System.UInt32&amp;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="nsGlyphStorageOrNSLayoutManager">To be added.</param>

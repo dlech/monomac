@@ -130,7 +130,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("addBezierPath:path")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("addBezierPath:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -217,7 +217,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("removeBezierPath:path")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("removeBezierPath:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

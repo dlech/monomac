@@ -282,7 +282,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use the NSIndexPath.Create (int []) static method instead")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use NSIndexPath.Create (int[]) instead")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

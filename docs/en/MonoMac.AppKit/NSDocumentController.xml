@@ -398,8 +398,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="DocumentForUrl">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSDocument DocumentForUrl (MonoMac.Foundation.NSUrl absoluteUrl);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AppKit.NSDocument DocumentForUrl(class MonoMac.Foundation.NSUrl absoluteUrl) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSDocument DocumentForUrl (MonoMac.Foundation.NSUrl url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AppKit.NSDocument DocumentForUrl(class MonoMac.Foundation.NSUrl url) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -413,10 +413,10 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.AppKit.NSDocument</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="absoluteUrl" Type="MonoMac.Foundation.NSUrl" />
+        <Parameter Name="url" Type="MonoMac.Foundation.NSUrl" />
       </Parameters>
       <Docs>
-        <param name="absoluteUrl">To be added.</param>
+        <param name="url">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -490,8 +490,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="MakeDocument">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject MakeDocument (MonoMac.Foundation.NSUrl absoluteUrl, string typeName, out MonoMac.Foundation.NSError outError);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject MakeDocument(class MonoMac.Foundation.NSUrl absoluteUrl, string typeName, class MonoMac.Foundation.NSError outError) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject MakeDocument (MonoMac.Foundation.NSUrl url, string typeName, out MonoMac.Foundation.NSError outError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject MakeDocument(class MonoMac.Foundation.NSUrl url, string typeName, class MonoMac.Foundation.NSError outError) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -505,12 +505,12 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="absoluteUrl" Type="MonoMac.Foundation.NSUrl" />
+        <Parameter Name="url" Type="MonoMac.Foundation.NSUrl" />
         <Parameter Name="typeName" Type="System.String" />
         <Parameter Name="outError" Type="MonoMac.Foundation.NSError&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="absoluteUrl">To be added.</param>
+        <param name="url">To be added.</param>
         <param name="typeName">To be added.</param>
         <param name="outError">To be added.</param>
         <summary>To be added.</summary>
@@ -519,8 +519,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="MakeDocument">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject MakeDocument (MonoMac.Foundation.NSUrl absoluteDocumentUrl, MonoMac.Foundation.NSUrl absoluteDocumentContentsUrl, string typeName, out MonoMac.Foundation.NSError outError);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject MakeDocument(class MonoMac.Foundation.NSUrl absoluteDocumentUrl, class MonoMac.Foundation.NSUrl absoluteDocumentContentsUrl, string typeName, class MonoMac.Foundation.NSError outError) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject MakeDocument (MonoMac.Foundation.NSUrl urlOrNil, MonoMac.Foundation.NSUrl contentsUrl, string typeName, out MonoMac.Foundation.NSError outError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject MakeDocument(class MonoMac.Foundation.NSUrl urlOrNil, class MonoMac.Foundation.NSUrl contentsUrl, string typeName, class MonoMac.Foundation.NSError outError) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -534,14 +534,14 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="absoluteDocumentUrl" Type="MonoMac.Foundation.NSUrl" />
-        <Parameter Name="absoluteDocumentContentsUrl" Type="MonoMac.Foundation.NSUrl" />
+        <Parameter Name="urlOrNil" Type="MonoMac.Foundation.NSUrl" />
+        <Parameter Name="contentsUrl" Type="MonoMac.Foundation.NSUrl" />
         <Parameter Name="typeName" Type="System.String" />
         <Parameter Name="outError" Type="MonoMac.Foundation.NSError&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="absoluteDocumentUrl">To be added.</param>
-        <param name="absoluteDocumentContentsUrl">To be added.</param>
+        <param name="urlOrNil">To be added.</param>
+        <param name="contentsUrl">To be added.</param>
         <param name="typeName">To be added.</param>
         <param name="outError">To be added.</param>
         <summary>To be added.</summary>
@@ -646,8 +646,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="NoteNewRecentDocumentURL">
-      <MemberSignature Language="C#" Value="public virtual void NoteNewRecentDocumentURL (MonoMac.Foundation.NSUrl absoluteUrl);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NoteNewRecentDocumentURL(class MonoMac.Foundation.NSUrl absoluteUrl) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void NoteNewRecentDocumentURL (MonoMac.Foundation.NSUrl url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NoteNewRecentDocumentURL(class MonoMac.Foundation.NSUrl url) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -661,10 +661,10 @@ public class MyClass : BaseClass {
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="absoluteUrl" Type="MonoMac.Foundation.NSUrl" />
+        <Parameter Name="url" Type="MonoMac.Foundation.NSUrl" />
       </Parameters>
       <Docs>
-        <param name="absoluteUrl">To be added.</param>
+        <param name="url">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -722,8 +722,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="OpenDocument">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject OpenDocument (MonoMac.Foundation.NSUrl absoluteUrl, bool displayDocument, out MonoMac.Foundation.NSError outError);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject OpenDocument(class MonoMac.Foundation.NSUrl absoluteUrl, bool displayDocument, class MonoMac.Foundation.NSError outError) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject OpenDocument (MonoMac.Foundation.NSUrl url, bool displayDocument, out MonoMac.Foundation.NSError outError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject OpenDocument(class MonoMac.Foundation.NSUrl url, bool displayDocument, class MonoMac.Foundation.NSError outError) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -737,12 +737,12 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="absoluteUrl" Type="MonoMac.Foundation.NSUrl" />
+        <Parameter Name="url" Type="MonoMac.Foundation.NSUrl" />
         <Parameter Name="displayDocument" Type="System.Boolean" />
         <Parameter Name="outError" Type="MonoMac.Foundation.NSError&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="absoluteUrl">To be added.</param>
+        <param name="url">To be added.</param>
         <param name="displayDocument">To be added.</param>
         <param name="outError">To be added.</param>
         <summary>To be added.</summary>
@@ -880,8 +880,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ReopenDocument">
-      <MemberSignature Language="C#" Value="public virtual bool ReopenDocument (MonoMac.Foundation.NSUrl absoluteDocumentUrl, MonoMac.Foundation.NSUrl absoluteDocumentContentsUrl, out MonoMac.Foundation.NSError outError);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ReopenDocument(class MonoMac.Foundation.NSUrl absoluteDocumentUrl, class MonoMac.Foundation.NSUrl absoluteDocumentContentsUrl, class MonoMac.Foundation.NSError outError) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool ReopenDocument (MonoMac.Foundation.NSUrl url, MonoMac.Foundation.NSUrl contentsUrl, out MonoMac.Foundation.NSError outError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ReopenDocument(class MonoMac.Foundation.NSUrl url, class MonoMac.Foundation.NSUrl contentsUrl, class MonoMac.Foundation.NSError outError) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -895,13 +895,13 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="absoluteDocumentUrl" Type="MonoMac.Foundation.NSUrl" />
-        <Parameter Name="absoluteDocumentContentsUrl" Type="MonoMac.Foundation.NSUrl" />
+        <Parameter Name="url" Type="MonoMac.Foundation.NSUrl" />
+        <Parameter Name="contentsUrl" Type="MonoMac.Foundation.NSUrl" />
         <Parameter Name="outError" Type="MonoMac.Foundation.NSError&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="absoluteDocumentUrl">To be added.</param>
-        <param name="absoluteDocumentContentsUrl">To be added.</param>
+        <param name="url">To be added.</param>
+        <param name="contentsUrl">To be added.</param>
         <param name="outError">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -968,9 +968,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RunModalOpenPanelforTypes">
-      <MemberSignature Language="C#" Value="public virtual int RunModalOpenPanelforTypes (MonoMac.AppKit.NSOpenPanel openPanel, string[] types);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 RunModalOpenPanelforTypes(class MonoMac.AppKit.NSOpenPanel openPanel, string[] types) cil managed" />
+    <Member MemberName="RunModalOpenPanel">
+      <MemberSignature Language="C#" Value="public virtual int RunModalOpenPanel (MonoMac.AppKit.NSOpenPanel openPanel, string[] types);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 RunModalOpenPanel(class MonoMac.AppKit.NSOpenPanel openPanel, string[] types) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1041,8 +1041,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="TypeForUrl">
-      <MemberSignature Language="C#" Value="public virtual string TypeForUrl (MonoMac.Foundation.NSUrl inAbsoluteUrl, out MonoMac.Foundation.NSError outError);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string TypeForUrl(class MonoMac.Foundation.NSUrl inAbsoluteUrl, class MonoMac.Foundation.NSError outError) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual string TypeForUrl (MonoMac.Foundation.NSUrl url, out MonoMac.Foundation.NSError outError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string TypeForUrl(class MonoMac.Foundation.NSUrl url, class MonoMac.Foundation.NSError outError) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1056,11 +1056,11 @@ public class MyClass : BaseClass {
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="inAbsoluteUrl" Type="MonoMac.Foundation.NSUrl" />
+        <Parameter Name="url" Type="MonoMac.Foundation.NSUrl" />
         <Parameter Name="outError" Type="MonoMac.Foundation.NSError&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="inAbsoluteUrl">To be added.</param>
+        <param name="url">To be added.</param>
         <param name="outError">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>

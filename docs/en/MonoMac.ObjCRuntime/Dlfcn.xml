@@ -316,6 +316,29 @@
         <remarks>This routine silently fails and returns the default value for stringconstant.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetArray">
+      <MemberSignature Language="C#" Value="public static void SetArray (IntPtr handle, string symbol, MonoMac.Foundation.NSArray array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetArray(native int handle, string symbol, class MonoMac.Foundation.NSArray array) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+        <Parameter Name="symbol" Type="System.String" />
+        <Parameter Name="array" Type="MonoMac.Foundation.NSArray" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <param name="symbol">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetDouble">
       <MemberSignature Language="C#" Value="public static void SetDouble (IntPtr handle, string symbol, double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDouble(native int handle, string symbol, float64 value) cil managed" />
@@ -445,6 +468,52 @@
         <Parameter Name="handle" Type="System.IntPtr" />
         <Parameter Name="symbol" Type="System.String" />
         <Parameter Name="value" Type="System.Drawing.SizeF" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <param name="symbol">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetString">
+      <MemberSignature Language="C#" Value="public static void SetString (IntPtr handle, string symbol, MonoMac.Foundation.NSString value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetString(native int handle, string symbol, class MonoMac.Foundation.NSString value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+        <Parameter Name="symbol" Type="System.String" />
+        <Parameter Name="value" Type="MonoMac.Foundation.NSString" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <param name="symbol">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetString">
+      <MemberSignature Language="C#" Value="public static void SetString (IntPtr handle, string symbol, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetString(native int handle, string symbol, string value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+        <Parameter Name="symbol" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>

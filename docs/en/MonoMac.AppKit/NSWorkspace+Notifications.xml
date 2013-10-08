@@ -1,0 +1,438 @@
+<Type Name="NSWorkspace+Notifications" FullName="MonoMac.AppKit.NSWorkspace+Notifications">
+  <TypeSignature Language="C#" Value="public static class NSWorkspace.Notifications" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit NSWorkspace/Notifications extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ObserveActiveSpaceDidChange">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveActiveSpaceDidChange (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveActiveSpaceDidChange(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidActivateApplication">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidActivateApplication (EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidActivateApplication(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidChangeFileLabels">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidChangeFileLabels (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidChangeFileLabels(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidDeactivateApplication">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidDeactivateApplication (EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidDeactivateApplication(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidHideApplication">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidHideApplication (EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidHideApplication(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidLaunchApplication">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidLaunchApplication (EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidLaunchApplication(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidMount">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidMount (EventHandler&lt;MonoMac.AppKit.NSWorkspaceMountEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidMount(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceMountEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceMountEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidPerformFileOperation">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidPerformFileOperation (EventHandler&lt;MonoMac.AppKit.NSWorkspaceFileOperationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidPerformFileOperation(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceFileOperationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceFileOperationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidRenameVolume">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidRenameVolume (EventHandler&lt;MonoMac.AppKit.NSWorkspaceRenamedEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidRenameVolume(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceRenamedEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceRenamedEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidTerminateApplication">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidTerminateApplication (EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidTerminateApplication(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidUnhideApplication">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidUnhideApplication (EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidUnhideApplication(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidUnmount">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidUnmount (EventHandler&lt;MonoMac.AppKit.NSWorkspaceMountEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidUnmount(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceMountEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceMountEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveDidWake">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveDidWake (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveDidWake(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveScreensDidSleep">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveScreensDidSleep (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveScreensDidSleep(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveScreensDidWake">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveScreensDidWake (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveScreensDidWake(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveSessionDidBecomeActive">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveSessionDidBecomeActive (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveSessionDidBecomeActive(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveSessionDidResignActive">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveSessionDidResignActive (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveSessionDidResignActive(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveWillLaunchApplication">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveWillLaunchApplication (EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveWillLaunchApplication(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceApplicationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveWillPowerOff">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveWillPowerOff (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveWillPowerOff(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveWillSleep">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveWillSleep (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveWillSleep(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveWillUnmount">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveWillUnmount (EventHandler&lt;MonoMac.AppKit.NSWorkspaceMountEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveWillUnmount(class System.EventHandler`1&lt;class MonoMac.AppKit.NSWorkspaceMountEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSWorkspaceMountEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

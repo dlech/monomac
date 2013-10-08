@@ -27,6 +27,20 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="AUHostIdentifier">
+      <MemberSignature Language="C#" Value="AUHostIdentifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType AUHostIdentifier = int32(46)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="BypassEffect">
       <MemberSignature Language="C#" Value="BypassEffect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType BypassEffect = int32(21)" />
@@ -58,6 +72,48 @@
     <Member MemberName="ClassInfo">
       <MemberSignature Language="C#" Value="ClassInfo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType ClassInfo = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassInfoFromDocument">
+      <MemberSignature Language="C#" Value="ClassInfoFromDocument" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType ClassInfoFromDocument = int32(50)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CocoaUI">
+      <MemberSignature Language="C#" Value="CocoaUI" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType CocoaUI = int32(31)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextName">
+      <MemberSignature Language="C#" Value="ContextName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType ContextName = int32(25)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -167,6 +223,48 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="FastDispatch">
+      <MemberSignature Language="C#" Value="FastDispatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType FastDispatch = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FrequencyResponse">
+      <MemberSignature Language="C#" Value="FrequencyResponse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType FrequencyResponse = int32(52)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUIComponentList">
+      <MemberSignature Language="C#" Value="GetUIComponentList" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType GetUIComponentList = int32(18)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="HasIO">
       <MemberSignature Language="C#" Value="HasIO" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType HasIO = int32(2006)" />
@@ -195,6 +293,20 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="IconLocation">
+      <MemberSignature Language="C#" Value="IconLocation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType IconLocation = int32(39)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="InPlaceProcessing">
       <MemberSignature Language="C#" Value="InPlaceProcessing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType InPlaceProcessing = int32(29)" />
@@ -212,6 +324,20 @@
     <Member MemberName="InputSampleInOutput">
       <MemberSignature Language="C#" Value="InputSampleInOutput" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType InputSampleInOutput = int32(49)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRunning">
+      <MemberSignature Language="C#" Value="IsRunning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType IsRunning = int32(2001)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -279,6 +405,34 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="MIDIOutputCallback">
+      <MemberSignature Language="C#" Value="MIDIOutputCallback" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType MIDIOutputCallback = int32(48)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MIDIOutputCallbackInfo">
+      <MemberSignature Language="C#" Value="MIDIOutputCallbackInfo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType MIDIOutputCallbackInfo = int32(47)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="Nickname">
       <MemberSignature Language="C#" Value="Nickname" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType Nickname = int32(54)" />
@@ -307,9 +461,37 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="ParameterClumpName">
+      <MemberSignature Language="C#" Value="ParameterClumpName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType ParameterClumpName = int32(35)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="ParameterHistoryInfo">
       <MemberSignature Language="C#" Value="ParameterHistoryInfo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType ParameterHistoryInfo = int32(53)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterIDName">
+      <MemberSignature Language="C#" Value="ParameterIDName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType ParameterIDName = int32(34)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -349,9 +531,51 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="ParameterStringFromValue">
+      <MemberSignature Language="C#" Value="ParameterStringFromValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType ParameterStringFromValue = int32(33)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterValueFromString">
+      <MemberSignature Language="C#" Value="ParameterValueFromString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType ParameterValueFromString = int32(38)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="ParameterValueStrings">
       <MemberSignature Language="C#" Value="ParameterValueStrings" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType ParameterValueStrings = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PresentationLatency">
+      <MemberSignature Language="C#" Value="PresentationLatency" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType PresentationLatency = int32(40)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -394,6 +618,20 @@
     <Member MemberName="SampleRate">
       <MemberSignature Language="C#" Value="SampleRate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType SampleRate = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitPropertyIDType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetExternalBuffer">
+      <MemberSignature Language="C#" Value="SetExternalBuffer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioUnitPropertyIDType SetExternalBuffer = int32(15)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

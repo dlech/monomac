@@ -99,7 +99,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetAudioFormat">
-      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioStreamBasicDescription GetAudioFormat (MonoMac.AudioUnit.AudioUnitScopeType scope, uint audioUnitElement);" />
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioStreamBasicDescription GetAudioFormat (MonoMac.AudioUnit.AudioUnitScopeType scope, uint audioUnitElement = 0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.AudioToolbox.AudioStreamBasicDescription GetAudioFormat(valuetype MonoMac.AudioUnit.AudioUnitScopeType scope, unsigned int32 audioUnitElement) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -176,6 +176,11 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -196,6 +201,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioUnit.AudioUnitStatus Render (ref MonoMac.AudioUnit.AudioUnitRenderActionFlags actionFlags, MonoMac.AudioToolbox.AudioTimeStamp timeStamp, uint busNumber, uint numberFrames, MonoMac.AudioToolbox.AudioBuffers data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.AudioUnit.AudioUnitStatus Render(valuetype MonoMac.AudioUnit.AudioUnitRenderActionFlags actionFlags, valuetype MonoMac.AudioToolbox.AudioTimeStamp timeStamp, unsigned int32 busNumber, unsigned int32 numberFrames, class MonoMac.AudioToolbox.AudioBuffers data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actionFlags" Type="MonoMac.AudioUnit.AudioUnitRenderActionFlags&amp;" RefType="ref" />
+        <Parameter Name="timeStamp" Type="MonoMac.AudioToolbox.AudioTimeStamp" />
+        <Parameter Name="busNumber" Type="System.UInt32" />
+        <Parameter Name="numberFrames" Type="System.UInt32" />
+        <Parameter Name="data" Type="MonoMac.AudioToolbox.AudioBuffers" />
+      </Parameters>
+      <Docs>
+        <param name="actionFlags">To be added.</param>
+        <param name="timeStamp">To be added.</param>
+        <param name="busNumber">To be added.</param>
+        <param name="numberFrames">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RenderCallback">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;MonoMac.AudioUnit.AudioUnitEventArgs&gt; RenderCallback;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class MonoMac.AudioUnit.AudioUnitEventArgs&gt; RenderCallback" />
@@ -203,6 +236,11 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use SetRenderCallback")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;MonoMac.AudioUnit.AudioUnitEventArgs&gt;</ReturnType>
       </ReturnValue>
@@ -212,7 +250,7 @@
       </Docs>
     </Member>
     <Member MemberName="SetAudioFormat">
-      <MemberSignature Language="C#" Value="public void SetAudioFormat (MonoMac.AudioToolbox.AudioStreamBasicDescription audioFormat, MonoMac.AudioUnit.AudioUnitScopeType scope, uint audioUnitElement);" />
+      <MemberSignature Language="C#" Value="public void SetAudioFormat (MonoMac.AudioToolbox.AudioStreamBasicDescription audioFormat, MonoMac.AudioUnit.AudioUnitScopeType scope, uint audioUnitElement = 0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAudioFormat(valuetype MonoMac.AudioToolbox.AudioStreamBasicDescription audioFormat, valuetype MonoMac.AudioUnit.AudioUnitScopeType scope, unsigned int32 audioUnitElement) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -235,14 +273,14 @@
       </Docs>
     </Member>
     <Member MemberName="SetEnableIO">
-      <MemberSignature Language="C#" Value="public void SetEnableIO (bool enableIO, MonoMac.AudioUnit.AudioUnitScopeType scope, uint audioUnitElement);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetEnableIO(bool enableIO, valuetype MonoMac.AudioUnit.AudioUnitScopeType scope, unsigned int32 audioUnitElement) cil managed" />
+      <MemberSignature Language="C#" Value="public MonoMac.AudioUnit.AudioUnitStatus SetEnableIO (bool enableIO, MonoMac.AudioUnit.AudioUnitScopeType scope, uint audioUnitElement = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.AudioUnit.AudioUnitStatus SetEnableIO(bool enableIO, valuetype MonoMac.AudioUnit.AudioUnitScopeType scope, unsigned int32 audioUnitElement) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitStatus</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="enableIO" Type="System.Boolean" />
@@ -254,6 +292,81 @@
         <param name="scope">To be added.</param>
         <param name="audioUnitElement">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMaximumFramesPerSlice">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioUnit.AudioUnitStatus SetMaximumFramesPerSlice (uint value, MonoMac.AudioUnit.AudioUnitScopeType scope, uint audioUnitElement = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.AudioUnit.AudioUnitStatus SetMaximumFramesPerSlice(unsigned int32 value, valuetype MonoMac.AudioUnit.AudioUnitScopeType scope, unsigned int32 audioUnitElement) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="scope" Type="MonoMac.AudioUnit.AudioUnitScopeType" />
+        <Parameter Name="audioUnitElement" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="scope">To be added.</param>
+        <param name="audioUnitElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParameter">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioUnit.AudioUnitStatus SetParameter (MonoMac.AudioUnit.AudioUnitParameterType type, float value, MonoMac.AudioUnit.AudioUnitScopeType scope, uint audioUnitElement = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.AudioUnit.AudioUnitStatus SetParameter(valuetype MonoMac.AudioUnit.AudioUnitParameterType type, float32 value, valuetype MonoMac.AudioUnit.AudioUnitScopeType scope, unsigned int32 audioUnitElement) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="MonoMac.AudioUnit.AudioUnitParameterType" />
+        <Parameter Name="value" Type="System.Single" />
+        <Parameter Name="scope" Type="MonoMac.AudioUnit.AudioUnitScopeType" />
+        <Parameter Name="audioUnitElement" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="scope">To be added.</param>
+        <param name="audioUnitElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRenderCallback">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioUnit.AudioUnitStatus SetRenderCallback (MonoMac.AudioUnit.RenderDelegate renderDelegate, MonoMac.AudioUnit.AudioUnitScopeType scope, uint audioUnitElement = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.AudioUnit.AudioUnitStatus SetRenderCallback(class MonoMac.AudioUnit.RenderDelegate renderDelegate, valuetype MonoMac.AudioUnit.AudioUnitScopeType scope, unsigned int32 audioUnitElement) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioUnitStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="renderDelegate" Type="MonoMac.AudioUnit.RenderDelegate" />
+        <Parameter Name="scope" Type="MonoMac.AudioUnit.AudioUnitScopeType" />
+        <Parameter Name="audioUnitElement" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="renderDelegate">To be added.</param>
+        <param name="scope">To be added.</param>
+        <param name="audioUnitElement">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,6 +409,11 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AudioUnit.AudioUnitStatus</ReturnType>
       </ReturnValue>

@@ -283,9 +283,6 @@ public class MyClass : BaseClass {
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("assetWriterInputPixelBufferAdaptorWithAssetWriterInput:sourcePixelBufferAttributes:")</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use Create method", false)</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AVFoundation.AVAssetWriterInputPixelBufferAdaptor</ReturnType>

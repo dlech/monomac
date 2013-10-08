@@ -122,29 +122,28 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Alignment">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTextAlignment Alignment ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.AppKit.NSTextAlignment Alignment() cil managed" />
-      <MemberType>Method</MemberType>
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTextAlignment Alignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSTextAlignment Alignment" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("alignment")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("alignment")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AppKit.NSTextAlignment</ReturnType>
       </ReturnValue>
-      <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseWritingDirection">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSWritingDirection BaseWritingDirection { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSWritingDirection BaseWritingDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSWritingDirection BaseWritingDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -181,7 +180,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="DefaultParagraphStyle">
-      <MemberSignature Language="C#" Value="public static MonoMac.AppKit.NSParagraphStyle DefaultParagraphStyle { get; }" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AppKit.NSParagraphStyle DefaultParagraphStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class MonoMac.AppKit.NSParagraphStyle DefaultParagraphStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -202,7 +201,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="DefaultTabInterval">
-      <MemberSignature Language="C#" Value="public virtual float DefaultTabInterval { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float DefaultTabInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 DefaultTabInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -223,8 +222,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="DefaultWritingDirection">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSWritingDirection DefaultWritingDirection (string languageName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.AppKit.NSWritingDirection DefaultWritingDirection(string languageName) cil managed" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AppKit.NSWritingDirection DefaultWritingDirection (string languageName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.AppKit.NSWritingDirection DefaultWritingDirection(string languageName) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -274,7 +273,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="FirstLineHeadIndent">
-      <MemberSignature Language="C#" Value="public virtual float FirstLineHeadIndent { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float FirstLineHeadIndent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 FirstLineHeadIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -295,7 +294,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="HeaderLevel">
-      <MemberSignature Language="C#" Value="public virtual int HeaderLevel { get; }" />
+      <MemberSignature Language="C#" Value="public virtual int HeaderLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HeaderLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -316,7 +315,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="HeadIndent">
-      <MemberSignature Language="C#" Value="public virtual float HeadIndent { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float HeadIndent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 HeadIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -337,7 +336,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="HyphenationFactor">
-      <MemberSignature Language="C#" Value="public virtual float HyphenationFactor { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float HyphenationFactor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 HyphenationFactor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -358,7 +357,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="LineBreakMode">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSLineBreakMode LineBreakMode { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSLineBreakMode LineBreakMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSLineBreakMode LineBreakMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -379,7 +378,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="LineHeightMultiple">
-      <MemberSignature Language="C#" Value="public virtual float LineHeightMultiple { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float LineHeightMultiple { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 LineHeightMultiple" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -400,7 +399,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="LineSpacing">
-      <MemberSignature Language="C#" Value="public virtual float LineSpacing { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float LineSpacing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 LineSpacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -421,7 +420,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="MaximumLineHeight">
-      <MemberSignature Language="C#" Value="public virtual float MaximumLineHeight { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float MaximumLineHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 MaximumLineHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -442,7 +441,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="MinimumLineHeight">
-      <MemberSignature Language="C#" Value="public virtual float MinimumLineHeight { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float MinimumLineHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 MinimumLineHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -463,7 +462,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ParagraphSpacing">
-      <MemberSignature Language="C#" Value="public virtual float ParagraphSpacing { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float ParagraphSpacing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 ParagraphSpacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -484,7 +483,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ParagraphSpacingBefore">
-      <MemberSignature Language="C#" Value="public virtual float ParagraphSpacingBefore { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float ParagraphSpacingBefore { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 ParagraphSpacingBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -505,29 +504,28 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="TabStops">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTextTab[] TabStops ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AppKit.NSTextTab[] TabStops() cil managed" />
-      <MemberType>Method</MemberType>
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTextTab[] TabStops { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSTextTab[] TabStops" />
+      <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("tabStops")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("tabStops")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AppKit.NSTextTab[]</ReturnType>
       </ReturnValue>
-      <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TailIndent">
-      <MemberSignature Language="C#" Value="public virtual float TailIndent { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float TailIndent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 TailIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -548,7 +546,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="TextBlocks">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTextTableBlock[] TextBlocks { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTextTableBlock[] TextBlocks { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSTextTableBlock[] TextBlocks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -569,7 +567,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="TextLists">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTextList[] TextLists { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTextList[] TextLists { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSTextList[] TextLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -590,7 +588,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="TighteningFactorForTruncation">
-      <MemberSignature Language="C#" Value="public virtual float TighteningFactorForTruncation { get; }" />
+      <MemberSignature Language="C#" Value="public virtual float TighteningFactorForTruncation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 TighteningFactorForTruncation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>

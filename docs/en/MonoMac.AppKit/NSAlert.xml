@@ -267,6 +267,27 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="BeginSheetForResponse">
+      <MemberSignature Language="C#" Value="public void BeginSheetForResponse (MonoMac.AppKit.NSWindow window, Action&lt;int&gt; onEnded);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginSheetForResponse(class MonoMac.AppKit.NSWindow window, class System.Action`1&lt;int32&gt; onEnded) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="MonoMac.AppKit.NSWindow" />
+        <Parameter Name="onEnded" Type="System.Action&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="window">To be added.</param>
+        <param name="onEnded">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Buttons">
       <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSButton[] Buttons { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSButton[] Buttons" />
@@ -497,6 +518,48 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RunSheetModal">
+      <MemberSignature Language="C#" Value="public int RunSheetModal (MonoMac.AppKit.NSWindow window);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 RunSheetModal(class MonoMac.AppKit.NSWindow window) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="MonoMac.AppKit.NSWindow" />
+      </Parameters>
+      <Docs>
+        <param name="window">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunSheetModal">
+      <MemberSignature Language="C#" Value="public int RunSheetModal (MonoMac.AppKit.NSWindow window, MonoMac.AppKit.NSApplication application);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 RunSheetModal(class MonoMac.AppKit.NSWindow window, class MonoMac.AppKit.NSApplication application) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="MonoMac.AppKit.NSWindow" />
+        <Parameter Name="application" Type="MonoMac.AppKit.NSApplication" />
+      </Parameters>
+      <Docs>
+        <param name="window">To be added.</param>
+        <param name="application">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ShowHelp">
       <MemberSignature Language="C#" Value="public MonoMac.AppKit.NSAlertPredicate ShowHelp { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSAlertPredicate ShowHelp" />
@@ -583,8 +646,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Window">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject Window { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSObject Window" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSPanel Window { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSPanel Window" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -595,7 +658,7 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+        <ReturnType>MonoMac.AppKit.NSPanel</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

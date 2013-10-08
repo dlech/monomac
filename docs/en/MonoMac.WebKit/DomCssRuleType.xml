@@ -15,7 +15,7 @@
   <Members>
     <Member MemberName="Charset">
       <MemberSignature Language="C#" Value="Charset" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Charset = int32(2)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Charset = unsigned int16(2)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -29,7 +29,7 @@
     </Member>
     <Member MemberName="FontFace">
       <MemberSignature Language="C#" Value="FontFace" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType FontFace = int32(5)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType FontFace = unsigned int16(5)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -43,7 +43,7 @@
     </Member>
     <Member MemberName="Import">
       <MemberSignature Language="C#" Value="Import" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Import = int32(3)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Import = unsigned int16(3)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -57,7 +57,7 @@
     </Member>
     <Member MemberName="Media">
       <MemberSignature Language="C#" Value="Media" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Media = int32(4)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Media = unsigned int16(4)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -71,7 +71,7 @@
     </Member>
     <Member MemberName="Page">
       <MemberSignature Language="C#" Value="Page" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Page = int32(6)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Page = unsigned int16(6)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -85,7 +85,7 @@
     </Member>
     <Member MemberName="Style">
       <MemberSignature Language="C#" Value="Style" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Style = int32(1)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Style = unsigned int16(1)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -99,7 +99,7 @@
     </Member>
     <Member MemberName="Unknown">
       <MemberSignature Language="C#" Value="Unknown" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Unknown = int32(0)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Unknown = unsigned int16(0)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -113,7 +113,7 @@
     </Member>
     <Member MemberName="Variables">
       <MemberSignature Language="C#" Value="Variables" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Variables = int32(7)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType Variables = unsigned int16(7)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -127,7 +127,7 @@
     </Member>
     <Member MemberName="WebKitKeyFrame">
       <MemberSignature Language="C#" Value="WebKitKeyFrame" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType WebKitKeyFrame = int32(9)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType WebKitKeyFrame = unsigned int16(9)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -141,7 +141,7 @@
     </Member>
     <Member MemberName="WebKitKeyFrames">
       <MemberSignature Language="C#" Value="WebKitKeyFrames" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType WebKitKeyFrames = int32(8)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssRuleType WebKitKeyFrames = unsigned int16(8)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

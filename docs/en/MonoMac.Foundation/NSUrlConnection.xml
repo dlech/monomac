@@ -123,8 +123,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NSUrlConnection (MonoMac.Foundation.NSUrlRequest request, MonoMac.Foundation.NSUrlConnectionDelegate del);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSUrlRequest request, class MonoMac.Foundation.NSUrlConnectionDelegate del) cil managed" />
+      <MemberSignature Language="C#" Value="public NSUrlConnection (MonoMac.Foundation.NSUrlRequest request, MonoMac.Foundation.NSUrlConnectionDelegate connectionDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSUrlRequest request, class MonoMac.Foundation.NSUrlConnectionDelegate connectionDelegate) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -136,18 +136,18 @@ public class MyClass : BaseClass {
       </Attributes>
       <Parameters>
         <Parameter Name="request" Type="MonoMac.Foundation.NSUrlRequest" />
-        <Parameter Name="del" Type="MonoMac.Foundation.NSUrlConnectionDelegate" />
+        <Parameter Name="connectionDelegate" Type="MonoMac.Foundation.NSUrlConnectionDelegate" />
       </Parameters>
       <Docs>
         <param name="request">To be added.</param>
-        <param name="del">To be added.</param>
+        <param name="connectionDelegate">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NSUrlConnection (MonoMac.Foundation.NSUrlRequest request, MonoMac.Foundation.NSUrlConnectionDelegate del, bool startImmediately);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSUrlRequest request, class MonoMac.Foundation.NSUrlConnectionDelegate del, bool startImmediately) cil managed" />
+      <MemberSignature Language="C#" Value="public NSUrlConnection (MonoMac.Foundation.NSUrlRequest request, MonoMac.Foundation.NSUrlConnectionDelegate connectionDelegate, bool startImmediately);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSUrlRequest request, class MonoMac.Foundation.NSUrlConnectionDelegate connectionDelegate, bool startImmediately) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -159,12 +159,12 @@ public class MyClass : BaseClass {
       </Attributes>
       <Parameters>
         <Parameter Name="request" Type="MonoMac.Foundation.NSUrlRequest" />
-        <Parameter Name="del" Type="MonoMac.Foundation.NSUrlConnectionDelegate" />
+        <Parameter Name="connectionDelegate" Type="MonoMac.Foundation.NSUrlConnectionDelegate" />
         <Parameter Name="startImmediately" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="request">To be added.</param>
-        <param name="del">To be added.</param>
+        <param name="connectionDelegate">To be added.</param>
         <param name="startImmediately">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
@@ -280,59 +280,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CurrentRequest">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSUrlRequest CurrentRequest { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSUrlRequest CurrentRequest" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(5, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("currentRequest")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSUrlRequest</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Dispose">
-      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <param name="disposing">
-          <para>If set to <see langword="true" />, the method is invoked directly and will dispose manage and unmanaged resources;   If set to <see langword="false" /> the method is being called by the garbage collector finalizer and should only release unmanaged resources.</para>
-        </param>
-        <summary>Releases the resources used by the NSUrlConnection object.</summary>
-        <remarks>
-          <para>This Dispose method releases the resources used by the NSUrlConnection class.</para>
-          <para>This method is called by both the Dispose() method and the object finalizer (Finalize).    When invoked by the Dispose method, the parameter disposting <paramref name="disposing" /> is set to <see langword="true" /> and any managed object references that this object holds are also disposed or released;  when invoked by the object finalizer, on the finalizer thread the value is set to <see langword="false" />. </para>
-          <para>Calling the Dispose method when you are finished using the NSUrlConnection ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.</para>
-          <para>  For more information on how to override this method and on the Dispose/IDisposable pattern, read the ``Implementing a Dispose Method'' document at http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx</para>
-        </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="FromRequest">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSUrlConnection FromRequest (MonoMac.Foundation.NSUrlRequest request, MonoMac.Foundation.NSUrlConnectionDelegate del);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSUrlConnection FromRequest(class MonoMac.Foundation.NSUrlRequest request, class MonoMac.Foundation.NSUrlConnectionDelegate del) cil managed" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSUrlConnection FromRequest (MonoMac.Foundation.NSUrlRequest request, MonoMac.Foundation.NSUrlConnectionDelegate connectionDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSUrlConnection FromRequest(class MonoMac.Foundation.NSUrlRequest request, class MonoMac.Foundation.NSUrlConnectionDelegate connectionDelegate) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -347,37 +297,61 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="request" Type="MonoMac.Foundation.NSUrlRequest" />
-        <Parameter Name="del" Type="MonoMac.Foundation.NSUrlConnectionDelegate" />
+        <Parameter Name="connectionDelegate" Type="MonoMac.Foundation.NSUrlConnectionDelegate" />
       </Parameters>
       <Docs>
         <param name="request">To be added.</param>
-        <param name="del">To be added.</param>
+        <param name="connectionDelegate">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="OriginalRequest">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSUrlRequest OriginalRequest { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSUrlRequest OriginalRequest" />
-      <MemberType>Property</MemberType>
+    <Member MemberName="PerformDefaultHandlingForChallenge">
+      <MemberSignature Language="C#" Value="public virtual void PerformDefaultHandlingForChallenge (MonoMac.Foundation.NSUrlAuthenticationChallenge challenge);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PerformDefaultHandlingForChallenge(class MonoMac.Foundation.NSUrlAuthenticationChallenge challenge) cil managed" />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(5, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("originalRequest")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("performDefaultHandlingForAuthenticationChallenge:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSUrlRequest</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
+      <Parameters>
+        <Parameter Name="challenge" Type="MonoMac.Foundation.NSUrlAuthenticationChallenge" />
+      </Parameters>
       <Docs>
+        <param name="challenge">To be added.</param>
         <summary>To be added.</summary>
-        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RejectProtectionSpaceAndContinueWithChallenge">
+      <MemberSignature Language="C#" Value="public virtual void RejectProtectionSpaceAndContinueWithChallenge (MonoMac.Foundation.NSUrlAuthenticationChallenge challenge);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RejectProtectionSpaceAndContinueWithChallenge(class MonoMac.Foundation.NSUrlAuthenticationChallenge challenge) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("rejectProtectionSpaceAndContinueWithChallenge:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="challenge" Type="MonoMac.Foundation.NSUrlAuthenticationChallenge" />
+      </Parameters>
+      <Docs>
+        <param name="challenge">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -416,10 +390,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("scheduleInRunLoop:forMode:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use Schedule (NSRunLoop, NSString) instead")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use Schedule (NSRunLoop, NSString) instead")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -461,6 +432,28 @@ public class MyClass : BaseClass {
         <param name="queue">To be added.</param>
         <param name="completionHandler">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendRequestAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;MonoMac.Foundation.NSUrlAsyncResult&gt; SendRequestAsync (MonoMac.Foundation.NSUrlRequest request, MonoMac.Foundation.NSOperationQueue queue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class MonoMac.Foundation.NSUrlAsyncResult&gt; SendRequestAsync(class MonoMac.Foundation.NSUrlRequest request, class MonoMac.Foundation.NSOperationQueue queue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;MonoMac.Foundation.NSUrlAsyncResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="MonoMac.Foundation.NSUrlRequest" />
+        <Parameter Name="queue" Type="MonoMac.Foundation.NSOperationQueue" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <param name="queue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -569,10 +562,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("unscheduleFromRunLoop:forMode:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use Unschedule (NSRunLoop, NSString) instead")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use Unschedule (NSRunLoop, NSString) instead")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

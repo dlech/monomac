@@ -255,6 +255,9 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.ThreadSafe</AttributeName>
+        </Attribute>
+        <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("currentApplication")</AttributeName>
         </Attribute>
       </Attributes>
@@ -450,23 +453,24 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Hide">
-      <MemberSignature Language="C#" Value="public virtual bool Hide { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool Hide" />
-      <MemberType>Property</MemberType>
+      <MemberSignature Language="C#" Value="public virtual bool Hide ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Hide() cil managed" />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("hide")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("hide")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <value>To be added.</value>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -598,23 +602,24 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Unhide">
-      <MemberSignature Language="C#" Value="public virtual bool Unhide { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool Unhide" />
-      <MemberType>Property</MemberType>
+      <MemberSignature Language="C#" Value="public virtual bool Unhide ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Unhide() cil managed" />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("unhide")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("unhide")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <value>To be added.</value>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

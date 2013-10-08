@@ -304,9 +304,6 @@ public class MyClass : BaseClass {
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("initWithCGImage:options:")</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use constructor with CIImageInitializationOptionsWithMetadata", false)</AttributeName>
-        </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="image" Type="MonoMac.CoreGraphics.CGImage" />
@@ -350,9 +347,6 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("initWithCGLayer:options:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use constructor with CIImageInitializationOptions", false)</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -398,9 +392,6 @@ public class MyClass : BaseClass {
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("initWithCVImageBuffer:options:")</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use constructor with CIImageInitializationOptions", false)</AttributeName>
-        </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="imageBuffer" Type="MonoMac.CoreVideo.CVImageBuffer" />
@@ -445,9 +436,6 @@ public class MyClass : BaseClass {
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("initWithData:options:")</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use constructor with CIImageInitializationOptionsWithMetadata", false)</AttributeName>
-        </Attribute>
       </Attributes>
       <Parameters>
         <Parameter Name="data" Type="MonoMac.Foundation.NSData" />
@@ -491,9 +479,6 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("initWithContentsOfURL:options:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use constructor with CIImageInitializationOptions", false)</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -710,6 +695,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("kCIFormatARGB8", "CoreImage")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -727,6 +717,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("kCIFormatRGBA16", "CoreImage")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -743,6 +738,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("kCIFormatRGBAf", "CoreImage")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -759,6 +759,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("kCIFormatRGBAh", "CoreImage")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -849,9 +854,6 @@ public class MyClass : BaseClass {
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("imageWithCGImage:options:")</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use FromCGImage (CGImage, CIImageInitializationOptionsWithMetadata) overload", false)</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.CoreImage.CIImage</ReturnType>
@@ -928,9 +930,6 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("imageWithData:options:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use FromData (NSData, CIImageInitializationOptionsWithMetadata) overload", false)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1145,9 +1144,6 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("imageWithContentsOfURL:options:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use FromUrl (NSUrl, CIImageInitializationOptions) overload", false)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

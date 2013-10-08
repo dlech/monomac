@@ -15,7 +15,7 @@
   </Docs>
   <Members>
     <Member MemberName="GetDirectories">
-      <MemberSignature Language="C#" Value="public static string[] GetDirectories (MonoMac.Foundation.NSSearchPathDirectory directory, MonoMac.Foundation.NSSearchPathDomain domainMask, bool expandTilde);" />
+      <MemberSignature Language="C#" Value="public static string[] GetDirectories (MonoMac.Foundation.NSSearchPathDirectory directory, MonoMac.Foundation.NSSearchPathDomain domainMask, bool expandTilde = true);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetDirectories(valuetype MonoMac.Foundation.NSSearchPathDirectory directory, valuetype MonoMac.Foundation.NSSearchPathDomain domainMask, bool expandTilde) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

@@ -261,7 +261,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="AllowsMixedState">
-      <MemberSignature Language="C#" Value="public virtual bool AllowsMixedState { get; }" />
+      <MemberSignature Language="C#" Value="public virtual bool AllowsMixedState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowsMixedState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -270,6 +270,9 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("allowsMixedState")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setAllowsMixedState:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -662,6 +665,27 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ControlTintChangedNotification">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString ControlTintChangedNotification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString ControlTintChangedNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSControlTintDidChangeNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ControlView">
       <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSView ControlView { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSView ControlView" />
@@ -851,6 +875,82 @@ public class MyClass : BaseClass {
       <Docs>
         <param name="cellFrame">To be added.</param>
         <param name="inView">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawNinePartImage">
+      <MemberSignature Language="C#" Value="public void DrawNinePartImage (System.Drawing.RectangleF frame, MonoMac.AppKit.NSImage topLeftCorner, MonoMac.AppKit.NSImage topEdgeFill, MonoMac.AppKit.NSImage topRightCorner, MonoMac.AppKit.NSImage leftEdgeFill, MonoMac.AppKit.NSImage centerFill, MonoMac.AppKit.NSImage rightEdgeFill, MonoMac.AppKit.NSImage bottomLeftCorner, MonoMac.AppKit.NSImage bottomEdgeFill, MonoMac.AppKit.NSImage bottomRightCorner, MonoMac.AppKit.NSCompositingOperation op, float alphaFraction, bool flipped);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawNinePartImage(valuetype System.Drawing.RectangleF frame, class MonoMac.AppKit.NSImage topLeftCorner, class MonoMac.AppKit.NSImage topEdgeFill, class MonoMac.AppKit.NSImage topRightCorner, class MonoMac.AppKit.NSImage leftEdgeFill, class MonoMac.AppKit.NSImage centerFill, class MonoMac.AppKit.NSImage rightEdgeFill, class MonoMac.AppKit.NSImage bottomLeftCorner, class MonoMac.AppKit.NSImage bottomEdgeFill, class MonoMac.AppKit.NSImage bottomRightCorner, valuetype MonoMac.AppKit.NSCompositingOperation op, float32 alphaFraction, bool flipped) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="frame" Type="System.Drawing.RectangleF" />
+        <Parameter Name="topLeftCorner" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="topEdgeFill" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="topRightCorner" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="leftEdgeFill" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="centerFill" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="rightEdgeFill" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="bottomLeftCorner" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="bottomEdgeFill" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="bottomRightCorner" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="op" Type="MonoMac.AppKit.NSCompositingOperation" />
+        <Parameter Name="alphaFraction" Type="System.Single" />
+        <Parameter Name="flipped" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="frame">To be added.</param>
+        <param name="topLeftCorner">To be added.</param>
+        <param name="topEdgeFill">To be added.</param>
+        <param name="topRightCorner">To be added.</param>
+        <param name="leftEdgeFill">To be added.</param>
+        <param name="centerFill">To be added.</param>
+        <param name="rightEdgeFill">To be added.</param>
+        <param name="bottomLeftCorner">To be added.</param>
+        <param name="bottomEdgeFill">To be added.</param>
+        <param name="bottomRightCorner">To be added.</param>
+        <param name="op">To be added.</param>
+        <param name="alphaFraction">To be added.</param>
+        <param name="flipped">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawThreePartImage">
+      <MemberSignature Language="C#" Value="public void DrawThreePartImage (System.Drawing.RectangleF frame, MonoMac.AppKit.NSImage startCap, MonoMac.AppKit.NSImage centerFill, MonoMac.AppKit.NSImage endCap, bool vertical, MonoMac.AppKit.NSCompositingOperation op, float alphaFraction, bool flipped);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawThreePartImage(valuetype System.Drawing.RectangleF frame, class MonoMac.AppKit.NSImage startCap, class MonoMac.AppKit.NSImage centerFill, class MonoMac.AppKit.NSImage endCap, bool vertical, valuetype MonoMac.AppKit.NSCompositingOperation op, float32 alphaFraction, bool flipped) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="frame" Type="System.Drawing.RectangleF" />
+        <Parameter Name="startCap" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="centerFill" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="endCap" Type="MonoMac.AppKit.NSImage" />
+        <Parameter Name="vertical" Type="System.Boolean" />
+        <Parameter Name="op" Type="MonoMac.AppKit.NSCompositingOperation" />
+        <Parameter Name="alphaFraction" Type="System.Single" />
+        <Parameter Name="flipped" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="frame">To be added.</param>
+        <param name="startCap">To be added.</param>
+        <param name="centerFill">To be added.</param>
+        <param name="endCap">To be added.</param>
+        <param name="vertical">To be added.</param>
+        <param name="op">To be added.</param>
+        <param name="alphaFraction">To be added.</param>
+        <param name="flipped">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1369,7 +1469,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Identifier">
-      <MemberSignature Language="C#" Value="public virtual string Identifier { get; }" />
+      <MemberSignature Language="C#" Value="public virtual string Identifier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Identifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -1378,6 +1478,9 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("identifier")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setIdentifier:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2013,8 +2116,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SendActionOn">
-      <MemberSignature Language="C#" Value="public virtual int SendActionOn (int mask);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 SendActionOn(int32 mask) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual int SendActionOn (MonoMac.AppKit.NSEventType mask);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 SendActionOn(valuetype MonoMac.AppKit.NSEventType mask) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2028,7 +2131,7 @@ public class MyClass : BaseClass {
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mask" Type="System.Int32" />
+        <Parameter Name="mask" Type="MonoMac.AppKit.NSEventType" />
       </Parameters>
       <Docs>
         <param name="mask">To be added.</param>
@@ -2656,7 +2759,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="WantsNotificationForMarkedText">
-      <MemberSignature Language="C#" Value="public virtual bool WantsNotificationForMarkedText { get; }" />
+      <MemberSignature Language="C#" Value="public virtual bool WantsNotificationForMarkedText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WantsNotificationForMarkedText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>

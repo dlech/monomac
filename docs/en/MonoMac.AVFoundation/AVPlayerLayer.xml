@@ -195,6 +195,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVLayerVideoGravityResize", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -212,6 +217,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVLayerVideoGravityResizeAspect", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -229,6 +239,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVLayerVideoGravityResizeAspectFill", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -236,22 +251,6 @@ public class MyClass : BaseClass {
         <summary>Represents the value associated with the constant AVLayerVideoGravityResizeAspectFill</summary>
         <value>
         </value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="LayerVideoGravity">
-      <MemberSignature Language="C#" Value="public MonoMac.AVFoundation.AVLayerVideoGravity LayerVideoGravity { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AVFoundation.AVLayerVideoGravity LayerVideoGravity" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.AVFoundation.AVLayerVideoGravity</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,23 +300,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="VideoGravity">
-      <MemberSignature Language="C#" Value="public virtual string VideoGravity { get; set; }" />
+      <MemberSignature Language="C#" Value="public string VideoGravity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VideoGravity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use LayerVideoGravity", false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("videoGravity")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setVideoGravity:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

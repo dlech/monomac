@@ -620,6 +620,39 @@ public class MyClass : BaseClass {
         <remarks>You assign a function, delegate or anonymous method to this property to return a value to the object.   If you assign a value to this property, it this will reset the value for the Delegate property to an internal handler that maps delegates to events.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PreferredMaxLayoutWidth">
+      <MemberSignature Language="C#" Value="public virtual float PreferredMaxLayoutWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 PreferredMaxLayoutWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.MountainLion</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("preferredMaxLayoutWidth")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: MonoMac.ObjCRuntime.MountainLion</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setPreferredMaxLayoutWidth:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.ObjCRuntime.MountainLion</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Selectable">
       <MemberSignature Language="C#" Value="public virtual bool Selectable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Selectable" />

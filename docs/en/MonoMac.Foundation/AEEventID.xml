@@ -15,7 +15,7 @@
   <Members>
     <Member MemberName="ApplicationDied">
       <MemberSignature Language="C#" Value="ApplicationDied" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID ApplicationDied = int32(1868720500)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID ApplicationDied = unsigned int32(1868720500)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -29,7 +29,7 @@
     </Member>
     <Member MemberName="GetUrl">
       <MemberSignature Language="C#" Value="GetUrl" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID GetUrl = int32(1196773964)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID GetUrl = unsigned int32(1196773964)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -43,7 +43,7 @@
     </Member>
     <Member MemberName="OpenApplication">
       <MemberSignature Language="C#" Value="OpenApplication" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID OpenApplication = int32(1868656752)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID OpenApplication = unsigned int32(1868656752)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -57,7 +57,7 @@
     </Member>
     <Member MemberName="OpenContents">
       <MemberSignature Language="C#" Value="OpenContents" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID OpenContents = int32(1868787566)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID OpenContents = unsigned int32(1868787566)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -71,7 +71,7 @@
     </Member>
     <Member MemberName="OpenDocuments">
       <MemberSignature Language="C#" Value="OpenDocuments" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID OpenDocuments = int32(1868853091)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID OpenDocuments = unsigned int32(1868853091)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -85,7 +85,7 @@
     </Member>
     <Member MemberName="PrintDocuments">
       <MemberSignature Language="C#" Value="PrintDocuments" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID PrintDocuments = int32(188563030)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID PrintDocuments = unsigned int32(188563030)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -99,7 +99,7 @@
     </Member>
     <Member MemberName="QuitApplication">
       <MemberSignature Language="C#" Value="QuitApplication" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID QuitApplication = int32(1903520116)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID QuitApplication = unsigned int32(1903520116)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -113,7 +113,7 @@
     </Member>
     <Member MemberName="ReopenApplication">
       <MemberSignature Language="C#" Value="ReopenApplication" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID ReopenApplication = int32(1918988400)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID ReopenApplication = unsigned int32(1918988400)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -127,7 +127,7 @@
     </Member>
     <Member MemberName="ShowPreferences">
       <MemberSignature Language="C#" Value="ShowPreferences" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID ShowPreferences = int32(1886545254)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Foundation.AEEventID ShowPreferences = unsigned int32(1886545254)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

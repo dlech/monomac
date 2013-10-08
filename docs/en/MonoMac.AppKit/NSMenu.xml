@@ -590,6 +590,32 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="public virtual void InsertItem (MonoMac.AppKit.NSMenuItem newItem, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertItem(class MonoMac.AppKit.NSMenuItem newItem, int32 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("insertItem:atIndex:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newItem" Type="MonoMac.AppKit.NSMenuItem" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="newItem">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
       <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSMenuItem InsertItem (string title, MonoMac.ObjCRuntime.Selector action, string charCode, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AppKit.NSMenuItem InsertItem(string title, class MonoMac.ObjCRuntime.Selector action, string charCode, int32 index) cil managed" />
       <MemberType>Method</MemberType>
@@ -617,32 +643,6 @@ public class MyClass : BaseClass {
         <param name="index">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="InsertItematIndex">
-      <MemberSignature Language="C#" Value="public virtual void InsertItematIndex (MonoMac.AppKit.NSMenuItem newItem, int index);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertItematIndex(class MonoMac.AppKit.NSMenuItem newItem, int32 index) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("insertItem:atIndex:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="newItem" Type="MonoMac.AppKit.NSMenuItem" />
-        <Parameter Name="index" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="newItem">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

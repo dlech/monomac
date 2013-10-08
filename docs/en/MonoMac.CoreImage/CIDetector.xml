@@ -143,6 +143,78 @@ public class MyClass : BaseClass {
         <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CreateFaceDetector">
+      <MemberSignature Language="C#" Value="public static MonoMac.CoreImage.CIDetector CreateFaceDetector (MonoMac.CoreImage.CIContext context, bool highAccuracy);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.CoreImage.CIDetector CreateFaceDetector(class MonoMac.CoreImage.CIContext context, bool highAccuracy) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreImage.CIDetector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="MonoMac.CoreImage.CIContext" />
+        <Parameter Name="highAccuracy" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="highAccuracy">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFaceDetector">
+      <MemberSignature Language="C#" Value="public static MonoMac.CoreImage.CIDetector CreateFaceDetector (MonoMac.CoreImage.CIContext context, bool highAccuracy, float minFeatureSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.CoreImage.CIDetector CreateFaceDetector(class MonoMac.CoreImage.CIContext context, bool highAccuracy, float32 minFeatureSize) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreImage.CIDetector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="MonoMac.CoreImage.CIContext" />
+        <Parameter Name="highAccuracy" Type="System.Boolean" />
+        <Parameter Name="minFeatureSize" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="highAccuracy">To be added.</param>
+        <param name="minFeatureSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFaceDetector">
+      <MemberSignature Language="C#" Value="public static MonoMac.CoreImage.CIDetector CreateFaceDetector (MonoMac.CoreImage.CIContext context, Nullable&lt;MonoMac.CoreImage.FaceDetectorAccuracy&gt; accuracy = null, Nullable&lt;float&gt; minFeatureSize = null, Nullable&lt;bool&gt; trackingEnabled = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.CoreImage.CIDetector CreateFaceDetector(class MonoMac.CoreImage.CIContext context, valuetype System.Nullable`1&lt;valuetype MonoMac.CoreImage.FaceDetectorAccuracy&gt; accuracy, valuetype System.Nullable`1&lt;float32&gt; minFeatureSize, valuetype System.Nullable`1&lt;bool&gt; trackingEnabled) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreImage.CIDetector</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="MonoMac.CoreImage.CIContext" />
+        <Parameter Name="accuracy" Type="System.Nullable&lt;MonoMac.CoreImage.FaceDetectorAccuracy&gt;" />
+        <Parameter Name="minFeatureSize" Type="System.Nullable&lt;System.Single&gt;" />
+        <Parameter Name="trackingEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="accuracy">To be added.</param>
+        <param name="minFeatureSize">To be added.</param>
+        <param name="trackingEnabled">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FeaturesInImage">
       <MemberSignature Language="C#" Value="public virtual MonoMac.CoreImage.CIFeature[] FeaturesInImage (MonoMac.CoreImage.CIImage image);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.CoreImage.CIFeature[] FeaturesInImage(class MonoMac.CoreImage.CIImage image) cil managed" />
@@ -163,6 +235,28 @@ public class MyClass : BaseClass {
       </Parameters>
       <Docs>
         <param name="image">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FeaturesInImage">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreImage.CIFeature[] FeaturesInImage (MonoMac.CoreImage.CIImage image, MonoMac.CoreImage.CIImageOrientation orientation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.CoreImage.CIFeature[] FeaturesInImage(class MonoMac.CoreImage.CIImage image, valuetype MonoMac.CoreImage.CIImageOrientation orientation) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreImage.CIFeature[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="image" Type="MonoMac.CoreImage.CIImage" />
+        <Parameter Name="orientation" Type="MonoMac.CoreImage.CIImageOrientation" />
+      </Parameters>
+      <Docs>
+        <param name="image">To be added.</param>
+        <param name="orientation">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

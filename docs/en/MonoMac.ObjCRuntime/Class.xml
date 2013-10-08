@@ -86,6 +86,26 @@
         <remarks />
       </Docs>
     </Member>
+    <Member MemberName="GetHandle">
+      <MemberSignature Language="C#" Value="public static IntPtr GetHandle (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetHandle(class System.Type type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Handle">
       <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
@@ -152,6 +172,21 @@
         <summary>The Objective-C handle to the super class for this class.</summary>
         <value />
         <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowOnInitFailure">
+      <MemberSignature Language="C#" Value="public static bool ThrowOnInitFailure;" />
+      <MemberSignature Language="ILAsm" Value=".field public static bool ThrowOnInitFailure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

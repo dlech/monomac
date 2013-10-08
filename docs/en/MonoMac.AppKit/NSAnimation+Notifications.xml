@@ -1,0 +1,38 @@
+<Type Name="NSAnimation+Notifications" FullName="MonoMac.AppKit.NSAnimation+Notifications">
+  <TypeSignature Language="C#" Value="public static class NSAnimation.Notifications" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit NSAnimation/Notifications extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ObserveProgressMark">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveProgressMark (EventHandler&lt;MonoMac.AppKit.NSAnimationProgressMarkEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveProgressMark(class System.EventHandler`1&lt;class MonoMac.AppKit.NSAnimationProgressMarkEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.AppKit.NSAnimationProgressMarkEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

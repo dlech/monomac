@@ -426,6 +426,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionDidStartRunningNotification", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -501,6 +506,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionDidStopRunningNotification", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -602,6 +612,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionErrorKey", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -633,102 +648,6 @@ void Setup ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Interrupted">
-      <MemberSignature Language="C#" Value="public virtual bool Interrupted { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool Interrupted" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isInterrupted")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Whether the session has been interrupted.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="InterruptionEndedNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString InterruptionEndedNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString InterruptionEndedNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Notification constant for InterruptionEnded</summary>
-        <value>NSString constant, should be used as a token to NSNotificationCenter.</value>
-        <remarks>
-          <para id="tool-remark">This constant can be used with the <see cref="T:MonoTouch.Foundation.NSNotificationCenter" /> to register a listener for this notification.   This is an NSString instead of a string, because these values can be used as tokens in some native libraries instead of being used purely for their actual string content.    The 'notification' parameter to the callback contains extra information that is specific to the notification type.</para>
-          <para id="tool-remark">If you want to subscribe to this notification, you can use the convenience <see cref="T:AVCaptureSession+Notifications" />.<see cref="M:AVCaptureSession+Notifications.ObserveInterruptionEnded" /> method which offers strongly typed access to the parameters of the notification.</para>
-          <para>The following example shows how to use the strongly typed Notifications class, to take the guesswork out of the available properties in the notification:</para>
-          <example>
-            <code lang="c#">
-//
-// Lambda style
-//
-
-// listening
-notification = AVCaptureSession.Notifications.ObserveInterruptionEnded ((sender, args) =&gt; {
-    /* Access strongly typed args */
-    Console.WriteLine ("Notification: {0}", args.Notification);
-});
-
-// To stop listening:
-notification.Dispose ();
-
-//
-// Method style
-//
-NSObject notification;
-void Callback (object sender, InterruptionEnded args)
-{
-    // Access strongly typed args
-    Console.WriteLine ("Notification: {0}", args.Notification);
-}
-
-void Setup ()
-{
-    notification = AVCaptureSession.Notifications.ObserveInterruptionEnded (Callback);
-}
-
-void Teardown ()
-{
-    notification.Dispose ();
-}</code>
-          </example>
-          <para>The following example shows how to use the notification with the DefaultCenter API:</para>
-          <example>
-            <code lang="c#">
-// Lambda style
-NSNotificationCenter.DefaultCenter.AddObserver (
-        AVCaptureSession.InterruptionEndedNotification, (notification) =&gt; {Console.WriteLine ("Received the notification AVCaptureSession", notification); }
-
-
-// Method style
-void Callback (NSNotification notification)
-{
-    Console.WriteLine ("Received a notification AVCaptureSession", notification);
-}
-
-void Setup ()
-{
-    NSNotificationCenter.DefaultCenter.AddObserver (AVCaptureSession.InterruptionEndedNotification, Callback);
-}
-</code>
-          </example>
-        </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Outputs">
       <MemberSignature Language="C#" Value="public virtual MonoMac.AVFoundation.AVCaptureOutput[] Outputs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AVFoundation.AVCaptureOutput[] Outputs" />
@@ -757,6 +676,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionPreset1280x720", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -774,6 +698,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionPreset352x288", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -791,6 +720,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionPreset640x480", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -808,6 +742,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionPresetHigh", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -825,6 +764,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionPresetiFrame1280x720", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -842,6 +786,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionPresetiFrame960x540", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -859,6 +808,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionPresetLow", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -876,6 +830,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionPresetMedium", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -893,6 +852,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionPresetPhoto", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -979,6 +943,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureSessionRuntimeErrorNotification", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1115,81 +1084,6 @@ void Setup ()
       <Docs>
         <summary>Stops the flow of inputs and outputs.</summary>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="WasInterruptedNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString WasInterruptedNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString WasInterruptedNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Notification constant for WasInterrupted</summary>
-        <value>NSString constant, should be used as a token to NSNotificationCenter.</value>
-        <remarks>
-          <para id="tool-remark">This constant can be used with the <see cref="T:MonoTouch.Foundation.NSNotificationCenter" /> to register a listener for this notification.   This is an NSString instead of a string, because these values can be used as tokens in some native libraries instead of being used purely for their actual string content.    The 'notification' parameter to the callback contains extra information that is specific to the notification type.</para>
-          <para id="tool-remark">If you want to subscribe to this notification, you can use the convenience <see cref="T:AVCaptureSession+Notifications" />.<see cref="M:AVCaptureSession+Notifications.ObserveWasInterrupted" /> method which offers strongly typed access to the parameters of the notification.</para>
-          <para>The following example shows how to use the strongly typed Notifications class, to take the guesswork out of the available properties in the notification:</para>
-          <example>
-            <code lang="c#">
-//
-// Lambda style
-//
-
-// listening
-notification = AVCaptureSession.Notifications.ObserveWasInterrupted ((sender, args) =&gt; {
-    /* Access strongly typed args */
-    Console.WriteLine ("Notification: {0}", args.Notification);
-});
-
-// To stop listening:
-notification.Dispose ();
-
-//
-// Method style
-//
-NSObject notification;
-void Callback (object sender, WasInterrupted args)
-{
-    // Access strongly typed args
-    Console.WriteLine ("Notification: {0}", args.Notification);
-}
-
-void Setup ()
-{
-    notification = AVCaptureSession.Notifications.ObserveWasInterrupted (Callback);
-}
-
-void Teardown ()
-{
-    notification.Dispose ();
-}</code>
-          </example>
-          <para>The following example shows how to use the notification with the DefaultCenter API:</para>
-          <example>
-            <code lang="c#">
-// Lambda style
-NSNotificationCenter.DefaultCenter.AddObserver (
-        AVCaptureSession.WasInterruptedNotification, (notification) =&gt; {Console.WriteLine ("Received the notification AVCaptureSession", notification); }
-
-
-// Method style
-void Callback (NSNotification notification)
-{
-    Console.WriteLine ("Received a notification AVCaptureSession", notification);
-}
-
-void Setup ()
-{
-    NSNotificationCenter.DefaultCenter.AddObserver (AVCaptureSession.WasInterruptedNotification, Callback);
-}
-</code>
-          </example>
-        </remarks>
       </Docs>
     </Member>
   </Members>

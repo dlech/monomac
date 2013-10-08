@@ -13,20 +13,6 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="ChannelAssignments">
-      <MemberSignature Language="C#" Value="ChannelAssignments" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioQueueProperty ChannelAssignments = unsigned int32(1634820961)" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.AudioToolbox.AudioQueueProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-      </Docs>
-    </Member>
     <Member MemberName="ChannelLayout">
       <MemberSignature Language="C#" Value="ChannelLayout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioQueueProperty ChannelLayout = unsigned int32(1634820972)" />
@@ -153,9 +139,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="HardwareCodecPolicy">
-      <MemberSignature Language="C#" Value="HardwareCodecPolicy" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioQueueProperty HardwareCodecPolicy = unsigned int32(1634820976)" />
+    <Member MemberName="EnableTimePitch">
+      <MemberSignature Language="C#" Value="EnableTimePitch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioQueueProperty EnableTimePitch = unsigned int32(1633645680)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -212,6 +198,34 @@
     <Member MemberName="StreamDescription">
       <MemberSignature Language="C#" Value="StreamDescription" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioQueueProperty StreamDescription = unsigned int32(1634821748)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioQueueProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TimePitchAlgorithm">
+      <MemberSignature Language="C#" Value="TimePitchAlgorithm" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioQueueProperty TimePitchAlgorithm = unsigned int32(1635020897)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioQueueProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TimePitchBypass">
+      <MemberSignature Language="C#" Value="TimePitchBypass" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioQueueProperty TimePitchBypass = unsigned int32(1635020898)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

@@ -186,7 +186,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Duration">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreMedia.CMTime Duration { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreMedia.CMTime Duration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.CoreMedia.CMTime Duration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -198,6 +198,9 @@ public class MyClass : BaseClass {
         </Attribute>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("duration")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setDuration:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -234,7 +237,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Key">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject Key { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject Key { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSObject Key" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -243,6 +246,9 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("key", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setKey:", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

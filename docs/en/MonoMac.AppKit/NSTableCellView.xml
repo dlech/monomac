@@ -186,6 +186,27 @@ public class MyClass : BaseClass {
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="DraggingImageComponents">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSArray DraggingImageComponents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSArray DraggingImageComponents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("draggingImageComponents", MonoMac.ObjCRuntime.ArgumentSemantic.Retain)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSArray</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ImageView">
       <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSImageView ImageView { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSImageView ImageView" />

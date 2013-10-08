@@ -9,6 +9,11 @@
     <BaseTypeName>MonoMac.AudioUnit.AudioUnitEventArgs</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides data for the <see cref="E:MonoMac.AudioUnit.AudioGraphEventArgs.RenderCallback" /> event.</summary>
     <remarks>

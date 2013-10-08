@@ -346,7 +346,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="AsCGImage">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreGraphics.CGImage AsCGImage (System.Drawing.RectangleF proposedDestRect, MonoMac.AppKit.NSGraphicsContext referenceContext, MonoMac.Foundation.NSDictionary hints);" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreGraphics.CGImage AsCGImage (ref System.Drawing.RectangleF proposedDestRect, MonoMac.AppKit.NSGraphicsContext referenceContext, MonoMac.Foundation.NSDictionary hints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.CoreGraphics.CGImage AsCGImage(valuetype System.Drawing.RectangleF proposedDestRect, class MonoMac.AppKit.NSGraphicsContext referenceContext, class MonoMac.Foundation.NSDictionary hints) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -361,7 +361,7 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.CoreGraphics.CGImage</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="proposedDestRect" Type="System.Drawing.RectangleF" />
+        <Parameter Name="proposedDestRect" Type="System.Drawing.RectangleF&amp;" RefType="ref" />
         <Parameter Name="referenceContext" Type="MonoMac.AppKit.NSGraphicsContext" />
         <Parameter Name="hints" Type="MonoMac.Foundation.NSDictionary" />
       </Parameters>
@@ -568,6 +568,22 @@ public class MyClass : BaseClass {
         <param name="pasteboard">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CGImage">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreGraphics.CGImage CGImage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.CoreGraphics.CGImage CGImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreGraphics.CGImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -973,6 +989,26 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ImageNamed">
+      <MemberSignature Language="C#" Value="public static MonoMac.AppKit.NSImage ImageNamed (MonoMac.AppKit.NSImageName name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AppKit.NSImage ImageNamed(valuetype MonoMac.AppKit.NSImageName name) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AppKit.NSImage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="MonoMac.AppKit.NSImageName" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageNamed">
       <MemberSignature Language="C#" Value="public static MonoMac.AppKit.NSImage ImageNamed (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AppKit.NSImage ImageNamed(string name) cil managed" />
       <MemberType>Method</MemberType>
@@ -1195,20 +1231,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Name">
-      <MemberSignature Language="C#" Value="public virtual string Name { get; set; }" />
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("name")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setName:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

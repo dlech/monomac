@@ -1,0 +1,27 @@
+<Type Name="AudioConverterComplexInputData" FullName="MonoMac.AudioToolbox.AudioConverterComplexInputData">
+  <TypeSignature Language="C#" Value="public delegate MonoMac.AudioToolbox.AudioConverterError AudioConverterComplexInputData(ref int numberDataPackets, AudioBuffers data, ref AudioStreamPacketDescription[] dataPacketDescription);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AudioConverterComplexInputData extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="numberDataPackets" Type="System.Int32&amp;" RefType="ref" />
+    <Parameter Name="data" Type="MonoMac.AudioToolbox.AudioBuffers" />
+    <Parameter Name="dataPacketDescription" Type="MonoMac.AudioToolbox.AudioStreamPacketDescription[]&amp;" RefType="ref" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>MonoMac.AudioToolbox.AudioConverterError</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="numberDataPackets">To be added.</param>
+    <param name="data">To be added.</param>
+    <param name="dataPacketDescription">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

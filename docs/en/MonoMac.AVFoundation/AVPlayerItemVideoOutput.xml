@@ -159,33 +159,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CopyPixelBuffer">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreVideo.CVPixelBuffer CopyPixelBuffer (MonoMac.CoreMedia.CMTime itemTime, ref MonoMac.CoreMedia.CMTime outItemTimeForDisplay);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.CoreVideo.CVPixelBuffer CopyPixelBuffer(valuetype MonoMac.CoreMedia.CMTime itemTime, valuetype MonoMac.CoreMedia.CMTime outItemTimeForDisplay) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("copyPixelBufferForItemTime:itemTimeForDisplay:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.CoreVideo.CVPixelBuffer</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="itemTime" Type="MonoMac.CoreMedia.CMTime" />
-        <Parameter Name="outItemTimeForDisplay" Type="MonoMac.CoreMedia.CMTime&amp;" RefType="ref" />
-      </Parameters>
-      <Docs>
-        <param name="itemTime">To be added.</param>
-        <param name="outItemTimeForDisplay">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Delegate">
       <MemberSignature Language="C#" Value="public MonoMac.AVFoundation.AVPlayerItemOutputPullDelegate Delegate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AVFoundation.AVPlayerItemOutputPullDelegate Delegate" />
@@ -314,6 +287,33 @@
         <param name="delegateClass">To be added.</param>
         <param name="delegateQueue">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WeakCopyPixelBuffer">
+      <MemberSignature Language="C#" Value="protected virtual IntPtr WeakCopyPixelBuffer (MonoMac.CoreMedia.CMTime itemTime, ref MonoMac.CoreMedia.CMTime outItemTimeForDisplay);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance native int WeakCopyPixelBuffer(valuetype MonoMac.CoreMedia.CMTime itemTime, valuetype MonoMac.CoreMedia.CMTime outItemTimeForDisplay) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("copyPixelBufferForItemTime:itemTimeForDisplay:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemTime" Type="MonoMac.CoreMedia.CMTime" />
+        <Parameter Name="outItemTimeForDisplay" Type="MonoMac.CoreMedia.CMTime&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="itemTime">To be added.</param>
+        <param name="outItemTimeForDisplay">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

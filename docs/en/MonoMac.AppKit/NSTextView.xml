@@ -814,7 +814,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CompletionsForPartialWord">
-      <MemberSignature Language="C#" Value="public virtual string[] CompletionsForPartialWord (MonoMac.Foundation.NSRange charRange, int index);" />
+      <MemberSignature Language="C#" Value="public virtual string[] CompletionsForPartialWord (MonoMac.Foundation.NSRange charRange, out int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] CompletionsForPartialWord(valuetype MonoMac.Foundation.NSRange charRange, int32 index) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -830,7 +830,7 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="charRange" Type="MonoMac.Foundation.NSRange" />
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="charRange">To be added.</param>
@@ -1200,9 +1200,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DragOperationForDraggingInfotype">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSDragOperation DragOperationForDraggingInfotype (MonoMac.AppKit.NSDraggingInfo dragInfo, string type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.AppKit.NSDragOperation DragOperationForDraggingInfotype(class MonoMac.AppKit.NSDraggingInfo dragInfo, string type) cil managed" />
+    <Member MemberName="DragOperationForDraggingInfo">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSDragOperation DragOperationForDraggingInfo (MonoMac.AppKit.NSDraggingInfo dragInfo, string type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.AppKit.NSDragOperation DragOperationForDraggingInfo(class MonoMac.AppKit.NSDraggingInfo dragInfo, string type) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1227,9 +1227,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DrawInsertionPointInRectcolorturnedOn">
-      <MemberSignature Language="C#" Value="public virtual void DrawInsertionPointInRectcolorturnedOn (System.Drawing.RectangleF rect, MonoMac.AppKit.NSColor color, bool turnedOn);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawInsertionPointInRectcolorturnedOn(valuetype System.Drawing.RectangleF rect, class MonoMac.AppKit.NSColor color, bool turnedOn) cil managed" />
+    <Member MemberName="DrawInsertionPoint">
+      <MemberSignature Language="C#" Value="public virtual void DrawInsertionPoint (System.Drawing.RectangleF rect, MonoMac.AppKit.NSColor color, bool turnedOn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawInsertionPoint(valuetype System.Drawing.RectangleF rect, class MonoMac.AppKit.NSColor color, bool turnedOn) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1391,6 +1391,33 @@ public class MyClass : BaseClass {
         <remarks>You assign a function, delegate or anonymous method to this property to return a value to the object.   If you assign a value to this property, it this will reset the value for the Delegate property to an internal handler that maps delegates to events.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetPreferredPasteboardType">
+      <MemberSignature Language="C#" Value="public virtual string GetPreferredPasteboardType (string[] availableTypes, string[] allowedTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPreferredPasteboardType(string[] availableTypes, string[] allowedTypes) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("preferredPasteboardTypeFromArray:restrictedToTypesFromArray:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="availableTypes" Type="System.String[]" />
+        <Parameter Name="allowedTypes" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="availableTypes">To be added.</param>
+        <param name="allowedTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetUndoManager">
       <MemberSignature Language="C#" Value="public MonoMac.AppKit.NSTextViewGetUndoManager GetUndoManager { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSTextViewGetUndoManager GetUndoManager" />
@@ -1526,9 +1553,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="InsertCompletionforPartialWord">
-      <MemberSignature Language="C#" Value="public virtual void InsertCompletionforPartialWord (string word, MonoMac.Foundation.NSRange charRange, int movement, bool isFinal);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertCompletionforPartialWord(string word, valuetype MonoMac.Foundation.NSRange charRange, int32 movement, bool isFinal) cil managed" />
+    <Member MemberName="InsertCompletion">
+      <MemberSignature Language="C#" Value="public virtual void InsertCompletion (string completion, MonoMac.Foundation.NSRange partialWordCharRange, int movement, bool isFinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertCompletion(string completion, valuetype MonoMac.Foundation.NSRange partialWordCharRange, int32 movement, bool isFinal) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1542,14 +1569,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="word" Type="System.String" />
-        <Parameter Name="charRange" Type="MonoMac.Foundation.NSRange" />
+        <Parameter Name="completion" Type="System.String" />
+        <Parameter Name="partialWordCharRange" Type="MonoMac.Foundation.NSRange" />
         <Parameter Name="movement" Type="System.Int32" />
         <Parameter Name="isFinal" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="word">To be added.</param>
-        <param name="charRange">To be added.</param>
+        <param name="completion">To be added.</param>
+        <param name="partialWordCharRange">To be added.</param>
         <param name="movement">To be added.</param>
         <param name="isFinal">To be added.</param>
         <summary>To be added.</summary>
@@ -2037,33 +2064,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PreferredPasteboardTypeFromArrayrestrictedToTypesFromArray">
-      <MemberSignature Language="C#" Value="public virtual string PreferredPasteboardTypeFromArrayrestrictedToTypesFromArray (string[] availableTypes, string[] allowedTypes);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string PreferredPasteboardTypeFromArrayrestrictedToTypesFromArray(string[] availableTypes, string[] allowedTypes) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("preferredPasteboardTypeFromArray:restrictedToTypesFromArray:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="availableTypes" Type="System.String[]" />
-        <Parameter Name="allowedTypes" Type="System.String[]" />
-      </Parameters>
-      <Docs>
-        <param name="availableTypes">To be added.</param>
-        <param name="allowedTypes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="RaiseBaseline">
       <MemberSignature Language="C#" Value="public virtual void RaiseBaseline (MonoMac.Foundation.NSObject sender);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RaiseBaseline(class MonoMac.Foundation.NSObject sender) cil managed" />
@@ -2289,9 +2289,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ReadSelectionFromPasteboardtype">
-      <MemberSignature Language="C#" Value="public virtual bool ReadSelectionFromPasteboardtype (MonoMac.AppKit.NSPasteboard pboard, string type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ReadSelectionFromPasteboardtype(class MonoMac.AppKit.NSPasteboard pboard, string type) cil managed" />
+    <Member MemberName="ReadSelectionFromPasteboard">
+      <MemberSignature Language="C#" Value="public virtual bool ReadSelectionFromPasteboard (MonoMac.AppKit.NSPasteboard pboard, string type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ReadSelectionFromPasteboard(class MonoMac.AppKit.NSPasteboard pboard, string type) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2317,8 +2317,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="RegisterForServices">
-      <MemberSignature Language="C#" Value="public virtual void RegisterForServices ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterForServices() cil managed" />
+      <MemberSignature Language="C#" Value="public static void RegisterForServices ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterForServices() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2570,9 +2570,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RulerViewWillAddMarkeratLocation">
-      <MemberSignature Language="C#" Value="public virtual float RulerViewWillAddMarkeratLocation (MonoMac.AppKit.NSRulerView ruler, MonoMac.AppKit.NSRulerMarker marker, float location);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 RulerViewWillAddMarkeratLocation(class MonoMac.AppKit.NSRulerView ruler, class MonoMac.AppKit.NSRulerMarker marker, float32 location) cil managed" />
+    <Member MemberName="RulerViewWillAddMarker">
+      <MemberSignature Language="C#" Value="public virtual float RulerViewWillAddMarker (MonoMac.AppKit.NSRulerView ruler, MonoMac.AppKit.NSRulerMarker marker, float location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 RulerViewWillAddMarker(class MonoMac.AppKit.NSRulerView ruler, class MonoMac.AppKit.NSRulerMarker marker, float32 location) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2599,9 +2599,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RulerViewWillMoveMarkertoLocation">
-      <MemberSignature Language="C#" Value="public virtual float RulerViewWillMoveMarkertoLocation (MonoMac.AppKit.NSRulerView ruler, MonoMac.AppKit.NSRulerMarker marker, float location);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 RulerViewWillMoveMarkertoLocation(class MonoMac.AppKit.NSRulerView ruler, class MonoMac.AppKit.NSRulerMarker marker, float32 location) cil managed" />
+    <Member MemberName="RulerViewWillMoveMarker">
+      <MemberSignature Language="C#" Value="public virtual float RulerViewWillMoveMarker (MonoMac.AppKit.NSRulerView ruler, MonoMac.AppKit.NSRulerMarker marker, float location);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 RulerViewWillMoveMarker(class MonoMac.AppKit.NSRulerView ruler, class MonoMac.AppKit.NSRulerMarker marker, float32 location) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2797,9 +2797,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetAlignmentrange">
-      <MemberSignature Language="C#" Value="public virtual void SetAlignmentrange (MonoMac.AppKit.NSTextAlignment alignment, MonoMac.Foundation.NSRange range);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAlignmentrange(valuetype MonoMac.AppKit.NSTextAlignment alignment, valuetype MonoMac.Foundation.NSRange range) cil managed" />
+    <Member MemberName="SetAlignmentRange">
+      <MemberSignature Language="C#" Value="public virtual void SetAlignmentRange (MonoMac.AppKit.NSTextAlignment alignment, MonoMac.Foundation.NSRange range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAlignmentRange(valuetype MonoMac.AppKit.NSTextAlignment alignment, valuetype MonoMac.Foundation.NSRange range) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2823,9 +2823,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetBaseWritingDirectionrange">
-      <MemberSignature Language="C#" Value="public virtual void SetBaseWritingDirectionrange (MonoMac.AppKit.NSWritingDirection writingDirection, MonoMac.Foundation.NSRange range);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetBaseWritingDirectionrange(valuetype MonoMac.AppKit.NSWritingDirection writingDirection, valuetype MonoMac.Foundation.NSRange range) cil managed" />
+    <Member MemberName="SetBaseWritingDirection">
+      <MemberSignature Language="C#" Value="public virtual void SetBaseWritingDirection (MonoMac.AppKit.NSWritingDirection writingDirection, MonoMac.Foundation.NSRange range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetBaseWritingDirection(valuetype MonoMac.AppKit.NSWritingDirection writingDirection, valuetype MonoMac.Foundation.NSRange range) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2951,37 +2951,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetSelectedRangeaffinitystillSelecting">
-      <MemberSignature Language="C#" Value="public virtual void SetSelectedRangeaffinitystillSelecting (MonoMac.Foundation.NSRange charRange, MonoMac.AppKit.NSSelectionAffinity affinity, bool stillSelectingFlag);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSelectedRangeaffinitystillSelecting(valuetype MonoMac.Foundation.NSRange charRange, valuetype MonoMac.AppKit.NSSelectionAffinity affinity, bool stillSelectingFlag) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setSelectedRange:affinity:stillSelecting:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="charRange" Type="MonoMac.Foundation.NSRange" />
-        <Parameter Name="affinity" Type="MonoMac.AppKit.NSSelectionAffinity" />
-        <Parameter Name="stillSelectingFlag" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <param name="charRange">To be added.</param>
-        <param name="affinity">To be added.</param>
-        <param name="stillSelectingFlag">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetSelectedRangesaffinitystillSelecting">
-      <MemberSignature Language="C#" Value="public virtual void SetSelectedRangesaffinitystillSelecting (MonoMac.Foundation.NSArray ranges, MonoMac.AppKit.NSSelectionAffinity affinity, bool stillSelectingFlag);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSelectedRangesaffinitystillSelecting(class MonoMac.Foundation.NSArray ranges, valuetype MonoMac.AppKit.NSSelectionAffinity affinity, bool stillSelectingFlag) cil managed" />
+    <Member MemberName="SetSelectedRanges">
+      <MemberSignature Language="C#" Value="public virtual void SetSelectedRanges (MonoMac.Foundation.NSArray ranges, MonoMac.AppKit.NSSelectionAffinity affinity, bool stillSelectingFlag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSelectedRanges(class MonoMac.Foundation.NSArray ranges, valuetype MonoMac.AppKit.NSSelectionAffinity affinity, bool stillSelectingFlag) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -3007,9 +2979,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetSpellingStaterange">
-      <MemberSignature Language="C#" Value="public virtual void SetSpellingStaterange (int value, MonoMac.Foundation.NSRange charRange);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSpellingStaterange(int32 value, valuetype MonoMac.Foundation.NSRange charRange) cil managed" />
+    <Member MemberName="SetSpellingState">
+      <MemberSignature Language="C#" Value="public virtual void SetSpellingState (int value, MonoMac.Foundation.NSRange charRange);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSpellingState(int32 value, valuetype MonoMac.Foundation.NSRange charRange) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -3030,6 +3002,33 @@ public class MyClass : BaseClass {
         <param name="value">To be added.</param>
         <param name="charRange">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldChangeText">
+      <MemberSignature Language="C#" Value="public virtual bool ShouldChangeText (MonoMac.Foundation.NSArray affectedRanges, string[] replacementStrings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldChangeText(class MonoMac.Foundation.NSArray affectedRanges, string[] replacementStrings) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("shouldChangeTextInRanges:replacementStrings:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="affectedRanges" Type="MonoMac.Foundation.NSArray" />
+        <Parameter Name="replacementStrings" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="affectedRanges">To be added.</param>
+        <param name="replacementStrings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3076,33 +3075,6 @@ public class MyClass : BaseClass {
         <remarks>You assign a function, delegate or anonymous method to this property to return a value to the object.   If you assign a value to this property, it this will reset the value for the Delegate property to an internal handler that maps delegates to events.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ShouldChangeTextInRangereplacementString">
-      <MemberSignature Language="C#" Value="public virtual bool ShouldChangeTextInRangereplacementString (MonoMac.Foundation.NSRange affectedCharRange, string replacementString);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldChangeTextInRangereplacementString(valuetype MonoMac.Foundation.NSRange affectedCharRange, string replacementString) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("shouldChangeTextInRange:replacementString:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="affectedCharRange" Type="MonoMac.Foundation.NSRange" />
-        <Parameter Name="replacementString" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="affectedCharRange">To be added.</param>
-        <param name="replacementString">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ShouldChangeTextInRanges">
       <MemberSignature Language="C#" Value="public MonoMac.AppKit.NSTextViewSelectionShouldChange ShouldChangeTextInRanges { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSTextViewSelectionShouldChange ShouldChangeTextInRanges" />
@@ -3117,33 +3089,6 @@ public class MyClass : BaseClass {
         <summary>Delegate invoked by the object to get a value.</summary>
         <value>To be added.</value>
         <remarks>You assign a function, delegate or anonymous method to this property to return a value to the object.   If you assign a value to this property, it this will reset the value for the Delegate property to an internal handler that maps delegates to events.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShouldChangeTextInRangesreplacementStrings">
-      <MemberSignature Language="C#" Value="public virtual bool ShouldChangeTextInRangesreplacementStrings (MonoMac.Foundation.NSArray affectedRanges, string[] replacementStrings);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldChangeTextInRangesreplacementStrings(class MonoMac.Foundation.NSArray affectedRanges, string[] replacementStrings) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("shouldChangeTextInRanges:replacementStrings:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="affectedRanges" Type="MonoMac.Foundation.NSArray" />
-        <Parameter Name="replacementStrings" Type="System.String[]" />
-      </Parameters>
-      <Docs>
-        <param name="affectedRanges">To be added.</param>
-        <param name="replacementStrings">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShouldChangeTypingAttributes">
@@ -4083,9 +4028,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ValidRequestorForSendTypereturnType">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject ValidRequestorForSendTypereturnType (string sendType, string returnType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject ValidRequestorForSendTypereturnType(string sendType, string returnType) cil managed" />
+    <Member MemberName="ValidRequestorForSendType">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject ValidRequestorForSendType (string sendType, string returnType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject ValidRequestorForSendType(string sendType, string returnType) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -4243,9 +4188,9 @@ public class MyClass : BaseClass {
         <remarks>You assign a function, delegate or anonymous method to this property to return a value to the object.   If you assign a value to this property, it this will reset the value for the Delegate property to an internal handler that maps delegates to events.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="WriteSelectionToPasteboardtype">
-      <MemberSignature Language="C#" Value="public virtual bool WriteSelectionToPasteboardtype (MonoMac.AppKit.NSPasteboard pboard, string type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool WriteSelectionToPasteboardtype(class MonoMac.AppKit.NSPasteboard pboard, string type) cil managed" />
+    <Member MemberName="WriteSelectionToPasteboard">
+      <MemberSignature Language="C#" Value="public virtual bool WriteSelectionToPasteboard (MonoMac.AppKit.NSPasteboard pboard, string type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool WriteSelectionToPasteboard(class MonoMac.AppKit.NSPasteboard pboard, string type) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -4270,9 +4215,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="WriteSelectionToPasteboardtypes">
-      <MemberSignature Language="C#" Value="public virtual bool WriteSelectionToPasteboardtypes (MonoMac.AppKit.NSPasteboard pboard, string[] types);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool WriteSelectionToPasteboardtypes(class MonoMac.AppKit.NSPasteboard pboard, string[] types) cil managed" />
+    <Member MemberName="WriteSelectionToPasteboard">
+      <MemberSignature Language="C#" Value="public virtual bool WriteSelectionToPasteboard (MonoMac.AppKit.NSPasteboard pboard, string[] types);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool WriteSelectionToPasteboard(class MonoMac.AppKit.NSPasteboard pboard, string[] types) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

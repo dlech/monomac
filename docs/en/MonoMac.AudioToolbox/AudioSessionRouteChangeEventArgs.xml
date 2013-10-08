@@ -1,0 +1,130 @@
+<Type Name="AudioSessionRouteChangeEventArgs" FullName="MonoMac.AudioToolbox.AudioSessionRouteChangeEventArgs">
+  <TypeSignature Language="C#" Value="public class AudioSessionRouteChangeEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi AudioSessionRouteChangeEventArgs extends System.EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AudioSessionRouteChangeEventArgs (IntPtr dictHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int dictHandle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dictHandle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="dictHandle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentInputRoute">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioSessionInputRouteKind CurrentInputRoute { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AudioToolbox.AudioSessionInputRouteKind CurrentInputRoute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioSessionInputRouteKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentOutputRoutes">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioSessionOutputRouteKind[] CurrentOutputRoutes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AudioToolbox.AudioSessionOutputRouteKind[] CurrentOutputRoutes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioSessionOutputRouteKind[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dictionary">
+      <MemberSignature Language="C#" Value="public MonoMac.Foundation.NSDictionary Dictionary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSDictionary Dictionary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousInputRoute">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioSessionInputRouteKind PreviousInputRoute { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AudioToolbox.AudioSessionInputRouteKind PreviousInputRoute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioSessionInputRouteKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousOutputRoutes">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioSessionOutputRouteKind[] PreviousOutputRoutes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AudioToolbox.AudioSessionOutputRouteKind[] PreviousOutputRoutes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioSessionOutputRouteKind[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reason">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioSessionRouteChangeReason Reason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AudioToolbox.AudioSessionRouteChangeReason Reason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioSessionRouteChangeReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

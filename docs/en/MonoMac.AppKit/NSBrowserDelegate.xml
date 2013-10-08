@@ -294,9 +294,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DidChangeLastColumntoColumn">
-      <MemberSignature Language="C#" Value="public virtual void DidChangeLastColumntoColumn (MonoMac.AppKit.NSBrowser browser, int oldLastColumn, int column);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DidChangeLastColumntoColumn(class MonoMac.AppKit.NSBrowser browser, int32 oldLastColumn, int32 column) cil managed" />
+    <Member MemberName="DidChangeLastColumn">
+      <MemberSignature Language="C#" Value="public virtual void DidChangeLastColumn (MonoMac.AppKit.NSBrowser browser, int oldLastColumn, int toColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DidChangeLastColumn(class MonoMac.AppKit.NSBrowser browser, int32 oldLastColumn, int32 toColumn) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -312,12 +312,12 @@ public class MyClass : BaseClass {
       <Parameters>
         <Parameter Name="browser" Type="MonoMac.AppKit.NSBrowser" />
         <Parameter Name="oldLastColumn" Type="System.Int32" />
-        <Parameter Name="column" Type="System.Int32" />
+        <Parameter Name="toColumn" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="browser">To be added.</param>
         <param name="oldLastColumn">To be added.</param>
-        <param name="column">To be added.</param>
+        <param name="toColumn">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -713,9 +713,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SelectRowinColumn">
-      <MemberSignature Language="C#" Value="public virtual bool SelectRowinColumn (MonoMac.AppKit.NSBrowser sender, int row, int column);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SelectRowinColumn(class MonoMac.AppKit.NSBrowser sender, int32 row, int32 column) cil managed" />
+    <Member MemberName="SelectRowInColumn">
+      <MemberSignature Language="C#" Value="public virtual bool SelectRowInColumn (MonoMac.AppKit.NSBrowser sender, int row, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SelectRowInColumn(class MonoMac.AppKit.NSBrowser sender, int32 row, int32 column) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

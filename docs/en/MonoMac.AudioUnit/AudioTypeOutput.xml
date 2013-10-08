@@ -69,5 +69,19 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="VoiceProcessingIO">
+      <MemberSignature Language="C#" Value="VoiceProcessingIO" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioUnit.AudioTypeOutput VoiceProcessingIO = int32(1987078511)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioUnit.AudioTypeOutput</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
   </Members>
 </Type>

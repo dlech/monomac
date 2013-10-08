@@ -15,7 +15,7 @@
   <Members>
     <Member MemberName="AtTarget">
       <MemberSignature Language="C#" Value="AtTarget" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomEventPhase AtTarget = int32(2)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomEventPhase AtTarget = unsigned int16(2)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -29,7 +29,7 @@
     </Member>
     <Member MemberName="Bubbling">
       <MemberSignature Language="C#" Value="Bubbling" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomEventPhase Bubbling = int32(3)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomEventPhase Bubbling = unsigned int16(3)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -43,7 +43,7 @@
     </Member>
     <Member MemberName="Capturing">
       <MemberSignature Language="C#" Value="Capturing" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomEventPhase Capturing = int32(1)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomEventPhase Capturing = unsigned int16(1)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
