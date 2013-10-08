@@ -53,7 +53,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use overload with CVPixelBufferPoolSettings")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use overload with CVPixelBufferPoolSettings")</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -74,11 +74,6 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use Settings")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSDictionary</ReturnType>
       </ReturnValue>

@@ -150,6 +150,137 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DrawDarkBezel">
+      <MemberSignature Language="C#" Value="public static void DrawDarkBezel (System.Drawing.RectangleF aRect, System.Drawing.RectangleF clipRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;/System/Library/Frameworks/AppKit.framework/AppKit&quot; as &quot;NSDrawDarkBezel&quot; winapi)void DrawDarkBezel(valuetype System.Drawing.RectangleF aRect, valuetype System.Drawing.RectangleF clipRect) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aRect" Type="System.Drawing.RectangleF" />
+        <Parameter Name="clipRect" Type="System.Drawing.RectangleF" />
+      </Parameters>
+      <Docs>
+        <param name="aRect">To be added.</param>
+        <param name="clipRect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawGrayBezel">
+      <MemberSignature Language="C#" Value="public static void DrawGrayBezel (System.Drawing.RectangleF aRect, System.Drawing.RectangleF clipRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;/System/Library/Frameworks/AppKit.framework/AppKit&quot; as &quot;NSDrawGrayBezel&quot; winapi)void DrawGrayBezel(valuetype System.Drawing.RectangleF aRect, valuetype System.Drawing.RectangleF clipRect) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aRect" Type="System.Drawing.RectangleF" />
+        <Parameter Name="clipRect" Type="System.Drawing.RectangleF" />
+      </Parameters>
+      <Docs>
+        <param name="aRect">To be added.</param>
+        <param name="clipRect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawGroove">
+      <MemberSignature Language="C#" Value="public static void DrawGroove (System.Drawing.RectangleF aRect, System.Drawing.RectangleF clipRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;/System/Library/Frameworks/AppKit.framework/AppKit&quot; as &quot;NSDrawGroove&quot; winapi)void DrawGroove(valuetype System.Drawing.RectangleF aRect, valuetype System.Drawing.RectangleF clipRect) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aRect" Type="System.Drawing.RectangleF" />
+        <Parameter Name="clipRect" Type="System.Drawing.RectangleF" />
+      </Parameters>
+      <Docs>
+        <param name="aRect">To be added.</param>
+        <param name="clipRect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawLightBezel">
+      <MemberSignature Language="C#" Value="public static void DrawLightBezel (System.Drawing.RectangleF aRect, System.Drawing.RectangleF clipRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;/System/Library/Frameworks/AppKit.framework/AppKit&quot; as &quot;NSDrawLightBezel&quot; winapi)void DrawLightBezel(valuetype System.Drawing.RectangleF aRect, valuetype System.Drawing.RectangleF clipRect) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aRect" Type="System.Drawing.RectangleF" />
+        <Parameter Name="clipRect" Type="System.Drawing.RectangleF" />
+      </Parameters>
+      <Docs>
+        <param name="aRect">To be added.</param>
+        <param name="clipRect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawTiledRects">
+      <MemberSignature Language="C#" Value="public static System.Drawing.RectangleF DrawTiledRects (System.Drawing.RectangleF aRect, System.Drawing.RectangleF clipRect, MonoMac.AppKit.NSRectEdge[] sides, float[] grays);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.RectangleF DrawTiledRects(valuetype System.Drawing.RectangleF aRect, valuetype System.Drawing.RectangleF clipRect, valuetype MonoMac.AppKit.NSRectEdge[] sides, float32[] grays) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RectangleF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aRect" Type="System.Drawing.RectangleF" />
+        <Parameter Name="clipRect" Type="System.Drawing.RectangleF" />
+        <Parameter Name="sides" Type="MonoMac.AppKit.NSRectEdge[]" />
+        <Parameter Name="grays" Type="System.Single[]" />
+      </Parameters>
+      <Docs>
+        <param name="aRect">To be added.</param>
+        <param name="clipRect">To be added.</param>
+        <param name="sides">To be added.</param>
+        <param name="grays">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawWhiteBezel">
+      <MemberSignature Language="C#" Value="public static void DrawWhiteBezel (System.Drawing.RectangleF aRect, System.Drawing.RectangleF clipRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;/System/Library/Frameworks/AppKit.framework/AppKit&quot; as &quot;NSDrawWhiteBezel&quot; winapi)void DrawWhiteBezel(valuetype System.Drawing.RectangleF aRect, valuetype System.Drawing.RectangleF clipRect) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aRect" Type="System.Drawing.RectangleF" />
+        <Parameter Name="clipRect" Type="System.Drawing.RectangleF" />
+      </Parameters>
+      <Docs>
+        <param name="aRect">To be added.</param>
+        <param name="clipRect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FrameRect">
       <MemberSignature Language="C#" Value="public static void FrameRect (System.Drawing.RectangleF rect);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;/System/Library/Frameworks/AppKit.framework/AppKit&quot; as &quot;NSFrameRect&quot; winapi)void FrameRect(valuetype System.Drawing.RectangleF rect) cil managed" />
@@ -165,6 +296,50 @@
       </Parameters>
       <Docs>
         <param name="rect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameRect">
+      <MemberSignature Language="C#" Value="public static void FrameRect (System.Drawing.RectangleF rect, float frameWidth);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;/System/Library/Frameworks/AppKit.framework/AppKit&quot; as &quot;NSFrameRectWithWidth&quot; winapi)void FrameRect(valuetype System.Drawing.RectangleF rect, float32 frameWidth) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="System.Drawing.RectangleF" />
+        <Parameter Name="frameWidth" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="rect">To be added.</param>
+        <param name="frameWidth">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameRect">
+      <MemberSignature Language="C#" Value="public static void FrameRect (System.Drawing.RectangleF rect, float frameWidth, MonoMac.AppKit.NSCompositingOperation operation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;/System/Library/Frameworks/AppKit.framework/AppKit&quot; as &quot;NSFrameRectWithWidthUsingOperation&quot; winapi)void FrameRect(valuetype System.Drawing.RectangleF rect, float32 frameWidth, valuetype MonoMac.AppKit.NSCompositingOperation operation) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="System.Drawing.RectangleF" />
+        <Parameter Name="frameWidth" Type="System.Single" />
+        <Parameter Name="operation" Type="MonoMac.AppKit.NSCompositingOperation" />
+      </Parameters>
+      <Docs>
+        <param name="rect">To be added.</param>
+        <param name="frameWidth">To be added.</param>
+        <param name="operation">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

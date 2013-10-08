@@ -13,6 +13,9 @@
     <Attribute>
       <AttributeName>MonoMac.Foundation.Register("NSUserNotification", true)</AttributeName>
     </Attribute>
+    <Attribute>
+      <AttributeName>MonoMac.ObjCRuntime.MountainLion</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
     <summary>To be added.</summary>
@@ -129,10 +132,10 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("actionButtonTitle")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("actionButtonTitle", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setActionButtonTitle:")</AttributeName>
+          <AttributeName>set: MonoMac.Foundation.Export("setActionButtonTitle:", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -211,10 +214,10 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("deliveryDate")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("deliveryDate", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setDeliveryDate:")</AttributeName>
+          <AttributeName>set: MonoMac.Foundation.Export("setDeliveryDate:", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -235,10 +238,10 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("deliveryRepeatInterval")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("deliveryRepeatInterval", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setDeliveryRepeatInterval:")</AttributeName>
+          <AttributeName>set: MonoMac.Foundation.Export("setDeliveryRepeatInterval:", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -259,10 +262,10 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("deliveryTimeZone")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("deliveryTimeZone", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setDeliveryTimeZone:")</AttributeName>
+          <AttributeName>set: MonoMac.Foundation.Export("setDeliveryTimeZone:", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -333,10 +336,10 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("informativeText")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("informativeText", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setInformativeText:")</AttributeName>
+          <AttributeName>set: MonoMac.Foundation.Export("setInformativeText:", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -355,6 +358,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSUserNotificationDefaultSoundName", "Foundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -374,10 +382,10 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("otherButtonTitle")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("otherButtonTitle", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setOtherButtonTitle:")</AttributeName>
+          <AttributeName>set: MonoMac.Foundation.Export("setOtherButtonTitle:", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -464,10 +472,10 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("subtitle")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("subtitle", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setSubtitle:")</AttributeName>
+          <AttributeName>set: MonoMac.Foundation.Export("setSubtitle:", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -488,10 +496,10 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("title")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("title", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setTitle:")</AttributeName>
+          <AttributeName>set: MonoMac.Foundation.Export("setTitle:", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -512,10 +520,10 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("userInfo")</AttributeName>
+          <AttributeName>get: MonoMac.Foundation.Export("userInfo", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setUserInfo:")</AttributeName>
+          <AttributeName>set: MonoMac.Foundation.Export("setUserInfo:", MonoMac.ObjCRuntime.ArgumentSemantic.Copy)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

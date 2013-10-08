@@ -189,6 +189,26 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CaptureStillImageTaskAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;MonoMac.CoreMedia.CMSampleBuffer&gt; CaptureStillImageTaskAsync (MonoMac.AVFoundation.AVCaptureConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class MonoMac.CoreMedia.CMSampleBuffer&gt; CaptureStillImageTaskAsync(class MonoMac.AVFoundation.AVCaptureConnection connection) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;MonoMac.CoreMedia.CMSampleBuffer&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="MonoMac.AVFoundation.AVCaptureConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CapturingStillImage">
       <MemberSignature Language="C#" Value="public virtual bool CapturingStillImage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CapturingStillImage" />

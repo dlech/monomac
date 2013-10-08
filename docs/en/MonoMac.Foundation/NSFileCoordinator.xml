@@ -432,6 +432,9 @@
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("itemAtURL:willMoveToURL:")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.MountainLion</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

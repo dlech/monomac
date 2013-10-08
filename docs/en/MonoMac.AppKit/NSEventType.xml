@@ -293,6 +293,20 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="QuickLook">
+      <MemberSignature Language="C#" Value="QuickLook" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AppKit.NSEventType QuickLook = int32(33)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AppKit.NSEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="RightMouseDown">
       <MemberSignature Language="C#" Value="RightMouseDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AppKit.NSEventType RightMouseDown = int32(3)" />
@@ -352,6 +366,20 @@
     <Member MemberName="ScrollWheel">
       <MemberSignature Language="C#" Value="ScrollWheel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AppKit.NSEventType ScrollWheel = int32(22)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AppKit.NSEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SmartMagnify">
+      <MemberSignature Language="C#" Value="SmartMagnify" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AppKit.NSEventType SmartMagnify = int32(32)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

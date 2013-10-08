@@ -98,6 +98,11 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use overload with AudioBuffers")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AudioToolbox.AudioQueueStatus</ReturnType>
       </ReturnValue>
@@ -107,6 +112,34 @@
         <Parameter Name="flags" Type="MonoMac.AudioToolbox.AudioQueueProcessingTapFlags&amp;" RefType="out" />
         <Parameter Name="parentNumberOfFrames" Type="System.UInt32&amp;" RefType="out" />
         <Parameter Name="data" Type="MonoMac.AudioToolbox.AudioBufferList" />
+      </Parameters>
+      <Docs>
+        <param name="numberOfFrames">To be added.</param>
+        <param name="timeStamp">To be added.</param>
+        <param name="flags">To be added.</param>
+        <param name="parentNumberOfFrames">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSourceAudio">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioQueueStatus GetSourceAudio (uint numberOfFrames, ref MonoMac.AudioToolbox.AudioTimeStamp timeStamp, out MonoMac.AudioToolbox.AudioQueueProcessingTapFlags flags, out uint parentNumberOfFrames, MonoMac.AudioToolbox.AudioBuffers data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.AudioToolbox.AudioQueueStatus GetSourceAudio(unsigned int32 numberOfFrames, valuetype MonoMac.AudioToolbox.AudioTimeStamp timeStamp, valuetype MonoMac.AudioToolbox.AudioQueueProcessingTapFlags flags, unsigned int32 parentNumberOfFrames, class MonoMac.AudioToolbox.AudioBuffers data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioQueueStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="numberOfFrames" Type="System.UInt32" />
+        <Parameter Name="timeStamp" Type="MonoMac.AudioToolbox.AudioTimeStamp&amp;" RefType="ref" />
+        <Parameter Name="flags" Type="MonoMac.AudioToolbox.AudioQueueProcessingTapFlags&amp;" RefType="out" />
+        <Parameter Name="parentNumberOfFrames" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="data" Type="MonoMac.AudioToolbox.AudioBuffers" />
       </Parameters>
       <Docs>
         <param name="numberOfFrames">To be added.</param>

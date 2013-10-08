@@ -55,6 +55,52 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CreateWithNewTiming">
+      <MemberSignature Language="C#" Value="public static MonoMac.CoreMedia.CMSampleBuffer CreateWithNewTiming (MonoMac.CoreMedia.CMSampleBuffer original, MonoMac.CoreMedia.CMSampleTimingInfo[] timing);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.CoreMedia.CMSampleBuffer CreateWithNewTiming(class MonoMac.CoreMedia.CMSampleBuffer original, valuetype MonoMac.CoreMedia.CMSampleTimingInfo[] timing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreMedia.CMSampleBuffer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="original" Type="MonoMac.CoreMedia.CMSampleBuffer" />
+        <Parameter Name="timing" Type="MonoMac.CoreMedia.CMSampleTimingInfo[]" />
+      </Parameters>
+      <Docs>
+        <param name="original">To be added.</param>
+        <param name="timing">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWithNewTiming">
+      <MemberSignature Language="C#" Value="public static MonoMac.CoreMedia.CMSampleBuffer CreateWithNewTiming (MonoMac.CoreMedia.CMSampleBuffer original, MonoMac.CoreMedia.CMSampleTimingInfo[] timing, out int status);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.CoreMedia.CMSampleBuffer CreateWithNewTiming(class MonoMac.CoreMedia.CMSampleBuffer original, valuetype MonoMac.CoreMedia.CMSampleTimingInfo[] timing, int32 status) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreMedia.CMSampleBuffer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="original" Type="MonoMac.CoreMedia.CMSampleBuffer" />
+        <Parameter Name="timing" Type="MonoMac.CoreMedia.CMSampleTimingInfo[]" />
+        <Parameter Name="status" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="original">To be added.</param>
+        <param name="timing">To be added.</param>
+        <param name="status">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CreateWithPacketDescriptions">
       <MemberSignature Language="C#" Value="public static MonoMac.CoreMedia.CMSampleBuffer CreateWithPacketDescriptions (MonoMac.CoreMedia.CMBlockBuffer dataBuffer, MonoMac.CoreMedia.CMFormatDescription formatDescription, int samplesCount, MonoMac.CoreMedia.CMTime sampleTimestamp, MonoMac.AudioToolbox.AudioStreamPacketDescription[] packetDescriptions, out MonoMac.CoreMedia.CMSampleBufferError error);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.CoreMedia.CMSampleBuffer CreateWithPacketDescriptions(class MonoMac.CoreMedia.CMBlockBuffer dataBuffer, class MonoMac.CoreMedia.CMFormatDescription formatDescription, int32 samplesCount, valuetype MonoMac.CoreMedia.CMTime sampleTimestamp, valuetype MonoMac.AudioToolbox.AudioStreamPacketDescription[] packetDescriptions, valuetype MonoMac.CoreMedia.CMSampleBufferError error) cil managed" />
@@ -238,7 +284,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use GetAudioFormatDescription or GetVideoFormatDescription")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use GetAudioFormatDescription or GetVideoFormatDescription")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -303,6 +349,43 @@
       </Parameters>
       <Docs>
         <param name="sampleIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSampleTimingInfo">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreMedia.CMSampleTimingInfo[] GetSampleTimingInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.CoreMedia.CMSampleTimingInfo[] GetSampleTimingInfo() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreMedia.CMSampleTimingInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSampleTimingInfo">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreMedia.CMSampleTimingInfo[] GetSampleTimingInfo (out int status);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.CoreMedia.CMSampleTimingInfo[] GetSampleTimingInfo(int32 status) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreMedia.CMSampleTimingInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="status">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

@@ -108,7 +108,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use overload with PixelBufferAttributes")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use overload with PixelBufferAttributes")</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -181,8 +181,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public MonoMac.AVFoundation.AVAssetReaderVideoCompositionOutput Create (MonoMac.AVFoundation.AVAssetTrack[] videoTracks, MonoMac.CoreVideo.CVPixelBufferAttributes settings);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.AVFoundation.AVAssetReaderVideoCompositionOutput Create(class MonoMac.AVFoundation.AVAssetTrack[] videoTracks, class MonoMac.CoreVideo.CVPixelBufferAttributes settings) cil managed" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AVFoundation.AVAssetReaderVideoCompositionOutput Create (MonoMac.AVFoundation.AVAssetTrack[] videoTracks, MonoMac.CoreVideo.CVPixelBufferAttributes settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AVFoundation.AVAssetReaderVideoCompositionOutput Create(class MonoMac.AVFoundation.AVAssetTrack[] videoTracks, class MonoMac.CoreVideo.CVPixelBufferAttributes settings) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -237,7 +237,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use Create method or constructor")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use Create method or constructor")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -305,7 +305,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use UncompressedVideoSettings property")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use UncompressedVideoSettings property")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -340,8 +340,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="WeakFromTracks">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AVFoundation.AVAssetReaderVideoCompositionOutput WeakFromTracks (MonoMac.AVFoundation.AVAssetTrack[] videoTracks, MonoMac.Foundation.NSDictionary videoSettings);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AVFoundation.AVAssetReaderVideoCompositionOutput WeakFromTracks(class MonoMac.AVFoundation.AVAssetTrack[] videoTracks, class MonoMac.Foundation.NSDictionary videoSettings) cil managed" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AVFoundation.AVAssetReaderVideoCompositionOutput WeakFromTracks (MonoMac.AVFoundation.AVAssetTrack[] videoTracks, MonoMac.Foundation.NSDictionary videoSettings);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AVFoundation.AVAssetReaderVideoCompositionOutput WeakFromTracks(class MonoMac.AVFoundation.AVAssetTrack[] videoTracks, class MonoMac.Foundation.NSDictionary videoSettings) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -349,9 +349,6 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("assetReaderVideoCompositionOutputWithVideoTracks:videoSettings:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use Create method", false)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

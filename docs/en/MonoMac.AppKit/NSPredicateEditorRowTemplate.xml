@@ -424,27 +424,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Predicate">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSPredicate Predicate { set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSPredicate Predicate" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setSetPredicate::")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSPredicate</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="PredicateWithSubpredicates">
       <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSPredicate PredicateWithSubpredicates (MonoMac.Foundation.NSPredicate[] subpredicates);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSPredicate PredicateWithSubpredicates(class MonoMac.Foundation.NSPredicate[] subpredicates) cil managed" />
@@ -509,6 +488,30 @@ public class MyClass : BaseClass {
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPredicate">
+      <MemberSignature Language="C#" Value="public virtual void SetPredicate (MonoMac.Foundation.NSPredicate predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPredicate(class MonoMac.Foundation.NSPredicate predicate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setPredicate:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="predicate" Type="MonoMac.Foundation.NSPredicate" />
+      </Parameters>
+      <Docs>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

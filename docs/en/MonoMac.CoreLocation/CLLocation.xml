@@ -484,6 +484,17 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("kCLErrorUserInfoAlternateRegionKey", "CoreLocation")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.MountainLion</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: MonoMac.ObjCRuntime.MountainLion</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>

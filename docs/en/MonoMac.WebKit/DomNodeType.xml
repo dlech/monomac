@@ -15,7 +15,7 @@
   <Members>
     <Member MemberName="Attribute">
       <MemberSignature Language="C#" Value="Attribute" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Attribute = int32(2)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Attribute = unsigned int16(2)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -29,7 +29,7 @@
     </Member>
     <Member MemberName="CData">
       <MemberSignature Language="C#" Value="CData" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType CData = int32(4)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType CData = unsigned int16(4)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -43,7 +43,7 @@
     </Member>
     <Member MemberName="Comment">
       <MemberSignature Language="C#" Value="Comment" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Comment = int32(8)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Comment = unsigned int16(8)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -57,7 +57,7 @@
     </Member>
     <Member MemberName="Document">
       <MemberSignature Language="C#" Value="Document" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Document = int32(9)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Document = unsigned int16(9)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -71,7 +71,7 @@
     </Member>
     <Member MemberName="DocumentFragment">
       <MemberSignature Language="C#" Value="DocumentFragment" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType DocumentFragment = int32(11)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType DocumentFragment = unsigned int16(11)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -85,7 +85,7 @@
     </Member>
     <Member MemberName="DocumentType">
       <MemberSignature Language="C#" Value="DocumentType" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType DocumentType = int32(10)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType DocumentType = unsigned int16(10)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -99,7 +99,7 @@
     </Member>
     <Member MemberName="Element">
       <MemberSignature Language="C#" Value="Element" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Element = int32(1)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Element = unsigned int16(1)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -113,7 +113,7 @@
     </Member>
     <Member MemberName="Entity">
       <MemberSignature Language="C#" Value="Entity" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Entity = int32(6)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Entity = unsigned int16(6)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -127,7 +127,7 @@
     </Member>
     <Member MemberName="EntityReference">
       <MemberSignature Language="C#" Value="EntityReference" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType EntityReference = int32(5)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType EntityReference = unsigned int16(5)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -141,7 +141,7 @@
     </Member>
     <Member MemberName="Notation">
       <MemberSignature Language="C#" Value="Notation" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Notation = int32(12)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Notation = unsigned int16(12)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -155,7 +155,7 @@
     </Member>
     <Member MemberName="ProcessingInstruction">
       <MemberSignature Language="C#" Value="ProcessingInstruction" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType ProcessingInstruction = int32(7)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType ProcessingInstruction = unsigned int16(7)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -169,7 +169,7 @@
     </Member>
     <Member MemberName="Text">
       <MemberSignature Language="C#" Value="Text" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Text = int32(3)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomNodeType Text = unsigned int16(3)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

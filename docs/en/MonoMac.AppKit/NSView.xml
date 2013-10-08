@@ -405,7 +405,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="AdjustPageHeightNew">
-      <MemberSignature Language="C#" Value="public virtual void AdjustPageHeightNew (float newBottom, float top, float proposedBottom, float bottomLimit);" />
+      <MemberSignature Language="C#" Value="public virtual void AdjustPageHeightNew (ref float newBottom, float top, float proposedBottom, float bottomLimit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AdjustPageHeightNew(float32 newBottom, float32 top, float32 proposedBottom, float32 bottomLimit) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -420,7 +420,7 @@ public class MyClass : BaseClass {
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="newBottom" Type="System.Single" />
+        <Parameter Name="newBottom" Type="System.Single&amp;" RefType="ref" />
         <Parameter Name="top" Type="System.Single" />
         <Parameter Name="proposedBottom" Type="System.Single" />
         <Parameter Name="bottomLimit" Type="System.Single" />
@@ -435,7 +435,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="AdjustPageWidthNew">
-      <MemberSignature Language="C#" Value="public virtual void AdjustPageWidthNew (float newRight, float left, float proposedRight, float rightLimit);" />
+      <MemberSignature Language="C#" Value="public virtual void AdjustPageWidthNew (ref float newRight, float left, float proposedRight, float rightLimit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AdjustPageWidthNew(float32 newRight, float32 left, float32 proposedRight, float32 rightLimit) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -450,7 +450,7 @@ public class MyClass : BaseClass {
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="newRight" Type="System.Single" />
+        <Parameter Name="newRight" Type="System.Single&amp;" RefType="ref" />
         <Parameter Name="left" Type="System.Single" />
         <Parameter Name="proposedRight" Type="System.Single" />
         <Parameter Name="rightLimit" Type="System.Single" />
@@ -798,6 +798,35 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="BeginDraggingSession">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSDraggingSession BeginDraggingSession (MonoMac.AppKit.NSDraggingItem[] itmes, MonoMac.AppKit.NSEvent evnt, MonoMac.AppKit.NSDraggingSource source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AppKit.NSDraggingSession BeginDraggingSession(class MonoMac.AppKit.NSDraggingItem[] itmes, class MonoMac.AppKit.NSEvent evnt, class MonoMac.AppKit.NSDraggingSource source) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("beginDraggingSessionWithItems:event:source:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.AppKit.NSDraggingSession</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itmes" Type="MonoMac.AppKit.NSDraggingItem[]" />
+        <Parameter Name="evnt" Type="MonoMac.AppKit.NSEvent" />
+        <Parameter Name="source" Type="MonoMac.AppKit.NSDraggingSource" />
+      </Parameters>
+      <Docs>
+        <param name="itmes">To be added.</param>
+        <param name="evnt">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BitmapImageRepForCachingDisplayInRect">
       <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSBitmapImageRep BitmapImageRepForCachingDisplayInRect (System.Drawing.RectangleF rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AppKit.NSBitmapImageRep BitmapImageRepForCachingDisplayInRect(valuetype System.Drawing.RectangleF rect) cil managed" />
@@ -847,6 +876,27 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="BoundsChangedNotification">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString BoundsChangedNotification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString BoundsChangedNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSViewBoundsDidChangeNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BoundsRotation">
       <MemberSignature Language="C#" Value="public virtual float BoundsRotation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 BoundsRotation" />
@@ -871,9 +921,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CacheDisplayInRecttoBitmapImageRep">
-      <MemberSignature Language="C#" Value="public virtual void CacheDisplayInRecttoBitmapImageRep (System.Drawing.RectangleF rect, MonoMac.AppKit.NSBitmapImageRep bitmapImageRep);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CacheDisplayInRecttoBitmapImageRep(valuetype System.Drawing.RectangleF rect, class MonoMac.AppKit.NSBitmapImageRep bitmapImageRep) cil managed" />
+    <Member MemberName="CacheDisplay">
+      <MemberSignature Language="C#" Value="public virtual void CacheDisplay (System.Drawing.RectangleF rect, MonoMac.AppKit.NSBitmapImageRep bitmapImageRep);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CacheDisplay(valuetype System.Drawing.RectangleF rect, class MonoMac.AppKit.NSBitmapImageRep bitmapImageRep) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2038,9 +2088,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DisplayRectIgnoringOpacityinContext">
-      <MemberSignature Language="C#" Value="public virtual void DisplayRectIgnoringOpacityinContext (System.Drawing.RectangleF aRect, MonoMac.AppKit.NSGraphicsContext context);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisplayRectIgnoringOpacityinContext(valuetype System.Drawing.RectangleF aRect, class MonoMac.AppKit.NSGraphicsContext context) cil managed" />
+    <Member MemberName="DisplayRectIgnoringOpacity">
+      <MemberSignature Language="C#" Value="public virtual void DisplayRectIgnoringOpacity (System.Drawing.RectangleF aRect, MonoMac.AppKit.NSGraphicsContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisplayRectIgnoringOpacity(valuetype System.Drawing.RectangleF aRect, class MonoMac.AppKit.NSGraphicsContext context) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2403,8 +2453,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="EnterFullscreenModeWithOptions">
-      <MemberSignature Language="C#" Value="public virtual void EnterFullscreenModeWithOptions (MonoMac.AppKit.NSScreen screen, MonoMac.Foundation.NSDictionary options);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnterFullscreenModeWithOptions(class MonoMac.AppKit.NSScreen screen, class MonoMac.Foundation.NSDictionary options) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool EnterFullscreenModeWithOptions (MonoMac.AppKit.NSScreen screen, MonoMac.Foundation.NSDictionary options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EnterFullscreenModeWithOptions(class MonoMac.AppKit.NSScreen screen, class MonoMac.Foundation.NSDictionary options) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2415,7 +2465,7 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="screen" Type="MonoMac.AppKit.NSScreen" />
@@ -2425,6 +2475,7 @@ public class MyClass : BaseClass {
         <param name="screen">To be added.</param>
         <param name="options">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2487,6 +2538,27 @@ public class MyClass : BaseClass {
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.SizeF</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FocusChangedNotification">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString FocusChangedNotification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString FocusChangedNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSViewFocusDidChangeNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -2609,6 +2681,27 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FrameChangedNotification">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString FrameChangedNotification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString FrameChangedNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSViewFrameDidChangeNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FrameRotation">
       <MemberSignature Language="C#" Value="public virtual float FrameRotation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 FrameRotation" />
@@ -2684,8 +2777,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GetContentCompressionResistancePriority">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSLayoutPriority GetContentCompressionResistancePriority (MonoMac.AppKit.NSLayoutConstraintOrientation orientation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.AppKit.NSLayoutPriority GetContentCompressionResistancePriority(valuetype MonoMac.AppKit.NSLayoutConstraintOrientation orientation) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual float GetContentCompressionResistancePriority (MonoMac.AppKit.NSLayoutConstraintOrientation orientation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 GetContentCompressionResistancePriority(valuetype MonoMac.AppKit.NSLayoutConstraintOrientation orientation) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2696,7 +2789,7 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.AppKit.NSLayoutPriority</ReturnType>
+        <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="orientation" Type="MonoMac.AppKit.NSLayoutConstraintOrientation" />
@@ -2709,8 +2802,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GetContentHuggingPriorityForOrientation">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSLayoutPriority GetContentHuggingPriorityForOrientation (MonoMac.AppKit.NSLayoutConstraintOrientation orientation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.AppKit.NSLayoutPriority GetContentHuggingPriorityForOrientation(valuetype MonoMac.AppKit.NSLayoutConstraintOrientation orientation) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual float GetContentHuggingPriorityForOrientation (MonoMac.AppKit.NSLayoutConstraintOrientation orientation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 GetContentHuggingPriorityForOrientation(valuetype MonoMac.AppKit.NSLayoutConstraintOrientation orientation) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2721,7 +2814,7 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.AppKit.NSLayoutPriority</ReturnType>
+        <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="orientation" Type="MonoMac.AppKit.NSLayoutConstraintOrientation" />
@@ -2755,6 +2848,27 @@ public class MyClass : BaseClass {
         <param name="alignmentRect">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalFrameChangedNotification">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString GlobalFrameChangedNotification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString GlobalFrameChangedNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSViewGlobalFrameDidChangeNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2872,7 +2986,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Identifier">
-      <MemberSignature Language="C#" Value="public virtual string Identifier { get; }" />
+      <MemberSignature Language="C#" Value="public virtual string Identifier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Identifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -2881,6 +2995,9 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("identifier")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setIdentifier:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3001,6 +3118,27 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsDrawingFindIndicator">
+      <MemberSignature Language="C#" Value="public virtual bool IsDrawingFindIndicator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDrawingFindIndicator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("isDrawingFindIndicator")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsFlipped">
       <MemberSignature Language="C#" Value="public virtual bool IsFlipped { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFlipped" />
@@ -3061,6 +3199,33 @@ public class MyClass : BaseClass {
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMouseInRect">
+      <MemberSignature Language="C#" Value="public virtual bool IsMouseInRect (System.Drawing.PointF aPoint, System.Drawing.RectangleF aRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsMouseInRect(valuetype System.Drawing.PointF aPoint, valuetype System.Drawing.RectangleF aRect) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("mouse:inRect:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="aPoint" Type="System.Drawing.PointF" />
+        <Parameter Name="aRect" Type="System.Drawing.RectangleF" />
+      </Parameters>
+      <Docs>
+        <param name="aPoint">To be added.</param>
+        <param name="aRect">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3430,33 +3595,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MouseinRect">
-      <MemberSignature Language="C#" Value="public virtual bool MouseinRect (System.Drawing.PointF aPoint, System.Drawing.RectangleF aRect);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MouseinRect(valuetype System.Drawing.PointF aPoint, valuetype System.Drawing.RectangleF aRect) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("mouse:inRect:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="aPoint" Type="System.Drawing.PointF" />
-        <Parameter Name="aRect" Type="System.Drawing.RectangleF" />
-      </Parameters>
-      <Docs>
-        <param name="aPoint">To be added.</param>
-        <param name="aRect">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="NeedsDisplay">
       <MemberSignature Language="C#" Value="public virtual bool NeedsDisplay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NeedsDisplay" />
@@ -3648,6 +3786,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFullScreenModeAllScreens", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -3665,6 +3808,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFullScreenModeApplicationPresentationOptions", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -3682,6 +3830,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFullScreenModeSetting", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -3699,6 +3852,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSFullScreenModeWindowLevel", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -3707,191 +3865,6 @@ public class MyClass : BaseClass {
         <value>
         </value>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NSViewBoundsDidChangeNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString NSViewBoundsDidChangeNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString NSViewBoundsDidChangeNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Notification constant for NSViewBoundsDidChange</summary>
-        <value>NSString constant, should be used as a token to NSNotificationCenter.</value>
-        <remarks>
-          <para id="tool-remark">This constant can be used with the <see cref="T:MonoMac.Foundation.NSNotificationCenter" /> to register a listener for this notification.   This is an NSString instead of a string, because these values can be used as tokens in some native libraries instead of being used purely for their actual string content.    The 'notification' parameter to the callback contains extra information that is specific to the notification type.</para>
-          <example>
-            <code lang="c#">
-// Lambda style
-NSNotificationCenter.DefaultCenter.AddObserver (
-        NSView.NSViewBoundsDidChangeNotification, (notification) =&gt; {Console.WriteLine ("Received the notification NSView", notification); }
-
-
-// Method style
-void Callback (NSNotification notification)
-{
-    Console.WriteLine ("Received a notification NSView", notification);
-}
-
-void Setup ()
-{
-    NSNotificationCenter.DefaultCenter.AddObserver (NSView.NSViewBoundsDidChangeNotification, Callback);
-}
-</code>
-          </example>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NSViewDidUpdateTrackingAreasNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString NSViewDidUpdateTrackingAreasNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString NSViewDidUpdateTrackingAreasNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Notification constant for NSViewDidUpdateTrackingAreas</summary>
-        <value>NSString constant, should be used as a token to NSNotificationCenter.</value>
-        <remarks>
-          <para id="tool-remark">This constant can be used with the <see cref="T:MonoMac.Foundation.NSNotificationCenter" /> to register a listener for this notification.   This is an NSString instead of a string, because these values can be used as tokens in some native libraries instead of being used purely for their actual string content.    The 'notification' parameter to the callback contains extra information that is specific to the notification type.</para>
-          <example>
-            <code lang="c#">
-// Lambda style
-NSNotificationCenter.DefaultCenter.AddObserver (
-        NSView.NSViewDidUpdateTrackingAreasNotification, (notification) =&gt; {Console.WriteLine ("Received the notification NSView", notification); }
-
-
-// Method style
-void Callback (NSNotification notification)
-{
-    Console.WriteLine ("Received a notification NSView", notification);
-}
-
-void Setup ()
-{
-    NSNotificationCenter.DefaultCenter.AddObserver (NSView.NSViewDidUpdateTrackingAreasNotification, Callback);
-}
-</code>
-          </example>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NSViewFocusDidChangeNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString NSViewFocusDidChangeNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString NSViewFocusDidChangeNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Notification constant for NSViewFocusDidChange</summary>
-        <value>NSString constant, should be used as a token to NSNotificationCenter.</value>
-        <remarks>
-          <para id="tool-remark">This constant can be used with the <see cref="T:MonoMac.Foundation.NSNotificationCenter" /> to register a listener for this notification.   This is an NSString instead of a string, because these values can be used as tokens in some native libraries instead of being used purely for their actual string content.    The 'notification' parameter to the callback contains extra information that is specific to the notification type.</para>
-          <example>
-            <code lang="c#">
-// Lambda style
-NSNotificationCenter.DefaultCenter.AddObserver (
-        NSView.NSViewFocusDidChangeNotification, (notification) =&gt; {Console.WriteLine ("Received the notification NSView", notification); }
-
-
-// Method style
-void Callback (NSNotification notification)
-{
-    Console.WriteLine ("Received a notification NSView", notification);
-}
-
-void Setup ()
-{
-    NSNotificationCenter.DefaultCenter.AddObserver (NSView.NSViewFocusDidChangeNotification, Callback);
-}
-</code>
-          </example>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NSViewFrameDidChangeNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString NSViewFrameDidChangeNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString NSViewFrameDidChangeNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Notification constant for NSViewFrameDidChange</summary>
-        <value>NSString constant, should be used as a token to NSNotificationCenter.</value>
-        <remarks>
-          <para id="tool-remark">This constant can be used with the <see cref="T:MonoMac.Foundation.NSNotificationCenter" /> to register a listener for this notification.   This is an NSString instead of a string, because these values can be used as tokens in some native libraries instead of being used purely for their actual string content.    The 'notification' parameter to the callback contains extra information that is specific to the notification type.</para>
-          <example>
-            <code lang="c#">
-// Lambda style
-NSNotificationCenter.DefaultCenter.AddObserver (
-        NSView.NSViewFrameDidChangeNotification, (notification) =&gt; {Console.WriteLine ("Received the notification NSView", notification); }
-
-
-// Method style
-void Callback (NSNotification notification)
-{
-    Console.WriteLine ("Received a notification NSView", notification);
-}
-
-void Setup ()
-{
-    NSNotificationCenter.DefaultCenter.AddObserver (NSView.NSViewFrameDidChangeNotification, Callback);
-}
-</code>
-          </example>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NSViewGlobalFrameDidChangeNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString NSViewGlobalFrameDidChangeNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString NSViewGlobalFrameDidChangeNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Notification constant for NSViewGlobalFrameDidChange</summary>
-        <value>NSString constant, should be used as a token to NSNotificationCenter.</value>
-        <remarks>
-          <para id="tool-remark">This constant can be used with the <see cref="T:MonoMac.Foundation.NSNotificationCenter" /> to register a listener for this notification.   This is an NSString instead of a string, because these values can be used as tokens in some native libraries instead of being used purely for their actual string content.    The 'notification' parameter to the callback contains extra information that is specific to the notification type.</para>
-          <example>
-            <code lang="c#">
-// Lambda style
-NSNotificationCenter.DefaultCenter.AddObserver (
-        NSView.NSViewGlobalFrameDidChangeNotification, (notification) =&gt; {Console.WriteLine ("Received the notification NSView", notification); }
-
-
-// Method style
-void Callback (NSNotification notification)
-{
-    Console.WriteLine ("Received a notification NSView", notification);
-}
-
-void Setup ()
-{
-    NSNotificationCenter.DefaultCenter.AddObserver (NSView.NSViewGlobalFrameDidChangeNotification, Callback);
-}
-</code>
-          </example>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OpaqueAncestor">
@@ -4008,8 +3981,8 @@ void Setup ()
       </Docs>
     </Member>
     <Member MemberName="PerformMnemonic">
-      <MemberSignature Language="C#" Value="public virtual void PerformMnemonic (string mnemonic);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PerformMnemonic(string mnemonic) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool PerformMnemonic (string mnemonic);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PerformMnemonic(string mnemonic) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -4018,9 +3991,12 @@ void Setup ()
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("performMnemonic:")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Deprecated in 10.8", false)</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="mnemonic" Type="System.String" />
@@ -4028,6 +4004,7 @@ void Setup ()
       <Docs>
         <param name="mnemonic">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4744,9 +4721,9 @@ void Setup ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ScrollRectby">
-      <MemberSignature Language="C#" Value="public virtual void ScrollRectby (System.Drawing.RectangleF aRect, System.Drawing.SizeF delta);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScrollRectby(valuetype System.Drawing.RectangleF aRect, valuetype System.Drawing.SizeF delta) cil managed" />
+    <Member MemberName="ScrollRect">
+      <MemberSignature Language="C#" Value="public virtual void ScrollRect (System.Drawing.RectangleF aRect, System.Drawing.SizeF delta);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScrollRect(valuetype System.Drawing.RectangleF aRect, valuetype System.Drawing.SizeF delta) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -4844,8 +4821,8 @@ void Setup ()
       </Docs>
     </Member>
     <Member MemberName="SetContentCompressionResistancePriority">
-      <MemberSignature Language="C#" Value="public virtual void SetContentCompressionResistancePriority (MonoMac.AppKit.NSLayoutPriority priority, MonoMac.AppKit.NSLayoutConstraintOrientation orientation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetContentCompressionResistancePriority(valuetype MonoMac.AppKit.NSLayoutPriority priority, valuetype MonoMac.AppKit.NSLayoutConstraintOrientation orientation) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void SetContentCompressionResistancePriority (float priority, MonoMac.AppKit.NSLayoutConstraintOrientation orientation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetContentCompressionResistancePriority(float32 priority, valuetype MonoMac.AppKit.NSLayoutConstraintOrientation orientation) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -4859,7 +4836,7 @@ void Setup ()
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="priority" Type="MonoMac.AppKit.NSLayoutPriority" />
+        <Parameter Name="priority" Type="System.Single" />
         <Parameter Name="orientation" Type="MonoMac.AppKit.NSLayoutConstraintOrientation" />
       </Parameters>
       <Docs>
@@ -4869,9 +4846,9 @@ void Setup ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetContentHuggingPriorityforOrientation">
-      <MemberSignature Language="C#" Value="public virtual void SetContentHuggingPriorityforOrientation (MonoMac.AppKit.NSLayoutPriority priority, MonoMac.AppKit.NSLayoutConstraintOrientation orientation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetContentHuggingPriorityforOrientation(valuetype MonoMac.AppKit.NSLayoutPriority priority, valuetype MonoMac.AppKit.NSLayoutConstraintOrientation orientation) cil managed" />
+    <Member MemberName="SetContentHuggingPriorityForOrientation">
+      <MemberSignature Language="C#" Value="public virtual void SetContentHuggingPriorityForOrientation (float priority, MonoMac.AppKit.NSLayoutConstraintOrientation orientation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetContentHuggingPriorityForOrientation(float32 priority, valuetype MonoMac.AppKit.NSLayoutConstraintOrientation orientation) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -4885,7 +4862,7 @@ void Setup ()
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="priority" Type="MonoMac.AppKit.NSLayoutPriority" />
+        <Parameter Name="priority" Type="System.Single" />
         <Parameter Name="orientation" Type="MonoMac.AppKit.NSLayoutConstraintOrientation" />
       </Parameters>
       <Docs>
@@ -5218,9 +5195,9 @@ void Setup ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="TranslateRectsNeedingDisplayInRectby">
-      <MemberSignature Language="C#" Value="public virtual void TranslateRectsNeedingDisplayInRectby (System.Drawing.RectangleF clipRect, System.Drawing.SizeF delta);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TranslateRectsNeedingDisplayInRectby(valuetype System.Drawing.RectangleF clipRect, valuetype System.Drawing.SizeF delta) cil managed" />
+    <Member MemberName="TranslateRectsNeedingDisplay">
+      <MemberSignature Language="C#" Value="public virtual void TranslateRectsNeedingDisplay (System.Drawing.RectangleF clipRect, System.Drawing.SizeF delta);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TranslateRectsNeedingDisplay(valuetype System.Drawing.RectangleF clipRect, valuetype System.Drawing.SizeF delta) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -5349,6 +5326,27 @@ void Setup ()
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatedTrackingAreasNotification">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString UpdatedTrackingAreasNotification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString UpdatedTrackingAreasNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("NSViewDidUpdateTrackingAreasNotification", "AppKit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5612,6 +5610,30 @@ void Setup ()
       <Docs>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WantsBestResolutionOpenGLSurface">
+      <MemberSignature Language="C#" Value="public virtual bool WantsBestResolutionOpenGLSurface { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WantsBestResolutionOpenGLSurface" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("wantsBestResolutionOpenGLSurface")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setWantsBestResolutionOpenGLSurface:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,98 @@
+<Type Name="NSComboBox+Notifications" FullName="MonoMac.AppKit.NSComboBox+Notifications">
+  <TypeSignature Language="C#" Value="public static class NSComboBox.Notifications" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit NSComboBox/Notifications extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ObserveSelectionDidChange">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveSelectionDidChange (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveSelectionDidChange(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveSelectionIsChanging">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveSelectionIsChanging (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveSelectionIsChanging(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveWillDismiss">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveWillDismiss (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveWillDismiss(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObserveWillPopUp">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject ObserveWillPopUp (EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject ObserveWillPopUp(class System.EventHandler`1&lt;class MonoMac.Foundation.NSNotificationEventArgs&gt; handler) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="System.EventHandler&lt;MonoMac.Foundation.NSNotificationEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

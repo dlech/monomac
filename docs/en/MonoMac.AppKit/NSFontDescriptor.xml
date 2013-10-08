@@ -381,8 +381,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="FromNameMatrix">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSFontDescriptor FromNameMatrix (string fontName, MonoMac.Foundation.NSAffineTransform matrix);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AppKit.NSFontDescriptor FromNameMatrix(string fontName, class MonoMac.Foundation.NSAffineTransform matrix) cil managed" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AppKit.NSFontDescriptor FromNameMatrix (string fontName, MonoMac.Foundation.NSAffineTransform matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AppKit.NSFontDescriptor FromNameMatrix(string fontName, class MonoMac.Foundation.NSAffineTransform matrix) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

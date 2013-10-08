@@ -490,6 +490,50 @@ public class MyClass : BaseClass {
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetSelectionIndexPath">
+      <MemberSignature Language="C#" Value="protected virtual MonoMac.Foundation.NSIndexPath GetSelectionIndexPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class MonoMac.Foundation.NSIndexPath GetSelectionIndexPath() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("selectionIndexPath")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSIndexPath</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelectionIndexPaths">
+      <MemberSignature Language="C#" Value="protected virtual MonoMac.Foundation.NSIndexPath[] GetSelectionIndexPaths ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class MonoMac.Foundation.NSIndexPath[] GetSelectionIndexPaths() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("selectionIndexPaths")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSIndexPath[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Insert">
       <MemberSignature Language="C#" Value="public virtual void Insert (MonoMac.Foundation.NSObject sender);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(class MonoMac.Foundation.NSObject sender) cil managed" />
@@ -876,20 +920,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SelectionIndexPath">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSIndexPath SelectionIndexPath { get; set; }" />
+      <MemberSignature Language="C#" Value="public MonoMac.Foundation.NSIndexPath SelectionIndexPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSIndexPath SelectionIndexPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("selectionIndexPath")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setSelectionIndexPath:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSIndexPath</ReturnType>
       </ReturnValue>
@@ -900,17 +936,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SelectionIndexPaths">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSIndexPath[] SelectionIndexPaths { get; }" />
+      <MemberSignature Language="C#" Value="public MonoMac.Foundation.NSIndexPath[] SelectionIndexPaths { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSIndexPath[] SelectionIndexPaths" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("selectionIndexPaths")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSIndexPath[]</ReturnType>
       </ReturnValue>
@@ -944,9 +975,34 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetSelectionIndexPath">
+      <MemberSignature Language="C#" Value="protected virtual bool SetSelectionIndexPath (MonoMac.Foundation.NSIndexPath index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool SetSelectionIndexPath(class MonoMac.Foundation.NSIndexPath index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setSelectionIndexPath:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="MonoMac.Foundation.NSIndexPath" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetSelectionIndexPaths">
-      <MemberSignature Language="C#" Value="public virtual bool SetSelectionIndexPaths (MonoMac.Foundation.NSArray indexPaths);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetSelectionIndexPaths(class MonoMac.Foundation.NSArray indexPaths) cil managed" />
+      <MemberSignature Language="C#" Value="protected virtual bool SetSelectionIndexPaths (MonoMac.Foundation.NSIndexPath[] indexPaths);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool SetSelectionIndexPaths(class MonoMac.Foundation.NSIndexPath[] indexPaths) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -960,7 +1016,7 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="indexPaths" Type="MonoMac.Foundation.NSArray" />
+        <Parameter Name="indexPaths" Type="MonoMac.Foundation.NSIndexPath[]" />
       </Parameters>
       <Docs>
         <param name="indexPaths">To be added.</param>

@@ -20,28 +20,6 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NSBundle ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <Parameters />
-      <Docs>
-        <summary>Default constructor that initializes a new instance of this class with no parameters.</summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NSBundle (MonoMac.Foundation.NSCoder coder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
       <MemberType>Constructor</MemberType>
@@ -198,6 +176,27 @@ public class MyClass : BaseClass {
       </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSBundle[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppStoreReceiptUrl">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSUrl AppStoreReceiptUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSUrl AppStoreReceiptUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("appStoreReceiptURL")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSUrl</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -549,6 +548,33 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetPathsForResources">
+      <MemberSignature Language="C#" Value="public static string[] GetPathsForResources (string fileExtension, string bundlePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetPathsForResources(string fileExtension, string bundlePath) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("pathsForResourcesOfType:inDirectory:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileExtension" Type="System.String" />
+        <Parameter Name="bundlePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileExtension">To be added.</param>
+        <param name="bundlePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="InfoDictionary">
       <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDictionary InfoDictionary { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSDictionary InfoDictionary" />
@@ -592,8 +618,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Load">
-      <MemberSignature Language="C#" Value="public virtual void Load ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool Load ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Load() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -604,11 +630,12 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -963,6 +990,82 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PathsForResources">
+      <MemberSignature Language="C#" Value="public string[] PathsForResources (string fileExtension);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] PathsForResources(string fileExtension) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileExtension" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileExtension">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathsForResources">
+      <MemberSignature Language="C#" Value="public virtual string[] PathsForResources (string fileExtension, string subDirectory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] PathsForResources(string fileExtension, string subDirectory) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("pathsForResourcesOfType:inDirectory:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileExtension" Type="System.String" />
+        <Parameter Name="subDirectory" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileExtension">To be added.</param>
+        <param name="subDirectory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PathsForResources">
+      <MemberSignature Language="C#" Value="public virtual string[] PathsForResources (string fileExtension, string subDirectory, string localizationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] PathsForResources(string fileExtension, string subDirectory, string localizationName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("pathsForResourcesOfType:inDirectory:forLocalization:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileExtension" Type="System.String" />
+        <Parameter Name="subDirectory" Type="System.String" />
+        <Parameter Name="localizationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileExtension">To be added.</param>
+        <param name="subDirectory">To be added.</param>
+        <param name="localizationName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PreferredLocalizations">
       <MemberSignature Language="C#" Value="public virtual string[] PreferredLocalizations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] PreferredLocalizations" />
@@ -1186,8 +1289,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Unload">
-      <MemberSignature Language="C#" Value="public virtual void Unload ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unload() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool Unload ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Unload() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1198,11 +1301,12 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,6 +1,6 @@
 <Type Name="NSMutableSet" FullName="MonoMac.Foundation.NSMutableSet">
-  <TypeSignature Language="C#" Value="public class NSMutableSet : MonoMac.Foundation.NSSet" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NSMutableSet extends MonoMac.Foundation.NSSet" />
+  <TypeSignature Language="C#" Value="public class NSMutableSet : MonoMac.Foundation.NSSet, System.Collections.Generic.IEnumerable&lt;MonoMac.Foundation.NSObject&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NSMutableSet extends MonoMac.Foundation.NSSet implements class System.Collections.Generic.IEnumerable`1&lt;class MonoMac.Foundation.NSObject&gt;, class System.Collections.IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>MonoMac</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -9,6 +9,9 @@
     <BaseTypeName>MonoMac.Foundation.NSSet</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;MonoMac.Foundation.NSObject&gt;</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
@@ -85,6 +88,22 @@
         <param name="coder">The unarchiver object.</param>
         <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
         <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NSMutableSet (MonoMac.Foundation.NSObject[] objs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObject[] objs) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="objs" Type="MonoMac.Foundation.NSObject[]" />
+      </Parameters>
+      <Docs>
+        <param name="objs">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -183,6 +202,28 @@ public class MyClass : BaseClass {
         <remarks>
           <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NSMutableSet (string[] strings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] strings) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="strings" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="strings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">

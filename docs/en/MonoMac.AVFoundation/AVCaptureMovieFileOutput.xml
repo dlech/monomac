@@ -188,7 +188,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="MovieFragmentInterval">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreMedia.CMTime MovieFragmentInterval { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreMedia.CMTime MovieFragmentInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.CoreMedia.CMTime MovieFragmentInterval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -197,6 +197,9 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("movieFragmentInterval")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setMovieFragmentInterval:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

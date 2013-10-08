@@ -319,9 +319,31 @@ public class MyClass : BaseClass {
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetVoice">
+      <MemberSignature Language="C#" Value="protected virtual string GetVoice ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetVoice() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("voice")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsAnyApplicationSpeaking">
-      <MemberSignature Language="C#" Value="public virtual bool IsAnyApplicationSpeaking { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IsAnyApplicationSpeaking" />
+      <MemberSignature Language="C#" Value="public static bool IsAnyApplicationSpeaking { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsAnyApplicationSpeaking" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -490,6 +512,31 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetVoice">
+      <MemberSignature Language="C#" Value="protected virtual bool SetVoice (string voice);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool SetVoice(string voice) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setVoice:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="voice" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="voice">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="StartSpeakingString">
       <MemberSignature Language="C#" Value="public virtual bool StartSpeakingString (string theString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool StartSpeakingString(string theString) cil managed" />
@@ -612,20 +659,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Voice">
-      <MemberSignature Language="C#" Value="public virtual string Voice { get; set; }" />
+      <MemberSignature Language="C#" Value="public string Voice { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Voice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("voice")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setVoice:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

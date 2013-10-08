@@ -152,6 +152,64 @@ public class MyClass : BaseClass {
         <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Components">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDateComponents Components (MonoMac.Foundation.NSCalendarUnit unitFlags, MonoMac.Foundation.NSDate fromDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDateComponents Components(valuetype MonoMac.Foundation.NSCalendarUnit unitFlags, class MonoMac.Foundation.NSDate fromDate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("components:fromDate:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSDateComponents</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unitFlags" Type="MonoMac.Foundation.NSCalendarUnit" />
+        <Parameter Name="fromDate" Type="MonoMac.Foundation.NSDate" />
+      </Parameters>
+      <Docs>
+        <param name="unitFlags">To be added.</param>
+        <param name="fromDate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Components">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDateComponents Components (MonoMac.Foundation.NSCalendarUnit unitFlags, MonoMac.Foundation.NSDate fromDate, MonoMac.Foundation.NSDate toDate, MonoMac.Foundation.NSDateComponentsWrappingBehavior opts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDateComponents Components(valuetype MonoMac.Foundation.NSCalendarUnit unitFlags, class MonoMac.Foundation.NSDate fromDate, class MonoMac.Foundation.NSDate toDate, valuetype MonoMac.Foundation.NSDateComponentsWrappingBehavior opts) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("components:fromDate:toDate:options:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSDateComponents</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unitFlags" Type="MonoMac.Foundation.NSCalendarUnit" />
+        <Parameter Name="fromDate" Type="MonoMac.Foundation.NSDate" />
+        <Parameter Name="toDate" Type="MonoMac.Foundation.NSDate" />
+        <Parameter Name="opts" Type="MonoMac.Foundation.NSDateComponentsWrappingBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="unitFlags">To be added.</param>
+        <param name="fromDate">To be added.</param>
+        <param name="toDate">To be added.</param>
+        <param name="opts">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CurrentCalendar">
       <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSCalendar CurrentCalendar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSCalendar CurrentCalendar" />
@@ -170,6 +228,60 @@ public class MyClass : BaseClass {
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateByAddingComponents">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDate DateByAddingComponents (MonoMac.Foundation.NSDateComponents comps, MonoMac.Foundation.NSDate date, MonoMac.Foundation.NSDateComponentsWrappingBehavior opts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDate DateByAddingComponents(class MonoMac.Foundation.NSDateComponents comps, class MonoMac.Foundation.NSDate date, valuetype MonoMac.Foundation.NSDateComponentsWrappingBehavior opts) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("dateByAddingComponents:toDate:options:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSDate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comps" Type="MonoMac.Foundation.NSDateComponents" />
+        <Parameter Name="date" Type="MonoMac.Foundation.NSDate" />
+        <Parameter Name="opts" Type="MonoMac.Foundation.NSDateComponentsWrappingBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="comps">To be added.</param>
+        <param name="date">To be added.</param>
+        <param name="opts">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateFromComponents">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDate DateFromComponents (MonoMac.Foundation.NSDateComponents comps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDate DateFromComponents(class MonoMac.Foundation.NSDateComponents comps) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("dateFromComponents:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSDate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comps" Type="MonoMac.Foundation.NSDateComponents" />
+      </Parameters>
+      <Docs>
+        <param name="comps">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

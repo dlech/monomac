@@ -9,6 +9,11 @@
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{FormatName}")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>An AudioStream description.</summary>
     <remarks>To be added.</remarks>
@@ -26,6 +31,21 @@
       </Parameters>
       <Docs>
         <param name="formatType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AudioFormatFlagsAudioUnitCanonical">
+      <MemberSignature Language="C#" Value="public static readonly MonoMac.AudioToolbox.AudioFormatFlags AudioFormatFlagsAudioUnitCanonical;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype MonoMac.AudioToolbox.AudioFormatFlags AudioFormatFlagsAudioUnitCanonical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFormatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,8 +127,8 @@
       </Docs>
     </Member>
     <Member MemberName="CreateLinearPCM">
-      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioStreamBasicDescription CreateLinearPCM (double sampleRate = 441000, uint channelsPerFrame = 2, uint bitsPerChannel = 16);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.AudioToolbox.AudioStreamBasicDescription CreateLinearPCM(float64 sampleRate, unsigned int32 channelsPerFrame, unsigned int32 bitsPerChannel) cil managed" />
+      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioStreamBasicDescription CreateLinearPCM (double sampleRate = 44100, uint channelsPerFrame = 2, uint bitsPerChannel = 16, bool bigEndian = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.AudioToolbox.AudioStreamBasicDescription CreateLinearPCM(float64 sampleRate, unsigned int32 channelsPerFrame, unsigned int32 bitsPerChannel, bool bigEndian) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -120,11 +140,13 @@
         <Parameter Name="sampleRate" Type="System.Double" />
         <Parameter Name="channelsPerFrame" Type="System.UInt32" />
         <Parameter Name="bitsPerChannel" Type="System.UInt32" />
+        <Parameter Name="bigEndian" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="sampleRate">To be added.</param>
         <param name="channelsPerFrame">To be added.</param>
         <param name="bitsPerChannel">To be added.</param>
+        <param name="bigEndian">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -160,6 +182,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FormatName">
+      <MemberSignature Language="C#" Value="public string FormatName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FormatName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FramesPerPacket">
       <MemberSignature Language="C#" Value="public int FramesPerPacket;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 FramesPerPacket" />
@@ -172,6 +210,154 @@
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAvailableEncodeChannelLayoutTags">
+      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioChannelLayoutTag[] GetAvailableEncodeChannelLayoutTags (MonoMac.AudioToolbox.AudioStreamBasicDescription format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.AudioToolbox.AudioChannelLayoutTag[] GetAvailableEncodeChannelLayoutTags(valuetype MonoMac.AudioToolbox.AudioStreamBasicDescription format) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioChannelLayoutTag[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="MonoMac.AudioToolbox.AudioStreamBasicDescription" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAvailableEncodeNumberChannels">
+      <MemberSignature Language="C#" Value="public static int[] GetAvailableEncodeNumberChannels (MonoMac.AudioToolbox.AudioStreamBasicDescription format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32[] GetAvailableEncodeNumberChannels(valuetype MonoMac.AudioToolbox.AudioStreamBasicDescription format) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="MonoMac.AudioToolbox.AudioStreamBasicDescription" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFormatInfo">
+      <MemberSignature Language="C#" Value="public static MonoMac.AudioToolbox.AudioFormatError GetFormatInfo (ref MonoMac.AudioToolbox.AudioStreamBasicDescription format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.AudioToolbox.AudioFormatError GetFormatInfo(valuetype MonoMac.AudioToolbox.AudioStreamBasicDescription format) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFormatError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="MonoMac.AudioToolbox.AudioStreamBasicDescription&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFormatList">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioFormat[] GetFormatList (byte[] magicCookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.AudioToolbox.AudioFormat[] GetFormatList(unsigned int8[] magicCookie) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFormat[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="magicCookie" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="magicCookie">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOutputFormatList">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioFormat[] GetOutputFormatList (byte[] magicCookie = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.AudioToolbox.AudioFormat[] GetOutputFormatList(unsigned int8[] magicCookie) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFormat[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="magicCookie" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="magicCookie">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEncrypted">
+      <MemberSignature Language="C#" Value="public bool IsEncrypted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEncrypted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExternallyFramed">
+      <MemberSignature Language="C#" Value="public bool IsExternallyFramed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsExternallyFramed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVariableBitrate">
+      <MemberSignature Language="C#" Value="public bool IsVariableBitrate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsVariableBitrate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

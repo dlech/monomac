@@ -609,9 +609,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="WidthValueTypeForLayeredge">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTextBlockValueType WidthValueTypeForLayeredge (MonoMac.AppKit.NSTextBlockLayer layer, MonoMac.AppKit.NSRectEdge edge);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.AppKit.NSTextBlockValueType WidthValueTypeForLayeredge(valuetype MonoMac.AppKit.NSTextBlockLayer layer, valuetype MonoMac.AppKit.NSRectEdge edge) cil managed" />
+    <Member MemberName="WidthValueTypeForLayer">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTextBlockValueType WidthValueTypeForLayer (MonoMac.AppKit.NSTextBlockLayer layer, MonoMac.AppKit.NSRectEdge edge);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.AppKit.NSTextBlockValueType WidthValueTypeForLayer(valuetype MonoMac.AppKit.NSTextBlockLayer layer, valuetype MonoMac.AppKit.NSRectEdge edge) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

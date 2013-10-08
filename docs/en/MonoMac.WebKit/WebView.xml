@@ -437,8 +437,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CanShowMimeType">
-      <MemberSignature Language="C#" Value="public virtual bool CanShowMimeType (string MimeType);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanShowMimeType(string MimeType) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool CanShowMimeType (string MimeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanShowMimeType(string MimeType) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -2151,15 +2151,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="RegisterViewClass">
-      <MemberSignature Language="C#" Value="public static void RegisterViewClass (MonoMac.ObjCRuntime.Class viewClass, MonoMac.ObjCRuntime.Class representationClass, string MimeType);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterViewClass(class MonoMac.ObjCRuntime.Class viewClass, class MonoMac.ObjCRuntime.Class representationClass, string MimeType) cil managed" />
+      <MemberSignature Language="C#" Value="public static void RegisterViewClass (MonoMac.ObjCRuntime.Class viewClass, MonoMac.ObjCRuntime.Class representationClass, string mimeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterViewClass(class MonoMac.ObjCRuntime.Class viewClass, class MonoMac.ObjCRuntime.Class representationClass, string mimeType) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("registerViewClass:representationClass:forMimeType:")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("registerViewClass:representationClass:forMIMEType:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2168,12 +2168,12 @@ public class MyClass : BaseClass {
       <Parameters>
         <Parameter Name="viewClass" Type="MonoMac.ObjCRuntime.Class" />
         <Parameter Name="representationClass" Type="MonoMac.ObjCRuntime.Class" />
-        <Parameter Name="MimeType" Type="System.String" />
+        <Parameter Name="mimeType" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="viewClass">To be added.</param>
         <param name="representationClass">To be added.</param>
-        <param name="MimeType">To be added.</param>
+        <param name="mimeType">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

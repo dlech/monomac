@@ -237,54 +237,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PejectProtectionSpaceAndContinueWithChallenge">
-      <MemberSignature Language="C#" Value="public virtual void PejectProtectionSpaceAndContinueWithChallenge (MonoMac.Foundation.NSUrlAuthenticationChallenge challenge);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PejectProtectionSpaceAndContinueWithChallenge(class MonoMac.Foundation.NSUrlAuthenticationChallenge challenge) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("rejectProtectionSpaceAndContinueWithChallenge:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="challenge" Type="MonoMac.Foundation.NSUrlAuthenticationChallenge" />
-      </Parameters>
-      <Docs>
-        <param name="challenge">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PerformDefaultHandlingForChallenge">
-      <MemberSignature Language="C#" Value="public virtual void PerformDefaultHandlingForChallenge (MonoMac.Foundation.NSUrlAuthenticationChallenge challenge);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PerformDefaultHandlingForChallenge(class MonoMac.Foundation.NSUrlAuthenticationChallenge challenge) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("performDefaultHandlingForAuthenticationChallenge:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="challenge" Type="MonoMac.Foundation.NSUrlAuthenticationChallenge" />
-      </Parameters>
-      <Docs>
-        <param name="challenge">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="PreviousFailureCount">
       <MemberSignature Language="C#" Value="public virtual int PreviousFailureCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PreviousFailureCount" />

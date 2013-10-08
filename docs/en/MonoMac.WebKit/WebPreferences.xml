@@ -601,7 +601,7 @@ public class MyClass : BaseClass {
           <AttributeName>get: MonoMac.Foundation.Export("arePlugInsEnabled")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setArePlugInsEnabled:")</AttributeName>
+          <AttributeName>set: MonoMac.Foundation.Export("setPlugInsEnabled:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -734,8 +734,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="StandardPreferences">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.WebKit.WebPreferences StandardPreferences { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.WebKit.WebPreferences StandardPreferences" />
+      <MemberSignature Language="C#" Value="public static MonoMac.WebKit.WebPreferences StandardPreferences { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.WebKit.WebPreferences StandardPreferences" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

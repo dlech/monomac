@@ -11,6 +11,9 @@
   <Interfaces />
   <Attributes>
     <Attribute>
+      <AttributeName>MonoMac.Foundation.Model</AttributeName>
+    </Attribute>
+    <Attribute>
       <AttributeName>MonoMac.Foundation.Register("QTCaptureDecompressedVideoOutput_Delegate", true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -119,22 +122,6 @@ public class MyClass : BaseClass {
         <remarks>
           <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ClassHandle">
-      <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>The handle for this class.</summary>
-        <value>The pointer to the Objective-C class.</value>
-        <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DidDropVideoFrame">

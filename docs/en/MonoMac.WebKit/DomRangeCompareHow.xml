@@ -15,7 +15,7 @@
   <Members>
     <Member MemberName="EndToEnd">
       <MemberSignature Language="C#" Value="EndToEnd" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomRangeCompareHow EndToEnd = int32(2)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomRangeCompareHow EndToEnd = unsigned int16(2)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -29,7 +29,7 @@
     </Member>
     <Member MemberName="EndToStart">
       <MemberSignature Language="C#" Value="EndToStart" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomRangeCompareHow EndToStart = int32(3)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomRangeCompareHow EndToStart = unsigned int16(3)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -43,7 +43,7 @@
     </Member>
     <Member MemberName="StartToEnd">
       <MemberSignature Language="C#" Value="StartToEnd" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomRangeCompareHow StartToEnd = int32(1)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomRangeCompareHow StartToEnd = unsigned int16(1)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -57,7 +57,7 @@
     </Member>
     <Member MemberName="StartToStart">
       <MemberSignature Language="C#" Value="StartToStart" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomRangeCompareHow StartToStart = int32(0)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomRangeCompareHow StartToStart = unsigned int16(0)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

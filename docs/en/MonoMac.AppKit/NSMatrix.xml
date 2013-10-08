@@ -463,8 +463,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CellFrameAtRowColumn">
-      <MemberSignature Language="C#" Value="public virtual System.Drawing.RectangleF CellFrameAtRowColumn (int row, int col);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Drawing.RectangleF CellFrameAtRowColumn(int32 row, int32 col) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.RectangleF CellFrameAtRowColumn (int row, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Drawing.RectangleF CellFrameAtRowColumn(int32 row, int32 column) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -479,11 +479,11 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="row" Type="System.Int32" />
-        <Parameter Name="col" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="row">To be added.</param>
-        <param name="col">To be added.</param>
+        <param name="column">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -846,8 +846,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="DrawCellAtRowColumn">
-      <MemberSignature Language="C#" Value="public virtual void DrawCellAtRowColumn (int row, int col);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawCellAtRowColumn(int32 row, int32 col) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void DrawCellAtRowColumn (int row, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawCellAtRowColumn(int32 row, int32 column) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -862,11 +862,11 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="row" Type="System.Int32" />
-        <Parameter Name="col" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="row">To be added.</param>
-        <param name="col">To be added.</param>
+        <param name="column">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -936,8 +936,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GetRowColumn">
-      <MemberSignature Language="C#" Value="public virtual bool GetRowColumn (out int row, out int col, MonoMac.AppKit.NSCell aCell);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetRowColumn(int32 row, int32 col, class MonoMac.AppKit.NSCell aCell) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool GetRowColumn (out int row, out int column, MonoMac.AppKit.NSCell aCell);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetRowColumn(int32 row, int32 column, class MonoMac.AppKit.NSCell aCell) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -952,21 +952,21 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="row" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="col" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="column" Type="System.Int32&amp;" RefType="out" />
         <Parameter Name="aCell" Type="MonoMac.AppKit.NSCell" />
       </Parameters>
       <Docs>
         <param name="row">To be added.</param>
-        <param name="col">To be added.</param>
+        <param name="column">To be added.</param>
         <param name="aCell">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetRowcolumnForPoint">
-      <MemberSignature Language="C#" Value="public virtual bool GetRowcolumnForPoint (out int row, out int col, System.Drawing.PointF aPoint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetRowcolumnForPoint(int32 row, int32 col, valuetype System.Drawing.PointF aPoint) cil managed" />
+    <Member MemberName="GetRowColumnForPoint">
+      <MemberSignature Language="C#" Value="public virtual bool GetRowColumnForPoint (out int row, out int column, System.Drawing.PointF aPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetRowColumnForPoint(int32 row, int32 column, valuetype System.Drawing.PointF aPoint) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -981,12 +981,12 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="row" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="col" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="column" Type="System.Int32&amp;" RefType="out" />
         <Parameter Name="aPoint" Type="System.Drawing.PointF" />
       </Parameters>
       <Docs>
         <param name="row">To be added.</param>
-        <param name="col">To be added.</param>
+        <param name="column">To be added.</param>
         <param name="aPoint">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
@@ -1019,9 +1019,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="HighlightCellatRowColumn">
-      <MemberSignature Language="C#" Value="public virtual void HighlightCellatRowColumn (bool highlight, int row, int col);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void HighlightCellatRowColumn(bool highlight, int32 row, int32 col) cil managed" />
+    <Member MemberName="HighlightCell">
+      <MemberSignature Language="C#" Value="public virtual void HighlightCell (bool highlight, int row, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void HighlightCell(bool highlight, int32 row, int32 column) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1037,12 +1037,12 @@ public class MyClass : BaseClass {
       <Parameters>
         <Parameter Name="highlight" Type="System.Boolean" />
         <Parameter Name="row" Type="System.Int32" />
-        <Parameter Name="col" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="highlight">To be added.</param>
         <param name="row">To be added.</param>
-        <param name="col">To be added.</param>
+        <param name="column">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1071,9 +1071,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="InsertColumnwithCells">
-      <MemberSignature Language="C#" Value="public virtual void InsertColumnwithCells (int column, MonoMac.AppKit.NSCell[] newCells);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertColumnwithCells(int32 column, class MonoMac.AppKit.NSCell[] newCells) cil managed" />
+    <Member MemberName="InsertColumn">
+      <MemberSignature Language="C#" Value="public virtual void InsertColumn (int column, MonoMac.AppKit.NSCell[] newCells);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertColumn(int32 column, class MonoMac.AppKit.NSCell[] newCells) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1233,9 +1233,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MakeCellAtRowcolumn">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSCell MakeCellAtRowcolumn (int row, int col);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AppKit.NSCell MakeCellAtRowcolumn(int32 row, int32 col) cil managed" />
+    <Member MemberName="MakeCell">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSCell MakeCell (int row, int col);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AppKit.NSCell MakeCell(int32 row, int32 col) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1379,9 +1379,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PutCellatRowColumn">
-      <MemberSignature Language="C#" Value="public virtual void PutCellatRowColumn (MonoMac.AppKit.NSCell newCell, int row, int col);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PutCellatRowColumn(class MonoMac.AppKit.NSCell newCell, int32 row, int32 col) cil managed" />
+    <Member MemberName="PutCell">
+      <MemberSignature Language="C#" Value="public virtual void PutCell (MonoMac.AppKit.NSCell newCell, int row, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PutCell(class MonoMac.AppKit.NSCell newCell, int32 row, int32 column) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1397,12 +1397,12 @@ public class MyClass : BaseClass {
       <Parameters>
         <Parameter Name="newCell" Type="MonoMac.AppKit.NSCell" />
         <Parameter Name="row" Type="System.Int32" />
-        <Parameter Name="col" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="newCell">To be added.</param>
         <param name="row">To be added.</param>
-        <param name="col">To be added.</param>
+        <param name="column">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1523,9 +1523,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ScrollCellToVisibleAtRowcolumn">
-      <MemberSignature Language="C#" Value="public virtual void ScrollCellToVisibleAtRowcolumn (int row, int col);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScrollCellToVisibleAtRowcolumn(int32 row, int32 col) cil managed" />
+    <Member MemberName="ScrollCellToVisible">
+      <MemberSignature Language="C#" Value="public virtual void ScrollCellToVisible (int row, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScrollCellToVisible(int32 row, int32 column) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1540,11 +1540,11 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="row" Type="System.Int32" />
-        <Parameter Name="col" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="row">To be added.</param>
-        <param name="col">To be added.</param>
+        <param name="column">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1573,9 +1573,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SelectCellAtRowcolumn">
-      <MemberSignature Language="C#" Value="public virtual void SelectCellAtRowcolumn (int row, int col);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectCellAtRowcolumn(int32 row, int32 col) cil managed" />
+    <Member MemberName="SelectCell">
+      <MemberSignature Language="C#" Value="public virtual void SelectCell (int row, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectCell(int32 row, int32 column) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1590,11 +1590,11 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="row" Type="System.Int32" />
-        <Parameter Name="col" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="row">To be added.</param>
-        <param name="col">To be added.</param>
+        <param name="column">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1757,8 +1757,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SelectTextAtRowColumn">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject SelectTextAtRowColumn (int row, int col);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject SelectTextAtRowColumn(int32 row, int32 col) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject SelectTextAtRowColumn (int row, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject SelectTextAtRowColumn(int32 row, int32 column) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1773,11 +1773,11 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="row" Type="System.Int32" />
-        <Parameter Name="col" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="row">To be added.</param>
-        <param name="col">To be added.</param>
+        <param name="column">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1909,8 +1909,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SetState">
-      <MemberSignature Language="C#" Value="public virtual void SetState (int state, int row, int col);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetState(int32 state, int32 row, int32 col) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void SetState (int state, int row, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetState(int32 state, int32 row, int32 column) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1926,19 +1926,19 @@ public class MyClass : BaseClass {
       <Parameters>
         <Parameter Name="state" Type="System.Int32" />
         <Parameter Name="row" Type="System.Int32" />
-        <Parameter Name="col" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="state">To be added.</param>
         <param name="row">To be added.</param>
-        <param name="col">To be added.</param>
+        <param name="column">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetToolTipforCell">
-      <MemberSignature Language="C#" Value="public virtual void SetToolTipforCell (string toolTipString, MonoMac.AppKit.NSCell cell);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetToolTipforCell(string toolTipString, class MonoMac.AppKit.NSCell cell) cil managed" />
+    <Member MemberName="SetToolTipForCell">
+      <MemberSignature Language="C#" Value="public virtual void SetToolTipForCell (string toolTipString, MonoMac.AppKit.NSCell cell);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetToolTipForCell(string toolTipString, class MonoMac.AppKit.NSCell cell) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

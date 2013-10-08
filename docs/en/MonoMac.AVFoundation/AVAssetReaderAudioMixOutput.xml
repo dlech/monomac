@@ -176,9 +176,6 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use Settings property", false)</AttributeName>
-        </Attribute>
-        <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("audioSettings")</AttributeName>
         </Attribute>
       </Attributes>
@@ -286,9 +283,6 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("assetReaderAudioMixOutputWithAudioTracks:audioSettings:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use Create method", false)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

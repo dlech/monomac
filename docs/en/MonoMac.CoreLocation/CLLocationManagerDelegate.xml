@@ -14,7 +14,7 @@
       <AttributeName>MonoMac.Foundation.Model</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>MonoMac.Foundation.Register("CLLocationManagerDelegate", true)</AttributeName>
+      <AttributeName>MonoMac.Foundation.Register("CLLocationManagerDelegate", false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

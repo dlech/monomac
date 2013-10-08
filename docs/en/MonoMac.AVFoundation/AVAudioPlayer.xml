@@ -186,33 +186,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ChannelAssignments">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AVFoundation.AVAudioSessionChannelDescription[] ChannelAssignments { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AVFoundation.AVAudioSessionChannelDescription[] ChannelAssignments" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("channelAssignments")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setChannelAssignments:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.AVFoundation.AVAudioSessionChannelDescription[]</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ClassHandle">
       <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
@@ -719,7 +692,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("This method was incorrectly named, use PlayAtTime instead")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("This method was incorrectly named, use PlayAtTime instead")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -814,7 +787,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use SoundSettings")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use SoundSettings")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

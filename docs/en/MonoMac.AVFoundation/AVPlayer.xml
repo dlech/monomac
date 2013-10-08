@@ -245,90 +245,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AirPlayVideoActive">
-      <MemberSignature Language="C#" Value="public virtual bool AirPlayVideoActive { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool AirPlayVideoActive" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(5, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Obsoleted in iOS6, use ExternalPlaybackActive", false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isAirPlayVideoActive")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AllowsAirPlayVideo">
-      <MemberSignature Language="C#" Value="public virtual bool AllowsAirPlayVideo { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool AllowsAirPlayVideo" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(5, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Obsoleted in iOS6, use AllowsExternalPlayback", false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("allowsAirPlayVideo")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setAllowsAirPlayVideo:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AllowsExternalPlayback">
-      <MemberSignature Language="C#" Value="public virtual bool AllowsExternalPlayback { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool AllowsExternalPlayback" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("allowsExternalPlayback")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setAllowsExternalPlayback:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="CancelPendingPrerolls">
       <MemberSignature Language="C#" Value="public virtual void CancelPendingPrerolls ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelPendingPrerolls() cil managed" />
@@ -479,46 +395,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ExternalPlaybackActive">
-      <MemberSignature Language="C#" Value="public virtual bool ExternalPlaybackActive { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool ExternalPlaybackActive" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isExternalPlaybackActive")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ExternalPlaybackVideoGravity">
-      <MemberSignature Language="C#" Value="public Nullable&lt;MonoMac.AVFoundation.AVLayerVideoGravity&gt; ExternalPlaybackVideoGravity { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype MonoMac.AVFoundation.AVLayerVideoGravity&gt; ExternalPlaybackVideoGravity" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;MonoMac.AVFoundation.AVLayerVideoGravity&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="FromPlayerItem">
       <MemberSignature Language="C#" Value="public static MonoMac.AVFoundation.AVPlayer FromPlayerItem (MonoMac.AVFoundation.AVPlayerItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AVFoundation.AVPlayer FromPlayerItem(class MonoMac.AVFoundation.AVPlayerItem item) cil managed" />
@@ -570,7 +446,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="MasterClock">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreMedia.CMClock MasterClock { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreMedia.CMClock MasterClock { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.CoreMedia.CMClock MasterClock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -583,33 +459,12 @@ public class MyClass : BaseClass {
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("masterClock")</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setMasterClock:")</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.CoreMedia.CMClock</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OutputObscuredDueToInsufficientExternalProtection">
-      <MemberSignature Language="C#" Value="public virtual bool OutputObscuredDueToInsufficientExternalProtection { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool OutputObscuredDueToInsufficientExternalProtection" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("outputObscuredDueToInsufficientExternalProtection")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -682,6 +537,26 @@ public class MyClass : BaseClass {
         <param name="rate">To be added.</param>
         <param name="onComplete">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrerollAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; PrerollAsync (float rate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; PrerollAsync(float32 rate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rate" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="rate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -782,30 +657,6 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Seek">
-      <MemberSignature Language="C#" Value="public virtual void Seek (MonoMac.Foundation.NSDate date);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Seek(class MonoMac.Foundation.NSDate date) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("seekToDate:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="date" Type="MonoMac.Foundation.NSDate" />
-      </Parameters>
-      <Docs>
-        <param name="date">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Seek">
       <MemberSignature Language="C#" Value="public virtual void Seek (MonoMac.CoreMedia.CMTime time, MonoMac.AVFoundation.AVCompletion completion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Seek(valuetype MonoMac.CoreMedia.CMTime time, class MonoMac.AVFoundation.AVCompletion completion) cil managed" />
       <MemberType>Method</MemberType>
@@ -827,32 +678,6 @@ public class MyClass : BaseClass {
       <Docs>
         <param name="time">To be added.</param>
         <param name="completion">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Seek">
-      <MemberSignature Language="C#" Value="public virtual void Seek (MonoMac.Foundation.NSDate date, MonoMac.AVFoundation.AVCompletion onComplete);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Seek(class MonoMac.Foundation.NSDate date, class MonoMac.AVFoundation.AVCompletion onComplete) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("seekToDate:completionHandler:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="date" Type="MonoMac.Foundation.NSDate" />
-        <Parameter Name="onComplete" Type="MonoMac.AVFoundation.AVCompletion" />
-      </Parameters>
-      <Docs>
-        <param name="date">To be added.</param>
-        <param name="onComplete">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -915,6 +740,50 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SeekAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; SeekAsync (MonoMac.CoreMedia.CMTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; SeekAsync(valuetype MonoMac.CoreMedia.CMTime time) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="MonoMac.CoreMedia.CMTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeekAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; SeekAsync (MonoMac.CoreMedia.CMTime time, MonoMac.CoreMedia.CMTime toleranceBefore, MonoMac.CoreMedia.CMTime toleranceAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; SeekAsync(valuetype MonoMac.CoreMedia.CMTime time, valuetype MonoMac.CoreMedia.CMTime toleranceBefore, valuetype MonoMac.CoreMedia.CMTime toleranceAfter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="MonoMac.CoreMedia.CMTime" />
+        <Parameter Name="toleranceBefore" Type="MonoMac.CoreMedia.CMTime" />
+        <Parameter Name="toleranceAfter" Type="MonoMac.CoreMedia.CMTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">To be added.</param>
+        <param name="toleranceBefore">To be added.</param>
+        <param name="toleranceAfter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetRate">
       <MemberSignature Language="C#" Value="public virtual void SetRate (float rate, MonoMac.CoreMedia.CMTime itemTime, MonoMac.CoreMedia.CMTime hostClockTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetRate(float32 rate, valuetype MonoMac.CoreMedia.CMTime itemTime, valuetype MonoMac.CoreMedia.CMTime hostClockTime) cil managed" />
@@ -957,90 +826,6 @@ public class MyClass : BaseClass {
       </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AVFoundation.AVPlayerStatus</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UsesAirPlayVideoWhileAirPlayScreenIsActive">
-      <MemberSignature Language="C#" Value="public virtual bool UsesAirPlayVideoWhileAirPlayScreenIsActive { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool UsesAirPlayVideoWhileAirPlayScreenIsActive" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(5, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Obsoleted in iOS6, use UsesExternalPlaybackWhileExternalScreenIsActive", false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("usesAirPlayVideoWhileAirPlayScreenIsActive")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setUsesAirPlayVideoWhileAirPlayScreenIsActive:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UsesExternalPlaybackWhileExternalScreenIsActive">
-      <MemberSignature Language="C#" Value="public virtual bool UsesExternalPlaybackWhileExternalScreenIsActive { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool UsesExternalPlaybackWhileExternalScreenIsActive" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("usesExternalPlaybackWhileExternalScreenIsActive")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setUsesExternalPlaybackWhileExternalScreenIsActive:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="WeakExternalPlaybackVideoGravity">
-      <MemberSignature Language="C#" Value="protected virtual MonoMac.Foundation.NSString WeakExternalPlaybackVideoGravity { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString WeakExternalPlaybackVideoGravity" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("externalPlaybackVideoGravity")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setExternalPlaybackVideoGravity:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

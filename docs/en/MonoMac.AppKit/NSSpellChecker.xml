@@ -256,7 +256,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CheckSpelling">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSRange CheckSpelling (string stringToCheck, int startingOffset, string language, bool wrapFlag, int documentTag, int wordCount);" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSRange CheckSpelling (string stringToCheck, int startingOffset, string language, bool wrapFlag, int documentTag, out int wordCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.Foundation.NSRange CheckSpelling(string stringToCheck, int32 startingOffset, string language, bool wrapFlag, int32 documentTag, int32 wordCount) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -276,7 +276,7 @@ public class MyClass : BaseClass {
         <Parameter Name="language" Type="System.String" />
         <Parameter Name="wrapFlag" Type="System.Boolean" />
         <Parameter Name="documentTag" Type="System.Int32" />
-        <Parameter Name="wordCount" Type="System.Int32" />
+        <Parameter Name="wordCount" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="stringToCheck">To be added.</param>
@@ -291,8 +291,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CheckString">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSTextCheckingResult[] CheckString (string stringToCheck, MonoMac.Foundation.NSRange range, MonoMac.Foundation.NSTextCheckingTypes checkingTypes, MonoMac.Foundation.NSDictionary options, int documentTag, MonoMac.Foundation.NSOrthography orthography, int wordCount);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSTextCheckingResult[] CheckString(string stringToCheck, valuetype MonoMac.Foundation.NSRange range, valuetype MonoMac.Foundation.NSTextCheckingTypes checkingTypes, class MonoMac.Foundation.NSDictionary options, int32 documentTag, class MonoMac.Foundation.NSOrthography orthography, int32 wordCount) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSTextCheckingResult[] CheckString (string stringToCheck, MonoMac.Foundation.NSRange range, MonoMac.Foundation.NSTextCheckingTypes checkingTypes, MonoMac.Foundation.NSDictionary options, int tag, out MonoMac.Foundation.NSOrthography orthography, out int wordCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSTextCheckingResult[] CheckString(string stringToCheck, valuetype MonoMac.Foundation.NSRange range, valuetype MonoMac.Foundation.NSTextCheckingTypes checkingTypes, class MonoMac.Foundation.NSDictionary options, int32 tag, class MonoMac.Foundation.NSOrthography orthography, int32 wordCount) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -310,16 +310,16 @@ public class MyClass : BaseClass {
         <Parameter Name="range" Type="MonoMac.Foundation.NSRange" />
         <Parameter Name="checkingTypes" Type="MonoMac.Foundation.NSTextCheckingTypes" />
         <Parameter Name="options" Type="MonoMac.Foundation.NSDictionary" />
-        <Parameter Name="documentTag" Type="System.Int32" />
-        <Parameter Name="orthography" Type="MonoMac.Foundation.NSOrthography" />
-        <Parameter Name="wordCount" Type="System.Int32" />
+        <Parameter Name="tag" Type="System.Int32" />
+        <Parameter Name="orthography" Type="MonoMac.Foundation.NSOrthography&amp;" RefType="out" />
+        <Parameter Name="wordCount" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
         <param name="stringToCheck">To be added.</param>
         <param name="range">To be added.</param>
         <param name="checkingTypes">To be added.</param>
         <param name="options">To be added.</param>
-        <param name="documentTag">To be added.</param>
+        <param name="tag">To be added.</param>
         <param name="orthography">To be added.</param>
         <param name="wordCount">To be added.</param>
         <summary>To be added.</summary>
@@ -451,6 +451,28 @@ public class MyClass : BaseClass {
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetLanguage">
+      <MemberSignature Language="C#" Value="protected virtual string GetLanguage ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetLanguage() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("language")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GuessesForWordRange">
       <MemberSignature Language="C#" Value="public virtual string[] GuessesForWordRange (MonoMac.Foundation.NSRange range, string theString, string language, int documentTag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GuessesForWordRange(valuetype MonoMac.Foundation.NSRange range, string theString, string language, int32 documentTag) cil managed" />
@@ -559,20 +581,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Language">
-      <MemberSignature Language="C#" Value="public virtual string Language { get; set; }" />
+      <MemberSignature Language="C#" Value="public string Language { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("language")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setLanguage:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -662,6 +676,31 @@ public class MyClass : BaseClass {
         <param name="words">To be added.</param>
         <param name="documentTag">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLanguage">
+      <MemberSignature Language="C#" Value="protected virtual bool SetLanguage (string language);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool SetLanguage(string language) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setLanguage:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="language" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="language">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

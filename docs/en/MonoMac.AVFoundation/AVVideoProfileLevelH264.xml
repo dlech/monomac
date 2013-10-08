@@ -55,34 +55,6 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="High40">
-      <MemberSignature Language="C#" Value="High40" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AVFoundation.AVVideoProfileLevelH264 High40 = int32(8)" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.AVFoundation.AVVideoProfileLevelH264</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-      </Docs>
-    </Member>
-    <Member MemberName="High41">
-      <MemberSignature Language="C#" Value="High41" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AVFoundation.AVVideoProfileLevelH264 High41 = int32(9)" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.AVFoundation.AVVideoProfileLevelH264</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-      </Docs>
-    </Member>
     <Member MemberName="Main30">
       <MemberSignature Language="C#" Value="Main30" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AVFoundation.AVVideoProfileLevelH264 Main30 = int32(4)" />

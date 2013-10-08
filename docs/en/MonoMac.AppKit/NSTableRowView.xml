@@ -211,9 +211,9 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DrawBackgrounn">
-      <MemberSignature Language="C#" Value="public virtual void DrawBackgrounn (System.Drawing.RectangleF dirtyRect);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawBackgrounn(valuetype System.Drawing.RectangleF dirtyRect) cil managed" />
+    <Member MemberName="DrawBackground">
+      <MemberSignature Language="C#" Value="public virtual void DrawBackground (System.Drawing.RectangleF dirtyRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DrawBackground(valuetype System.Drawing.RectangleF dirtyRect) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

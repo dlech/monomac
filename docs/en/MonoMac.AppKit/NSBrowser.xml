@@ -340,8 +340,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CellClass">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.ObjCRuntime.Class CellClass { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.ObjCRuntime.Class CellClass" />
+      <MemberSignature Language="C#" Value="public static MonoMac.ObjCRuntime.Class CellClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.ObjCRuntime.Class CellClass" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -349,9 +349,6 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("cellClass")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setCellClass:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -573,7 +570,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ColumnResizingType">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSBrowserColumnResizingType ColumnResizingType { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSBrowserColumnResizingType ColumnResizingType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSBrowserColumnResizingType ColumnResizingType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -582,6 +579,9 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("columnResizingType")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setColumnResizingType:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -927,9 +927,58 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetRowColumnforPoint">
-      <MemberSignature Language="C#" Value="public virtual bool GetRowColumnforPoint (out int row, out int column, System.Drawing.PointF point);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetRowColumnforPoint(int32 row, int32 column, valuetype System.Drawing.PointF point) cil managed" />
+    <Member MemberName="GetItem">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject GetItem (int row, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject GetItem(int32 row, int32 column) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("itemAtRow:inColumn:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="row">To be added.</param>
+        <param name="column">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPath">
+      <MemberSignature Language="C#" Value="protected virtual string GetPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetPath() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("path")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowColumnForPoint">
+      <MemberSignature Language="C#" Value="public virtual bool GetRowColumnForPoint (out int row, out int column, System.Drawing.PointF point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetRowColumnForPoint(int32 row, int32 column, valuetype System.Drawing.PointF point) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1050,33 +1099,6 @@ public class MyClass : BaseClass {
       </Parameters>
       <Docs>
         <param name="indexPath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ItemAtRowinColumn">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject ItemAtRowinColumn (int row, int column);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject ItemAtRowinColumn(int32 row, int32 column) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("itemAtRow:inColumn:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="row" Type="System.Int32" />
-        <Parameter Name="column" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="row">To be added.</param>
-        <param name="column">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1345,20 +1367,12 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Path">
-      <MemberSignature Language="C#" Value="public virtual string Path { get; set; }" />
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("path")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setPath:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1998,6 +2012,30 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetCellClass">
+      <MemberSignature Language="C#" Value="public virtual void SetCellClass (MonoMac.ObjCRuntime.Class factoryId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCellClass(class MonoMac.ObjCRuntime.Class factoryId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setCellClass:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="factoryId" Type="MonoMac.ObjCRuntime.Class" />
+      </Parameters>
+      <Docs>
+        <param name="factoryId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetColumnResizingType">
       <MemberSignature Language="C#" Value="public virtual void SetColumnResizingType (MonoMac.AppKit.NSBrowserColumnResizingType columnResizingType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetColumnResizingType(valuetype MonoMac.AppKit.NSBrowserColumnResizingType columnResizingType) cil managed" />
@@ -2071,6 +2109,31 @@ public class MyClass : BaseClass {
         <param name="mask">To be added.</param>
         <param name="isLocal">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPath">
+      <MemberSignature Language="C#" Value="protected virtual bool SetPath (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool SetPath(string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setPath:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

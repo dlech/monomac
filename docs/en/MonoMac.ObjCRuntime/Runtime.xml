@@ -1,6 +1,6 @@
 <Type Name="Runtime" FullName="MonoMac.ObjCRuntime.Runtime">
   <TypeSignature Language="C#" Value="public static class Runtime" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Runtime extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Runtime extends System.Object" />
   <AssemblyInfo>
     <AssemblyName>MonoMac</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -47,6 +47,22 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="FrameworksPath">
+      <MemberSignature Language="C#" Value="public static string FrameworksPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string FrameworksPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetNSObject">
       <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSObject GetNSObject (IntPtr ptr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSObject GetNSObject(native int ptr) cil managed" />
@@ -84,6 +100,22 @@
         <param name="a">The assembly to process.</param>
         <summary>Registers all of the classes in the specified assembly.</summary>
         <remarks>This iterates over all the types that derive from NSObject in the specified assembly and registers them with the runtime.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourcesPath">
+      <MemberSignature Language="C#" Value="public static string ResourcesPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ResourcesPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="TryGetNSObject">

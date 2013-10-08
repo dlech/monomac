@@ -73,8 +73,8 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NSInputStream ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="C#" Value="protected NSInputStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -119,6 +119,27 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NSInputStream (MonoMac.Foundation.NSData data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSData data) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithData:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="data" Type="MonoMac.Foundation.NSData" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NSInputStream (MonoMac.Foundation.NSObjectFlag t);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
       <MemberType>Constructor</MemberType>
@@ -149,6 +170,27 @@ public class MyClass : BaseClass {
 </code>
           </example>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NSInputStream (MonoMac.Foundation.NSUrl url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSUrl url) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithURL:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="url" Type="MonoMac.Foundation.NSUrl" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -287,6 +329,31 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FromUrl">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSInputStream FromUrl (MonoMac.Foundation.NSUrl url);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSInputStream FromUrl(class MonoMac.Foundation.NSUrl url) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("inputStreamWithURL:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSInputStream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="MonoMac.Foundation.NSUrl" />
+      </Parameters>
+      <Docs>
+        <param name="url">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetBuffer">
       <MemberSignature Language="C#" Value="protected virtual bool GetBuffer (out IntPtr buffer, out uint len);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool GetBuffer(native int buffer, unsigned int32 len) cil managed" />
@@ -407,33 +474,6 @@ public class MyClass : BaseClass {
         <remarks>You can use methods in <see cref="T:System.Runtime.InteropServices.Marshal" /> to write to the buffer (for instance: <see cref="M:System.Runtime.InteropServices.Marshal.Copy(byte[],int,IntPtr,int)" /> to write from a byte array).</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ScheduleInCFRunLoop">
-      <MemberSignature Language="C#" Value="public virtual void ScheduleInCFRunLoop (MonoMac.CoreFoundation.CFRunLoop runloop, MonoMac.Foundation.NSString mode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScheduleInCFRunLoop(class MonoMac.CoreFoundation.CFRunLoop runloop, class MonoMac.Foundation.NSString mode) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("_scheduleInCFRunLoop:forMode:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="runloop" Type="MonoMac.CoreFoundation.CFRunLoop" />
-        <Parameter Name="mode" Type="MonoMac.Foundation.NSString" />
-      </Parameters>
-      <Docs>
-        <param name="runloop">The RunLoop to schedule in.</param>
-        <param name="mode">The RunLoop mode to schedule in.</param>
-        <summary>Schedules the stream in a RunLoop.</summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SetCFClientFlags">
       <MemberSignature Language="C#" Value="protected virtual bool SetCFClientFlags (MonoMac.CoreFoundation.CFStreamEventType inFlags, IntPtr inCallback, IntPtr inContextPtr);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool SetCFClientFlags(valuetype MonoMac.CoreFoundation.CFStreamEventType inFlags, native int inCallback, native int inContextPtr) cil managed" />
@@ -461,33 +501,6 @@ public class MyClass : BaseClass {
         <summary>Adds a client for the stream. This method is not supposed to be called by managed code, it will be called by consumers of the straem. When overriding it make sure to call the base implementation.</summary>
         <returns>
         </returns>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UnscheduleInCFRunLoop">
-      <MemberSignature Language="C#" Value="public virtual void UnscheduleInCFRunLoop (MonoMac.CoreFoundation.CFRunLoop runloop, MonoMac.Foundation.NSString mode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnscheduleInCFRunLoop(class MonoMac.CoreFoundation.CFRunLoop runloop, class MonoMac.Foundation.NSString mode) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("_unscheduleFromCFRunLoop:forMode:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="runloop" Type="MonoMac.CoreFoundation.CFRunLoop" />
-        <Parameter Name="mode" Type="MonoMac.Foundation.NSString" />
-      </Parameters>
-      <Docs>
-        <param name="runloop">The RunLoop to unschedule.</param>
-        <param name="mode">The mode to unschedule.</param>
-        <summary>Unschedules the stream from a RunLoop.</summary>
         <remarks>
         </remarks>
       </Docs>

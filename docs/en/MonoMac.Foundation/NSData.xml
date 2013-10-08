@@ -316,6 +316,31 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FromData">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSData FromData (MonoMac.Foundation.NSData source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSData FromData(class MonoMac.Foundation.NSData source) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("dataWithData:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="MonoMac.Foundation.NSData" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FromFile">
       <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSData FromFile (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSData FromFile(string path) cil managed" />
@@ -529,7 +554,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Length">
-      <MemberSignature Language="C#" Value="public virtual uint Length { get; }" />
+      <MemberSignature Language="C#" Value="public virtual uint Length { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>

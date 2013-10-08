@@ -122,15 +122,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ApertureBundleIdentifier">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString ApertureBundleIdentifier { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString ApertureBundleIdentifier" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString ApertureBundleIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString ApertureBundleIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IK_ApertureBundleIdentifier")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IK_ApertureBundleIdentifier", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -143,15 +143,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="AudioFile">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString AudioFile { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString AudioFile" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString AudioFile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString AudioFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IKSlideshowAudioFile")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IKSlideshowAudioFile", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -228,32 +228,6 @@ public class MyClass : BaseClass {
         <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Dispose">
-      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <param name="disposing">
-          <para>If set to <see langword="true" />, the method is invoked directly and will dispose manage and unmanaged resources;   If set to <see langword="false" /> the method is being called by the garbage collector finalizer and should only release unmanaged resources.</para>
-        </param>
-        <summary>Releases the resources used by the IKSlideshow object.</summary>
-        <remarks>
-          <para>This Dispose method releases the resources used by the IKSlideshow class.</para>
-          <para>This method is called by both the Dispose() method and the object finalizer (Finalize).    When invoked by the Dispose method, the parameter disposting <paramref name="disposing" /> is set to <see langword="true" /> and any managed object references that this object holds are also disposed or released;  when invoked by the object finalizer, on the finalizer thread the value is set to <see langword="false" />. </para>
-          <para>Calling the Dispose method when you are finished using the IKSlideshow ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.</para>
-          <para>  For more information on how to override this method and on the Dispose/IDisposable pattern, read the ``Implementing a Dispose Method'' document at http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx</para>
-        </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ExportSlideshowItemtoApplication">
       <MemberSignature Language="C#" Value="public static void ExportSlideshowItemtoApplication (MonoMac.Foundation.NSObject item, string applicationBundleIdentifier);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExportSlideshowItemtoApplication(class MonoMac.Foundation.NSObject item, string applicationBundleIdentifier) cil managed" />
@@ -302,15 +276,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="IPhotoBundleIdentifier">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString IPhotoBundleIdentifier { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString IPhotoBundleIdentifier" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString IPhotoBundleIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString IPhotoBundleIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IK_iPhotoBundleIdentifier")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IK_iPhotoBundleIdentifier", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -323,15 +297,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="MailBundleIdentifier">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString MailBundleIdentifier { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString MailBundleIdentifier" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString MailBundleIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString MailBundleIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IK_MailBundleIdentifier")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IK_MailBundleIdentifier", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -344,15 +318,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ModeImages">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString ModeImages { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString ModeImages" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString ModeImages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString ModeImages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IKSlideshowModeImages")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IKSlideshowModeImages", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -365,15 +339,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ModeOther">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString ModeOther { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString ModeOther" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString ModeOther { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString ModeOther" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IKSlideshowModeOther")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IKSlideshowModeOther", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -386,15 +360,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="ModePDF">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString ModePDF { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString ModePDF" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString ModePDF { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString ModePDF" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IKSlideshowModePDF")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IKSlideshowModePDF", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -407,15 +381,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="PDFDisplayBox">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString PDFDisplayBox { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString PDFDisplayBox" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString PDFDisplayBox { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString PDFDisplayBox" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IKSlideshowPDFDisplayBox")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IKSlideshowPDFDisplayBox", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -428,15 +402,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="PDFDisplayMode">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString PDFDisplayMode { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString PDFDisplayMode" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString PDFDisplayMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString PDFDisplayMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IKSlideshowPDFDisplayMode")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IKSlideshowPDFDisplayMode", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -449,15 +423,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="PDFDisplaysAsBook">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString PDFDisplaysAsBook { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString PDFDisplaysAsBook" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString PDFDisplaysAsBook { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString PDFDisplaysAsBook" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IKSlideshowPDFDisplaysAsBook")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IKSlideshowPDFDisplaysAsBook", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -543,15 +517,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Screen">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString Screen { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString Screen" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString Screen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString Screen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IKSlideshowScreen")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IKSlideshowScreen", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -585,15 +559,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="StartIndex">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString StartIndex { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString StartIndex" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString StartIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString StartIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IKSlideshowStartIndex")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IKSlideshowStartIndex", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -606,15 +580,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="StartPaused">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString StartPaused { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString StartPaused" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString StartPaused { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString StartPaused" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IKSlideshowStartPaused")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IKSlideshowStartPaused", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -651,15 +625,15 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="WrapAround">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSString WrapAround { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSString WrapAround" />
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString WrapAround { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString WrapAround" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("IKSlideshowWrapAround")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Field("IKSlideshowWrapAround", "ImageKit")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

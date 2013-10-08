@@ -138,7 +138,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GetOpacityRamp">
-      <MemberSignature Language="C#" Value="public virtual bool GetOpacityRamp (MonoMac.CoreMedia.CMTime time, float startOpacity, float endOpacity, MonoMac.CoreMedia.CMTimeRange timeRange);" />
+      <MemberSignature Language="C#" Value="public virtual bool GetOpacityRamp (MonoMac.CoreMedia.CMTime time, ref float startOpacity, ref float endOpacity, ref MonoMac.CoreMedia.CMTimeRange timeRange);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetOpacityRamp(valuetype MonoMac.CoreMedia.CMTime time, float32 startOpacity, float32 endOpacity, valuetype MonoMac.CoreMedia.CMTimeRange timeRange) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -154,9 +154,9 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="time" Type="MonoMac.CoreMedia.CMTime" />
-        <Parameter Name="startOpacity" Type="System.Single" />
-        <Parameter Name="endOpacity" Type="System.Single" />
-        <Parameter Name="timeRange" Type="MonoMac.CoreMedia.CMTimeRange" />
+        <Parameter Name="startOpacity" Type="System.Single&amp;" RefType="ref" />
+        <Parameter Name="endOpacity" Type="System.Single&amp;" RefType="ref" />
+        <Parameter Name="timeRange" Type="MonoMac.CoreMedia.CMTimeRange&amp;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="time">To be added.</param>
@@ -169,7 +169,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="GetTransformRamp">
-      <MemberSignature Language="C#" Value="public virtual bool GetTransformRamp (MonoMac.CoreMedia.CMTime time, MonoMac.CoreGraphics.CGAffineTransform startTransform, MonoMac.CoreGraphics.CGAffineTransform endTransform, MonoMac.CoreMedia.CMTimeRange timeRange);" />
+      <MemberSignature Language="C#" Value="public virtual bool GetTransformRamp (MonoMac.CoreMedia.CMTime time, ref MonoMac.CoreGraphics.CGAffineTransform startTransform, ref MonoMac.CoreGraphics.CGAffineTransform endTransform, ref MonoMac.CoreMedia.CMTimeRange timeRange);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetTransformRamp(valuetype MonoMac.CoreMedia.CMTime time, valuetype MonoMac.CoreGraphics.CGAffineTransform startTransform, valuetype MonoMac.CoreGraphics.CGAffineTransform endTransform, valuetype MonoMac.CoreMedia.CMTimeRange timeRange) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -185,9 +185,9 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters>
         <Parameter Name="time" Type="MonoMac.CoreMedia.CMTime" />
-        <Parameter Name="startTransform" Type="MonoMac.CoreGraphics.CGAffineTransform" />
-        <Parameter Name="endTransform" Type="MonoMac.CoreGraphics.CGAffineTransform" />
-        <Parameter Name="timeRange" Type="MonoMac.CoreMedia.CMTimeRange" />
+        <Parameter Name="startTransform" Type="MonoMac.CoreGraphics.CGAffineTransform&amp;" RefType="ref" />
+        <Parameter Name="endTransform" Type="MonoMac.CoreGraphics.CGAffineTransform&amp;" RefType="ref" />
+        <Parameter Name="timeRange" Type="MonoMac.CoreMedia.CMTimeRange&amp;" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="time">To be added.</param>

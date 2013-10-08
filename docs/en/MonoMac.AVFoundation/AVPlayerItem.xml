@@ -491,6 +491,11 @@ public class MyClass : BaseClass {
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVPlayerItemDidPlayToEndTimeNotification", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -735,6 +740,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVPlayerItemFailedToPlayToEndTimeErrorKey", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -752,6 +762,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVPlayerItemFailedToPlayToEndTimeNotification", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -845,41 +860,9 @@ void Setup ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NewAccessLogEntryNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString NewAccessLogEntryNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString NewAccessLogEntryNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NewErrorLogEntryNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString NewErrorLogEntryNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString NewErrorLogEntryNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Outputs">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AVFoundation.AVPlayerItemOutput Outputs { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AVFoundation.AVPlayerItemOutput Outputs" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.AVFoundation.AVPlayerItemOutput[] Outputs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AVFoundation.AVPlayerItemOutput[] Outputs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -893,7 +876,7 @@ void Setup ()
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.AVFoundation.AVPlayerItemOutput</ReturnType>
+        <ReturnType>MonoMac.AVFoundation.AVPlayerItemOutput[]</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -957,22 +940,6 @@ void Setup ()
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PlaybackStalledNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString PlaybackStalledNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString PlaybackStalledNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -1050,8 +1017,8 @@ void Setup ()
       </Docs>
     </Member>
     <Member MemberName="Seek">
-      <MemberSignature Language="C#" Value="public virtual bool Seek (MonoMac.CoreMedia.CMTime time);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Seek(valuetype MonoMac.CoreMedia.CMTime time) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void Seek (MonoMac.CoreMedia.CMTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Seek(valuetype MonoMac.CoreMedia.CMTime time) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -1062,7 +1029,7 @@ void Setup ()
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="time" Type="MonoMac.CoreMedia.CMTime" />
@@ -1070,7 +1037,6 @@ void Setup ()
       <Docs>
         <param name="time">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1126,29 +1092,30 @@ void Setup ()
       </Docs>
     </Member>
     <Member MemberName="Seek">
-      <MemberSignature Language="C#" Value="public virtual bool Seek (MonoMac.Foundation.NSDate date, MonoMac.AVFoundation.AVCompletion completion);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Seek(class MonoMac.Foundation.NSDate date, class MonoMac.AVFoundation.AVCompletion completion) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void Seek (MonoMac.CoreMedia.CMTime time, MonoMac.CoreMedia.CMTime toleranceBefore, MonoMac.CoreMedia.CMTime toleranceAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Seek(valuetype MonoMac.CoreMedia.CMTime time, valuetype MonoMac.CoreMedia.CMTime toleranceBefore, valuetype MonoMac.CoreMedia.CMTime toleranceAfter) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("seekToDate:completionHandler:")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("seekToTime:toleranceBefore:toleranceAfter:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="date" Type="MonoMac.Foundation.NSDate" />
-        <Parameter Name="completion" Type="MonoMac.AVFoundation.AVCompletion" />
+        <Parameter Name="time" Type="MonoMac.CoreMedia.CMTime" />
+        <Parameter Name="toleranceBefore" Type="MonoMac.CoreMedia.CMTime" />
+        <Parameter Name="toleranceAfter" Type="MonoMac.CoreMedia.CMTime" />
       </Parameters>
       <Docs>
-        <param name="date">To be added.</param>
-        <param name="completion">To be added.</param>
+        <param name="time">To be added.</param>
+        <param name="toleranceBefore">To be added.</param>
+        <param name="toleranceAfter">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1203,47 +1170,35 @@ void Setup ()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SeekingWaitsForVideoCompositionRendering">
-      <MemberSignature Language="C#" Value="public virtual bool SeekingWaitsForVideoCompositionRendering { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool SeekingWaitsForVideoCompositionRendering" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("seekingWaitsForVideoCompositionRendering")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setSeekingWaitsForVideoCompositionRendering:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SeekToDate">
-      <MemberSignature Language="C#" Value="public virtual bool SeekToDate (MonoMac.CoreMedia.CMTime time, MonoMac.CoreMedia.CMTime toleranceBefore, MonoMac.CoreMedia.CMTime toleranceAfter);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SeekToDate(valuetype MonoMac.CoreMedia.CMTime time, valuetype MonoMac.CoreMedia.CMTime toleranceBefore, valuetype MonoMac.CoreMedia.CMTime toleranceAfter) cil managed" />
+    <Member MemberName="SeekAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; SeekAsync (MonoMac.CoreMedia.CMTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; SeekAsync(valuetype MonoMac.CoreMedia.CMTime time) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("seekToDate:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="MonoMac.CoreMedia.CMTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeekAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; SeekAsync (MonoMac.CoreMedia.CMTime time, MonoMac.CoreMedia.CMTime toleranceBefore, MonoMac.CoreMedia.CMTime toleranceAfter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; SeekAsync(valuetype MonoMac.CoreMedia.CMTime time, valuetype MonoMac.CoreMedia.CMTime toleranceBefore, valuetype MonoMac.CoreMedia.CMTime toleranceAfter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="time" Type="MonoMac.CoreMedia.CMTime" />
@@ -1256,57 +1211,6 @@ void Setup ()
         <param name="toleranceAfter">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SelectedMediaOption">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AVFoundation.AVMediaSelectionOption SelectedMediaOption (MonoMac.AVFoundation.AVMediaSelectionGroup inMediaSelectionGroup);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.AVFoundation.AVMediaSelectionOption SelectedMediaOption(class MonoMac.AVFoundation.AVMediaSelectionGroup inMediaSelectionGroup) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("selectedMediaOptionInMediaSelectionGroup:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.AVFoundation.AVMediaSelectionOption</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="inMediaSelectionGroup" Type="MonoMac.AVFoundation.AVMediaSelectionGroup" />
-      </Parameters>
-      <Docs>
-        <param name="inMediaSelectionGroup">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SelectMediaOption">
-      <MemberSignature Language="C#" Value="public virtual void SelectMediaOption (MonoMac.AVFoundation.AVMediaSelectionOption mediaSelectionOption, MonoMac.AVFoundation.AVMediaSelectionGroup mediaSelectionGroup);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectMediaOption(class MonoMac.AVFoundation.AVMediaSelectionOption mediaSelectionOption, class MonoMac.AVFoundation.AVMediaSelectionGroup mediaSelectionGroup) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("selectMediaOption:inMediaSelectionGroup:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="mediaSelectionOption" Type="MonoMac.AVFoundation.AVMediaSelectionOption" />
-        <Parameter Name="mediaSelectionGroup" Type="MonoMac.AVFoundation.AVMediaSelectionGroup" />
-      </Parameters>
-      <Docs>
-        <param name="mediaSelectionOption">To be added.</param>
-        <param name="mediaSelectionGroup">To be added.</param>
-        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1352,33 +1256,6 @@ void Setup ()
       <Docs>
         <param name="stepCount">To be added.</param>
         <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TextStyleRules">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AVFoundation.AVTextStyleRule[] TextStyleRules { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AVFoundation.AVTextStyleRule[] TextStyleRules" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("textStyleRules")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setTextStyleRules:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.AVFoundation.AVTextStyleRule[]</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1434,6 +1311,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVPlayerItemTimeJumpedNotification", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>

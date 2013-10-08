@@ -262,7 +262,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use AddObserver(NSString, Action&lt;NSNotification&gt;) instead")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use AddObserver(NSString, Action&lt;NSNotification&gt;) instead")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -314,7 +314,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use AddObserver(NSString, Action&lt;NSNotification&gt;, NSObject)")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use AddObserver(NSString, Action&lt;NSNotification&gt;, NSObject)")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -386,7 +386,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use AddObserver(NSObject, Selector, NSString, NSObject) instead")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use AddObserver(NSObject, Selector, NSString, NSObject) instead")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -415,8 +415,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="AddObserver">
-      <MemberSignature Language="C#" Value="public virtual void AddObserver (string name, MonoMac.Foundation.NSObject obj, MonoMac.Foundation.NSOperationQueue queue, MonoMac.Foundation.NSNotificationHandler handler);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddObserver(string name, class MonoMac.Foundation.NSObject obj, class MonoMac.Foundation.NSOperationQueue queue, class MonoMac.Foundation.NSNotificationHandler handler) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject AddObserver (string name, MonoMac.Foundation.NSObject obj, MonoMac.Foundation.NSOperationQueue queue, MonoMac.Foundation.NSNotificationHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject AddObserver(string name, class MonoMac.Foundation.NSObject obj, class MonoMac.Foundation.NSOperationQueue queue, class MonoMac.Foundation.NSNotificationHandler handler) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -427,7 +427,7 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -441,6 +441,7 @@ public class MyClass : BaseClass {
         <param name="queue">To be added.</param>
         <param name="handler">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

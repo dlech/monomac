@@ -1,6 +1,6 @@
 <Type Name="AudioFileStream" FullName="MonoMac.AudioToolbox.AudioFileStream">
   <TypeSignature Language="C#" Value="public class AudioFileStream : IDisposable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi AudioFileStream extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioFileStream extends System.Object implements class System.IDisposable" />
   <AssemblyInfo>
     <AssemblyName>MonoMac</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -148,6 +148,22 @@ This can be used to parse audio files when you are streaming audio from the netw
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DataFormat">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioStreamBasicDescription DataFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AudioToolbox.AudioStreamBasicDescription DataFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioStreamBasicDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DataOffset">
       <MemberSignature Language="C#" Value="public long DataOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 DataOffset" />
@@ -258,6 +274,22 @@ This can be used to parse audio files when you are streaming audio from the netw
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="FormatList">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioFormat[] FormatList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AudioToolbox.AudioFormat[] FormatList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFormat[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FrameToPacket">
       <MemberSignature Language="C#" Value="public long FrameToPacket (long frame, out int frameOffsetInPacket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 FrameToPacket(int64 frame, int32 frameOffsetInPacket) cil managed" />
@@ -324,6 +356,22 @@ This can be used to parse audio files when you are streaming audio from the netw
         <param name="outPropertyData">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastError">
+      <MemberSignature Language="C#" Value="public MonoMac.AudioToolbox.AudioFileStreamStatus LastError { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AudioToolbox.AudioFileStreamStatus LastError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.AudioToolbox.AudioFileStreamStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -427,6 +475,22 @@ This can be used to parse audio files when you are streaming audio from the netw
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PacketTableInfo">
+      <MemberSignature Language="C#" Value="public Nullable&lt;MonoMac.AudioToolbox.AudioFilePacketTableInfo&gt; PacketTableInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype MonoMac.AudioToolbox.AudioFilePacketTableInfo&gt; PacketTableInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;MonoMac.AudioToolbox.AudioFilePacketTableInfo&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -634,6 +698,11 @@ This can be used to parse audio files when you are streaming audio from the netw
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Advice("Use DataFormat")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AudioToolbox.AudioStreamBasicDescription</ReturnType>
       </ReturnValue>

@@ -334,7 +334,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("drawKnob")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("drawKnob:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -493,8 +493,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="PrefersTrackingUntilMouseUp">
-      <MemberSignature Language="C#" Value="public virtual bool PrefersTrackingUntilMouseUp ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool PrefersTrackingUntilMouseUp() cil managed" />
+      <MemberSignature Language="C#" Value="public static bool PrefersTrackingUntilMouseUp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool PrefersTrackingUntilMouseUp() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

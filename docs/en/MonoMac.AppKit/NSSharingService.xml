@@ -13,6 +13,9 @@
     <Attribute>
       <AttributeName>MonoMac.Foundation.Register("NSSharingService", true)</AttributeName>
     </Attribute>
+    <Attribute>
+      <AttributeName>MonoMac.ObjCRuntime.MountainLion</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
     <summary>To be added.</summary>
@@ -177,7 +180,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("canPerformWithItems")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("canPerformWithItems:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -363,7 +366,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("performWithItems")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("performWithItems:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

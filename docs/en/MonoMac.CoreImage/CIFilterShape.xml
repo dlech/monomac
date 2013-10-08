@@ -137,8 +137,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="FromRect">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreImage.CIFilterShape FromRect (System.Drawing.RectangleF rect);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.CoreImage.CIFilterShape FromRect(valuetype System.Drawing.RectangleF rect) cil managed" />
+      <MemberSignature Language="C#" Value="public static MonoMac.CoreImage.CIFilterShape FromRect (System.Drawing.RectangleF rect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.CoreImage.CIFilterShape FromRect(valuetype System.Drawing.RectangleF rect) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -214,8 +214,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="IntersectWithRect">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreImage.CIFilterShape IntersectWithRect (System.Drawing.Rectangle rectangle);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.CoreImage.CIFilterShape IntersectWithRect(valuetype System.Drawing.Rectangle rectangle) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreImage.CIFilterShape IntersectWithRect (System.Drawing.RectangleF rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.CoreImage.CIFilterShape IntersectWithRect(valuetype System.Drawing.RectangleF rectangle) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -229,7 +229,7 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.CoreImage.CIFilterShape</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="rectangle" Type="System.Drawing.RectangleF" />
       </Parameters>
       <Docs>
         <param name="rectangle">To be added.</param>

@@ -205,31 +205,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="FromAssetProperties">
-      <MemberSignature Language="C#" Value="public static MonoMac.AVFoundation.AVVideoComposition FromAssetProperties (MonoMac.AVFoundation.AVAsset asset);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.AVFoundation.AVVideoComposition FromAssetProperties(class MonoMac.AVFoundation.AVAsset asset) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("videoCompositionWithPropertiesOfAsset:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.AVFoundation.AVVideoComposition</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="asset" Type="MonoMac.AVFoundation.AVAsset" />
-      </Parameters>
-      <Docs>
-        <param name="asset">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Instructions">
       <MemberSignature Language="C#" Value="public virtual MonoMac.AVFoundation.AVVideoCompositionInstruction[] Instructions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AVFoundation.AVVideoCompositionInstruction[] Instructions" />
@@ -277,30 +252,6 @@ public class MyClass : BaseClass {
         <param name="validationDelegate">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RenderScale">
-      <MemberSignature Language="C#" Value="public virtual float RenderScale { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance float32 RenderScale" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("renderScale")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setRenderScale:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Single</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

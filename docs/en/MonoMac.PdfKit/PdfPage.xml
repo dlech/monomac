@@ -370,7 +370,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("annotationAtPoint:point")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Export("annotationAtPoint:")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

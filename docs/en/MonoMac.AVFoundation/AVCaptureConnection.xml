@@ -256,33 +256,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EnablesVideoStabilizationWhenAvailable">
-      <MemberSignature Language="C#" Value="public virtual bool EnablesVideoStabilizationWhenAvailable { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool EnablesVideoStabilizationWhenAvailable" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("enablesVideoStabilizationWhenAvailable")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setEnablesVideoStabilizationWhenAvailable:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="inputPorts">
       <MemberSignature Language="C#" Value="public MonoMac.AVFoundation.AVCaptureInputPort[] inputPorts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AVFoundation.AVCaptureInputPort[] inputPorts" />
@@ -292,7 +265,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use InputPorts")</AttributeName>
+          <AttributeName>MonoMac.Foundation.Advice("Use InputPorts")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -420,75 +393,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SupportsVideoStabilization">
-      <MemberSignature Language="C#" Value="public virtual bool SupportsVideoStabilization { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsVideoStabilization" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isVideoStabilizationSupported")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="VideoMaxFrameDuration">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.CoreMedia.CMTime VideoMaxFrameDuration { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.CoreMedia.CMTime VideoMaxFrameDuration" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("videoMaxFrameDuration")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setVideoMaxFrameDuration:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.CoreMedia.CMTime</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="VideoMaxScaleAndCropFactor">
-      <MemberSignature Language="C#" Value="public virtual float VideoMaxScaleAndCropFactor { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance float32 VideoMaxScaleAndCropFactor" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("videoMaxScaleAndCropFactor")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Single</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="VideoMinFrameDuration">
       <MemberSignature Language="C#" Value="public virtual MonoMac.CoreMedia.CMTime VideoMinFrameDuration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.CoreMedia.CMTime VideoMinFrameDuration" />
@@ -578,54 +482,6 @@ public class MyClass : BaseClass {
       </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AVFoundation.AVCaptureVideoPreviewLayer</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="VideoScaleAndCropFactor">
-      <MemberSignature Language="C#" Value="public virtual float VideoScaleAndCropFactor { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance float32 VideoScaleAndCropFactor" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("videoScaleAndCropFactor")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setVideoScaleAndCropFactor:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Single</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="VideoStabilizationEnabled">
-      <MemberSignature Language="C#" Value="public virtual bool VideoStabilizationEnabled { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool VideoStabilizationEnabled" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isVideoStabilizationEnabled")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

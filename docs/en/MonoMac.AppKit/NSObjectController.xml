@@ -533,7 +533,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="SelectedObjects">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject[] SelectedObjects { get; }" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject[] SelectedObjects { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSObject[] SelectedObjects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>

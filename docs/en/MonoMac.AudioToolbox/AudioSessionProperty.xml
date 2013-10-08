@@ -50,7 +50,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Use AudioRouteDescription")</AttributeName>
+          <AttributeName>System.Obsolete("Deprecated in iOS 5.0")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -244,7 +244,7 @@
     </Member>
     <Member MemberName="InterruptionType">
       <MemberSignature Language="C#" Value="InterruptionType" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioSessionProperty InterruptionType = int32(561148781)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.AudioToolbox.AudioSessionProperty InterruptionType = int32(1954115685)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

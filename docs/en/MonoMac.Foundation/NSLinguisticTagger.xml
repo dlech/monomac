@@ -265,6 +265,33 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetOrthography">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSOrthography GetOrthography (int charIndex, ref MonoMac.Foundation.NSRange effectiveRange);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSOrthography GetOrthography(int32 charIndex, valuetype MonoMac.Foundation.NSRange effectiveRange) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("orthographyAtIndex:effectiveRange:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSOrthography</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="charIndex" Type="System.Int32" />
+        <Parameter Name="effectiveRange" Type="MonoMac.Foundation.NSRange&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="charIndex">To be added.</param>
+        <param name="effectiveRange">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetSentenceRangeForRange">
       <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSRange GetSentenceRangeForRange (MonoMac.Foundation.NSRange range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.Foundation.NSRange GetSentenceRangeForRange(valuetype MonoMac.Foundation.NSRange range) cil managed" />
@@ -285,6 +312,37 @@ public class MyClass : BaseClass {
       </Parameters>
       <Docs>
         <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTag">
+      <MemberSignature Language="C#" Value="public virtual string GetTag (int charIndex, MonoMac.Foundation.NSString tagScheme, ref MonoMac.Foundation.NSRange tokenRange, ref MonoMac.Foundation.NSRange sentenceRange);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTag(int32 charIndex, class MonoMac.Foundation.NSString tagScheme, valuetype MonoMac.Foundation.NSRange tokenRange, valuetype MonoMac.Foundation.NSRange sentenceRange) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("tagAtIndex:scheme:tokenRange:sentenceRange:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="charIndex" Type="System.Int32" />
+        <Parameter Name="tagScheme" Type="MonoMac.Foundation.NSString" />
+        <Parameter Name="tokenRange" Type="MonoMac.Foundation.NSRange&amp;" RefType="ref" />
+        <Parameter Name="sentenceRange" Type="MonoMac.Foundation.NSRange&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="charIndex">To be added.</param>
+        <param name="tagScheme">To be added.</param>
+        <param name="tokenRange">To be added.</param>
+        <param name="sentenceRange">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

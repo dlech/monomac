@@ -163,33 +163,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AutomaticallyEnablesLowLightBoostWhenAvailable">
-      <MemberSignature Language="C#" Value="public virtual bool AutomaticallyEnablesLowLightBoostWhenAvailable { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool AutomaticallyEnablesLowLightBoostWhenAvailable" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("automaticallyEnablesLowLightBoostWhenAvailable")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>set: MonoMac.Foundation.Export("setAutomaticallyEnablesLowLightBoostWhenAvailable:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ClassHandle">
       <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
@@ -381,54 +354,6 @@ public class MyClass : BaseClass {
       <Attributes>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("isExposurePointOfInterestSupported")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FlashActive">
-      <MemberSignature Language="C#" Value="public virtual bool FlashActive { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool FlashActive" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(5, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isFlashActive")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FlashAvailable">
-      <MemberSignature Language="C#" Value="public virtual bool FlashAvailable { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool FlashAvailable" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(5, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isFlashAvailable")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -729,70 +654,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LowLightBoostEnabled">
-      <MemberSignature Language="C#" Value="public virtual bool LowLightBoostEnabled { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool LowLightBoostEnabled" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isLowLightBoostEnabled")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="LowLightBoostSupported">
-      <MemberSignature Language="C#" Value="public virtual bool LowLightBoostSupported { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool LowLightBoostSupported" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isLowLightBoostSupported")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MaxAvailableTorchLevel">
-      <MemberSignature Language="C#" Value="public static float MaxAvailableTorchLevel { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property float32 MaxAvailableTorchLevel" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Single</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ModelID">
       <MemberSignature Language="C#" Value="public virtual string ModelID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ModelID" />
@@ -835,108 +696,6 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetTorchModeLevel">
-      <MemberSignature Language="C#" Value="public virtual bool SetTorchModeLevel (float torchLevel, out MonoMac.Foundation.NSError outError);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetTorchModeLevel(float32 torchLevel, class MonoMac.Foundation.NSError outError) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setTorchModeOnWithLevel:error:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="torchLevel" Type="System.Single" />
-        <Parameter Name="outError" Type="MonoMac.Foundation.NSError&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="torchLevel">To be added.</param>
-        <param name="outError">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SubjectAreaDidChangeNotification">
-      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString SubjectAreaDidChangeNotification { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property class MonoMac.Foundation.NSString SubjectAreaDidChangeNotification" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Notification constant for SubjectAreaDidChange</summary>
-        <value>NSString constant, should be used as a token to NSNotificationCenter.</value>
-        <remarks>
-          <para id="tool-remark">This constant can be used with the <see cref="T:MonoTouch.Foundation.NSNotificationCenter" /> to register a listener for this notification.   This is an NSString instead of a string, because these values can be used as tokens in some native libraries instead of being used purely for their actual string content.    The 'notification' parameter to the callback contains extra information that is specific to the notification type.</para>
-          <para id="tool-remark">If you want to subscribe to this notification, you can use the convenience <see cref="T:AVCaptureDevice+Notifications" />.<see cref="M:AVCaptureDevice+Notifications.ObserveSubjectAreaDidChange" /> method which offers strongly typed access to the parameters of the notification.</para>
-          <para>The following example shows how to use the strongly typed Notifications class, to take the guesswork out of the available properties in the notification:</para>
-          <example>
-            <code lang="c#">
-//
-// Lambda style
-//
-
-// listening
-notification = AVCaptureDevice.Notifications.ObserveSubjectAreaDidChange ((sender, args) =&gt; {
-    /* Access strongly typed args */
-    Console.WriteLine ("Notification: {0}", args.Notification);
-});
-
-// To stop listening:
-notification.Dispose ();
-
-//
-// Method style
-//
-NSObject notification;
-void Callback (object sender, SubjectAreaDidChange args)
-{
-    // Access strongly typed args
-    Console.WriteLine ("Notification: {0}", args.Notification);
-}
-
-void Setup ()
-{
-    notification = AVCaptureDevice.Notifications.ObserveSubjectAreaDidChange (Callback);
-}
-
-void Teardown ()
-{
-    notification.Dispose ();
-}</code>
-          </example>
-          <para>The following example shows how to use the notification with the DefaultCenter API:</para>
-          <example>
-            <code lang="c#">
-// Lambda style
-NSNotificationCenter.DefaultCenter.AddObserver (
-        AVCaptureDevice.SubjectAreaDidChangeNotification, (notification) =&gt; {Console.WriteLine ("Received the notification AVCaptureDevice", notification); }
-
-
-// Method style
-void Callback (NSNotification notification)
-{
-    Console.WriteLine ("Received a notification AVCaptureDevice", notification);
-}
-
-void Setup ()
-{
-    NSNotificationCenter.DefaultCenter.AddObserver (AVCaptureDevice.SubjectAreaDidChangeNotification, Callback);
-}
-</code>
-          </example>
-        </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SupportsAVCaptureSessionPreset">
       <MemberSignature Language="C#" Value="public virtual bool SupportsAVCaptureSessionPreset (string preset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsAVCaptureSessionPreset(string preset) cil managed" />
@@ -959,78 +718,6 @@ void Setup ()
         <param name="preset">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TorchActive">
-      <MemberSignature Language="C#" Value="public virtual bool TorchActive { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool TorchActive" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isTorchActive")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TorchAvailable">
-      <MemberSignature Language="C#" Value="public virtual bool TorchAvailable { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool TorchAvailable" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(5, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isTorchAvailable")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TorchLevel">
-      <MemberSignature Language="C#" Value="public virtual float TorchLevel { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance float32 TorchLevel" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.ObjCRuntime.Since(5, 0)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("torchLevel")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Single</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1107,6 +794,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureDeviceWasConnectedNotification", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>
@@ -1182,6 +874,11 @@ void Setup ()
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Field("AVCaptureDeviceWasDisconnectedNotification", "AVFoundation")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.Foundation.NSString</ReturnType>
       </ReturnValue>

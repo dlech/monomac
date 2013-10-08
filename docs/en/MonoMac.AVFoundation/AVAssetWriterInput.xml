@@ -308,9 +308,6 @@ public class MyClass : BaseClass {
         <Attribute>
           <AttributeName>MonoMac.Foundation.Export("assetWriterInputWithMediaType:outputSettings:")</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use constructor or Create method", false)</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.AVFoundation.AVAssetWriterInput</ReturnType>

@@ -15,7 +15,7 @@
   <Members>
     <Member MemberName="Custom">
       <MemberSignature Language="C#" Value="Custom" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssValueType Custom = int32(3)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssValueType Custom = unsigned int16(3)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -29,7 +29,7 @@
     </Member>
     <Member MemberName="Inherit">
       <MemberSignature Language="C#" Value="Inherit" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssValueType Inherit = int32(0)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssValueType Inherit = unsigned int16(0)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -43,7 +43,7 @@
     </Member>
     <Member MemberName="PrimitiveValue">
       <MemberSignature Language="C#" Value="PrimitiveValue" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssValueType PrimitiveValue = int32(1)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssValueType PrimitiveValue = unsigned int16(1)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -57,7 +57,7 @@
     </Member>
     <Member MemberName="ValueList">
       <MemberSignature Language="C#" Value="ValueList" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssValueType ValueList = int32(2)" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.WebKit.DomCssValueType ValueList = unsigned int16(2)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

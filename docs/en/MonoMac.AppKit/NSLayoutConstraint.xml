@@ -414,8 +414,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Priority">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSLayoutPriority Priority { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.AppKit.NSLayoutPriority Priority" />
+      <MemberSignature Language="C#" Value="public virtual float Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -429,7 +429,7 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.AppKit.NSLayoutPriority</ReturnType>
+        <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

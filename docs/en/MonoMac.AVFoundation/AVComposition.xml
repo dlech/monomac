@@ -164,7 +164,7 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="NaturalSize">
-      <MemberSignature Language="C#" Value="public virtual System.Drawing.SizeF NaturalSize { get; }" />
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.SizeF NaturalSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.SizeF NaturalSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -172,7 +172,7 @@ public class MyClass : BaseClass {
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Deprecated in iOS5", false)</AttributeName>
+          <AttributeName>System.Obsolete("Deprecated in iOS 5.0 and OSX 10.8", false)</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>get: MonoMac.Foundation.Export("naturalSize")</AttributeName>
