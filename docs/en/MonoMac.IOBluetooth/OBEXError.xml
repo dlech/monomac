@@ -1,0 +1,395 @@
+<Type Name="OBEXError" FullName="MonoMac.IOBluetooth.OBEXError">
+  <TypeSignature Language="C#" Value="public enum OBEXError" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OBEXError extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BadArgumentError">
+      <MemberSignature Language="C#" Value="BadArgumentError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError BadArgumentError = int32(-21854)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BadRequestError">
+      <MemberSignature Language="C#" Value="BadRequestError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError BadRequestError = int32(-21856)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelledError">
+      <MemberSignature Language="C#" Value="CancelledError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError CancelledError = int32(-21857)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConflictError">
+      <MemberSignature Language="C#" Value="ConflictError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError ConflictError = int32(-21861)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorRangeMax">
+      <MemberSignature Language="C#" Value="ErrorRangeMax" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError ErrorRangeMax = int32(-21899)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorRangeMin">
+      <MemberSignature Language="C#" Value="ErrorRangeMin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError ErrorRangeMin = int32(-21850)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ForbiddenError">
+      <MemberSignature Language="C#" Value="ForbiddenError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError ForbiddenError = int32(-21858)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeneralError">
+      <MemberSignature Language="C#" Value="GeneralError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError GeneralError = int32(-21850)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalError">
+      <MemberSignature Language="C#" Value="InternalError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError InternalError = int32(-21853)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodNotAllowedError">
+      <MemberSignature Language="C#" Value="MethodNotAllowedError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError MethodNotAllowedError = int32(-21862)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoResourcesError">
+      <MemberSignature Language="C#" Value="NoResourcesError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError NoResourcesError = int32(-21851)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAcceptableError">
+      <MemberSignature Language="C#" Value="NotAcceptableError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError NotAcceptableError = int32(-21860)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotFoundError">
+      <MemberSignature Language="C#" Value="NotFoundError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError NotFoundError = int32(-21863)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotImplementedError">
+      <MemberSignature Language="C#" Value="NotImplementedError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError NotImplementedError = int32(-21864)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreconditionFailedError">
+      <MemberSignature Language="C#" Value="PreconditionFailedError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError PreconditionFailedError = int32(-21865)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionAlreadyConnectedError">
+      <MemberSignature Language="C#" Value="SessionAlreadyConnectedError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError SessionAlreadyConnectedError = int32(-21882)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionBadRequestError">
+      <MemberSignature Language="C#" Value="SessionBadRequestError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError SessionBadRequestError = int32(-21877)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionBadResponseError">
+      <MemberSignature Language="C#" Value="SessionBadResponseError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError SessionBadResponseError = int32(-21878)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionBusyError">
+      <MemberSignature Language="C#" Value="SessionBusyError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError SessionBusyError = int32(-21875)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionNotConnectedError">
+      <MemberSignature Language="C#" Value="SessionNotConnectedError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError SessionNotConnectedError = int32(-21876)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionNoTransportError">
+      <MemberSignature Language="C#" Value="SessionNoTransportError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError SessionNoTransportError = int32(-21879)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionTimeoutError">
+      <MemberSignature Language="C#" Value="SessionTimeoutError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError SessionTimeoutError = int32(-21881)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionTransportDiedError">
+      <MemberSignature Language="C#" Value="SessionTransportDiedError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError SessionTransportDiedError = int32(-21880)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="Success" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError Success = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeoutError">
+      <MemberSignature Language="C#" Value="TimeoutError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError TimeoutError = int32(-21855)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnauthorizedError">
+      <MemberSignature Language="C#" Value="UnauthorizedError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError UnauthorizedError = int32(-21859)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsupportedError">
+      <MemberSignature Language="C#" Value="UnsupportedError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXError UnsupportedError = int32(-21852)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,883 @@
+<Type Name="OBEXSession" FullName="MonoMac.IOBluetooth.OBEXSession">
+  <TypeSignature Language="C#" Value="public class OBEXSession : MonoMac.Foundation.NSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OBEXSession extends MonoMac.Foundation.NSObject" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.Foundation.NSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Register("OBEXSession", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OBEXSession ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OBEXSession (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithCoder:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OBEXSession (MonoMac.Foundation.NSObjectFlag t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="t" Type="MonoMac.Foundation.NSObjectFlag" />
+      </Parameters>
+      <Docs>
+        <param name="t">Unused sentinel value, pass NSObjectFlag.Empty.</param>
+        <summary>Constructor to call on derived classes when the derived class has an [Export] constructor.</summary>
+        <remarks>
+          <para>This constructor should be called by derived classes when they are initialized using an [Export] attribute. The argument value is ignore, typically the chaining would look like this:</para>
+          <example>
+            <code lang="C#">
+public class MyClass : BaseClass {
+    [Export ("initWithFoo:")]
+    public MyClass (string foo) : base (NSObjectFlag.Empty)
+    {
+        ...
+    }
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OBEXSession (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Pointer (handle) to the unmanaged object.</param>
+        <summary>A constructor used when creating managed representations of unmanaged objects;  Called by the runtime.</summary>
+        <remarks>
+          <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError Abort (IntPtr inOptionalHeaders, UIntPtr inOptionalHeadersLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError Abort(native int inOptionalHeaders, native unsigned int inOptionalHeadersLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXAbort:optionalHeadersLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inOptionalHeaders" Type="System.IntPtr" />
+        <Parameter Name="inOptionalHeadersLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inOptionalHeaders">To be added.</param>
+        <param name="inOptionalHeadersLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbortResponse">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError AbortResponse (byte inResponseOpCode, IntPtr inOptionalHeaders, UIntPtr inOptionalHeadersLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError AbortResponse(unsigned int8 inResponseOpCode, native int inOptionalHeaders, native unsigned int inOptionalHeadersLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXAbortResponse:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inResponseOpCode" Type="System.Byte" />
+        <Parameter Name="inOptionalHeaders" Type="System.IntPtr" />
+        <Parameter Name="inOptionalHeadersLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inResponseOpCode">To be added.</param>
+        <param name="inOptionalHeaders">To be added.</param>
+        <param name="inOptionalHeadersLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassHandle">
+      <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The handle for this class.</summary>
+        <value>The pointer to the Objective-C class.</value>
+        <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientHandleIncomingData">
+      <MemberSignature Language="C#" Value="public virtual void ClientHandleIncomingData (MonoMac.IOBluetooth.OBEXTransportEvent event);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClientHandleIncomingData(valuetype MonoMac.IOBluetooth.OBEXTransportEvent event) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("clientHandleIncomingData:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="event" Type="MonoMac.IOBluetooth.OBEXTransportEvent" />
+      </Parameters>
+      <Docs>
+        <param name="event">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseTransportConnection">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError CloseTransportConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError CloseTransportConnection() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("closeTransportConnection")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError Connect (byte inFlags, uint inMaxPacketLength, IntPtr inOptionalHeaders, UIntPtr inOptionalHeadersLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError Connect(unsigned int8 inFlags, unsigned int32 inMaxPacketLength, native int inOptionalHeaders, native unsigned int inOptionalHeadersLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXConnect:maxPacketLength:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inFlags" Type="System.Byte" />
+        <Parameter Name="inMaxPacketLength" Type="System.UInt32" />
+        <Parameter Name="inOptionalHeaders" Type="System.IntPtr" />
+        <Parameter Name="inOptionalHeadersLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inFlags">To be added.</param>
+        <param name="inMaxPacketLength">To be added.</param>
+        <param name="inOptionalHeaders">To be added.</param>
+        <param name="inOptionalHeadersLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectResponse">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError ConnectResponse (byte inResponseOpCode, byte inFlags, uint inMaxPacketLength, IntPtr inOptionalHeaders, UIntPtr inOptionalHeadersLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError ConnectResponse(unsigned int8 inResponseOpCode, unsigned int8 inFlags, unsigned int32 inMaxPacketLength, native int inOptionalHeaders, native unsigned int inOptionalHeadersLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXConnectResponse:flags:maxPacketLength:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inResponseOpCode" Type="System.Byte" />
+        <Parameter Name="inFlags" Type="System.Byte" />
+        <Parameter Name="inMaxPacketLength" Type="System.UInt32" />
+        <Parameter Name="inOptionalHeaders" Type="System.IntPtr" />
+        <Parameter Name="inOptionalHeadersLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inResponseOpCode">To be added.</param>
+        <param name="inFlags">To be added.</param>
+        <param name="inMaxPacketLength">To be added.</param>
+        <param name="inOptionalHeaders">To be added.</param>
+        <param name="inOptionalHeadersLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError Disconnect (IntPtr inOptionalHeaders, UIntPtr inOptionalHeadersLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError Disconnect(native int inOptionalHeaders, native unsigned int inOptionalHeadersLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXDisconnect:optionalHeadersLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inOptionalHeaders" Type="System.IntPtr" />
+        <Parameter Name="inOptionalHeadersLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inOptionalHeaders">To be added.</param>
+        <param name="inOptionalHeadersLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectResponse">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError DisconnectResponse (byte inResponseOpCode, IntPtr inOptionalHeaders, UIntPtr inOptionalHeadersLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError DisconnectResponse(unsigned int8 inResponseOpCode, native int inOptionalHeaders, native unsigned int inOptionalHeadersLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXDisconnectResponse:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inResponseOpCode" Type="System.Byte" />
+        <Parameter Name="inOptionalHeaders" Type="System.IntPtr" />
+        <Parameter Name="inOptionalHeadersLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inResponseOpCode">To be added.</param>
+        <param name="inOptionalHeaders">To be added.</param>
+        <param name="inOptionalHeadersLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError Get (bool isFinalChunk, IntPtr inHeaders, UIntPtr inHeadersLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError Get(bool isFinalChunk, native int inHeaders, native unsigned int inHeadersLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXGet:headers:headersLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isFinalChunk" Type="System.Boolean" />
+        <Parameter Name="inHeaders" Type="System.IntPtr" />
+        <Parameter Name="inHeadersLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="isFinalChunk">To be added.</param>
+        <param name="inHeaders">To be added.</param>
+        <param name="inHeadersLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAvailableCommandPayloadLength">
+      <MemberSignature Language="C#" Value="public virtual uint GetAvailableCommandPayloadLength (byte inOpCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 GetAvailableCommandPayloadLength(unsigned int8 inOpCode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("getAvailableCommandPayloadLength:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inOpCode" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="inOpCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAvailableCommandResponsePayloadLength">
+      <MemberSignature Language="C#" Value="public virtual uint GetAvailableCommandResponsePayloadLength (byte inOpCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 GetAvailableCommandResponsePayloadLength(unsigned int8 inOpCode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("getAvailableCommandResponsePayloadLength:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inOpCode" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="inOpCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResponse">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError GetResponse (byte inResponseOpCode, IntPtr inOptionalHeaders, UIntPtr inOptionalHeadersLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError GetResponse(unsigned int8 inResponseOpCode, native int inOptionalHeaders, native unsigned int inOptionalHeadersLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXGetResponse:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inResponseOpCode" Type="System.Byte" />
+        <Parameter Name="inOptionalHeaders" Type="System.IntPtr" />
+        <Parameter Name="inOptionalHeadersLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inResponseOpCode">To be added.</param>
+        <param name="inOptionalHeaders">To be added.</param>
+        <param name="inOptionalHeadersLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasOpenConnection">
+      <MemberSignature Language="C#" Value="public virtual bool HasOpenConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasOpenConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("hasOpenOBEXConnection")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasOpenTransportConnection">
+      <MemberSignature Language="C#" Value="public virtual bool HasOpenTransportConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasOpenTransportConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("hasOpenTransportConnection")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPacketLength">
+      <MemberSignature Language="C#" Value="public virtual uint MaxPacketLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 MaxPacketLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getMaxPacketLength")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenTransportConnection">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError OpenTransportConnection (MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError OpenTransportConnection(class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openTransportConnection:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Put">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError Put (bool isFinalChunk, IntPtr inHeadersData, UIntPtr inHeadersDataLength, IntPtr inBodyData, UIntPtr inBodyDataLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError Put(bool isFinalChunk, native int inHeadersData, native unsigned int inHeadersDataLength, native int inBodyData, native unsigned int inBodyDataLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXPut:headersData:headersDataLength:bodyData:bodyDataLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isFinalChunk" Type="System.Boolean" />
+        <Parameter Name="inHeadersData" Type="System.IntPtr" />
+        <Parameter Name="inHeadersDataLength" Type="System.UIntPtr" />
+        <Parameter Name="inBodyData" Type="System.IntPtr" />
+        <Parameter Name="inBodyDataLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="isFinalChunk">To be added.</param>
+        <param name="inHeadersData">To be added.</param>
+        <param name="inHeadersDataLength">To be added.</param>
+        <param name="inBodyData">To be added.</param>
+        <param name="inBodyDataLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PutResponse">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError PutResponse (byte inResponseOpCode, IntPtr inOptionalHeaders, UIntPtr inOptionalHeadersLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError PutResponse(unsigned int8 inResponseOpCode, native int inOptionalHeaders, native unsigned int inOptionalHeadersLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXPutResponse:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inResponseOpCode" Type="System.Byte" />
+        <Parameter Name="inOptionalHeaders" Type="System.IntPtr" />
+        <Parameter Name="inOptionalHeadersLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inResponseOpCode">To be added.</param>
+        <param name="inOptionalHeaders">To be added.</param>
+        <param name="inOptionalHeadersLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendDataToTransport">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError SendDataToTransport (IntPtr inDataToSend, UIntPtr inDataLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError SendDataToTransport(native int inDataToSend, native unsigned int inDataLength) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("sendDataToTransport:dataLength:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inDataToSend" Type="System.IntPtr" />
+        <Parameter Name="inDataLength" Type="System.UIntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inDataToSend">To be added.</param>
+        <param name="inDataLength">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerHandleIncomingData">
+      <MemberSignature Language="C#" Value="public virtual void ServerHandleIncomingData (MonoMac.IOBluetooth.OBEXTransportEvent event);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ServerHandleIncomingData(valuetype MonoMac.IOBluetooth.OBEXTransportEvent event) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("serverHandleIncomingData:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="event" Type="MonoMac.IOBluetooth.OBEXTransportEvent" />
+      </Parameters>
+      <Docs>
+        <param name="event">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEventCallback">
+      <MemberSignature Language="C#" Value="public virtual void SetEventCallback (MonoMac.IOBluetooth.OBEXSessionEventCallback inEventCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetEventCallback(class MonoMac.IOBluetooth.OBEXSessionEventCallback inEventCallback) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setEventCallback:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inEventCallback" Type="MonoMac.IOBluetooth.OBEXSessionEventCallback" />
+      </Parameters>
+      <Docs>
+        <param name="inEventCallback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEventRefCon">
+      <MemberSignature Language="C#" Value="public virtual void SetEventRefCon (IntPtr inRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetEventRefCon(native int inRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setEventRefCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEventSelector">
+      <MemberSignature Language="C#" Value="public virtual void SetEventSelector (MonoMac.ObjCRuntime.Selector inEventSelector, MonoMac.Foundation.NSObject inEventSelectorTarget, MonoMac.Foundation.NSObject inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetEventSelector(class MonoMac.ObjCRuntime.Selector inEventSelector, class MonoMac.Foundation.NSObject inEventSelectorTarget, class MonoMac.Foundation.NSObject inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setEventSelector:target:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inEventSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inEventSelectorTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="inEventSelector">To be added.</param>
+        <param name="inEventSelectorTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPath">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError SetPath (byte inFlags, byte inConstants, IntPtr inOptionalHeaders, UIntPtr inOptionalHeadersLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError SetPath(unsigned int8 inFlags, unsigned int8 inConstants, native int inOptionalHeaders, native unsigned int inOptionalHeadersLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXSetPath:constants:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inFlags" Type="System.Byte" />
+        <Parameter Name="inConstants" Type="System.Byte" />
+        <Parameter Name="inOptionalHeaders" Type="System.IntPtr" />
+        <Parameter Name="inOptionalHeadersLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inFlags">To be added.</param>
+        <param name="inConstants">To be added.</param>
+        <param name="inOptionalHeaders">To be added.</param>
+        <param name="inOptionalHeadersLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPathResponse">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError SetPathResponse (byte inResponseOpCode, IntPtr inOptionalHeaders, UIntPtr inOptionalHeadersLength, MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError SetPathResponse(unsigned int8 inResponseOpCode, native int inOptionalHeaders, native unsigned int inOptionalHeadersLength, class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("OBEXSetPathResponse:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inResponseOpCode" Type="System.Byte" />
+        <Parameter Name="inOptionalHeaders" Type="System.IntPtr" />
+        <Parameter Name="inOptionalHeadersLength" Type="System.UIntPtr" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inResponseOpCode">To be added.</param>
+        <param name="inOptionalHeaders">To be added.</param>
+        <param name="inOptionalHeadersLength">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

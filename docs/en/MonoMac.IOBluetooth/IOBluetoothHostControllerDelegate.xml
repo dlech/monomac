@@ -1,0 +1,187 @@
+<Type Name="IOBluetoothHostControllerDelegate" FullName="MonoMac.IOBluetooth.IOBluetoothHostControllerDelegate">
+  <TypeSignature Language="C#" Value="public class IOBluetoothHostControllerDelegate : MonoMac.Foundation.NSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOBluetoothHostControllerDelegate extends MonoMac.Foundation.NSObject" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.Foundation.NSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Model</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Register("IOBluetoothHostControllerDelegate", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothHostControllerDelegate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothHostControllerDelegate (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithCoder:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothHostControllerDelegate (MonoMac.Foundation.NSObjectFlag t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="t" Type="MonoMac.Foundation.NSObjectFlag" />
+      </Parameters>
+      <Docs>
+        <param name="t">Unused sentinel value, pass NSObjectFlag.Empty.</param>
+        <summary>Constructor to call on derived classes when the derived class has an [Export] constructor.</summary>
+        <remarks>
+          <para>This constructor should be called by derived classes when they are initialized using an [Export] attribute. The argument value is ignore, typically the chaining would look like this:</para>
+          <example>
+            <code lang="C#">
+public class MyClass : BaseClass {
+    [Export ("initWithFoo:")]
+    public MyClass (string foo) : base (NSObjectFlag.Empty)
+    {
+        ...
+    }
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothHostControllerDelegate (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Pointer (handle) to the unmanaged object.</param>
+        <summary>A constructor used when creating managed representations of unmanaged objects;  Called by the runtime.</summary>
+        <remarks>
+          <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadLinkQualityForDeviceCompleted">
+      <MemberSignature Language="C#" Value="public virtual void ReadLinkQualityForDeviceCompleted (MonoMac.Foundation.NSObject controller, MonoMac.IOBluetooth.IOBluetoothDevice device, MonoMac.IOBluetooth.BluetoothHCILinkQualityInfo info, MonoMac.IOKit.IOReturn error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadLinkQualityForDeviceCompleted(class MonoMac.Foundation.NSObject controller, class MonoMac.IOBluetooth.IOBluetoothDevice device, valuetype MonoMac.IOBluetooth.BluetoothHCILinkQualityInfo info, valuetype MonoMac.IOKit.IOReturn error) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("readLinkQualityForDeviceComplete:device:info:error:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controller" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothDevice" />
+        <Parameter Name="info" Type="MonoMac.IOBluetooth.BluetoothHCILinkQualityInfo" />
+        <Parameter Name="error" Type="MonoMac.IOKit.IOReturn" />
+      </Parameters>
+      <Docs>
+        <param name="controller">To be added.</param>
+        <param name="device">To be added.</param>
+        <param name="info">To be added.</param>
+        <param name="error">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadRSSIForDeviceCompleted">
+      <MemberSignature Language="C#" Value="public virtual void ReadRSSIForDeviceCompleted (MonoMac.Foundation.NSObject controller, MonoMac.IOBluetooth.IOBluetoothDevice device, MonoMac.IOBluetooth.BluetoothHCIRSSIInfo info, MonoMac.IOKit.IOReturn error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadRSSIForDeviceCompleted(class MonoMac.Foundation.NSObject controller, class MonoMac.IOBluetooth.IOBluetoothDevice device, valuetype MonoMac.IOBluetooth.BluetoothHCIRSSIInfo info, valuetype MonoMac.IOKit.IOReturn error) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("readRSSIForDeviceComplete:device:info:error:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controller" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothDevice" />
+        <Parameter Name="info" Type="MonoMac.IOBluetooth.BluetoothHCIRSSIInfo" />
+        <Parameter Name="error" Type="MonoMac.IOKit.IOReturn" />
+      </Parameters>
+      <Docs>
+        <param name="controller">To be added.</param>
+        <param name="device">To be added.</param>
+        <param name="info">To be added.</param>
+        <param name="error">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

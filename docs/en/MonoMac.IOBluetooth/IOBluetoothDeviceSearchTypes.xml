@@ -1,0 +1,36 @@
+<Type Name="IOBluetoothDeviceSearchTypes" FullName="MonoMac.IOBluetooth.IOBluetoothDeviceSearchTypes">
+  <TypeSignature Language="C#" Value="public enum IOBluetoothDeviceSearchTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOBluetoothDeviceSearchTypes extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Classic">
+      <MemberSignature Language="C#" Value="Classic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.IOBluetoothDeviceSearchTypes Classic = unsigned int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDeviceSearchTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

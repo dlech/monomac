@@ -1,0 +1,204 @@
+<Type Name="BluetoothServiceClassMajor" FullName="MonoMac.IOBluetooth.BluetoothServiceClassMajor">
+  <TypeSignature Language="C#" Value="public enum BluetoothServiceClassMajor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BluetoothServiceClassMajor extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Any">
+      <MemberSignature Language="C#" Value="Any" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor Any = int32(707406378)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Audio">
+      <MemberSignature Language="C#" Value="Audio" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor Audio = int32(256)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Capturing">
+      <MemberSignature Language="C#" Value="Capturing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor Capturing = int32(64)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Information">
+      <MemberSignature Language="C#" Value="Information" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor Information = int32(1024)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LimitedDiscoverableMode">
+      <MemberSignature Language="C#" Value="LimitedDiscoverableMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor LimitedDiscoverableMode = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Networking">
+      <MemberSignature Language="C#" Value="Networking" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor Networking = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor None = int32(1852796517)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectTransfer">
+      <MemberSignature Language="C#" Value="ObjectTransfer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor ObjectTransfer = int32(128)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Positioning">
+      <MemberSignature Language="C#" Value="Positioning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor Positioning = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rendering">
+      <MemberSignature Language="C#" Value="Rendering" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor Rendering = int32(32)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved1">
+      <MemberSignature Language="C#" Value="Reserved1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor Reserved1 = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved2">
+      <MemberSignature Language="C#" Value="Reserved2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor Reserved2 = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Telephony">
+      <MemberSignature Language="C#" Value="Telephony" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor Telephony = int32(512)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

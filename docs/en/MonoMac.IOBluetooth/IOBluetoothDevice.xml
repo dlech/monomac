@@ -1,0 +1,1679 @@
+<Type Name="IOBluetoothDevice" FullName="MonoMac.IOBluetooth.IOBluetoothDevice">
+  <TypeSignature Language="C#" Value="public class IOBluetoothDevice : MonoMac.IOBluetooth.IOBluetoothObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOBluetoothDevice extends MonoMac.IOBluetooth.IOBluetoothObject" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.IOBluetooth.IOBluetoothObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Register("IOBluetoothDevice", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An instance of IOBluetoothDevice represents a single remote Bluetooth device.</summary>
+    <remarks>An IOBluetoothDevice object may exist independent of the existence of a baseband connection with the target device. Through this object you can request baseband connections to be made, request opening and closing of L2CAP and RFCOMM channels.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDevice ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDevice (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithCoder:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDevice (MonoMac.Foundation.NSObjectFlag t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="t" Type="MonoMac.Foundation.NSObjectFlag" />
+      </Parameters>
+      <Docs>
+        <param name="t">Unused sentinel value, pass NSObjectFlag.Empty.</param>
+        <summary>Constructor to call on derived classes when the derived class has an [Export] constructor.</summary>
+        <remarks>
+          <para>This constructor should be called by derived classes when they are initialized using an [Export] attribute. The argument value is ignore, typically the chaining would look like this:</para>
+          <example>
+            <code lang="C#">
+public class MyClass : BaseClass {
+    [Export ("initWithFoo:")]
+    public MyClass (string foo) : base (NSObjectFlag.Empty)
+    {
+        ...
+    }
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDevice (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Pointer (handle) to the unmanaged object.</param>
+        <summary>A constructor used when creating managed representations of unmanaged objects;  Called by the runtime.</summary>
+        <remarks>
+          <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.BluetoothDeviceAddress Address { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothDeviceAddress Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getAddress")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressString">
+      <MemberSignature Language="C#" Value="public virtual string AddressString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AddressString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("addressString")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddToFavorites">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn AddToFavorites ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn AddToFavorites() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("addToFavorites")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AwakeAfterUsingCoder">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject AwakeAfterUsingCoder (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSObject AwakeAfterUsingCoder(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("awakeAfterUsingCoder:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <returns>To be added.</returns>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassHandle">
+      <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The handle for this class.</summary>
+        <value>The pointer to the Objective-C class.</value>
+        <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassOfDevice">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.BluetoothClassOfDevice ClassOfDevice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothClassOfDevice ClassOfDevice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("classOfDevice")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothClassOfDevice</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClockOffset">
+      <MemberSignature Language="C#" Value="public virtual ushort ClockOffset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 ClockOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getClockOffset")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseConnection">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn CloseConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn CloseConnection() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("closeConnection")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionHandle">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.BluetoothConnectionHandle ConnectionHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothConnectionHandle ConnectionHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("connectionHandle")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothConnectionHandle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceClassMajor">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.BluetoothDeviceClassMajor DeviceClassMajor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMajor DeviceClassMajor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("deviceClassMajor")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceClassMinor">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.BluetoothDeviceClassMinor DeviceClassMinor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMinor DeviceClassMinor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("deviceClassMinor")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceClassMinor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceRef">
+      <MemberSignature Language="C#" Value="public virtual IntPtr DeviceRef { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int DeviceRef" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Deprecated in OS X 7.0", false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getDeviceRef")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <para>If set to <see langword="true" />, the method is invoked directly and will dispose manage and unmanaged resources;   If set to <see langword="false" /> the method is being called by the garbage collector finalizer and should only release unmanaged resources.</para>
+        </param>
+        <summary>Releases the resources used by the IOBluetoothDevice object.</summary>
+        <remarks>
+          <para>This Dispose method releases the resources used by the IOBluetoothDevice class.</para>
+          <para>This method is called by both the Dispose() method and the object finalizer (Finalize).    When invoked by the Dispose method, the parameter disposting <paramref name="disposing" /> is set to <see langword="true" /> and any managed object references that this object holds are also disposed or released;  when invoked by the object finalizer, on the finalizer thread the value is set to <see langword="false" />. </para>
+          <para>Calling the Dispose method when you are finished using the IOBluetoothDevice ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.</para>
+          <para>  For more information on how to override this method and on the Dispose/IDisposable pattern, read the ``Implementing a Dispose Method'' document at http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionMode">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.BluetoothHCIEncryptionMode EncryptionMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothHCIEncryptionMode EncryptionMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getEncryptionMode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIEncryptionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FavoriteDevices">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothDevice[] FavoriteDevices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.IOBluetooth.IOBluetoothDevice[] FavoriteDevices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("favoriteDevices")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceWithAddress">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothDevice GetDeviceWithAddress (MonoMac.IOBluetooth.BluetoothDeviceAddress address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothDevice GetDeviceWithAddress(valuetype MonoMac.IOBluetooth.BluetoothDeviceAddress address) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("deviceWithAddress:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="MonoMac.IOBluetooth.BluetoothDeviceAddress" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeviceWithAddress">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothDevice GetDeviceWithAddress (string address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothDevice GetDeviceWithAddress(string address) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("deviceWithAddressString:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLastServicesUpdate">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDate GetLastServicesUpdate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.Foundation.NSDate GetLastServicesUpdate() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("getLastServicesUpdate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSDate</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRecentDevices">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothDevice[] GetRecentDevices (ulong numDevices);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothDevice[] GetRecentDevices(unsigned int64 numDevices) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("recentDevices:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="numDevices" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="numDevices">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServiceRecordForUUID">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord GetServiceRecordForUUID (MonoMac.IOBluetooth.IOBluetoothSDPUUID sdpUUID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord GetServiceRecordForUUID(class MonoMac.IOBluetooth.IOBluetoothSDPUUID sdpUUID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("getServiceRecordForUUID:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sdpUUID" Type="MonoMac.IOBluetooth.IOBluetoothSDPUUID" />
+      </Parameters>
+      <Docs>
+        <param name="sdpUUID">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandsFreeAudioGatewayDriverID">
+      <MemberSignature Language="C#" Value="public virtual string HandsFreeAudioGatewayDriverID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HandsFreeAudioGatewayDriverID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("handsFreeAudioGatewayDriverID")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandsFreeAudioGatewayServiceRecord">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord HandsFreeAudioGatewayServiceRecord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord HandsFreeAudioGatewayServiceRecord" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("handsFreeAudioGatewayServiceRecord")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandsFreeDeviceDriverID">
+      <MemberSignature Language="C#" Value="public virtual string HandsFreeDeviceDriverID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HandsFreeDeviceDriverID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("handsFreeDeviceDriverID")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandsFreeDeviceServiceRecord">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord HandsFreeDeviceServiceRecord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord HandsFreeDeviceServiceRecord" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("handsFreeDeviceServiceRecord")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConnected">
+      <MemberSignature Language="C#" Value="public virtual bool IsConnected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConnected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("isConnected")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFavorite">
+      <MemberSignature Language="C#" Value="public virtual bool IsFavorite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFavorite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("isFavorite")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsHandsFreeAudioGateway">
+      <MemberSignature Language="C#" Value="public virtual bool IsHandsFreeAudioGateway { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsHandsFreeAudioGateway" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("isHandsFreeAudioGateway")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsHandsFreeDevice">
+      <MemberSignature Language="C#" Value="public virtual bool IsHandsFreeDevice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsHandsFreeDevice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("isHandsFreeDevice")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIncoming">
+      <MemberSignature Language="C#" Value="public virtual bool IsIncoming { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsIncoming" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("isIncoming")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPaired">
+      <MemberSignature Language="C#" Value="public virtual bool IsPaired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPaired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("isPaired")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastInquiryUpdate">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDate LastInquiryUpdate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSDate LastInquiryUpdate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getLastInquiryUpdate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSDate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastNameUpdate">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDate LastNameUpdate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSDate LastNameUpdate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("lastNameUpdate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSDate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkType">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.BluetoothLinkType LinkType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothLinkType LinkType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getLinkType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothLinkType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public virtual string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameOrAddress">
+      <MemberSignature Language="C#" Value="public virtual string NameOrAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NameOrAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("nameOrAddress")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenConnection">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn OpenConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn OpenConnection() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openConnection")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenConnection">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn OpenConnection (MonoMac.Foundation.NSObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn OpenConnection(class MonoMac.Foundation.NSObject target) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openConnection:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenConnection">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn OpenConnection (MonoMac.Foundation.NSObject target, ushort pageTimeoutValue, bool authenticationRequired);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn OpenConnection(class MonoMac.Foundation.NSObject target, unsigned int16 pageTimeoutValue, bool authenticationRequired) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openConnection:withPageTimeout:authenticationRequired:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="pageTimeoutValue" Type="System.UInt16" />
+        <Parameter Name="authenticationRequired" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <param name="pageTimeoutValue">To be added.</param>
+        <param name="authenticationRequired">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenL2CAPChannel">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn OpenL2CAPChannel (MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, bool findExisting, MonoMac.IOBluetooth.IOBluetoothL2CAPChannel newChannel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn OpenL2CAPChannel(valuetype MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, bool findExisting, class MonoMac.IOBluetooth.IOBluetoothL2CAPChannel newChannel) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openL2CAPChannel:findExisting:newChannel:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Deprecated in OS X 5.0", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="psm" Type="MonoMac.IOBluetooth.BluetoothL2CAPPSM" />
+        <Parameter Name="findExisting" Type="System.Boolean" />
+        <Parameter Name="newChannel" Type="MonoMac.IOBluetooth.IOBluetoothL2CAPChannel" />
+      </Parameters>
+      <Docs>
+        <param name="psm">To be added.</param>
+        <param name="findExisting">To be added.</param>
+        <param name="newChannel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenL2CAPChannelAsync">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn OpenL2CAPChannelAsync (MonoMac.IOBluetooth.IOBluetoothL2CAPChannel newChannel, MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, MonoMac.Foundation.NSObject channelDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn OpenL2CAPChannelAsync(class MonoMac.IOBluetooth.IOBluetoothL2CAPChannel newChannel, valuetype MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, class MonoMac.Foundation.NSObject channelDelegate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openL2CAPChannelAsync:withPSM:delegate:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newChannel" Type="MonoMac.IOBluetooth.IOBluetoothL2CAPChannel" />
+        <Parameter Name="psm" Type="MonoMac.IOBluetooth.BluetoothL2CAPPSM" />
+        <Parameter Name="channelDelegate" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="newChannel">To be added.</param>
+        <param name="psm">To be added.</param>
+        <param name="channelDelegate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenL2CAPChannelAsync">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn OpenL2CAPChannelAsync (MonoMac.IOBluetooth.IOBluetoothL2CAPChannel newChannel, MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, MonoMac.Foundation.NSDictionary channelConfiguration, MonoMac.Foundation.NSObject channelDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn OpenL2CAPChannelAsync(class MonoMac.IOBluetooth.IOBluetoothL2CAPChannel newChannel, valuetype MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, class MonoMac.Foundation.NSDictionary channelConfiguration, class MonoMac.Foundation.NSObject channelDelegate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openL2CAPChannelAsync:withPSM:withConfiguration:delegate:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newChannel" Type="MonoMac.IOBluetooth.IOBluetoothL2CAPChannel" />
+        <Parameter Name="psm" Type="MonoMac.IOBluetooth.BluetoothL2CAPPSM" />
+        <Parameter Name="channelConfiguration" Type="MonoMac.Foundation.NSDictionary" />
+        <Parameter Name="channelDelegate" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="newChannel">To be added.</param>
+        <param name="psm">To be added.</param>
+        <param name="channelConfiguration">To be added.</param>
+        <param name="channelDelegate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenL2CAPChannelSync">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn OpenL2CAPChannelSync (MonoMac.IOBluetooth.IOBluetoothL2CAPChannel newChannel, MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, MonoMac.Foundation.NSObject channelDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn OpenL2CAPChannelSync(class MonoMac.IOBluetooth.IOBluetoothL2CAPChannel newChannel, valuetype MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, class MonoMac.Foundation.NSObject channelDelegate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openL2CAPChannelSync:withPSM:delegate:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newChannel" Type="MonoMac.IOBluetooth.IOBluetoothL2CAPChannel" />
+        <Parameter Name="psm" Type="MonoMac.IOBluetooth.BluetoothL2CAPPSM" />
+        <Parameter Name="channelDelegate" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="newChannel">To be added.</param>
+        <param name="psm">To be added.</param>
+        <param name="channelDelegate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenL2CAPChannelSync">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn OpenL2CAPChannelSync (MonoMac.IOBluetooth.IOBluetoothL2CAPChannel newChannel, MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, MonoMac.Foundation.NSDictionary channelConfiguration, MonoMac.Foundation.NSObject channelDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn OpenL2CAPChannelSync(class MonoMac.IOBluetooth.IOBluetoothL2CAPChannel newChannel, valuetype MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, class MonoMac.Foundation.NSDictionary channelConfiguration, class MonoMac.Foundation.NSObject channelDelegate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openL2CAPChannelSync:withPSM:withConfiguration:delegate:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newChannel" Type="MonoMac.IOBluetooth.IOBluetoothL2CAPChannel" />
+        <Parameter Name="psm" Type="MonoMac.IOBluetooth.BluetoothL2CAPPSM" />
+        <Parameter Name="channelConfiguration" Type="MonoMac.Foundation.NSDictionary" />
+        <Parameter Name="channelDelegate" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="newChannel">To be added.</param>
+        <param name="psm">To be added.</param>
+        <param name="channelConfiguration">To be added.</param>
+        <param name="channelDelegate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenRFCOMMChannel">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn OpenRFCOMMChannel (byte channelID, MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel rfcommChannel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn OpenRFCOMMChannel(unsigned int8 channelID, class MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel rfcommChannel) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openRFCOMMChannel:channel:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Deprecated in OS X 5.0", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channelID" Type="System.Byte" />
+        <Parameter Name="rfcommChannel" Type="MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel" />
+      </Parameters>
+      <Docs>
+        <param name="channelID">To be added.</param>
+        <param name="rfcommChannel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenRFCOMMChannelAsync">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn OpenRFCOMMChannelAsync (MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel rfcommChannel, byte channelID, MonoMac.Foundation.NSObject channelDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn OpenRFCOMMChannelAsync(class MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel rfcommChannel, unsigned int8 channelID, class MonoMac.Foundation.NSObject channelDelegate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openRFCOMMChannelAsync:withChannelID:delegate:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rfcommChannel" Type="MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel" />
+        <Parameter Name="channelID" Type="System.Byte" />
+        <Parameter Name="channelDelegate" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="rfcommChannel">To be added.</param>
+        <param name="channelID">To be added.</param>
+        <param name="channelDelegate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenRFCOMMChannelSync">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn OpenRFCOMMChannelSync (MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel rfcommChannel, byte channelID, MonoMac.Foundation.NSObject channelDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn OpenRFCOMMChannelSync(class MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel rfcommChannel, unsigned int8 channelID, class MonoMac.Foundation.NSObject channelDelegate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openRFCOMMChannelSync:withChannelID:delegate:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rfcommChannel" Type="MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel" />
+        <Parameter Name="channelID" Type="System.Byte" />
+        <Parameter Name="channelDelegate" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="rfcommChannel">To be added.</param>
+        <param name="channelID">To be added.</param>
+        <param name="channelDelegate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageScanMode">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.BluetoothPageScanMode PageScanMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothPageScanMode PageScanMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getPageScanMode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothPageScanMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageScanPeriodMode">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.BluetoothPageScanPeriodMode PageScanPeriodMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothPageScanPeriodMode PageScanPeriodMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getPageScanPeriodMode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothPageScanPeriodMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageScanRepetitionMode">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.BluetoothPageScanRepetitionMode PageScanRepetitionMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothPageScanRepetitionMode PageScanRepetitionMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getPageScanRepetitionMode")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothPageScanRepetitionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PairedDevices">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothDevice[] PairedDevices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class MonoMac.IOBluetooth.IOBluetoothDevice[] PairedDevices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("pairedDevices")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformSDPQuery">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn PerformSDPQuery (MonoMac.Foundation.NSObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn PerformSDPQuery(class MonoMac.Foundation.NSObject target) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("performSDPQuery:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformSDPQuery">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn PerformSDPQuery (MonoMac.Foundation.NSObject target, MonoMac.IOBluetooth.IOBluetoothSDPUUID[] uuids);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn PerformSDPQuery(class MonoMac.Foundation.NSObject target, class MonoMac.IOBluetooth.IOBluetoothSDPUUID[] uuids) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("performSDPQuery:uuids:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="uuids" Type="MonoMac.IOBluetooth.IOBluetoothSDPUUID[]" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <param name="uuids">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RawRSSI">
+      <MemberSignature Language="C#" Value="public virtual sbyte RawRSSI { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int8 RawRSSI" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("rawRSSI")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecentAccessDate">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSDate RecentAccessDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSDate RecentAccessDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("recentAccessDate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSDate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterForConnectNotifications">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForConnectNotifications (MonoMac.Foundation.NSObject observer, MonoMac.ObjCRuntime.Selector inSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForConnectNotifications(class MonoMac.Foundation.NSObject observer, class MonoMac.ObjCRuntime.Selector inSelector) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("registerForConnectNotifications:selector:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothUserNotification</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+      </Parameters>
+      <Docs>
+        <param name="observer">Target observer object.</param>
+        <param name="inSelector">Selector to be sent to the observer when a new connection is made.</param>
+        <summary>Allows a client to register for device connect notifications for any connection.</summary>
+        <returns>Returns an <see cref="IOBluetoothUserNotification" /> representing the outstanding device connect notification.
+            To unregister the notification, call -unregister on the returned IOBluetoothUserNotification
+            object.  If an error is encountered creating the notification, nil is returned.  The returned
+            IOBluetoothUserNotification object will be valid for as long as the notification is registered.
+            It is not necessary to retain the result.  Once -unregister is called on it, it will no longer
+            be valid.</returns>
+        <remarks>The given selector will be called on the target observer whenever any device connection is made.
+            The selector should accept two arguments.  The first is the user notification object.  The second
+            is the device that was connected.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterForDisconnectNotification">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForDisconnectNotification (MonoMac.Foundation.NSObject observer, MonoMac.ObjCRuntime.Selector inSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForDisconnectNotification(class MonoMac.Foundation.NSObject observer, class MonoMac.ObjCRuntime.Selector inSelector) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("registerForDisconnectNotification:selector:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothUserNotification</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+      </Parameters>
+      <Docs>
+        <param name="observer">To be added.</param>
+        <param name="inSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteNameRequest">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn RemoteNameRequest (MonoMac.Foundation.NSObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn RemoteNameRequest(class MonoMac.Foundation.NSObject target) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("remoteNameRequest:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteNameRequest">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn RemoteNameRequest (MonoMac.Foundation.NSObject target, ushort pageTimeoutValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn RemoteNameRequest(class MonoMac.Foundation.NSObject target, unsigned int16 pageTimeoutValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("remoteNameRequest:withPageTimeout:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="pageTimeoutValue" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <param name="pageTimeoutValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveFromFavorites">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn RemoveFromFavorites ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn RemoveFromFavorites() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("removeFromFavorites")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAuthentication">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn RequestAuthentication ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn RequestAuthentication() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("requestAuthentication")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RSSI">
+      <MemberSignature Language="C#" Value="public virtual sbyte RSSI { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int8 RSSI" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("RSSI")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendL2CAPEchoRequest">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn SendL2CAPEchoRequest (IntPtr data, ushort length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn SendL2CAPEchoRequest(native int data, unsigned int16 length) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("sendL2CAPEchoRequest:length:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.IntPtr" />
+        <Parameter Name="length" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceClassMajor">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.BluetoothServiceClassMajor ServiceClassMajor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor ServiceClassMajor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("serviceClassMajor")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Services">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord[] Services { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord[] Services" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("services")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSupervisionTimeout">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn SetSupervisionTimeout (ushort timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn SetSupervisionTimeout(unsigned int16 timeout) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setSupervisionTimeout:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithDeviceRef">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothDevice WithDeviceRef (IntPtr deviceRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothDevice WithDeviceRef(native int deviceRef) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("withDeviceRef:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Deprecated in OS X 7.0", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceRef" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="deviceRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

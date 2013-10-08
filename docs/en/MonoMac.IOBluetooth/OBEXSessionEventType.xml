@@ -1,0 +1,199 @@
+<Type Name="OBEXSessionEventType" FullName="MonoMac.IOBluetooth.OBEXSessionEventType">
+  <TypeSignature Language="C#" Value="public enum OBEXSessionEventType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OBEXSessionEventType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AbortCommandReceived">
+      <MemberSignature Language="C#" Value="AbortCommandReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType AbortCommandReceived = unsigned int32(1330857281)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AbortCommandResponseReceived">
+      <MemberSignature Language="C#" Value="AbortCommandResponseReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType AbortCommandResponseReceived = unsigned int32(1329808705)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectCommandReceived">
+      <MemberSignature Language="C#" Value="ConnectCommandReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType ConnectCommandReceived = unsigned int32(1330857283)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectCommandResponseReceived">
+      <MemberSignature Language="C#" Value="ConnectCommandResponseReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType ConnectCommandResponseReceived = unsigned int32(1329808707)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectCommandReceived">
+      <MemberSignature Language="C#" Value="DisconnectCommandReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType DisconnectCommandReceived = unsigned int32(1330857284)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectCommandResponseReceived">
+      <MemberSignature Language="C#" Value="DisconnectCommandResponseReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType DisconnectCommandResponseReceived = unsigned int32(1329808708)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType Error = unsigned int32(1330070853)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommandReceived">
+      <MemberSignature Language="C#" Value="GetCommandReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType GetCommandReceived = unsigned int32(1330857287)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommandResponseReceived">
+      <MemberSignature Language="C#" Value="GetCommandResponseReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType GetCommandResponseReceived = unsigned int32(1329808711)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PutCommandReceived">
+      <MemberSignature Language="C#" Value="PutCommandReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType PutCommandReceived = unsigned int32(1330857296)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PutCommandResponseReceived">
+      <MemberSignature Language="C#" Value="PutCommandResponseReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType PutCommandResponseReceived = unsigned int32(1329808720)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPathCommandReceived">
+      <MemberSignature Language="C#" Value="SetPathCommandReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType SetPathCommandReceived = unsigned int32(1330857299)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPathCommandResponseReceived">
+      <MemberSignature Language="C#" Value="SetPathCommandResponseReceived" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.OBEXSessionEventType SetPathCommandResponseReceived = unsigned int32(1329808723)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXSessionEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -182,6 +182,7 @@ SHARED_API = \
 	./coremidi.cs		\
 	./corelocation.cs	\
 	./imageio.cs		\
+	./iobluetooth.cs	\
 	./quicklook.cs
 
 SHARED_SOURCES = $(patsubst %,$(MACCORE_DIR)/src/%,$(SHARED_SOURCE))

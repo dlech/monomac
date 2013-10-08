@@ -1,0 +1,1305 @@
+<Type Name="BluetoothCompanyIdentifers" FullName="MonoMac.IOBluetooth.BluetoothCompanyIdentifers">
+  <TypeSignature Language="C#" Value="public enum BluetoothCompanyIdentifers" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BluetoothCompanyIdentifers extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_3Com">
+      <MemberSignature Language="C#" Value="_3Com" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers _3Com = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="_3DiJoy">
+      <MemberSignature Language="C#" Value="_3DiJoy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers _3DiJoy = int32(84)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="_3DSP">
+      <MemberSignature Language="C#" Value="_3DSP" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers _3DSP = int32(73)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AccelSemiconductor">
+      <MemberSignature Language="C#" Value="AccelSemiconductor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers AccelSemiconductor = int32(74)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alcatel">
+      <MemberSignature Language="C#" Value="Alcatel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Alcatel = int32(36)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Apple">
+      <MemberSignature Language="C#" Value="Apple" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Apple = int32(76)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="APT">
+      <MemberSignature Language="C#" Value="APT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers APT = int32(79)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AtherosCommunications">
+      <MemberSignature Language="C#" Value="AtherosCommunications" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers AtherosCommunications = int32(69)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Atmel">
+      <MemberSignature Language="C#" Value="Atmel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Atmel = int32(19)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AvagoTechnologies">
+      <MemberSignature Language="C#" Value="AvagoTechnologies" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers AvagoTechnologies = int32(78)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AVMBerlin">
+      <MemberSignature Language="C#" Value="AVMBerlin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers AVMBerlin = int32(31)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bandspeed">
+      <MemberSignature Language="C#" Value="Bandspeed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Bandspeed = int32(32)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bluegiga">
+      <MemberSignature Language="C#" Value="Bluegiga" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Bluegiga = int32(71)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BluetoothSIG">
+      <MemberSignature Language="C#" Value="BluetoothSIG" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers BluetoothSIG = int32(63)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Broadcom">
+      <MemberSignature Language="C#" Value="Broadcom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Broadcom = int32(15)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CambridgeSiliconRadio">
+      <MemberSignature Language="C#" Value="CambridgeSiliconRadio" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers CambridgeSiliconRadio = int32(10)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CATC">
+      <MemberSignature Language="C#" Value="CATC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers CATC = int32(52)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Commil">
+      <MemberSignature Language="C#" Value="Commil" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Commil = int32(51)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConexantSystems">
+      <MemberSignature Language="C#" Value="ConexantSystems" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers ConexantSystems = int32(28)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinentialAutomotiveSystems">
+      <MemberSignature Language="C#" Value="ContinentialAutomotiveSystems" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers ContinentialAutomotiveSystems = int32(75)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CONWISETechnology">
+      <MemberSignature Language="C#" Value="CONWISETechnology" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers CONWISETechnology = int32(66)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CTechnologies">
+      <MemberSignature Language="C#" Value="CTechnologies" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers CTechnologies = int32(38)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DigianswerAS">
+      <MemberSignature Language="C#" Value="DigianswerAS" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers DigianswerAS = int32(12)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Eclipse">
+      <MemberSignature Language="C#" Value="Eclipse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Eclipse = int32(53)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EMMicroElectronicMarin">
+      <MemberSignature Language="C#" Value="EMMicroElectronicMarin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers EMMicroElectronicMarin = int32(90)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EricssonTechnologyLicensing">
+      <MemberSignature Language="C#" Value="EricssonTechnologyLicensing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers EricssonTechnologyLicensing = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Free2Move">
+      <MemberSignature Language="C#" Value="Free2Move" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Free2Move = int32(83)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GCTSemiconductor">
+      <MemberSignature Language="C#" Value="GCTSemiconductor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers GCTSemiconductor = int32(45)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Gennum">
+      <MemberSignature Language="C#" Value="Gennum" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Gennum = int32(59)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HarmonInternational">
+      <MemberSignature Language="C#" Value="HarmonInternational" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers HarmonInternational = int32(87)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hitachi">
+      <MemberSignature Language="C#" Value="Hitachi" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Hitachi = int32(41)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IBM">
+      <MemberSignature Language="C#" Value="IBM" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers IBM = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InfineonTechnologiesAG">
+      <MemberSignature Language="C#" Value="InfineonTechnologiesAG" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers InfineonTechnologiesAG = int32(9)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IntegratedSiliconSolution">
+      <MemberSignature Language="C#" Value="IntegratedSiliconSolution" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers IntegratedSiliconSolution = int32(65)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IntegratedSystemSolution">
+      <MemberSignature Language="C#" Value="IntegratedSystemSolution" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers IntegratedSystemSolution = int32(57)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Intel">
+      <MemberSignature Language="C#" Value="Intel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Intel = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InteropIdentifier">
+      <MemberSignature Language="C#" Value="InteropIdentifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers InteropIdentifier = int32(65535)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inventel">
+      <MemberSignature Language="C#" Value="Inventel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Inventel = int32(30)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IPextreme">
+      <MemberSignature Language="C#" Value="IPextreme" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers IPextreme = int32(61)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JandM">
+      <MemberSignature Language="C#" Value="JandM" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers JandM = int32(82)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KCTechnology">
+      <MemberSignature Language="C#" Value="KCTechnology" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers KCTechnology = int32(22)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Lucent">
+      <MemberSignature Language="C#" Value="Lucent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Lucent = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MacronixInternational">
+      <MemberSignature Language="C#" Value="MacronixInternational" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers MacronixInternational = int32(44)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mansella">
+      <MemberSignature Language="C#" Value="Mansella" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Mansella = int32(33)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MarvellTechnologyGroup">
+      <MemberSignature Language="C#" Value="MarvellTechnologyGroup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers MarvellTechnologyGroup = int32(72)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MatsushitaElectricIndustrial">
+      <MemberSignature Language="C#" Value="MatsushitaElectricIndustrial" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers MatsushitaElectricIndustrial = int32(58)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaTek">
+      <MemberSignature Language="C#" Value="MediaTek" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers MediaTek = int32(70)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MewTelTechnology">
+      <MemberSignature Language="C#" Value="MewTelTechnology" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers MewTelTechnology = int32(47)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft">
+      <MemberSignature Language="C#" Value="Microsoft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Microsoft = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MistubishiElectric">
+      <MemberSignature Language="C#" Value="MistubishiElectric" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers MistubishiElectric = int32(20)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MitelSemiconductor">
+      <MemberSignature Language="C#" Value="MitelSemiconductor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers MitelSemiconductor = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mobilian">
+      <MemberSignature Language="C#" Value="Mobilian" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Mobilian = int32(55)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Motorola">
+      <MemberSignature Language="C#" Value="Motorola" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Motorola = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NEC">
+      <MemberSignature Language="C#" Value="NEC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers NEC = int32(34)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Newlogic">
+      <MemberSignature Language="C#" Value="Newlogic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Newlogic = int32(23)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NokiaMobilePhones">
+      <MemberSignature Language="C#" Value="NokiaMobilePhones" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers NokiaMobilePhones = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NordicSemiconductor">
+      <MemberSignature Language="C#" Value="NordicSemiconductor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers NordicSemiconductor = int32(89)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NorwoodSystems">
+      <MemberSignature Language="C#" Value="NorwoodSystems" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers NorwoodSystems = int32(46)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenInterface">
+      <MemberSignature Language="C#" Value="OpenInterface" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers OpenInterface = int32(39)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParrotSA">
+      <MemberSignature Language="C#" Value="ParrotSA" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers ParrotSA = int32(67)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParthusTechnologies">
+      <MemberSignature Language="C#" Value="ParthusTechnologies" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers ParthusTechnologies = int32(14)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PhilipsSemiconductor">
+      <MemberSignature Language="C#" Value="PhilipsSemiconductor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers PhilipsSemiconductor = int32(37)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Plantronics">
+      <MemberSignature Language="C#" Value="Plantronics" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Plantronics = int32(85)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Qualcomm">
+      <MemberSignature Language="C#" Value="Qualcomm" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Qualcomm = int32(29)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RedMCommunications">
+      <MemberSignature Language="C#" Value="RedMCommunications" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers RedMCommunications = int32(50)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RenesasTechnology">
+      <MemberSignature Language="C#" Value="RenesasTechnology" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers RenesasTechnology = int32(54)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResearchInMotion">
+      <MemberSignature Language="C#" Value="ResearchInMotion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers ResearchInMotion = int32(60)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RFCMicroDevices">
+      <MemberSignature Language="C#" Value="RFCMicroDevices" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers RFCMicroDevices = int32(40)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RohdeandSchwarz">
+      <MemberSignature Language="C#" Value="RohdeandSchwarz" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers RohdeandSchwarz = int32(25)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RTXTelecom">
+      <MemberSignature Language="C#" Value="RTXTelecom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers RTXTelecom = int32(21)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SeikoEpson">
+      <MemberSignature Language="C#" Value="SeikoEpson" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers SeikoEpson = int32(64)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SigniaTechnologies">
+      <MemberSignature Language="C#" Value="SigniaTechnologies" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers SigniaTechnologies = int32(27)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiliconWave">
+      <MemberSignature Language="C#" Value="SiliconWave" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers SiliconWave = int32(11)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiRFTechnology">
+      <MemberSignature Language="C#" Value="SiRFTechnology" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers SiRFTechnology = int32(80)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SocketCommunications">
+      <MemberSignature Language="C#" Value="SocketCommunications" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers SocketCommunications = int32(68)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SonyEricssonMobileCommunications">
+      <MemberSignature Language="C#" Value="SonyEricssonMobileCommunications" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers SonyEricssonMobileCommunications = int32(86)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaccatoCommunications">
+      <MemberSignature Language="C#" Value="StaccatoCommunications" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers StaccatoCommunications = int32(77)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="STMicroelectronics">
+      <MemberSignature Language="C#" Value="STMicroelectronics" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers STMicroelectronics = int32(48)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SymbolTechnologies">
+      <MemberSignature Language="C#" Value="SymbolTechnologies" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers SymbolTechnologies = int32(42)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Synopsys">
+      <MemberSignature Language="C#" Value="Synopsys" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Synopsys = int32(49)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemsAndChips">
+      <MemberSignature Language="C#" Value="SystemsAndChips" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers SystemsAndChips = int32(62)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tenovis">
+      <MemberSignature Language="C#" Value="Tenovis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Tenovis = int32(43)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Terax">
+      <MemberSignature Language="C#" Value="Terax" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Terax = int32(56)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TexasInstruments">
+      <MemberSignature Language="C#" Value="TexasInstruments" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers TexasInstruments = int32(13)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Toshiba">
+      <MemberSignature Language="C#" Value="Toshiba" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Toshiba = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Transilica">
+      <MemberSignature Language="C#" Value="Transilica" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Transilica = int32(24)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TTPCom">
+      <MemberSignature Language="C#" Value="TTPCom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers TTPCom = int32(26)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TZeroTechnologies">
+      <MemberSignature Language="C#" Value="TZeroTechnologies" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers TZeroTechnologies = int32(81)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Visio">
+      <MemberSignature Language="C#" Value="Visio" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Visio = int32(88)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WavePlusTechnology">
+      <MemberSignature Language="C#" Value="WavePlusTechnology" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers WavePlusTechnology = int32(35)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Widcomm">
+      <MemberSignature Language="C#" Value="Widcomm" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Widcomm = int32(17)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Zeevo">
+      <MemberSignature Language="C#" Value="Zeevo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothCompanyIdentifers Zeevo = int32(18)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothCompanyIdentifers</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

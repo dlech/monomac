@@ -1,0 +1,311 @@
+<Type Name="BluetoothHCIExtendedInquiryResponseDataTypes" FullName="MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes">
+  <TypeSignature Language="C#" Value="public enum BluetoothHCIExtendedInquiryResponseDataTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BluetoothHCIExtendedInquiryResponseDataTypes extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_128BitServiceClassUUIDsCompleteList">
+      <MemberSignature Language="C#" Value="_128BitServiceClassUUIDsCompleteList" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes _128BitServiceClassUUIDsCompleteList = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="_128BitServiceClassUUIDsWithMoreAvailable">
+      <MemberSignature Language="C#" Value="_128BitServiceClassUUIDsWithMoreAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes _128BitServiceClassUUIDsWithMoreAvailable = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="_16BitServiceClassUUIDsCompleteList">
+      <MemberSignature Language="C#" Value="_16BitServiceClassUUIDsCompleteList" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes _16BitServiceClassUUIDsCompleteList = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="_16BitServiceClassUUIDsWithMoreAvailable">
+      <MemberSignature Language="C#" Value="_16BitServiceClassUUIDsWithMoreAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes _16BitServiceClassUUIDsWithMoreAvailable = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="_32BitServiceClassUUIDsCompleteList">
+      <MemberSignature Language="C#" Value="_32BitServiceClassUUIDsCompleteList" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes _32BitServiceClassUUIDsCompleteList = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="_32BitServiceClassUUIDsWithMoreAvailable">
+      <MemberSignature Language="C#" Value="_32BitServiceClassUUIDsWithMoreAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes _32BitServiceClassUUIDsWithMoreAvailable = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompleteLocalName">
+      <MemberSignature Language="C#" Value="CompleteLocalName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes CompleteLocalName = int32(9)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceID">
+      <MemberSignature Language="C#" Value="DeviceID" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes DeviceID = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="Flags" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes Flags = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ManufacturerSpecificData">
+      <MemberSignature Language="C#" Value="ManufacturerSpecificData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes ManufacturerSpecificData = int32(255)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityManagerOOBFlags">
+      <MemberSignature Language="C#" Value="SecurityManagerOOBFlags" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes SecurityManagerOOBFlags = int32(17)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityManagerTKValue">
+      <MemberSignature Language="C#" Value="SecurityManagerTKValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes SecurityManagerTKValue = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceData">
+      <MemberSignature Language="C#" Value="ServiceData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes ServiceData = int32(22)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceSolicitation128BitUUIDs">
+      <MemberSignature Language="C#" Value="ServiceSolicitation128BitUUIDs" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes ServiceSolicitation128BitUUIDs = int32(21)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceSolicitation16BitUUIDs">
+      <MemberSignature Language="C#" Value="ServiceSolicitation16BitUUIDs" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes ServiceSolicitation16BitUUIDs = int32(20)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortenedLocalName">
+      <MemberSignature Language="C#" Value="ShortenedLocalName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes ShortenedLocalName = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SlaveConnectionIntervalRange">
+      <MemberSignature Language="C#" Value="SlaveConnectionIntervalRange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes SlaveConnectionIntervalRange = int32(18)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SSPOOBClassOfDevice">
+      <MemberSignature Language="C#" Value="SSPOOBClassOfDevice" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes SSPOOBClassOfDevice = int32(13)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SSPOOBSimplePairingHashC">
+      <MemberSignature Language="C#" Value="SSPOOBSimplePairingHashC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes SSPOOBSimplePairingHashC = int32(14)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SSPOOBSimplePairingRandomizerR">
+      <MemberSignature Language="C#" Value="SSPOOBSimplePairingRandomizerR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes SSPOOBSimplePairingRandomizerR = int32(15)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TransmitPowerLevel">
+      <MemberSignature Language="C#" Value="TransmitPowerLevel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes TransmitPowerLevel = int32(10)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothHCIExtendedInquiryResponseDataTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

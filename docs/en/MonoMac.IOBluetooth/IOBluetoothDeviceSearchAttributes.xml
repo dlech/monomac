@@ -1,0 +1,54 @@
+<Type Name="IOBluetoothDeviceSearchAttributes" FullName="MonoMac.IOBluetooth.IOBluetoothDeviceSearchAttributes">
+  <TypeSignature Language="C#" Value="public class IOBluetoothDeviceSearchAttributes" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit IOBluetoothDeviceSearchAttributes extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDeviceSearchAttributes (MonoMac.IOBluetooth.IOBluetoothDeviceSearchOptions options = MonoMac.IOBluetooth.IOBluetoothDeviceSearchOptions.None, uint maxResults = 0, MonoMac.IOBluetooth.IOBluetoothDeviceSearchDeviceAttributes[] attributes = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype MonoMac.IOBluetooth.IOBluetoothDeviceSearchOptions options, unsigned int32 maxResults, class MonoMac.IOBluetooth.IOBluetoothDeviceSearchDeviceAttributes[] attributes) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="options" Type="MonoMac.IOBluetooth.IOBluetoothDeviceSearchOptions" />
+        <Parameter Name="maxResults" Type="System.UInt32" />
+        <Parameter Name="attributes" Type="MonoMac.IOBluetooth.IOBluetoothDeviceSearchDeviceAttributes[]" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <param name="maxResults">To be added.</param>
+        <param name="attributes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~IOBluetoothDeviceSearchAttributes ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

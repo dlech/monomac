@@ -1,0 +1,86 @@
+<Type Name="BluetoothClassOfDevice" FullName="MonoMac.IOBluetooth.BluetoothClassOfDevice">
+  <TypeSignature Language="C#" Value="public struct BluetoothClassOfDevice" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BluetoothClassOfDevice extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BluetoothClassOfDevice (MonoMac.IOBluetooth.BluetoothServiceClassMajor inServiceClassMajor, MonoMac.IOBluetooth.BluetoothDeviceClassMajor inDeviceClassMajor, MonoMac.IOBluetooth.BluetoothDeviceClassMinor inDeviceClassMinor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor inServiceClassMajor, valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMajor inDeviceClassMajor, valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMinor inDeviceClassMinor) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="inServiceClassMajor" Type="MonoMac.IOBluetooth.BluetoothServiceClassMajor" />
+        <Parameter Name="inDeviceClassMajor" Type="MonoMac.IOBluetooth.BluetoothDeviceClassMajor" />
+        <Parameter Name="inDeviceClassMinor" Type="MonoMac.IOBluetooth.BluetoothDeviceClassMinor" />
+      </Parameters>
+      <Docs>
+        <param name="inServiceClassMajor">To be added.</param>
+        <param name="inDeviceClassMajor">To be added.</param>
+        <param name="inDeviceClassMinor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceClassMajor">
+      <MemberSignature Language="C#" Value="public MonoMac.IOBluetooth.BluetoothDeviceClassMajor DeviceClassMajor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMajor DeviceClassMajor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceClassMinor">
+      <MemberSignature Language="C#" Value="public MonoMac.IOBluetooth.BluetoothDeviceClassMinor DeviceClassMinor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMinor DeviceClassMinor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceClassMinor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceClassMajor">
+      <MemberSignature Language="C#" Value="public MonoMac.IOBluetooth.BluetoothServiceClassMajor ServiceClassMajor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor ServiceClassMajor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
