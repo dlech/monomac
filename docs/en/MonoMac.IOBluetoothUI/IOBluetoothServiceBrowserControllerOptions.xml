@@ -1,0 +1,87 @@
+<Type Name="IOBluetoothServiceBrowserControllerOptions" FullName="MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions">
+  <TypeSignature Language="C#" Value="public enum IOBluetoothServiceBrowserControllerOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOBluetoothServiceBrowserControllerOptions extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.ObjCRuntime.Since(2, 0)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Option values to customize the behavior of an <see cref="MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserController" /> object.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AutoStartInquiry">
+      <MemberSignature Language="C#" Value="AutoStartInquiry" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions AutoStartInquiry = unsigned int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("this has been deprecated in 10.5, all panels will AutoStart")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Automatically start an inquiry when the panel is displayed.</summary>
+        <remarks>
+          <c>kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry</c>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectWhenDone">
+      <MemberSignature Language="C#" Value="DisconnectWhenDone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions DisconnectWhenDone = unsigned int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Disconnect from the device when UI operations are finished.</summary>
+        <remarks>
+          <c>kIOBluetoothServiceBrowserControllerOptionsNone</c>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions None = unsigned int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No options set.</summary>
+        <remarks>
+          <c>kIOBluetoothServiceBrowserControllerOptionsNone</c>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

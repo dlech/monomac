@@ -1,0 +1,483 @@
+<Type Name="IOBluetoothServiceBrowserController" FullName="MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserController">
+  <TypeSignature Language="C#" Value="public class IOBluetoothServiceBrowserController : MonoMac.AppKit.NSWindowController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOBluetoothServiceBrowserController extends MonoMac.AppKit.NSWindowController" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.AppKit.NSWindowController</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Register("IOBluetoothServiceBrowserController", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A <see cref="MonoMac.AppKit.NSWindowController" /> subclass to display a window to search for and perform SDP queries on bluetooth
+          devices within range.</summary>
+    <remarks>This NSWindowController subclass will bring up a generic Bluetooth search and SDP browsing window
+          allowing the user to find devices within range, perform SDP queries on a particular device, and
+          select a SDP service to connect to.  The client application can provide NSArrays of valid service
+          UUIDs to allow, and an NSArray of valid device types to allow.  The device type filter is not
+          yet implemented.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothServiceBrowserController ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothServiceBrowserController (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithCoder:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothServiceBrowserController (MonoMac.Foundation.NSObjectFlag t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="t" Type="MonoMac.Foundation.NSObjectFlag" />
+      </Parameters>
+      <Docs>
+        <param name="t">Unused sentinel value, pass NSObjectFlag.Empty.</param>
+        <summary>Constructor to call on derived classes when the derived class has an [Export] constructor.</summary>
+        <remarks>
+          <para>This constructor should be called by derived classes when they are initialized using an [Export] attribute. The argument value is ignore, typically the chaining would look like this:</para>
+          <example>
+            <code lang="C#">
+public class MyClass : BaseClass {
+    [Export ("initWithFoo:")]
+    public MyClass (string foo) : base (NSObjectFlag.Empty)
+    {
+        ...
+    }
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothServiceBrowserController (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Pointer (handle) to the unmanaged object.</param>
+        <summary>A constructor used when creating managed representations of unmanaged objects;  Called by the runtime.</summary>
+        <remarks>
+          <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAllowedUUID">
+      <MemberSignature Language="C#" Value="public virtual void AddAllowedUUID (MonoMac.IOBluetooth.IOBluetoothSDPUUID allowedUUID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAllowedUUID(class MonoMac.IOBluetooth.IOBluetoothSDPUUID allowedUUID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("addAllowedUUID:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="allowedUUID" Type="MonoMac.IOBluetooth.IOBluetoothSDPUUID" />
+      </Parameters>
+      <Docs>
+        <param name="allowedUUID">UUID that a device may contain to be selected.</param>
+        <summary>Adds a UUID to the list of UUIDs that are used to validate the user's selection.</summary>
+        <remarks>The user's device selection gets validated against the UUIDs passed to <c>AddAllowedUUID</c> and
+              <c>AddAllowedUUIDs.</c>  Each call to those methods essentially adds a filter that the
+              selected device gets validated with.  If any of the filters match, the device is considered
+              valid.  If they all fail, the device is not valid and the user is presented with an
+              error code that the device does not support the required services.  The UUID passed to
+              <c>AddAllowedUUID</c> is the only UUID that must be present in the device's SDP service records.
+              Alternatively, all of the UUIDs in the UUID array passed to <c>AddAllowedUUIDs</c> must be
+              present.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAllowedUUIDs">
+      <MemberSignature Language="C#" Value="public virtual void AddAllowedUUIDs (MonoMac.IOBluetooth.IOBluetoothSDPUUID[] allowedUUIDs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAllowedUUIDs(class MonoMac.IOBluetooth.IOBluetoothSDPUUID[] allowedUUIDs) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("addAllowedUUIDArray:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="allowedUUIDs" Type="MonoMac.IOBluetooth.IOBluetoothSDPUUID[]" />
+      </Parameters>
+      <Docs>
+        <param name="allowedUUIDs">An array of UUIDs that all must be present in a device for it to be selectable.</param>
+        <summary>Adds an array of UUIDs to the list of UUIDs that are used to validate the user's selection.</summary>
+        <remarks>The user's device selection gets validated against the UUIDs passed to <c>AddAllowedUUID</c> and
+              <c>AddAllowedUUIDs.</c>  Each call to those methods essentially adds a filter that the
+              selected device gets validated with.  If any of the filters match, the device is considered
+              valid.  If they all fail, the device is not valid and the user is presented with an
+              error code that the device does not support the required services.  The UUID passed to
+              <c>AddAllowedUUID</c> is the only UUID that must be present in the device's SDP service records.
+              Alternatively, all of the UUIDs in the UUID array passed to <c>AddAllowedUUIDs</c> must be
+              present.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginSheetModalForWindow">
+      <MemberSignature Language="C#" Value="public void BeginSheetModalForWindow (MonoMac.AppKit.NSWindow sheetWindow, MonoMac.Foundation.NSObject modalDelegate, MonoMac.ObjCRuntime.Selector didEndSelector, IntPtr contextInfo = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginSheetModalForWindow(class MonoMac.AppKit.NSWindow sheetWindow, class MonoMac.Foundation.NSObject modalDelegate, class MonoMac.ObjCRuntime.Selector didEndSelector, native int contextInfo) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sheetWindow" Type="MonoMac.AppKit.NSWindow" />
+        <Parameter Name="modalDelegate" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="didEndSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="contextInfo" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="sheetWindow">NSWindow to attach the service browser panel to as a sheet.</param>
+        <param name="modalDelegate">Delegate object that gets sent the didEndSelector when the sheet modal session is finished.</param>
+        <param name="didEndSelector">Selector sent to the modalDelegate when the sheet modal session is finished.
+</param>
+        <param name="contextInfo">User-definied value passed to the modalDelegate in the didEndSelector.
+</param>
+        <summary>Runs the service browser panel as a sheet on the target window.</summary>
+        <remarks>This function works the same way as <see cref="MonoMac.AppKit.NSApplication.BeginSheet" />.
+            The <c>didEndSelector</c> has a similar prototype as in NSApplication except that the first argument is the
+            IOBluetoothDeviceSelectorController object instead of the window:
+            <code>
+                [Export ("sheetDidEnd")]
+                void SheetDidEnd (IOBluetoothDeviceSelectorController controller, IOBluetoothUIPanelReturn returnCode, IntPtr contextInfo)
+                {
+                // handle result.
+                }
+            </code></remarks>
+        <exception cref="MonoMac.IOKit.IOKitException">Thrown if the sheet modal session did not start.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassHandle">
+      <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The handle for this class.</summary>
+        <value>The pointer to the Objective-C class.</value>
+        <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAllowedUUIDs">
+      <MemberSignature Language="C#" Value="public virtual void ClearAllowedUUIDs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearAllowedUUIDs() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("clearAllowedUUIDs")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the controller back to the default state where it will accept any device the user selects.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateServiceBrowserController">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserController CreateServiceBrowserController (MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions inOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserController CreateServiceBrowserController(valuetype MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions inOptions) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("serviceBrowserController:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserController</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inOptions" Type="MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions" />
+      </Parameters>
+      <Docs>
+        <param name="inOptions">Bit field for options to set in the newly allocated controller.  Currently no options are available.</param>
+        <summary>Allocator work Bluetooth Service Browser window controller.</summary>
+        <returns>A new instance of the IOBluetoothServiceBrowserController Controller, <c>null</c> if unsuccessful.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DescriptionText">
+      <MemberSignature Language="C#" Value="public virtual string DescriptionText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DescriptionText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getDescriptionText")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setDescriptionText:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the description text that appears in the device selector panel.</summary>
+        <value>String that appears in the description section of the device selector panel.</value>
+        <remarks>The description text should be localized for best user experience.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <para>If set to <see langword="true" />, the method is invoked directly and will dispose manage and unmanaged resources;   If set to <see langword="false" /> the method is being called by the garbage collector finalizer and should only release unmanaged resources.</para>
+        </param>
+        <summary>Releases the resources used by the IOBluetoothServiceBrowserController object.</summary>
+        <remarks>
+          <para>This Dispose method releases the resources used by the IOBluetoothServiceBrowserController class.</para>
+          <para>This method is called by both the Dispose() method and the object finalizer (Finalize).    When invoked by the Dispose method, the parameter disposting <paramref name="disposing" /> is set to <see langword="true" /> and any managed object references that this object holds are also disposed or released;  when invoked by the object finalizer, on the finalizer thread the value is set to <see langword="false" />. </para>
+          <para>Calling the Dispose method when you are finished using the IOBluetoothServiceBrowserController ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.</para>
+          <para>  For more information on how to override this method and on the Dispose/IDisposable pattern, read the ``Implementing a Dispose Method'' document at http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getOptions")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setOptions:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetoothUI.IOBluetoothServiceBrowserControllerOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the options for the window controller.</summary>
+        <value>Option flags.</value>
+        <remarks>This method will set the options for the browser to new values.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prompt">
+      <MemberSignature Language="C#" Value="public virtual string Prompt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Prompt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getPrompt")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setPrompt:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the title of the default/select button in the device selector panel.</summary>
+        <value>String that appears in the default/select button in the device selector panel.</value>
+        <remarks>The prompt text should be localized for best user experience.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Results">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord[] Results { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord[] Results" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getResults")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the result of the user's selection.</summary>
+        <value>An array of IOBluetoothSDPServiceRecord objects corresponding to the user's selection.  If the user cancelled
+            the panel, <c>null</c> will be returned.</value>
+        <remarks>There will only be results if the panel has been run, the user has successfully made a selection and that
+            selection has been validated.  If <see cref="MonoMac.IOBluetoothUI.IOBluetoothUIPanelResult.Success" /> was returned for the session, there should be valid
+            results.  Currently only a single device is allowed to be selected, so the results array will only contain
+            one object.  However in the future multiple selection will be supported.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunModal">
+      <MemberSignature Language="C#" Value="public virtual int RunModal ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 RunModal() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("runModal")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Runs the service browser panel in a modal session to allow the user to select a service on a Bluetooth device.</summary>
+        <returns>Returns <see cref="MonoMac.IOBluetoothUI.IOBluetoothUIPanelResult.Success" /> if a successful, validated service selection was made by the user.
+            Returns <see cref="MonoMac.IOBluetoothUI.IOBluetoothUIPanelResult.UserCanceledErr" /> if the user cancelled the panel.</returns>
+        <remarks>The controller will use the panel attributes to filter what devices the user sees.  The allowed UUIDs
+            will be used to validate the selection the user makes.  The user will only be able to select services
+            that match the allowed UUIDs.  Only when a selection has been validated (or
+            the panel cancelled), will this method return.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchAttributes">
+      <MemberSignature Language="C#" Value="public MonoMac.IOBluetooth.IOBluetoothDeviceSearchAttributes SearchAttributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothDeviceSearchAttributes SearchAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDeviceSearchAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets the search attributes that control the panel's search/inquiry behavior.</summary>
+        <value>Attributes to control the panel's inquiry behavior.</value>
+        <remarks>The device search attributes control the inquiry behavior of the panel.  They allow only devices
+            that match the specified attributes (i.e. class of device) to be displayed to the user.  Note that
+            this only covers attributes returned in an inquiry result and not actual SDP services on the device.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public virtual string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getTitle")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setTitle:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the title of the panel when not run as a sheet.</summary>
+        <value>Title of the device selector panel.</value>
+        <remarks>The panel title should be localized for best user experience.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,50 @@
+<Type Name="IOBluetoothUIPanelResult" FullName="MonoMac.IOBluetoothUI.IOBluetoothUIPanelResult">
+  <TypeSignature Language="C#" Value="public enum IOBluetoothUIPanelResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOBluetoothUIPanelResult extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents the result returned by several of the IOBluetoothUI panels.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="Success" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetoothUI.IOBluetoothUIPanelResult Success = int32(-1000)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetoothUI.IOBluetoothUIPanelResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>User responded in the affirmative.</summary>
+        <remarks>
+          <c>kIOBluetoothUISuccess</c>: Same as NSRunStoppedResponse.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserCanceledErr">
+      <MemberSignature Language="C#" Value="UserCanceledErr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetoothUI.IOBluetoothUIPanelResult UserCanceledErr = int32(-1001)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetoothUI.IOBluetoothUIPanelResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>User canceled or there was an error.</summary>
+        <remarks>
+          <c>kIOBluetoothUIUserCanceledErr</c>: Same as NSRunAbortedResponse.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
