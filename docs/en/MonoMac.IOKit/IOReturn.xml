@@ -195,6 +195,62 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
+    <Member MemberName="IOBluetoothConnectionAlreadyExists">
+      <MemberSignature Language="C#" Value="IOBluetoothConnectionAlreadyExists" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn IOBluetoothConnectionAlreadyExists = int32(-536739838)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attempting to open a connection that already exists.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IOBluetoothDeviceResetError">
+      <MemberSignature Language="C#" Value="IOBluetoothDeviceResetError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn IOBluetoothDeviceResetError = int32(-536739839)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Device reset interrupted pending operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IOBluetoothHCIPowerStatesNotSupported">
+      <MemberSignature Language="C#" Value="IOBluetoothHCIPowerStatesNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn IOBluetoothHCIPowerStatesNotSupported = int32(-536739836)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>HCI controller does not support changing power states.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IOBluetoothNoHCIController">
+      <MemberSignature Language="C#" Value="IOBluetoothNoHCIController" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn IOBluetoothNoHCIController = int32(-536739837)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No HCI controller is present.</summary>
+      </Docs>
+    </Member>
     <Member MemberName="IOError">
       <MemberSignature Language="C#" Value="IOError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOReturn IOError = int32(-536870198)" />
