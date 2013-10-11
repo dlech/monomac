@@ -167,7 +167,6 @@ SHARED_SOURCE = \
 	./IOKit/HID/IOHIDDevice.cs                      \
 	./IOKit/HID/IOHIDDeviceEventArgs.cs             \
 	./IOKit/HID/IOHIDElement.cs                     \
-	./IOKit/HID/IOHIDEventArgs.cs                   \
 	./IOKit/HID/IOHIDManager.cs                     \
 	./IOKit/HID/IOHIDReportEventArgs.cs             \
 	./IOKit/HID/IOHIDValue.cs                       \
@@ -271,6 +270,7 @@ SHARED_CORE_SOURCE = \
 	./IOBluetooth/Enums.cs                          \
 	./IOKit/IOKit.cs                                \
 	./IOKit/IOReturn.cs                             \
+	./IOKit/IOReturnEventArgs.cs                    \
         ./ObjCRuntime/AdoptsAttribute.cs               	\
         ./ObjCRuntime/ArgumentSemantic.cs               \
         ./ObjCRuntime/AlphaAttribute.cs                 \

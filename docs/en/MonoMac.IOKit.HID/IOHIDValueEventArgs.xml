@@ -1,12 +1,12 @@
 <Type Name="IOHIDValueEventArgs" FullName="MonoMac.IOKit.HID.IOHIDValueEventArgs">
-  <TypeSignature Language="C#" Value="public class IOHIDValueEventArgs : MonoMac.IOKit.HID.IOHIDEventArgs" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOHIDValueEventArgs extends MonoMac.IOKit.HID.IOHIDEventArgs" />
+  <TypeSignature Language="C#" Value="public class IOHIDValueEventArgs : MonoMac.IOKit.IOReturnEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOHIDValueEventArgs extends MonoMac.IOKit.IOReturnEventArgs" />
   <AssemblyInfo>
     <AssemblyName>MonoMac</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>MonoMac.IOKit.HID.IOHIDEventArgs</BaseTypeName>
+    <BaseTypeName>MonoMac.IOKit.IOReturnEventArgs</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>

@@ -631,14 +631,14 @@
       </Docs>
     </Member>
     <Member MemberName="Removed">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;MonoMac.IOKit.HID.IOHIDEventArgs&gt; Removed;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class MonoMac.IOKit.HID.IOHIDEventArgs&gt; Removed" />
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;MonoMac.IOKit.IOReturnEventArgs&gt; Removed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class MonoMac.IOKit.IOReturnEventArgs&gt; Removed" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.EventHandler&lt;MonoMac.IOKit.HID.IOHIDEventArgs&gt;</ReturnType>
+        <ReturnType>System.EventHandler&lt;MonoMac.IOKit.IOReturnEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
