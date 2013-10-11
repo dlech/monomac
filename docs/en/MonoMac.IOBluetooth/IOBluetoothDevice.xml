@@ -542,90 +542,6 @@ public class MyClass : BaseClass {
             be updated to return an array of service records if more than one contains the UUID.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="HandsFreeAudioGatewayDriverID">
-      <MemberSignature Language="C#" Value="public virtual string HandsFreeAudioGatewayDriverID { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string HandsFreeAudioGatewayDriverID" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("handsFreeAudioGatewayDriverID")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HandsFreeAudioGatewayServiceRecord">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord HandsFreeAudioGatewayServiceRecord { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord HandsFreeAudioGatewayServiceRecord" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("handsFreeAudioGatewayServiceRecord")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HandsFreeDeviceDriverID">
-      <MemberSignature Language="C#" Value="public virtual string HandsFreeDeviceDriverID { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string HandsFreeDeviceDriverID" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("handsFreeDeviceDriverID")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HandsFreeDeviceServiceRecord">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord HandsFreeDeviceServiceRecord { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord HandsFreeDeviceServiceRecord" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("handsFreeDeviceServiceRecord")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="IsConnected">
       <MemberSignature Language="C#" Value="public virtual bool IsConnected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsConnected" />
@@ -673,48 +589,6 @@ public class MyClass : BaseClass {
           <c>true</c> if the target device is a favorite for the user, <c>false</c> if not.</value>
         <remarks>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsHandsFreeAudioGateway">
-      <MemberSignature Language="C#" Value="public virtual bool IsHandsFreeAudioGateway { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IsHandsFreeAudioGateway" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isHandsFreeAudioGateway")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsHandsFreeDevice">
-      <MemberSignature Language="C#" Value="public virtual bool IsHandsFreeDevice { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IsHandsFreeDevice" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("isHandsFreeDevice")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsIncoming">

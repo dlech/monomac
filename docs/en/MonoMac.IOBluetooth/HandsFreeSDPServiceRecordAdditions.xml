@@ -1,0 +1,43 @@
+<Type Name="HandsFreeSDPServiceRecordAdditions" FullName="MonoMac.IOBluetooth.HandsFreeSDPServiceRecordAdditions">
+  <TypeSignature Language="C#" Value="public static class HandsFreeSDPServiceRecordAdditions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit HandsFreeSDPServiceRecordAdditions extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetHandsFreeSupportedFeatures">
+      <MemberSignature Language="C#" Value="public static ushort GetHandsFreeSupportedFeatures (this MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord This);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 GetHandsFreeSupportedFeatures(class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord This) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFreeSupportedFeatures")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

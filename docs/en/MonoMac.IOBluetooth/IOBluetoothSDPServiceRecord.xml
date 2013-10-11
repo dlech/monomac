@@ -311,27 +311,6 @@ public class MyClass : BaseClass {
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="HandsFreeSupportedFeatures">
-      <MemberSignature Language="C#" Value="public virtual ushort HandsFreeSupportedFeatures { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 HandsFreeSupportedFeatures" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("handsFreeSupportedFeatures")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.UInt16</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="HasService">
       <MemberSignature Language="C#" Value="public virtual bool HasService (MonoMac.IOBluetooth.IOBluetoothSDPUUID[] serviceUuids);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasService(class MonoMac.IOBluetooth.IOBluetoothSDPUUID[] serviceUuids) cil managed" />

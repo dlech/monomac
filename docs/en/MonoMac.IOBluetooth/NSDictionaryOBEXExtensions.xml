@@ -1,0 +1,614 @@
+<Type Name="NSDictionaryOBEXExtensions" FullName="MonoMac.IOBluetooth.NSDictionaryOBEXExtensions">
+  <TypeSignature Language="C#" Value="public static class NSDictionaryOBEXExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit NSDictionaryOBEXExtensions extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddApplicationParameterHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddApplicationParameterHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddApplicationParameterHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAuthorizationChallengeHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddAuthorizationChallengeHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddAuthorizationChallengeHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAuthorizationResponseHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddAuthorizationResponseHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddAuthorizationResponseHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBodyHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddBodyHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data, bool isEndOfBody);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddBodyHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data, bool isEndOfBody) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+        <Parameter Name="isEndOfBody" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <param name="isEndOfBody">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddByteSequenceHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddByteSequenceHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddByteSequenceHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConnectionIDHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddConnectionIDHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddConnectionIDHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCountHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddCountHeader (this MonoMac.Foundation.NSMutableDictionary This, uint inCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddCountHeader(class MonoMac.Foundation.NSMutableDictionary This, unsigned int32 inCount) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("addCountHeader:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="inCount" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <param name="inCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDescriptionHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddDescriptionHeader (this MonoMac.Foundation.NSMutableDictionary This, string inDescriptionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddDescriptionHeader(class MonoMac.Foundation.NSMutableDictionary This, string inDescriptionString) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("addDescriptionHeader:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="inDescriptionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <param name="inDescriptionString">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHTTPHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddHTTPHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddHTTPHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImageDescriptorHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddImageDescriptorHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddImageDescriptorHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImageHandleHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddImageHandleHeader (this MonoMac.Foundation.NSMutableDictionary This, string type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddImageHandleHeader(class MonoMac.Foundation.NSMutableDictionary This, string type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("addImageHandleHeader:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="type" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLengthHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddLengthHeader (this MonoMac.Foundation.NSMutableDictionary This, uint length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddLengthHeader(class MonoMac.Foundation.NSMutableDictionary This, unsigned int32 length) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("addLengthHeader:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="length" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNameHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddNameHeader (this MonoMac.Foundation.NSMutableDictionary This, string inNameString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddNameHeader(class MonoMac.Foundation.NSMutableDictionary This, string inNameString) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("addNameHeader:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="inNameString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <param name="inNameString">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddObjectClassHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddObjectClassHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddObjectClassHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTargetHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddTargetHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddTargetHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTime4ByteHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddTime4ByteHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] time4Byte);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddTime4ByteHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] time4Byte) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="time4Byte" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="time4Byte">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTime4ByteHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddTime4ByteHeader (this MonoMac.Foundation.NSMutableDictionary This, uint time4Byte);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddTime4ByteHeader(class MonoMac.Foundation.NSMutableDictionary This, unsigned int32 time4Byte) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("addTime4ByteHeader:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="time4Byte" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <param name="time4Byte">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTimeISOHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddTimeISOHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddTimeISOHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTypeHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddTypeHeader (this MonoMac.Foundation.NSMutableDictionary This, string type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddTypeHeader(class MonoMac.Foundation.NSMutableDictionary This, string type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("addTypeHeader:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="type" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddUserDefinedHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddUserDefinedHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddUserDefinedHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddWhoHeader">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.OBEXError AddWhoHeader (this MonoMac.Foundation.NSMutableDictionary dictionary, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.OBEXError AddWhoHeader(class MonoMac.Foundation.NSMutableDictionary dictionary, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDictionaryWithOBEXHeadersData">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSMutableDictionary CreateDictionaryWithOBEXHeadersData (byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSMutableDictionary CreateDictionaryWithOBEXHeadersData(unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSMutableDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDictionaryWithOBEXHeadersData">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSMutableDictionary CreateDictionaryWithOBEXHeadersData (this MonoMac.Foundation.NSMutableDictionary This, MonoMac.Foundation.NSData inHeadersData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSMutableDictionary CreateDictionaryWithOBEXHeadersData(class MonoMac.Foundation.NSMutableDictionary This, class MonoMac.Foundation.NSData inHeadersData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("dictionaryWithOBEXHeadersData:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSMutableDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+        <Parameter Name="inHeadersData" Type="MonoMac.Foundation.NSData" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <param name="inHeadersData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWithOBEXHeadersData">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSMutableDictionary CreateWithOBEXHeadersData (byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSMutableDictionary CreateWithOBEXHeadersData(unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Deprecated in OS X 7.0", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSMutableDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHeaderBytes">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSMutableData GetHeaderBytes (this MonoMac.Foundation.NSMutableDictionary This);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSMutableData GetHeaderBytes(class MonoMac.Foundation.NSMutableDictionary This) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("getHeaderBytes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSMutableData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.Foundation.NSMutableDictionary" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
