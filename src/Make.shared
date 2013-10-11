@@ -152,6 +152,7 @@ SHARED_SOURCE = \
 	./IOBluetooth/IOBluetoothDevice.cs              \
 	./IOBluetooth/IOBluetoothRFCOMMChannel.cs       \
 	./IOBluetooth/IOBluetoothSDPServiceRecord.cs    \
+	./IOBluetooth/NSDictionaryOBEXExtensions.cs     \
 	./IOKit/Enums.cs                                \
 	./IOKit/IOCFPlugin.cs                           \
 	./IOKit/IOConnection.cs                         \
