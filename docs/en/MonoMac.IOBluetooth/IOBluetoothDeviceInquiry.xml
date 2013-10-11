@@ -15,8 +15,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Object representing a device inquiry that finds Bluetooth devices in-range of the computer, and (optionally) retrieves name information for them.</summary>
+    <remarks>
+      <para>Object representing a device inquiry that finds Bluetooth devices in-range of the computer, and (optionally) retrieves name information for them.</para>
+      <para>You should only use this object if your application needs to know about in-range devices and cannot use the GUI provided by the IOBluetoothUI framework. It will not let you perform unlimited back-to-back inquiries, but will instead throttle the number of attempted inquiries if too many are attempted within a small window of time. Important Note: DO NOT perform remote name requests on devices from delegate methods or while this object is in use. If you wish to do your own remote name requests on devices, do them after you have stopped this object. If you do not heed this warning, you could potentially deadlock your process.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,9 +116,18 @@ public class MyClass : BaseClass {
         <Parameter Name="delegate" Type="MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate" />
       </Parameters>
       <Docs>
-        <param name="delegate">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="delegate">
+          <format type="text/html">
+            <dd>
+              <para>A delegate object that wishes to receive messages from the inquiry object.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initializes an alloc'd inquiry object, and sets the delegate object.</para>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -174,8 +186,11 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Removes all found devices from the inquiry object.</para>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateInquiryWithDelegate">
@@ -197,10 +212,22 @@ public class MyClass : BaseClass {
         <Parameter Name="delegate" Type="MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate" />
       </Parameters>
       <Docs>
-        <param name="delegate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="delegate">
+          <format type="text/html">
+            <dd>
+              <para>A delegate object that wishes to receive messages from the inquiry object.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Class method to create an inquiry object.</para>
+        </summary>
+        <returns>
+          <para>The created IOBluetoothDeviceInquiry object.</para>
+        </returns>
+        <remarks>
+          <para>The inquiry is NOT automatically started. You musts call <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceInquiry.Start" /> on it to start the search for in-range devices.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delegate">
@@ -265,9 +292,14 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Returns found IOBluetoothDevice objects as an array.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Will not return <c>null</c>. If there are no devices found, returns an array with length of 0.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InquiryLength">
@@ -289,9 +321,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Returns the number of seconds the search will be performed.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>A default of 10 seconds is used, unless a different value is specified using this method. Note that if you have called <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceInquiry.Start" /> again too quickly, your inquiry may actually take much longer than what length you specify, as inquiries are throttled in the system. Also note that if you have the inquiry object updating device names for you, the whole inquiry process could be much longer than the specified length, depending on the number of devices found and how responsive to name requests they are. If you -must- have a strict inquiry length, disable name updates. In other words, this "length" only refers to the actual device discovery portion of the whole inquiry process.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SearchType">
@@ -313,9 +350,14 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.IOBluetooth.IOBluetoothDeviceSearchTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Returns the search type that will be performed.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>A default of <see cref="F:MonoMac.IOBluetooth.IOBluetoothDeviceSearchTypes.Classic" /> is used, unless a different value is specified using this method.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSearchCriteria">
@@ -339,11 +381,37 @@ public class MyClass : BaseClass {
         <Parameter Name="inMinorDeviceClass" Type="MonoMac.IOBluetooth.BluetoothDeviceClassMinor" />
       </Parameters>
       <Docs>
-        <param name="inServiceClassMajor">To be added.</param>
-        <param name="inMajorDeviceClass">To be added.</param>
-        <param name="inMinorDeviceClass">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inServiceClassMajor">
+          <format type="text/html">
+            <dd>
+              <para>Set the major service class for found devices. Set to <see cref="F:MonoMac.IOBluetooth.BluetoothServiceClassMajor.Any" /> for all devices.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inMajorDeviceClass">
+          <format type="text/html">
+            <dd>
+              <para>Set the major device class for found devices. Set to <see cref="F:MonoMac.IOBluetooth.BluetoothDeviceClassMajor.Any" /> for all devices.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inMinorDeviceClass">
+          <format type="text/html">
+            <dd>
+              <para>Set the minor device class for found devices. Set to <see cref="F:MonoMac.IOBluetooth.BluetoothDeviceClassMinor.Any" /> for all devices.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Use this method to set the criteria for the device search.</para>
+        </summary>
+        <remarks>
+          <para>The default inquiry object will search for all types of devices. If you wish to find only keyboards, for example, you might use this method like this:</para>
+          <code>
+myInquiryObject.SetSearchCriteria (BluetoothServiceClassMajor.Any, BluetoothDeviceClassMajor.Peripheral, BluetoothDeviceClassMinor.Peripheral1Keyboard);
+          </code>
+          <para>However, we recommend only using this if you are certain of the device class you are looking for, as some devices may report a different/unexpected device class, and the search may miss the device you are interested in.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -363,9 +431,15 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Tells inquiry object to begin the inquiry and name updating process, if specified.</para>
+        </summary>
+        <returns>
+          <para>Returns <see cref="F:MonoMac.IOKit.IOReturn.Success" /> if start was successful. Returns <see cref="F:MonoMac.IOKit.IOReturn.Busy" /> if the object is already in process. May return other IOReturn values, as appropriate.</para>
+        </returns>
+        <remarks>
+          <para>Calling start multiple times in rapid succession or back-to-back will probably not produce the intended results. Inquiries are throttled if they are called too quickly in succession.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -385,9 +459,14 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Halts the inquiry object. Could either stop the search for new devices, or the updating of found device names.</para>
+        </summary>
+        <returns>
+          <para>Returns <see cref="F:MonoMac.IOKit.IOReturn.Success" /> if the inquiry is successfully stopped. Returns <see cref="F:MonoMac.IOKit.IOReturn.NotPermitted" /> if the inquiry object is already stopped. May return other IOReturn values, as appropriate.</para>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateNewDeviceNames">
@@ -409,9 +488,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Returns whether or the inquiry object will perform remote name requests on found devices.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>The default value for the inquiry object is TRUE, unless this method is used to change it.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WeakDelegate">

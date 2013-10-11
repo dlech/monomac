@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Object representing an OBEX connection to a remote target.</summary>
+    <remarks>
+      <para>Object representing an OBEX connection to a remote target.</para>
+      <para>You will have no need for a obtaining/using a raw OBEXSession, since it requires an underlying transport to do anything useful. However, once you have an object that is a subclass of this class, you can use the functions herein to manipulate that OBEXSession. First off, you will want to use OBEXConnect (if you are a client session) to actually cause the transport to open a connection to a remote target and establish an OBEX connection over it. From there you can issue more commands based on the responses from a server.</para>
+      <para>If you are a server session, the first thing you should receive is an OBEXConnect command packet, and you will want to issue an OBEXConnectResponse packet, with your reesponse to that command (success, denied, bad request, etc.).</para>
+      <para>You can use the session accessors to access certain information, such as the negotiated max packet length.</para>
+      <para>If you wish to implement your own OBEXSession over a transport such as ethernet, you will need to see the end of the file to determine which functions to override, and what to pass to those functions.</para>
+      <para>No timeout mechanism has been implemented so far for an OBEXSessions. If you need timeouts, you will need to implement them yourself. This is being explored for a future revision. However, be aware that the OBEX Specification does not explicitly require timeouts, so be sure you allow ample time for commands to complete, as some devices may be slow when sending large amounts of data.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -143,14 +150,50 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inOptionalHeaders">To be added.</param>
-        <param name="inOptionalHeadersLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inOptionalHeaders">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your optional headers. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeadersLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXAbortHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Send an OBEX Abort command to the session's target.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the transport. You will receive a response to your command on your selector.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AbortResponse">
@@ -177,15 +220,57 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inResponseOpCode">To be added.</param>
-        <param name="inOptionalHeaders">To be added.</param>
-        <param name="inOptionalHeadersLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inResponseOpCode">
+          <format type="text/html">
+            <dd>
+              <para>Maximum packet size you want your OBEX session to communicate with. This MUST be lower than the max packet size the client has reported to you in the connect command you received from it.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeaders">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your optional headers. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeadersLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXAbortResponseHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Send a abort response to a session's target.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the underlying OBEX transport. You will receive any responses to your command response on your selector.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassHandle">
@@ -223,9 +308,19 @@ public class MyClass : BaseClass {
         <Parameter Name="event" Type="MonoMac.IOBluetooth.OBEXTransportEvent" />
       </Parameters>
       <Docs>
-        <param name="event">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="event">
+          <format type="text/html">
+            <dd>
+              <para>New event received from the transport.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Tranport subclasses need to invoke this from their own data-receive handlers. For example, when data is received over a Bluetooth RFCOMM channel in the IOBluetoothOBEXSession, it in turn calls this to dispatch the data. If you do not handle this case, your server session will not work, guaranteed.</para>
+        </summary>
+        <remarks>
+          <para>Tranport subclasses must call this for OBEX client sessions to work!</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseTransportConnection">
@@ -245,9 +340,15 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>You must override this - it will be called when the transport connection should be shutdown.</para>
+        </summary>
+        <returns>
+          <para>Return whether or not the transport connection was closed successfully or not. Return OBEXSuccess ( 0 ) on success, otherwise an error code.</para>
+        </returns>
+        <remarks>
+          <para>Tranport subclasses must override this! When called you should take whatever steps are necessary to actually close down the transport connection.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Connect">
@@ -275,16 +376,64 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inFlags">To be added.</param>
-        <param name="inMaxPacketLength">To be added.</param>
-        <param name="inOptionalHeaders">To be added.</param>
-        <param name="inOptionalHeadersLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inFlags">
+          <format type="text/html">
+            <dd>
+              <para>OBEX connect flags. See OBEX.h for possibilities.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inMaxPacketLength">
+          <format type="text/html">
+            <dd>
+              <para>Maximum packet size you want to support. May be negotiated down, depending on target device.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeaders">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your optional headers. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeadersLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXConnectHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initiate an OBEX connection to a device. Causes underlying transport (Bluetooth, et al) to attempt to connect to a remote device. After success, an OBEX connect packet is sent to establish the OBEX Connection.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the transport. You will receive a response to your command on your selector. If you have already established an OBEX connection and you call this again you will get an 'kOBEXSessionAlreadyConnectedError' as a result.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectResponse">
@@ -313,17 +462,71 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inResponseOpCode">To be added.</param>
-        <param name="inFlags">To be added.</param>
-        <param name="inMaxPacketLength">To be added.</param>
-        <param name="inOptionalHeaders">To be added.</param>
-        <param name="inOptionalHeadersLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inResponseOpCode">
+          <format type="text/html">
+            <dd>
+              <para>OBEX connect flags. See OBEX.h for possibilities.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inFlags">
+          <format type="text/html">
+            <dd>
+              <para>OBEX connect constants. See OBEX.h for possibilities.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inMaxPacketLength">
+          <format type="text/html">
+            <dd>
+              <para>Maximum packet size you want your OBEX session to communicate with. This MUST be lower than the max packet size the client has reported to you in the connect command you received from it.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeaders">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your optional headers. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeadersLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXConnectResponseHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Send a connect response to a session's target.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the underlying OBEX transport. You will receive any responses to your command response on your selector.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Disconnect">
@@ -349,14 +552,50 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inOptionalHeaders">To be added.</param>
-        <param name="inOptionalHeadersLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inOptionalHeaders">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your optional headers. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeadersLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXDisconnectHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Send an OBEX Disconnect command to the session's target. THIS DOES NOT necessarily close the underlying transport connection. Deleting the session will ensure that closure.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the transport. You will receive a response to your command on your selector. Be careful not to exceed the max packet length in your optional headers, or your command will be rejected. It is recommended that you call getMaxPacketLength on your session before issuing this command so you know how much data the session's target will accept in a single transaction.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisconnectResponse">
@@ -383,15 +622,57 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inResponseOpCode">To be added.</param>
-        <param name="inOptionalHeaders">To be added.</param>
-        <param name="inOptionalHeadersLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inResponseOpCode">
+          <format type="text/html">
+            <dd>
+              <para>Maximum packet size you want your OBEX session to communicate with. This MUST be lower than the max packet size the client has reported to you in the connect command you received from it.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeaders">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your optional headers. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeadersLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXDisconnectResponseHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Send a disconnect response to a session's target.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the underlying OBEX transport. You will receive any responses to your command response on your selector.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -418,15 +699,57 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="isFinalChunk">To be added.</param>
-        <param name="inHeaders">To be added.</param>
-        <param name="inHeadersLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="isFinalChunk">
+          <format type="text/html">
+            <dd>
+              <para>Specify if this request is complete in one shot - that all the headers you are supplying will fit in the negotiated max packet length.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inHeaders">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your headers, such as Length, Name, etc. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for your convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inHeadersLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXGetHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Send an OBEX Get command to the session's target.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the transport. You will receive a response to your command on your selector.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableCommandPayloadLength">
@@ -448,10 +771,22 @@ public class MyClass : BaseClass {
         <Parameter Name="inOpCode" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="inOpCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inOpCode">
+          <format type="text/html">
+            <dd>
+              <para>The opcode you are interested in sending (as a client).</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Determine the maximum amount of data you can send in a particular command as an OBEX client session.</para>
+        </summary>
+        <returns>
+          <para>The maximum amount of data a particular packet can handle, after accounting for any command overhead.</para>
+        </returns>
+        <remarks>
+          <para>Each OBEX Command has a certain amount of overhead. Since the negotiated max packet length does not indicate what the maximum data amount you can send in a particular command's packet, you can use this function to determine how much data to provide in optional headers or body data headers.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAvailableCommandResponsePayloadLength">
@@ -473,10 +808,22 @@ public class MyClass : BaseClass {
         <Parameter Name="inOpCode" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="inOpCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inOpCode">
+          <format type="text/html">
+            <dd>
+              <para>The opcode you are interested in responding to (as a server).</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Determine the maximum amount of data you can send in a particular command response as an OBEX server session.</para>
+        </summary>
+        <returns>
+          <para>The maximum amount of data a particular packet can handle, after accounting for any command response overhead.</para>
+        </returns>
+        <remarks>
+          <para>Each OBEX Command response has a certain amount of overhead. Since the negotiated max packet length does not indicate what the maximum data amount you can send in a particular response's packet, you can use this function to determine how much data to provide in optional headers or body data headers.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetResponse">
@@ -503,15 +850,57 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inResponseOpCode">To be added.</param>
-        <param name="inOptionalHeaders">To be added.</param>
-        <param name="inOptionalHeadersLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inResponseOpCode">
+          <format type="text/html">
+            <dd>
+              <para>Maximum packet size you want your OBEX session to communicate with. This MUST be lower than the max packet size the client has reported to you in the connect command you received from it.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeaders">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your optional headers. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeadersLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXGetResponseHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Send a get response to a session's target.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the underlying OBEX transport. You will receive any responses to your command response on your selector.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasOpenConnection">
@@ -530,9 +919,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Has a successful connect packet been sent and received? This API tells you so.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>A "transport" connection may exist (such as a Bluetooth baseband connection), but the OBEX connection may not be established over that transport. If it has been, this function returns true.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasOpenTransportConnection">
@@ -551,9 +945,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>You must override this - it will be called periodically to determine if a transport connection is open or not.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Tranport subclasses must override this! When called you simply return if the transport connection is still open or not.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxPacketLength">
@@ -572,9 +971,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Gets current max packet length.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>This value *could* change before and after a connect command has been sent or a connect command response has been received, since the recipient could negotiate a lower max packet size.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenTransportConnection">
@@ -598,12 +1002,35 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>Selector to call for success, failure or timeout.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>Target on which to call the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Caller's reference constant.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Opens a transport connection to a device. A Bluetooth connection is one example of a transport.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>Tranport subclasses must override this! when called you should attempt to open your transport connection, and if you are successful, return kOBEXSuccess, otherwise an interesting error code.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Put">
@@ -632,17 +1059,71 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="isFinalChunk">To be added.</param>
-        <param name="inHeadersData">To be added.</param>
-        <param name="inHeadersDataLength">To be added.</param>
-        <param name="inBodyData">To be added.</param>
-        <param name="inBodyDataLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="isFinalChunk">
+          <format type="text/html">
+            <dd>
+              <para>Specify if this request is complete in one shot - that all the headers you are supplying will fit in the negotiated max packet length.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inHeadersData">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your headers, such as Length, Name, etc. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inHeadersDataLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inBodyData">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your BODY header. Do not construct a real OBEX header here, it will be done for you - just pass a pointer to your data, we'll do the rest. HOWEVER, be aware that some overhead (3 bytes) will be added to the data in constructing the BODY header for you.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inBodyDataLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXPutHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Send an OBEX Put command to the session's target.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the transport. You will receive a response to your command on your selector.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PutResponse">
@@ -669,15 +1150,57 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inResponseOpCode">To be added.</param>
-        <param name="inOptionalHeaders">To be added.</param>
-        <param name="inOptionalHeadersLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inResponseOpCode">
+          <format type="text/html">
+            <dd>
+              <para>Maximum packet size you want your OBEX session to communicate with. This MUST be lower than the max packet size the client has reported to you in the connect command you received from it.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeaders">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your optional headers. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeadersLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXPutResponseHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Send a put response to a session's target.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the underlying OBEX transport. You will receive any responses to your command response on your selector.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendDataToTransport">
@@ -700,11 +1223,28 @@ public class MyClass : BaseClass {
         <Parameter Name="inDataLength" Type="System.UIntPtr" />
       </Parameters>
       <Docs>
-        <param name="inDataToSend">To be added.</param>
-        <param name="inDataLength">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inDataToSend">
+          <format type="text/html">
+            <dd>
+              <para>Data to shove over the transport to a remote OBEX session.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inDataLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data passed in.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>You must override this to send data over your transport. This does nothing by default, it will return a kOBEXUnsupportedError.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>Tranport subclasses must override this! When called you should send the data over the transport to the remote session.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServerHandleIncomingData">
@@ -726,9 +1266,19 @@ public class MyClass : BaseClass {
         <Parameter Name="event" Type="MonoMac.IOBluetooth.OBEXTransportEvent" />
       </Parameters>
       <Docs>
-        <param name="event">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="event">
+          <format type="text/html">
+            <dd>
+              <para>New event received from the transport.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Tranport subclasses need to invoke this from their own data-receive handlers. For example, when data is received over a Bluetooth RFCOMM channel in the IOBluetoothOBEXSession, it in turn calls this to dispatch the data. If you do not handle this case, your server session will not work, guaranteed.</para>
+        </summary>
+        <remarks>
+          <para>Tranport subclasses must call this for OBEX server sessions to work!</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetEventCallback">
@@ -750,9 +1300,19 @@ public class MyClass : BaseClass {
         <Parameter Name="inEventCallback" Type="MonoMac.IOBluetooth.OBEXSessionEventCallback" />
       </Parameters>
       <Docs>
-        <param name="inEventCallback">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inEventCallback">
+          <format type="text/html">
+            <dd>
+              <para>Function to callback. Should be non-NULL, unless you are attempting to clear the callback, but doing that doesn't make much sense.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Sets the C-API callback used when the session recieves data.</para>
+        </summary>
+        <remarks>
+          <para>This is really not intended for client sessions. Only subclasses would really be interested in using this. They should set these when their subclass object is created, because otherwise they will have no way of receiving the initial command data packet. This is a partner to setEventRefCon, described below.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetEventRefCon">
@@ -774,9 +1334,19 @@ public class MyClass : BaseClass {
         <Parameter Name="inRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inRefCon">
+          <format type="text/html">
+            <dd>
+              <para>User's refCon that will get passed when their event callback is invoked.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Sets the C-API callback refCon used when the session recieves data.</para>
+        </summary>
+        <remarks>
+          <para>This is really not intended for client sessions. Only subclasses would really be interested in using this. They should set these when their subclass object is created, because otherwise they will have no context in their callback.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetEventSelector">
@@ -800,11 +1370,33 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="MonoMac.Foundation.NSObject" />
       </Parameters>
       <Docs>
-        <param name="inEventSelector">To be added.</param>
-        <param name="inEventSelectorTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inEventSelector">
+          <format type="text/html">
+            <dd>
+              <para>Selector to call on the target.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inEventSelectorTarget">
+          <format type="text/html">
+            <dd>
+              <para>Target to be called with the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>User's refCon that will get passed when their event callback is invoked.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Allow you to set a selector to be called when events occur on the OBEX session.</para>
+        </summary>
+        <remarks>
+          <para>Really not needed to be used, since the event selector will get set when an OBEX command is sent out.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPath">
@@ -832,16 +1424,64 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inFlags">To be added.</param>
-        <param name="inConstants">To be added.</param>
-        <param name="inOptionalHeaders">To be added.</param>
-        <param name="inOptionalHeadersLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inFlags">
+          <format type="text/html">
+            <dd>
+              <para>OBEX setpath flags. See OBEX.h for possibilities.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inConstants">
+          <format type="text/html">
+            <dd>
+              <para>OBEX setpath constants. See OBEX.h for possibilities.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeaders">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your optional headers. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeadersLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXSetPathHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Send an OBEX SetPath command to the session's target.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the transport. You will receive a response to your command on your selector.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPathResponse">
@@ -868,15 +1508,57 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inResponseOpCode">To be added.</param>
-        <param name="inOptionalHeaders">To be added.</param>
-        <param name="inOptionalHeadersLength">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <param name="inTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inResponseOpCode">
+          <format type="text/html">
+            <dd>
+              <para>Maximum packet size you want your OBEX session to communicate with. This MUST be lower than the max packet size the client has reported to you in the connect command you received from it.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeaders">
+          <format type="text/html">
+            <dd>
+              <para>Can be NULL. Ptr to some data you want to send as your optional headers. Use the provided header contruction kit in OBEX.h and OBEXHeadersToBytes() for convenience.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inOptionalHeadersLength">
+          <format type="text/html">
+            <dd>
+              <para>Length of data in ptr passed in above.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>A VALID selector to be called when something interesting happens due to this call. Selector in your target object MUST have the following signature, or it will not be called properly (look for error messages in Console.app):</para>
+              <para>- (void)OBEXSetPathResponseHandler:(const OBEXSessionEvent*)inSessionEvent;</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inTarget">
+          <format type="text/html">
+            <dd>
+              <para>A VALID target object for the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>Whatever you want to pass here. It will be passed back to you in the refCon portion of the OBEXSessionEvent struct. nil is, of course, OK here.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Send a set path response to a session's target.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>A NULL selector or target will result in an error. After return, the data passed in will have been sent over the underlying OBEX transport. You will receive any responses to your command response on your selector.</para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -15,8 +15,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An instance of IOBluetoothDevicePair represents a pairing attempt to a remote Bluetooth device.</summary>
+    <remarks>
+      <para>Use the IOBluetoothDevicePair object to attempt to pair with any Bluetooth device. Once <see cref="M:MonoMac.IOBluetooth. IOBluetoothDevicePair.Start" /> is invoked on it, progress is returned to the delegate via the messages defined below. This object enables you to pair with devices within your application without having to use the standard panels provided by the IOBluetoothUI framework, allowing you to write custom UI to select devices, and still handle the ability to perform device pairings.</para>
+      <para>Of note is that this object MAY attempt to perform two low-level pairings, depending on the type of device you are attempting to pair. This is inconsequential to your code, however, as it occurs automatically and does not change the messaging.</para>
+      <para>Once started, the pairing cannot be stopped or cancelled. You can set the delegate to nil to stop receiving messages, but the process will continue behind the scenes until success or failure occurs. This is due to the complex interaction between the all the Bluetooth software components and your code.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -175,9 +179,13 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Get the <see cref="T:MonoMac.IOBluetooth.IOBluetoothDevice" /> being used by the object.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -225,10 +233,21 @@ public class MyClass : BaseClass {
         <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothDevice" />
       </Parameters>
       <Docs>
-        <param name="device">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="device">
+          <format type="text/html">
+            <dd>
+              <para>An <see cref="T:MonoMac.IOBluetooth.IOBluetoothDevice" /> to attept to pair with. The device is retained.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates an autorelease IOBluetoothDevicePair object with a device as the pairing target.</para>
+        </summary>
+        <returns>
+          <para>Returns an error code, if the pairing could not be started.</para>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplyPINCode">
@@ -251,10 +270,25 @@ public class MyClass : BaseClass {
         <Parameter Name="PINCode" Type="MonoMac.IOBluetooth.BluetoothPINCode" />
       </Parameters>
       <Docs>
-        <param name="PINCodeSize">To be added.</param>
-        <param name="PINCode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="PINCodeSize">
+          <format type="text/html">
+            <dd>
+              <para>The PIN code length in bytes.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="PINCode">
+          <format type="text/html">
+            <dd>
+              <para>PIN code for the device. Can be up to a maximum of 16 bytes.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>This is the required reply to the DevicePairingPINCodeRequest delegate message. Set the PIN code to use during pairing if required.</para>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplyUserConfirmation">
@@ -276,9 +310,18 @@ public class MyClass : BaseClass {
         <Parameter Name="reply" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="reply">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reply">
+          <format type="text/html">
+            <dd>
+              <para>A yes/no answer provide by the user to the numeric comparison presented.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>This is the required reply to the DevicePairingUserConfirmationRequest delegate message.</para>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -298,9 +341,14 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Kicks off the pairing with the device.</para>
+        </summary>
+        <returns>
+          <para>Returns an error code, if the pairing could not be started.</para>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WeakDelegate">

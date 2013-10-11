@@ -15,8 +15,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Hands free profile class.</summary>
+    <remarks>
+      <para>Hands free profile class.</para>
+      <para>Superclass of <see cref="T:MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" /> and <see cref="T:MonoMac.IOBluetooth.IOBluetoothHandsFreeAudioGateway" /> classes. Contains the common code used to support the bluetoooth hands free profile.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -137,10 +140,26 @@ public class MyClass : BaseClass {
         <Parameter Name="inDelegate" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDelegate" />
       </Parameters>
       <Docs>
-        <param name="device">To be added.</param>
-        <param name="inDelegate">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="device">
+          <format type="text/html">
+            <dd>
+              <para>An IOBluetoothDevice</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inDelegate">
+          <format type="text/html">
+            <dd>
+              <para>An object to act as delegate that implements the IOBluetoothHandsFreeDelegate protocol.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Create a new IOBluetoothHandsFree object</para>
+        </summary>
+        <remarks>
+          <para>This method should be called on a subclass (<see cref="T:MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" /> or <see cref="T:MonoMac.IOBluetooth.IOBluetoothHandsFreeAudioGateway" />) to get full functionality.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassHandle">
@@ -176,8 +195,12 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Connect to the device</para>
+        </summary>
+        <remarks>
+          <para>Connects to the device and sets up a service level connection (RFCOMM channel). Delegate methods will be called once the connection is complete or a failure occurs.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectSCO">
@@ -197,8 +220,12 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Open a SCO connection with the device</para>
+        </summary>
+        <remarks>
+          <para>Opens a SCO connection with the device. The device must already have a service level connection or this will return immediately. Delegate methods will be called once the connection is complete of a failure occurs.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delegate">
@@ -237,9 +264,14 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Return the IOBluetoothDevice.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Returns the IOBluetoothDevice to connect with.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeviceCallHoldModes">
@@ -258,9 +290,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Return the device's supported call hold modes.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Returns the device's supported call hold modes bitmap. The values are described in “IOBluetoothHandsFreeCallHoldModes.”</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeviceSupportedFeatures">
@@ -279,9 +316,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Return the device's supported features.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Returns the device's supported features bitmap. The values are described in “IOBluetoothHandsFreeDeviceFeatures and IOBluetoothHandsFreeAudioGatewayFeatures.”</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeviceSupportedSMSServices">
@@ -300,9 +342,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Return the device's supported SMS services.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Returns the device's supported SMS services bitmap. The values are described in “IOBluetoothHandsFreeSMSSupport.”</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Disconnect">
@@ -322,8 +369,12 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Disconnect from the device</para>
+        </summary>
+        <remarks>
+          <para>Disconnects from the device, closes the SCO and service level connection if they are connected. Delegate methods will be called once the disconnection is complete.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisconnectSCO">
@@ -343,8 +394,12 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Disconnect the SCO connection with the device</para>
+        </summary>
+        <remarks>
+          <para>Disconnects the SCO connection with the device (if one exists). Delegate methods will be called once the disconnection is complete.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -392,10 +447,20 @@ public class MyClass : BaseClass {
         <Parameter Name="indicatorName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="indicatorName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="indicatorName">
+          <format type="text/html">
+            <dd>
+              <para>See “Hands free indicator constants," for standard indicator names.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Return an indicator's value</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InputMuted">
@@ -417,9 +482,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Return the input mute state.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Returns the inputs mute state.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InputVolume">
@@ -441,9 +511,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Set the input volume</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Sets the input volume between 0 and 1. 0 is the same as mute.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsConnected">
@@ -462,9 +537,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Determine if there is a serivice level connection to the device</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Determines if there is a serivice level connection to the device.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSCOConnected">
@@ -483,9 +563,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Determine if there is a SCO connection to the device</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Determines if there is a SCO connection to the device.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputMuted">
@@ -507,9 +592,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Return the output mute state.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Returns the outputs mute state.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OutputVolume">
@@ -531,9 +621,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Set the output volume</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Sets the output volume between 0 and 1. 0 is the same as mute.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetIndicator">
@@ -556,10 +651,26 @@ public class MyClass : BaseClass {
         <Parameter Name="indicatorValue" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="indicatorName">To be added.</param>
-        <param name="indicatorValue">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="indicatorName">
+          <format type="text/html">
+            <dd>
+              <para>See “Hands free indicator constants," for standard indicator names.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="indicatorValue">
+          <format type="text/html">
+            <dd>
+              <para>Will set the indicator value as long as it is within the min and max values allowed.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Set an indicator's value</para>
+        </summary>
+        <remarks>
+          <para>Sets an indicator's value.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SMSEnabled">
@@ -578,9 +689,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          Gets whetherthe device has SMS enabled or not.
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Returns <c>true</c> if the device has SMS enabled (by responding to a CMGF command). <c>false</c> if the device has not set an SMS mode or doesn't support SMS.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SMSMode">
@@ -599,9 +715,14 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.IOBluetooth.IOBluetoothSMSMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Return the device's SMS mode.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Returns the device's SMS mode.”</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SupportedFeatures">
@@ -623,9 +744,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Set the supported features</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Sets the supported features bitmap. The values are described in “IOBluetoothHandsFreeDeviceFeatures and IOBluetoothHandsFreeAudioGatewayFeatures.”</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WeakDelegate">
@@ -653,6 +779,7 @@ public class MyClass : BaseClass {
           <para>The delegate instance assigned to this object will be used to handle events or provide data on demand to this class.</para>
           <para>When setting the Delegate or WeakDelegate values events will be delivered to the specified instance instead of being delivered to the C#-style events</para>
           <para>   Methods must be decorated with the [Export ("selectorName")] attribute to respond to each method from the protocol.   Alternatively use the Delegate method which is strongly typed and does not require the [Export] attributes on methods.</para>
+          <para>A IOBluetoothHandsFree delegate can optionally respond to any of the delegate methods in IOBluetoothHandsFreeDelegate and any subclasses delegates.</para>
         </remarks>
       </Docs>
     </Member>

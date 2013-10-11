@@ -15,8 +15,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An OBEX Session with a Bluetooth RFCOMM channel as the transport.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -113,9 +114,16 @@ public class MyClass : BaseClass {
         <Parameter Name="inSDPServiceRecord" Type="MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord" />
       </Parameters>
       <Docs>
-        <param name="inSDPServiceRecord">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inSDPServiceRecord">
+          <format type="text/html">
+            <dd />
+          </format>
+        </param>
+        <summary>
+          <para>Initializes a Bluetooth-based OBEX Session using an SDP service record.</para>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -158,10 +166,25 @@ public class MyClass : BaseClass {
         <Parameter Name="inChannelID" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="inDevice">To be added.</param>
-        <param name="inChannelID">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inDevice">
+          <format type="text/html">
+            <dd>
+              <para>The bluetooth device on which to open the OBEXSession.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inChannelID">
+          <format type="text/html">
+            <dd>
+              <para>The RFCOMM channel ID to use when opening the connection.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initializes a Bluetooth-based OBEX Session using a Bluetooth device.</para>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -183,12 +206,39 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inChannel">To be added.</param>
-        <param name="inEventSelector">To be added.</param>
-        <param name="inEventSelectorTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inChannel">
+          <format type="text/html">
+            <dd>
+              <para>RFCOMM channel ID of the desired channel to be used.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inEventSelector">
+          <format type="text/html">
+            <dd>
+              <para>The selector to be called when an event is received.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inEventSelectorTarget">
+          <format type="text/html">
+            <dd>
+              <para>The target object that get the selector message.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>caller reference constant, pass whatever you want, it will be returned to you in the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initializes a Bluetooth-based OBEX Session using an incoming RFCOMM channel.</para>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassHandle">
@@ -224,9 +274,14 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>An OBEXSession override. When this is called by the session baseclass, we will close the transport connection if it is opened. In our case, it will be the RFCOMM channel that needs closing.</para>
+        </summary>
+        <returns>
+          <para>Success or failure code, describing whether the call succeeded in closing the transport connection successfully.</para>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Device">
@@ -245,9 +300,13 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Get the Bluetooth Device being used by the session object.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -296,11 +355,29 @@ public class MyClass : BaseClass {
         <Parameter Name="inRFCOMMChannelID" Type="System.Byte" />
       </Parameters>
       <Docs>
-        <param name="inDevice">To be added.</param>
-        <param name="inRFCOMMChannelID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inDevice">
+          <format type="text/html">
+            <dd>
+              <para>A valid Bluetooth device describing which device you want to connect to with Bluetooth/OBEX.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inRFCOMMChannelID">
+          <format type="text/html">
+            <dd>
+              <para>An RFCOMM Channel ID numbe that is available on the remote device. This channel will be used when the transport connection is attempted.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a Bluetooth-based OBEX Session using a Bluetooth device and a Bluetooth RFCOMM channel ID.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>Note that this does NOT mean the transport connection was open. It will be opened when OBEXConnect is invoked on the session object.</para>
+          <para>*IMPORTANT NOTE* In Bluetooth framework version 1.0.0, the session returned will NOT be autoreleased as it should be according to objc convention. This has been changed starting in Bluetooth version 1.0.1 and later, so it WILL be autoreleased upon return, so you will need to retain it if you want to reference it later.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSessionWithIncomingRFCOMMChannel">
@@ -325,13 +402,42 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inChannel">To be added.</param>
-        <param name="inEventSelector">To be added.</param>
-        <param name="inEventSelectorTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inChannel">
+          <format type="text/html">
+            <dd>
+              <para>The channel to use to create a connection to a device.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inEventSelector">
+          <format type="text/html">
+            <dd>
+              <para>The selector that gets called when an event occurs on the OBEX Session.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inEventSelectorTarget">
+          <format type="text/html">
+            <dd>
+              <para>The object that is used to call the above selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>The reference constant. Pass whatever you wish - it will be returned to you in the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a Bluetooth-based OBEX Session using an incoming RFCOMM channel.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>*IMPORTANT NOTE* In Bluetooth framework version 1.0.0, the session returned will NOT be autoreleased as it should be according to objc convention. This has been changed starting in Bluetooth version 1.0.1 and later, so it WILL be autoreleased upon return, so you will need to retain it if you want to reference it later.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSessionWithSDPServiceRecord">
@@ -353,10 +459,23 @@ public class MyClass : BaseClass {
         <Parameter Name="inSDPServiceRecord" Type="MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord" />
       </Parameters>
       <Docs>
-        <param name="inSDPServiceRecord">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="inSDPServiceRecord">
+          <format type="text/html">
+            <dd>
+              <para>A valid SDP service record describing the service (and RFCOMM channel) you want to connect to with Bluetooth/OBEX.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a Bluetooth-based OBEX Session using an SDP service record, typically obtained from a device/service browser window controller.</para>
+        </summary>
+        <returns>
+          <para>An OBEX session representing the device/rfcomm channel found in the service record. nil if we failed.</para>
+        </returns>
+        <remarks>
+          <para>Note that this does NOT mean the transport connection was open. It will be opened when OBEXConnect is invoked on the session object.</para>
+          <para>*IMPORTANT NOTE* In Bluetooth framework version 1.0.0, the session returned will NOT be autoreleased as it should be according to objc convention. This has been changed starting in Bluetooth version 1.0.1 and later, so it WILL be autoreleased upon return, so you will need to retain it if you want to reference it later.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasOpenTransportConnection">
@@ -375,9 +494,13 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>An OBEXSession override. When this is called by the session baseclass, we will return whether or not we have a transport connection established to another OBEX server/client. In our case we will tell whether or not the RFCOMM channel to a remote device is still open.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSessionTargetAMac">
@@ -396,9 +519,14 @@ public class MyClass : BaseClass {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Tells whether the target device is a Mac by checking its service record.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Tells whether the target device is a Mac by checking its service record.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenTransportConnection">
@@ -425,9 +553,18 @@ public class MyClass : BaseClass {
         <param name="inSelector">To be added.</param>
         <param name="inTarget">To be added.</param>
         <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>An OBEXSession override. When this is called by the session baseclass, we will attempt to open the transport connection. In our case, this would be an RFCOMM channel to another Bluetooth device.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>Your selector should have the following signature:</para>
+          <para>-(void)transportConnectionSelector:(id)refcon status:(OBEXError)status;</para>
+          <para>Thus you could use it with openTransportConnection like this:</para>
+          <para>OBEXError error = [anOBEXSession openTransportConnection:@selector( transportConnectionSelector:status: ) selectorTarget:self refCon:anOBEXSession]; // or whatever you want to pass as a refCon...</para>
+          <para>Be sure to check the status code! Assume the connection was not opened unless status is kOBEXSuccess.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RestartTransmission">
@@ -447,8 +584,12 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>If the transmission was stopeed due to the lack of buffers this call restarts it.</para>
+        </summary>
+        <remarks>
+          <para>If the transmission was stopeed due to the lack of buffers this call restarts it.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RFCOMMChannel">
@@ -467,9 +608,14 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Get the Bluetooth RFCOMM channel being used by the session object.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>This could potentially be nil even though you have a valid OBEX session, because the RFCOMM channel is only valid when the session is connected.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendBufferTroughChannel">
@@ -489,9 +635,14 @@ public class MyClass : BaseClass {
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Sends the next block of data trough the rfcomm channel.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>Since a send in the rfcomm channel is broken in multiple write calls (this actually is true only if the size is grater than the rfcomm MTU). Each write call is performed by sendBufferTroughChannel. This should never need to be overwritten.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendDataToTransport">
@@ -516,9 +667,13 @@ public class MyClass : BaseClass {
       <Docs>
         <param name="inDataToSend">To be added.</param>
         <param name="inDataLength">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>An OBEXSession override. When this is called by the session baseclass, we will send the data we are given over our transport connection. If none is open, we could try to open it, or just return an error. In our case, it will be sent over the RFCOMM channel.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetOBEXSessionOpenConnectionCallback">
@@ -541,10 +696,25 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <param name="inCallback">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inCallback">
+          <format type="text/html">
+            <dd>
+              <para>function to call on the target.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>user's reference constant, will be returned on the callback.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>For C API support. Allows you to set the callback to be invoked when the OBEX connection is actually opened.</para>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetOpenTransportConnectionAsyncSelector">
@@ -568,11 +738,33 @@ public class MyClass : BaseClass {
         <Parameter Name="inUserRefCon" Type="MonoMac.Foundation.NSObject" />
       </Parameters>
       <Docs>
-        <param name="inSelector">To be added.</param>
-        <param name="inSelectorTarget">To be added.</param>
-        <param name="inUserRefCon">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>Selector to call on the target.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelectorTarget">
+          <format type="text/html">
+            <dd>
+              <para>Target to be called with the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>User's refCon that will get passed to them when their selector is invoked.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Allows you to set the selector to be used when a transport connection is opened, or fails to open.</para>
+        </summary>
+        <remarks>
+          <para>You do not need to call this on the session typically, unless you have subclassed the OBEXSession to implement a new transport and that transport supports async opening of connections. If it does not support async open, then using this is pointless.</para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

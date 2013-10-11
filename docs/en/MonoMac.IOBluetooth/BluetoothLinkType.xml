@@ -41,9 +41,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="LinkTypeNone">
-      <MemberSignature Language="C#" Value="LinkTypeNone" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothLinkType LinkTypeNone = unsigned int8(255)" />
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOBluetooth.BluetoothLinkType None = unsigned int8(255)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

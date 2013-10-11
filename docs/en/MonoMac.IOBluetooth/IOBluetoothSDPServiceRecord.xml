@@ -15,8 +15,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An instance of this class represents a single SDP service record.</summary>
+    <remarks>
+      <para>An instance of this class represents a single SDP service record.</para>
+      <para>As a service record, an instance of this class has an NSDictionary of service attributes. It also has a link to the IOBluetoothDevice that the service belongs to. The service dictionary is keyed off of the attribute ID of each attribute represented as an NSNumber.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -139,8 +142,11 @@ public class MyClass : BaseClass {
       <Docs>
         <param name="serviceDict">To be added.</param>
         <param name="device">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Returns an initialized IOBluetoothSDPServiceRecord * with the attributes specified in the provided service dictionary. Provide a pointer to an IOBlueotothDevice if you wish to associate the record to a specific IOBluetoothDevice.</para>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -159,9 +165,14 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.Foundation.NSDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Returns an NSDictionary containing the attributes for the service.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>The attribute dictionary is keyed off of the attribute id represented as an NSNumber. The values in the NSDictionary are IOBluetoothSDPDataElement objects representing the data element for the given attribute.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassHandle">
@@ -196,9 +207,14 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Returns the IOBluetoothDevice that the target service belongs to.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>If the service is a local service (i.e. one the current host is vending out), then nil is returned.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -246,60 +262,21 @@ public class MyClass : BaseClass {
         <Parameter Name="attributeID" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="attributeID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetL2CAPPSM">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn GetL2CAPPSM (out MonoMac.IOBluetooth.BluetoothL2CAPPSM outPSM);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn GetL2CAPPSM(valuetype MonoMac.IOBluetooth.BluetoothL2CAPPSM outPSM) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("getL2CAPPSM:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="outPSM" Type="MonoMac.IOBluetooth.BluetoothL2CAPPSM&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="outPSM">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetRecordWithSDPServiceRecordRef">
-      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord GetRecordWithSDPServiceRecordRef (IntPtr sdpServiceRecordRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord GetRecordWithSDPServiceRecordRef(native int sdpServiceRecordRef) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("withSDPServiceRecordRef:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="sdpServiceRecordRef" Type="System.IntPtr" />
-      </Parameters>
-      <Docs>
-        <param name="sdpServiceRecordRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="attributeID">
+          <format type="text/html">
+            <dd>
+              <para>The attribute ID of the desired attribute.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Gets the data element for the given attribute ID in the target service.</para>
+        </summary>
+        <returns>
+          <para>The data element for the given attribute ID in the target service. If the service does not contain an attribute with the given ID, then <see langword="null" /> is returned.</para>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRecordWithServiceDictionary">
@@ -324,59 +301,14 @@ public class MyClass : BaseClass {
       <Docs>
         <param name="serviceDict">To be added.</param>
         <param name="device">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetRFCOMMChannelID">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn GetRFCOMMChannelID (out byte rfcommChannelID);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn GetRFCOMMChannelID(unsigned int8 rfcommChannelID) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("getRFCOMMChannelID:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="rfcommChannelID" Type="System.Byte&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="rfcommChannelID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetServiceRecordHandle">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn GetServiceRecordHandle (out IntPtr outServiceRecordHandle);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn GetServiceRecordHandle(native int outServiceRecordHandle) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("getServiceRecordHandle:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="outServiceRecordHandle" Type="System.IntPtr&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="outServiceRecordHandle">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Gets an IOBluetoothSDPServiceRecord with the attributes specified in the provided service dictionary. Provide an IOBlueotothDevice if you wish to associate the record to a specific IOBluetoothDevice.</para>
+        </summary>
+        <returns>
+          <para>IOBluetoothSDPServiceRecord with the attributes specified in the provided dictionary.</para>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HandsFreeSupportedFeatures">
@@ -419,10 +351,43 @@ public class MyClass : BaseClass {
         <Parameter Name="serviceUuids" Type="MonoMac.IOBluetooth.IOBluetoothSDPUUID[]" />
       </Parameters>
       <Docs>
-        <param name="serviceUuids">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="serviceUuids">
+          <format type="text/html">
+            <dd>
+              <para>An array of IOBluetoothSDPUUID objects to search for in the target service.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Returns <see langword="true" /> if any one of the UUIDs in the given array is found in the target service.</para>
+        </summary>
+        <returns>
+          <para>Returns <see langword="true" /> if any of the given UUIDs are present in the service.</para>
+        </returns>
+        <remarks>
+          <para>The given array should contain IOBluetoothSDPUUID objects. It is currently implemented such that it returns <see langword="true" /> if any of the UUIDs are found. However in the future, it is likely that this will change to more closely match the functionality in the SDP spec so that it only returns <see langword="true" /> if all of the given UUIDs are present. That way, both AND and OR comparisons can be implemented. Please make a note of this potential change.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="L2CAPPSM">
+      <MemberSignature Language="C#" Value="public MonoMac.IOBluetooth.BluetoothL2CAPPSM L2CAPPSM { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothL2CAPPSM L2CAPPSM" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothL2CAPPSM</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Allows the discovery of the L2CAP PSM assigned to the service.</para>
+        </summary>
+        <value>The found L2CAP PSM.</value>
+        <remarks>
+          <para>This method will search through the ProtoclDescriptorList attribute to find an entry with the L2CAP UUID (UUID16: 0x0100). If one is found, it gets the second element of the data element sequence.</para>
+        </remarks>
+        <excption cref="T:MonoMac.IOKit.IOKitException">If the PSM is not found.</excption>
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -444,10 +409,23 @@ public class MyClass : BaseClass {
         <Parameter Name="uuidArray" Type="MonoMac.IOBluetooth.IOBluetoothSDPUUID[]" />
       </Parameters>
       <Docs>
-        <param name="uuidArray">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uuidArray">
+          <format type="text/html">
+            <dd>
+              <para>An array of IOBluetoothSDPUUID objects to search for in the target service.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Returns <see langword="true" /> if ALL of the UUIDs in the given array is found in the target service.</para>
+        </summary>
+        <returns>
+          <para>Returns <see langword="true" /> if all of the given UUIDs are present in the service.</para>
+        </returns>
+        <remarks>
+          <para>It only returns <see langword="true" /> if all of the UUIDs are found. This method is like <see cref="M:MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord.HasService (MonoMac.IOBluetooth.IOBluetoothSDPUUID[])" /> except that it requires that all UUIDs match instead of any of them matching.</para>
+          <para>NOTE: This method is only available in OS X v10.2.4 (Bluetooth v1.1) or later.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -469,31 +447,42 @@ public class MyClass : BaseClass {
         <Parameter Name="uuid16" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="uuid16">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uuid16">
+          <format type="text/html">
+            <dd>
+              <para>A BluetoothSDPUUID16 to search for in the target service.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Returns <see langword="true" /> the UUID16 is found in the target service.</para>
+        </summary>
+        <returns>
+          <para>Returns <see langword="true" /> if the UUID16 is present in the service.</para>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
-    <Member MemberName="SDPServiceRecordRef">
-      <MemberSignature Language="C#" Value="public virtual IntPtr SDPServiceRecordRef { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance native int SDPServiceRecordRef" />
+    <Member MemberName="RFCOMMChannelID">
+      <MemberSignature Language="C#" Value="public byte RFCOMMChannelID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 RFCOMMChannelID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("getSDPServiceRecordRef")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
+        <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Gets the RFCOMM channel ID assigned to the service.</para>
+        </summary>
+        <value>The location of the found RFCOMM channel ID.</value>
+        <remarks>
+          <para>This method will search through the ProtoclDescriptorList attribute to find an entry with the RFCOMM UUID (UUID16: 0x0003). If one is found, it gets the second element of the data element sequence.</para>
+        </remarks>
+        <excption cref="T:MonoMac.IOKit.IOKitException">If the channel ID was not found.</excption>
       </Docs>
     </Member>
     <Member MemberName="ServiceName">
@@ -512,14 +501,19 @@ public class MyClass : BaseClass {
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Returns the name of the service.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>This is currently implemented to simply return the attribute with an id of 0x0100. In the future, it will be extended to allow name localization based on the user's chosen language or other languages.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SortedAttributes">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSArray SortedAttributes { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSArray SortedAttributes" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothSDPServiceAttribute[] SortedAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothSDPServiceAttribute[] SortedAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -530,12 +524,17 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.Foundation.NSArray</ReturnType>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceAttribute[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Returns a sorted array of SDP attributes</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>This method will walk all the elements of the service record and return an array of IOBluetoothSDPServiceAttribute objects sorted by attributeID</para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -15,8 +15,43 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The NSMutableDictionary class declares the programmatic interface to objects that manage mutable associations of keys and values.</summary>
+    <remarks>
+      <para>The <c>NSMutableDictionary</c> class declares the programmatic interface to objects that manage mutable associations of keys and values. It adds modification operations to the basic operations it inherits from <c><format type="text/html"><a target="_self" href="http://developer.apple.com/iphone/library/documentation/Cocoa/Reference/Foundation/Classes/NSMutableDictionary_Class/Reference/http:/developer.apple.com/iphone/library/documentation/Cocoa/Reference/Foundation/Classes/NSMutableDictionary_Class/Reference/http:/developer.apple.com/iphone/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/Reference/Reference.html#/apple_ref/occ/cl/NSDictionary">NSDictionary</a></format></c>. <c>NSMutableDictionary</c> is “toll-free bridged” with its Core Foundation counterpart, <c><format type="text/html"><a target="_self" href="http://developer.apple.com/iphone/library/documentation/Cocoa/Reference/Foundation/Classes/NSMutableDictionary_Class/Reference/http:/developer.apple.com/iphone/library/documentation/Cocoa/Reference/Foundation/Classes/NSMutableDictionary_Class/Reference/http:/developer.apple.com/iphone/library/documentation/CoreFoundation/Reference/CFMutableDictionaryRef/Reference/reference.html#/apple_ref/c/tdef/CFMutableDictionaryRef">CFMutableDictionaryRef</a></format></c>. See <format type="text/html"><a target="_self" href="http://developer.apple.com/iphone/library/documentation/Cocoa/Reference/Foundation/Classes/NSMutableDictionary_Class/Reference/http:/developer.apple.com/iphone/library/documentation/Cocoa/Reference/Foundation/Classes/NSMutableDictionary_Class/Reference/http:/developer.apple.com/iphone/library/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#/apple_ref/doc/uid/TP40010810-CH2">“Toll-Free Bridging”</a></format> for more information.</para>
+      <format type="text/html">
+        <h3>Subclassing Notes</h3>
+      </format>
+      <para>	There should typically be little need to subclass <c>NSMutableDictionary</c>. If you do need to customize behavior, it is often better to consider composition rather than subclassing.</para>
+      <format type="text/html">
+        <h4>Methods to Override</h4>
+      </format>
+      <para>In a subclass, you must override both of its primitive methods:</para>
+      <list type="bullet">
+        <item>
+          <term>
+            <para>
+              <c>
+                <format type="text/html">
+                  <a href="#//apple_ref/occ/instm/NSMutableDictionary/setObject:forKey:">setObject:forKey:</a>
+                </format>
+              </c>
+            </para>
+          </term>
+        </item>
+        <item>
+          <term>
+            <para>
+              <c>
+                <format type="text/html">
+                  <a href="#//apple_ref/occ/instm/NSMutableDictionary/removeObjectForKey:">removeObjectForKey:</a>
+                </format>
+              </c>
+            </para>
+          </term>
+        </item>
+      </list>
+      <para>You must also override the primitive methods of the <c><format type="text/html"><a target="_self" href="http://developer.apple.com/iphone/library/documentation/Cocoa/Reference/Foundation/Classes/NSMutableDictionary_Class/Reference/http:/developer.apple.com/iphone/library/documentation/Cocoa/Reference/Foundation/Classes/NSDictionary_Class/Reference/Reference.html#/apple_ref/occ/cl/NSDictionary">NSDictionary</a></format></c> class.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

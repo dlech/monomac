@@ -1,6 +1,6 @@
 <Type Name="IOBluetoothRFCOMMChannel" FullName="MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel">
   <TypeSignature Language="C#" Value="public class IOBluetoothRFCOMMChannel : MonoMac.IOBluetooth.IOBluetoothObject" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOBluetoothRFCOMMChannel extends MonoMac.IOBluetooth.IOBluetoothObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi IOBluetoothRFCOMMChannel extends MonoMac.IOBluetooth.IOBluetoothObject" />
   <AssemblyInfo>
     <AssemblyName>MonoMac</AssemblyName>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -141,6 +141,21 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ChannelOpened">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel.ChannelOpenedEventArgs&gt; ChannelOpened;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel/ChannelOpenedEventArgs&gt; ChannelOpened" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel+ChannelOpenedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ClassHandle">
       <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
@@ -158,24 +173,63 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="CloseChannel">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn CloseChannel ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn CloseChannel() cil managed" />
+      <MemberSignature Language="C#" Value="public void CloseChannel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CloseChannel() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("closeChannel")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Closed">
+      <MemberSignature Language="C#" Value="public event EventHandler Closed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Closed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlSignalsChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler ControlSignalsChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ControlSignalsChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataReceived">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel.DataReceivedEventArgs&gt; DataReceived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel/DataReceivedEventArgs&gt; DataReceived" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel+DataReceivedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,6 +300,21 @@ public class MyClass : BaseClass {
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="FlowControlChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler FlowControlChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FlowControlChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetChannelWithObjectID">
       <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel GetChannelWithObjectID (ulong objectID);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel GetChannelWithObjectID(unsigned int64 objectID) cil managed" />
@@ -266,53 +335,6 @@ public class MyClass : BaseClass {
       </Parameters>
       <Docs>
         <param name="objectID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetChannelWithRFCOMMChannelRef">
-      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel GetChannelWithRFCOMMChannelRef (IntPtr rfcommChannelRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel GetChannelWithRFCOMMChannelRef(native int rfcommChannelRef) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("withRFCOMMChannelRef:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="rfcommChannelRef" Type="System.IntPtr" />
-      </Parameters>
-      <Docs>
-        <param name="rfcommChannelRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetRFCOMMChannelRef">
-      <MemberSignature Language="C#" Value="public virtual IntPtr GetRFCOMMChannelRef ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetRFCOMMChannelRef() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("getRFCOMMChannelRef")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -423,105 +445,45 @@ public class MyClass : BaseClass {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RegisterForChannelCloseNotification">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelCloseNotification (MonoMac.Foundation.NSObject observer, MonoMac.ObjCRuntime.Selector inSelector);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelCloseNotification(class MonoMac.Foundation.NSObject observer, class MonoMac.ObjCRuntime.Selector inSelector) cil managed" />
-      <MemberType>Method</MemberType>
+    <Member MemberName="Opened">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;MonoMac.IOKit.IOReturnEventArgs&gt; Opened;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class MonoMac.IOKit.IOReturnEventArgs&gt; Opened" />
+      <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("registerForChannelCloseNotification:selector:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothUserNotification</ReturnType>
+        <ReturnType>System.EventHandler&lt;MonoMac.IOKit.IOReturnEventArgs&gt;</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="observer" Type="MonoMac.Foundation.NSObject" />
-        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
-      </Parameters>
       <Docs>
-        <param name="observer">To be added.</param>
-        <param name="inSelector">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RegisterForChannelOpenNotifications">
-      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelOpenNotifications (MonoMac.Foundation.NSObject object, MonoMac.ObjCRuntime.Selector selector);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelOpenNotifications(class MonoMac.Foundation.NSObject object, class MonoMac.ObjCRuntime.Selector selector) cil managed" />
-      <MemberType>Method</MemberType>
+    <Member MemberName="QueueSpaceBecameAvailable">
+      <MemberSignature Language="C#" Value="public event EventHandler QueueSpaceBecameAvailable;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler QueueSpaceBecameAvailable" />
+      <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("registerForChannelOpenNotifications:selector:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothUserNotification</ReturnType>
+        <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="object" Type="MonoMac.Foundation.NSObject" />
-        <Parameter Name="selector" Type="MonoMac.ObjCRuntime.Selector" />
-      </Parameters>
       <Docs>
-        <param name="object">To be added.</param>
-        <param name="selector">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RegisterForChannelOpenNotifications">
-      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelOpenNotifications (MonoMac.Foundation.NSObject object, MonoMac.ObjCRuntime.Selector selector, byte channelID, MonoMac.IOBluetooth.IOBluetoothUserNotificationChannelDirection inDirection);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelOpenNotifications(class MonoMac.Foundation.NSObject object, class MonoMac.ObjCRuntime.Selector selector, unsigned int8 channelID, valuetype MonoMac.IOBluetooth.IOBluetoothUserNotificationChannelDirection inDirection) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("registerForChannelOpenNotifications:selector:withChannelID:direction:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothUserNotification</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="object" Type="MonoMac.Foundation.NSObject" />
-        <Parameter Name="selector" Type="MonoMac.ObjCRuntime.Selector" />
-        <Parameter Name="channelID" Type="System.Byte" />
-        <Parameter Name="inDirection" Type="MonoMac.IOBluetooth.IOBluetoothUserNotificationChannelDirection" />
-      </Parameters>
-      <Docs>
-        <param name="object">To be added.</param>
-        <param name="selector">To be added.</param>
-        <param name="channelID">To be added.</param>
-        <param name="inDirection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SendRemoteLineStatus">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn SendRemoteLineStatus (MonoMac.IOBluetooth.BluetoothRFCOMMLineStatus lineStatus);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn SendRemoteLineStatus(valuetype MonoMac.IOBluetooth.BluetoothRFCOMMLineStatus lineStatus) cil managed" />
+      <MemberSignature Language="C#" Value="public void SendRemoteLineStatus (MonoMac.IOBluetooth.BluetoothRFCOMMLineStatus lineStatus);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendRemoteLineStatus(valuetype MonoMac.IOBluetooth.BluetoothRFCOMMLineStatus lineStatus) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("sendRemoteLineStatus:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="lineStatus" Type="MonoMac.IOBluetooth.BluetoothRFCOMMLineStatus" />
@@ -529,24 +491,18 @@ public class MyClass : BaseClass {
       <Docs>
         <param name="lineStatus">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSerialParameters">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn SetSerialParameters (uint speed, byte nBits, MonoMac.IOBluetooth.BluetoothRFCOMMParityType parity, byte bitStop);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn SetSerialParameters(unsigned int32 speed, unsigned int8 nBits, valuetype MonoMac.IOBluetooth.BluetoothRFCOMMParityType parity, unsigned int8 bitStop) cil managed" />
+      <MemberSignature Language="C#" Value="public void SetSerialParameters (uint speed, byte nBits, MonoMac.IOBluetooth.BluetoothRFCOMMParityType parity, byte bitStop);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSerialParameters(unsigned int32 speed, unsigned int8 nBits, valuetype MonoMac.IOBluetooth.BluetoothRFCOMMParityType parity, unsigned int8 bitStop) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("setSerialParameters:dataBits:parity:stopBits:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="speed" Type="System.UInt32" />
@@ -560,7 +516,6 @@ public class MyClass : BaseClass {
         <param name="parity">To be added.</param>
         <param name="bitStop">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -593,122 +548,39 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn Write (IntPtr data, ushort length, bool sleep);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn Write(native int data, unsigned int16 length, bool sleep) cil managed" />
+      <MemberSignature Language="C#" Value="public void Write (byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(unsigned int8[] data) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("write:length:sleep:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Deprecated in OS X 5.0", false)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="System.IntPtr" />
-        <Parameter Name="length" Type="System.UInt16" />
-        <Parameter Name="sleep" Type="System.Boolean" />
+        <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
         <param name="data">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="sleep">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn WriteAsync (IntPtr data, ushort length, IntPtr refcon);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn WriteAsync(native int data, unsigned int16 length, native int refcon) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel&gt; WriteAsync (byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel&gt; WriteAsync(unsigned int8[] data) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("writeAsync:length:refcon:")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="data" Type="System.IntPtr" />
-        <Parameter Name="length" Type="System.UInt16" />
-        <Parameter Name="refcon" Type="System.IntPtr" />
+        <Parameter Name="data" Type="System.Byte[]" />
       </Parameters>
       <Docs>
         <param name="data">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="refcon">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="WriteSimple">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn WriteSimple (IntPtr data, ushort length, bool sleep, uint numBytesSent);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn WriteSimple(native int data, unsigned int16 length, bool sleep, unsigned int32 numBytesSent) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("writeSimple:length:sleep:bytesSent:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Deprecated in OS X 5.0", false)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="data" Type="System.IntPtr" />
-        <Parameter Name="length" Type="System.UInt16" />
-        <Parameter Name="sleep" Type="System.Boolean" />
-        <Parameter Name="numBytesSent" Type="System.UInt32" />
-      </Parameters>
-      <Docs>
-        <param name="data">To be added.</param>
-        <param name="length">To be added.</param>
-        <param name="sleep">To be added.</param>
-        <param name="numBytesSent">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="WriteSync">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn WriteSync (IntPtr data, ushort length);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn WriteSync(native int data, unsigned int16 length) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("writeSync:length:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="data" Type="System.IntPtr" />
-        <Parameter Name="length" Type="System.UInt16" />
-      </Parameters>
-      <Docs>
-        <param name="data">To be added.</param>
-        <param name="length">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

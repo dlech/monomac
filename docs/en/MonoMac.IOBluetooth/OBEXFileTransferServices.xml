@@ -15,8 +15,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implements advanced OBEX operations in addition to simple PUT and GET.</summary>
+    <remarks>
+      <para>Implements advanced OBEX operations in addition to simple PUT and GET.</para>
+      <para>All operations are asynchronous and will callback over a respective delegate method if the initial return value is successful. The initial return value usually concerns the state of this object where as the delegate return value reflects the response of the remote device.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -15,8 +15,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This class is a representation of a Bluetooth Host Controller Interface that is present on the local computer (either plugged in externally or available internally).</summary>
+    <remarks>
+      <para>This class is a representation of a Bluetooth Host Controller Interface that is present on the local computer (either plugged in externally or available internally).</para>
+      <para>This object can be used to ask a Bluetooth HCI for certain pieces of information, and be used to make it perform certain functions.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -136,9 +139,13 @@ public class MyClass : BaseClass {
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Convience routine to get the HCI controller's Bluetooth address as an string.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassHandle">
@@ -173,9 +180,13 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.IOBluetooth.BluetoothClassOfDevice</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Gets the current class of device value.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultController">
@@ -194,9 +205,13 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.IOBluetooth.IOBluetoothHostController</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Gets the default HCI controller object.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delegate">
@@ -261,9 +276,13 @@ public class MyClass : BaseClass {
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Gets the "friendly" name of HCI controller.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PowerState">
@@ -282,9 +301,13 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.IOBluetooth.BluetoothHCIPowerState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Gets the controller power state</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetClassOfDevice">
@@ -309,9 +332,14 @@ public class MyClass : BaseClass {
       <Docs>
         <param name="classOfDevice">To be added.</param>
         <param name="seconds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Sets the current class of device value, for the specified amount of time. Note that the time interval *must* be set and valid. The range of acceptable values is 30-120 seconds. Anything above or below will be rounded up, or down, as appropriate.</para>
+        </summary>
+        <returns>
+          <para>Returns the whether setting the class of device value was successful. 0 if success, error code otherwise.</para>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WeakDelegate">

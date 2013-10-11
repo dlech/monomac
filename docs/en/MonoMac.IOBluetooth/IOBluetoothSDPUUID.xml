@@ -15,8 +15,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An NSData subclass that represents a UUID as defined in the Bluetooth SDP spec.</summary>
+    <remarks>
+      <para>An NSData subclass that represents a UUID as defined in the Bluetooth SDP spec.</para>
+      <para>The IOBluetoothSDPUUID class can represent a UUID of any valid size (16, 32 or 128 bits). It provides the ability to compare two UUIDs no matter what their size as well as the ability to promote the size of a UUID to a larger one.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -136,9 +139,18 @@ public class MyClass : BaseClass {
         <Parameter Name="uuid16" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="uuid16">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="uuid16">
+          <format type="text/html">
+            <dd>
+              <para>A scalar representing a 16-bit UUID</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initializes a new 16-bit IOBluetoothSDPUUID with the given UUID16</para>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -157,9 +169,18 @@ public class MyClass : BaseClass {
         <Parameter Name="uuid32" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="uuid32">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="uuid32">
+          <format type="text/html">
+            <dd>
+              <para>A scalar representing a 32-bit UUID</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a new 32-bit IOBluetoothSDPUUID with the given UUID32</para>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassForArchiver">
@@ -178,9 +199,16 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.ObjCRuntime.Class</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Overridden by subclasses to substitute a class other than its own during archiving.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>This method is invoked by <c>NSArchiver</c>. It allows specialized behavior for archiving—for example, the private subclasses of a class cluster substitute the name of their public superclass when being archived. </para>
+          <para>
+            <c>NSObject</c>’s implementation returns the object returned by <c><format type="text/html"><a href="#//apple_ref/occ/instm/NSObject/classForCoder">classForCoder</a></format></c>. Override <c><format type="text/html"><a href="#//apple_ref/occ/instm/NSObject/classForCoder">classForCoder</a></format></c> to add general coding behavior.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassForCoder">
@@ -199,9 +227,14 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.ObjCRuntime.Class</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Overridden by subclasses to substitute a class other than its own during coding.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>This method is invoked by <c>NSCoder</c>. <c>NSObject</c>’s implementation returns the receiver’s class. The private subclasses of a class cluster substitute the name of their public superclass when being archived.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassForPortCoder">
@@ -220,9 +253,14 @@ public class MyClass : BaseClass {
         <ReturnType>MonoMac.ObjCRuntime.Class</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          <para>Overridden by subclasses to substitute a class other than its own for distribution encoding.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>This method allows specialized behavior for distributed objects—override <c><format type="text/html"><a href="#//apple_ref/occ/instm/NSObject/classForCoder">classForCoder</a></format></c> to add general coding behavior. This method is invoked by <c>NSPortCoder</c>. <c>NSObject</c>’s implementation returns the class returned by <c><format type="text/html"><a href="#//apple_ref/occ/instm/NSObject/classForCoder">classForCoder</a></format></c>.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassHandle">
@@ -261,11 +299,29 @@ public class MyClass : BaseClass {
         <Parameter Name="length" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="bytes">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bytes">
+          <format type="text/html">
+            <dd>
+              <para>An array of bytes representing the UUID.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="length">
+          <format type="text/html">
+            <dd>
+              <para>The length of the array of bytes.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a new IOBluetoothSDPUUID object with the given bytes of the given length.</para>
+        </summary>
+        <returns>
+          <para>Returns the new IOBluetoothSDPUUID object or nil on failure.</para>
+        </returns>
+        <remarks>
+          <para>If the length is invalid for a UUID, nil is returned.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateUuidWithData">
@@ -287,38 +343,22 @@ public class MyClass : BaseClass {
         <Parameter Name="data" Type="MonoMac.Foundation.NSData" />
       </Parameters>
       <Docs>
-        <param name="data">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FromSDPUUIDRef">
-      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothSDPUUID FromSDPUUIDRef (IntPtr sdpUUIDRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothSDPUUID FromSDPUUIDRef(native int sdpUUIDRef) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("withSDPUUIDRef:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Deprecated in OS X 7.0", false)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPUUID</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="sdpUUIDRef" Type="System.IntPtr" />
-      </Parameters>
-      <Docs>
-        <param name="sdpUUIDRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="data">
+          <format type="text/html">
+            <dd>
+              <para>The NSData containing the UUID bytes.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a new IOBluetoothSDPUUID object from the given NSData.</para>
+        </summary>
+        <returns>
+          <para>Returns the new IOBluetoothSDPUUID object or nil on failure.</para>
+        </returns>
+        <remarks>
+          <para>If the length of the NSData is invalid for a UUID, nil is returned.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromUuid16">
@@ -340,10 +380,21 @@ public class MyClass : BaseClass {
         <Parameter Name="uuid16" Type="System.UInt16" />
       </Parameters>
       <Docs>
-        <param name="uuid16">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uuid16">
+          <format type="text/html">
+            <dd>
+              <para>A scalar representing a 16-bit UUID</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a new 16-bit IOBluetoothSDPUUID with the given UUID16</para>
+        </summary>
+        <returns>
+          <para>Returns the new IOBluetoothSDPUUID object.</para>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FromUuid32">
@@ -365,10 +416,21 @@ public class MyClass : BaseClass {
         <Parameter Name="uuid32" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="uuid32">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="uuid32">
+          <format type="text/html">
+            <dd>
+              <para>A scalar representing a 32-bit UUID</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a new 32-bit IOBluetoothSDPUUID with the given UUID32</para>
+        </summary>
+        <returns>
+          <para>Returns the new IOBluetoothSDPUUID object.</para>
+        </returns>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetUUIDWithLength">
@@ -390,10 +452,22 @@ public class MyClass : BaseClass {
         <Parameter Name="newLength" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="newLength">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="newLength">
+          <format type="text/html">
+            <dd>
+              <para>The desired length for the UUID.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Returns an IOBluetoothSDPUUID object matching the target UUID, but with the given number of bytes.</para>
+        </summary>
+        <returns>
+          <para>Returns an IOBluetoothSDPUUID object with the same data as the target but with the given length if it is possible to do so. Otherwise, nil is returned.</para>
+        </returns>
+        <remarks>
+          <para>If the target object is the same length as newLength, it returns self. If newLength is greater it creates a new IOBluetoothSDPUUID object with the correct value for the given length. If newLength is smaller, it will attempt to create a new IOBluetoothSDPUUID that is smaller if the data matches the Bluetooth UUID base. This downconversion is currently unimplemented.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEqualToUUID">
@@ -415,34 +489,22 @@ public class MyClass : BaseClass {
         <Parameter Name="otherUUID" Type="MonoMac.IOBluetooth.IOBluetoothSDPUUID" />
       </Parameters>
       <Docs>
-        <param name="otherUUID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SDPUUIDRef">
-      <MemberSignature Language="C#" Value="public virtual IntPtr SDPUUIDRef { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance native int SDPUUIDRef" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Deprecated in OS X 7.0", false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>get: MonoMac.Foundation.Export("getSDPUUIDRef")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="otherUUID">
+          <format type="text/html">
+            <dd>
+              <para>The UUID object to be compared with the target.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Compares the target IOBluetoothSDPUUID object with the given otherUUID object.</para>
+        </summary>
+        <returns>
+          <para>Returns true if the UUID values of each object are equal. This includes the case where the sizes are different but the data itself is the same when the Bluetooth UUID base is applied.</para>
+        </returns>
+        <remarks>
+          <para>This method will compare the two UUID values independent of their length.</para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

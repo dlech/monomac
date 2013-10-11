@@ -225,34 +225,6 @@ public class MyClass : BaseClass {
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetChannelWithL2CAPChannelRef">
-      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothL2CAPChannel GetChannelWithL2CAPChannelRef (IntPtr l2capChannelRef);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothL2CAPChannel GetChannelWithL2CAPChannelRef(native int l2capChannelRef) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("withL2CAPChannelRef:")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Deprecated in OS X 7.0", false)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothL2CAPChannel</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="l2capChannelRef" Type="System.IntPtr" />
-      </Parameters>
-      <Docs>
-        <param name="l2capChannelRef">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetChannelWithObjectID">
       <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothL2CAPChannel GetChannelWithObjectID (ulong objectID);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothL2CAPChannel GetChannelWithObjectID(unsigned int64 objectID) cil managed" />
@@ -273,31 +245,6 @@ public class MyClass : BaseClass {
       </Parameters>
       <Docs>
         <param name="objectID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetL2CAPChannelRef">
-      <MemberSignature Language="C#" Value="public virtual IntPtr GetL2CAPChannelRef ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetL2CAPChannelRef() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("getL2CAPChannelRef")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Obsolete("Deprecated in OS X 7.0", false)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -426,91 +373,6 @@ public class MyClass : BaseClass {
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RegisterForChannelCloseNotifications">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelCloseNotifications (MonoMac.Foundation.NSObject observer, MonoMac.ObjCRuntime.Selector inSelector);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelCloseNotifications(class MonoMac.Foundation.NSObject observer, class MonoMac.ObjCRuntime.Selector inSelector) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("registerForChannelCloseNotification:selector:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothUserNotification</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="observer" Type="MonoMac.Foundation.NSObject" />
-        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
-      </Parameters>
-      <Docs>
-        <param name="observer">To be added.</param>
-        <param name="inSelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RegisterForChannelOpenNotifications">
-      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelOpenNotifications (MonoMac.Foundation.NSObject object, MonoMac.ObjCRuntime.Selector selector);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelOpenNotifications(class MonoMac.Foundation.NSObject object, class MonoMac.ObjCRuntime.Selector selector) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("registerForChannelOpenNotifications:selector:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothUserNotification</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="object" Type="MonoMac.Foundation.NSObject" />
-        <Parameter Name="selector" Type="MonoMac.ObjCRuntime.Selector" />
-      </Parameters>
-      <Docs>
-        <param name="object">To be added.</param>
-        <param name="selector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RegisterForChannelOpenNotifications">
-      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelOpenNotifications (MonoMac.Foundation.NSObject object, MonoMac.ObjCRuntime.Selector selector, MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, MonoMac.IOBluetooth.IOBluetoothUserNotificationChannelDirection inDirection);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothUserNotification RegisterForChannelOpenNotifications(class MonoMac.Foundation.NSObject object, class MonoMac.ObjCRuntime.Selector selector, valuetype MonoMac.IOBluetooth.BluetoothL2CAPPSM psm, valuetype MonoMac.IOBluetooth.IOBluetoothUserNotificationChannelDirection inDirection) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>MonoMac.Foundation.Export("registerForChannelOpenNotifications:selector:withPSM:direction:")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOBluetooth.IOBluetoothUserNotification</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="object" Type="MonoMac.Foundation.NSObject" />
-        <Parameter Name="selector" Type="MonoMac.ObjCRuntime.Selector" />
-        <Parameter Name="psm" Type="MonoMac.IOBluetooth.BluetoothL2CAPPSM" />
-        <Parameter Name="inDirection" Type="MonoMac.IOBluetooth.IOBluetoothUserNotificationChannelDirection" />
-      </Parameters>
-      <Docs>
-        <param name="object">To be added.</param>
-        <param name="selector">To be added.</param>
-        <param name="psm">To be added.</param>
-        <param name="inDirection">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
