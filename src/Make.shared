@@ -149,6 +149,9 @@ SHARED_SOURCE = \
 	./Foundation/ToString.cs			\
 	./ImageIO/CGImageSource.cs			\
 	./ImageIO/CGImageDestination.cs			\
+	./IOBluetooth/IOBluetoothDevice.cs              \
+	./IOBluetooth/IOBluetoothRFCOMMChannel.cs       \
+	./IOBluetooth/IOBluetoothSDPServiceRecord.cs    \
 	./IOKit/Enums.cs                                \
 	./IOKit/IOCFPlugin.cs                           \
 	./IOKit/IOConnection.cs                         \
