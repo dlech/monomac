@@ -77,13 +77,13 @@ namespace MonoMac.IOBluetoothUI
 		void ClearAllowedUUIDs ();
 
 		[Export ("title")]
-		string GetTitle { [Bind ("getTitle")] get; set; }
+		string Title { [Bind ("getTitle")] get; set; }
 
 		[Export ("descriptionText")]
-		string GetDescriptionText { [Bind ("getDescriptionText")] get; set; }
+		string DescriptionText { [Bind ("getDescriptionText")] get; set; }
 
 		[Export ("prompt")]
-		string GetPrompt { [Bind ("getPrompt")] get; set; }
+		string Prompt { [Bind ("getPrompt")] get; set; }
 	}
 
 	[Internal]
