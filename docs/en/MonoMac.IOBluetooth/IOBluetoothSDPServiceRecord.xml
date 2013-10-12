@@ -366,7 +366,7 @@ public class MyClass : BaseClass {
         <remarks>
           <para>This method will search through the ProtoclDescriptorList attribute to find an entry with the L2CAP UUID (UUID16: 0x0100). If one is found, it gets the second element of the data element sequence.</para>
         </remarks>
-        <excption cref="T:MonoMac.IOKit.IOKitException">If the PSM is not found.</excption>
+        <excption cref="T:MonoMac.IOKit.IOReturnException">If the PSM is not found.</excption>
       </Docs>
     </Member>
     <Member MemberName="Matches">
@@ -461,7 +461,7 @@ public class MyClass : BaseClass {
         <remarks>
           <para>This method will search through the ProtoclDescriptorList attribute to find an entry with the RFCOMM UUID (UUID16: 0x0003). If one is found, it gets the second element of the data element sequence.</para>
         </remarks>
-        <excption cref="T:MonoMac.IOKit.IOKitException">If the channel ID was not found.</excption>
+        <excption cref="T:MonoMac.IOKit.IOReturnException">If the channel ID was not found.</excption>
       </Docs>
     </Member>
     <Member MemberName="ServiceName">

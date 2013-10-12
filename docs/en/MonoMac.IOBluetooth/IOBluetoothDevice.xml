@@ -183,7 +183,7 @@ public class MyClass : BaseClass {
         <summary>Adds the target device to the user's favorite devices list.</summary>
         <remarks>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the device was not successfully added to the user's
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the device was not successfully added to the user's
             list of favorite devices.</exception>
       </Docs>
     </Member>
@@ -265,7 +265,7 @@ public class MyClass : BaseClass {
         <summary>Close down the baseband connection to the device.</summary>
         <remarks>This method is synchronous and will not return until the connection has been closed (or the
             command failed). In the future this API will be changed to allow asynchronous operation.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the connection was not successfully closed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the connection was not successfully closed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConnectionHandle">
@@ -810,7 +810,7 @@ public class MyClass : BaseClass {
             <see cref="M:MonoMac.IOBluetooth.IOBluetoothDevice.OpenConnection(MonoMac.Foundation.NSObject,System.Uint16,System.Boolean)" /> should be used instead.</para>
           <para>As of Mac OS X 10.7, this method will no longer mask out "Connection Exists" 'errors' and an exception will be thrown; your code must account for the cases where the baseband connection is already open.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the connection was not successfully created.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the connection was not successfully created.</exception>
         <seealso cref="M:MonoMac.IOBluetooth.IOBluetoothDevice.OpenDeviceAsync" />
       </Docs>
     </Member>
@@ -840,7 +840,7 @@ public class MyClass : BaseClass {
           <para>As of Mac OS X 10.7, this method will no longer mask out "Connection Exists" 'errors' and an exeption will be thrown;
             your code must account for the cases where the baseband connection is already open.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the connection was not successfully created (or if asynchronous, if the CREATE_CONNECTION command was not successfully issued).</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the connection was not successfully created (or if asynchronous, if the CREATE_CONNECTION command was not successfully issued).</exception>
         <seealso cref="M:MonoMac.IOBluetooth.IOBluetoothDevice.OpenDeviceAsync" />
       </Docs>
     </Member>
@@ -877,7 +877,7 @@ public class MyClass : BaseClass {
           <para>As of Mac OS X 10.7, this method will no longer mask out "Connection Exists" 'errors' and an exeption will be thrown;
             your code must account for the cases where the baseband connection is already open.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the connection was not successfully created (or if asynchronous, if the CREATE_CONNECTION command was not successfully issued).</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the connection was not successfully created (or if asynchronous, if the CREATE_CONNECTION command was not successfully issued).</exception>
         <seealso cref="M:MonoMac.IOBluetooth.IOBluetoothDevice.OpenDeviceAsync(System.Uint16,System.Boolean)" />
       </Docs>
     </Member>
@@ -903,7 +903,7 @@ public class MyClass : BaseClass {
           <para>As of Mac OS X 10.7, this method will no longer mask out "Connection Exists" 'errors' and an exeption will be thrown;
             your code must account for the cases where the baseband connection is already open.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the CREATE_CONNECTION command was not successfully issued.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the CREATE_CONNECTION command was not successfully issued.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenConnectionAsync">
@@ -927,7 +927,7 @@ public class MyClass : BaseClass {
         <returns>A Task object. Call Task.Result or Task.ContinueWith(...) to check the success of the command.</returns>
         <remarks>As of Mac OS X 10.7, this method will no longer mask out "Connection Exists" 'errors' and an exeption will be thrown;
             your code must account for the cases where the baseband connection is already open.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the CREATE_CONNECTION command was not successfully issued.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the CREATE_CONNECTION command was not successfully issued.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenL2CAPChannel">
@@ -961,7 +961,7 @@ public class MyClass : BaseClass {
           <para>This method will begin the process of opening a new L2CAP channel to the target device.
           The baseband connection to the device will be opened if it is not open already.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenL2CAPChannel">
@@ -993,7 +993,7 @@ public class MyClass : BaseClass {
           <para>This method will begin the process of opening a new L2CAP channel to the target device.
               The baseband connection to the device will be opened if it is not open already.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenL2CAPChannel">
@@ -1027,7 +1027,7 @@ public class MyClass : BaseClass {
         <returns>The L2CAP channel requested to be opened.</returns>
         <remarks>This method will begin the process of opening a new L2CAP channel to the target device.
             The baseband connection to the device will be opened if it is not open already.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenL2CAPChannel">
@@ -1059,7 +1059,7 @@ public class MyClass : BaseClass {
         <returns>The L2CAP channel requested to be opened.</returns>
         <remarks>This method will begin the process of opening a new L2CAP channel to the target device.
             The baseband connection to the device will be opened if it is not open already.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenL2CAPChannelAsync">
@@ -1094,7 +1094,7 @@ public class MyClass : BaseClass {
             The baseband connection to the device will be opened if it is not open already.</para>
           <para>Use the <see cref="E:MonoMac.IOBluetooth.IOBluetoothL2CAPChannel.Opened" /> event to handle the channel when it is opened.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenL2CAPChannelAsync">
@@ -1127,7 +1127,7 @@ public class MyClass : BaseClass {
             The baseband connection to the device will be opened if it is not open already.</para>
           <para>Use the <see cref="E:MonoMac.IOBluetooth.IOBluetoothL2CAPChannel.Opened" /> event to handle the channel when it is opened.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenL2CAPChannelAsync">
@@ -1161,7 +1161,7 @@ public class MyClass : BaseClass {
         <returns>The L2CAP channel requested to be opened.</returns>
         <remarks>This method will begin the process of opening a new L2CAP channel to the target device.
               The baseband connection to the device will be opened if it is not open already.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenL2CAPChannelAsync">
@@ -1193,7 +1193,7 @@ public class MyClass : BaseClass {
         <returns>The L2CAP channel requested to be opened.</returns>
         <remarks>This method will begin the process of opening a new L2CAP channel to the target device.
               The baseband connection to the device will be opened if it is not open already.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing L2CAP channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenRFCOMMChannel">
@@ -1233,7 +1233,7 @@ public class MyClass : BaseClass {
             situations where the method would return an error; in these instances, the desired RFCOMM channel could not
             be opened again until the calling app was restarted.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing RFCOMM channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing RFCOMM channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenRFCOMMChannel">
@@ -1271,7 +1271,7 @@ public class MyClass : BaseClass {
             situations where the method would return an error; in these instances, the desired RFCOMM channel could not
             be opened again until the calling app was restarted.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing RFCOMM channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing RFCOMM channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenRFCOMMChannelAsync">
@@ -1311,7 +1311,7 @@ public class MyClass : BaseClass {
             situations where the method would return an error; in these instances, the desired RFCOMM channel could not
             be opened again until the calling app was restarted.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing RFCOMM channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing RFCOMM channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="OpenRFCOMMChannelAsync">
@@ -1349,7 +1349,7 @@ public class MyClass : BaseClass {
             situations where the method would return an error; in these instances, the desired RFCOMM channel could not
             be opened again until the calling app was restarted.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If an existing RFCOMM channel was not found and the open process was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If an existing RFCOMM channel was not found and the open process was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="PageScanMode">
@@ -1468,7 +1468,7 @@ public class MyClass : BaseClass {
             an error is encountered), the method <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceAsyncCallbacks.SdpQueryComplete(MonoMac.IOBluetooth.IOBluetoothDevice,MonoMac.IOKit.IOResult)" /> (-sdpQueryComplete:status:) will be called on the given target. If no target
             is specified, the request is still asynchronous, but no callback will be made. That can be useful if the client
             has	registered for SDP service changed notifications.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the SDP query was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the SDP query was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="PerformSDPQuery">
@@ -1503,7 +1503,7 @@ public class MyClass : BaseClass {
             is specified, the request is still asynchronous, but no callback will be made. That can be useful if the client
             has	registered for SDP service changed notifications.</para>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the SDP query was not successfully started.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the SDP query was not successfully started.</exception>
       </Docs>
     </Member>
     <Member MemberName="RawRSSI">
@@ -1577,7 +1577,7 @@ public class MyClass : BaseClass {
         <summary>Removes the target device from the user's favorite devices list.</summary>
         <remarks>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the device was not successfully removed from the user's
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the device was not successfully removed from the user's
             list of favorite devices.</exception>
       </Docs>
     </Member>
@@ -1598,7 +1598,7 @@ public class MyClass : BaseClass {
               the pairing process. This call will synchronously initiate the pairing process with the target device
               and not return until the authentication process is complete. This API will be updated to allow
               for asynchronous operation.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If authentication fails or no baseband connection exists.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If authentication fails or no baseband connection exists.</exception>
       </Docs>
     </Member>
     <Member MemberName="RequestRemoteName">
@@ -1622,7 +1622,7 @@ public class MyClass : BaseClass {
             If no target is specified, the request is made synchronously and won't return until the request is
             complete. This call with operate with the default page timeout value. If a different page timeout
             value is desired, the method <see cref="M:MonoMac.IOBluetooth.RequestRemoteName(MonoMac.Foundation.NSObject, System.UInt16,System.Boolean)" /> should be used instead.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the remote name request was not successfully issued (or if synchronous, if
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the remote name request was not successfully issued (or if synchronous, if
             the request did not complete successfully).</exception>
       </Docs>
     </Member>
@@ -1653,7 +1653,7 @@ public class MyClass : BaseClass {
             command, the method <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceAsyncCallbacks.RequestRemoteNameComplete(MonoMac.IOBluetooth.IOBluetoothDevice,MonoMac.IOKit.IOReturn)" /> (-remoteNameRequestComplete:status:) will be called on the specified target.
             If no target is specified, the request is made synchronously and won't return until the request is
             complete.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the remote name request was not successfully issued (or if synchronous, if
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the remote name request was not successfully issued (or if synchronous, if
             the request did not complete successfully).</exception>
       </Docs>
     </Member>
@@ -1706,7 +1706,7 @@ public class MyClass : BaseClass {
               In the future, this method will also open the connection if necessary. The API will be updated
               to allow the client to be informed when the echo response has been received (both synchronously
               and asynchronously).</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the echo request was not able to be sent.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the echo request was not able to be sent.</exception>
       </Docs>
     </Member>
     <Member MemberName="ServiceClassMajor">
@@ -1791,7 +1791,7 @@ public class MyClass : BaseClass {
         <summary>Sets the connection supervision timeout.</summary>
         <remarks>
         </remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If it was not possible to set the connection supervision timeout.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If it was not possible to set the connection supervision timeout.</exception>
       </Docs>
     </Member>
   </Members>

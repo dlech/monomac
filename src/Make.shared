@@ -157,7 +157,6 @@ SHARED_SOURCE = \
 	./IOKit/IOCFPlugin.cs                           \
 	./IOKit/IOConnection.cs                         \
 	./IOKit/IOIterator.cs                           \
-	./IOKit/IOKitException.cs                       \
 	./IOKit/IOMasterPort.cs                         \
 	./IOKit/IOMessage.cs                            \
 	./IOKit/IONotificationPort.cs                   \
@@ -165,6 +164,7 @@ SHARED_SOURCE = \
 	./IOKit/IOReceivePort.cs                        \
 	./IOKit/IORegistryEntry.cs                      \
 	./IOKit/IORegistryIterator.cs                   \
+	./IOKit/IOReturnException.cs                    \
 	./IOKit/IOService.cs                            \
 	./IOKit/HID/Enums.cs                            \
 	./IOKit/HID/IOHID.cs                            \
@@ -275,6 +275,7 @@ SHARED_CORE_SOURCE = \
 	./IOKit/IOKit.cs                                \
 	./IOKit/IOReturn.cs                             \
 	./IOKit/IOReturnEventArgs.cs                    \
+	./Kernel/Mach/Error.cs                          \
         ./ObjCRuntime/AdoptsAttribute.cs               	\
         ./ObjCRuntime/ArgumentSemantic.cs               \
         ./ObjCRuntime/AlphaAttribute.cs                 \

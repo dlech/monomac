@@ -218,7 +218,7 @@ void SheetDidEnd (IOBluetoothDeviceSelectorController controller,
     // handle result.
 }
             </code></remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">Thrown if the sheet modal session did not start.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the sheet modal session did not start.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClassHandle">

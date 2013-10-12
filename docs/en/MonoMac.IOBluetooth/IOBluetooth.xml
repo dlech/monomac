@@ -250,7 +250,7 @@
         <summary>Convenience method to take an NSString and turn it into a BluetoothDeviceAddress structure.</summary>
         <returns>BluetoothDeviceAddress.</returns>
         <remarks>Pass in most types of strings, such as "001122334455" or "00-11-22-33-44-55" and the conversion should be successful. Also, you should have 2 characters per byte for the conversion to work properly.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the string cannot be converted to an address.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the string cannot be converted to an address.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToDeviceAddress">
@@ -271,7 +271,7 @@
         <summary>Convenience method to take a string and turn it into a BluetoothDeviceAddress structure.</summary>
         <returns>BluetoothDeviceAddress.</returns>
         <remarks>Pass in most types of strings, such as "001122334455" or "00-11-22-33-44-55" and the conversion should be successful. Also, you should have 2 characters per byte for the conversion to work properly.</remarks>
-        <exception cref="T:MonoMac.IOKit.IOKitException">If the string cannot be converted to an address.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the string cannot be converted to an address.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToNSString">
