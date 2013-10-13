@@ -14,7 +14,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Options for <see cref="M:MonoMac.IOKit.IORegistry.CreateIterator" />, <see cref="M:MonoMac.IOKit.IORegistryEntry.CreateIterator" /> and
+            <see cref="M:MonoMac.IOKit.IORegistryEntry.SearchCFProperty" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +31,9 @@
         <ReturnType>MonoMac.IOKit.RegistryIteratorOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               kIORegistryIterateParents
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +47,9 @@
         <ReturnType>MonoMac.IOKit.RegistryIteratorOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               No flags are set.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Recusive">
@@ -57,7 +63,9 @@
         <ReturnType>MonoMac.IOKit.RegistryIteratorOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               kIORegistryIterateRecursively
+               </summary>
       </Docs>
     </Member>
   </Members>

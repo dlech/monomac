@@ -9,7 +9,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Specifies values for the bRequest field of a Device Request.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

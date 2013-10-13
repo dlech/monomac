@@ -9,13 +9,45 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+           Interface SubClass
+           </summary>
+    <remarks>
+           Constants for USB Interface SubClasses (bInterfaceSubClass).
+           </remarks>
   </Docs>
   <Members>
-    <Member MemberName="ATMNetworking">
-      <MemberSignature Language="C#" Value="ATMNetworking" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass ATMNetworking = unsigned int16(7)" />
+    <Member MemberName="AppDFU">
+      <MemberSignature Language="C#" Value="AppDFU" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass AppDFU = unsigned int16(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.InterfaceSubClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AppIrDABridge">
+      <MemberSignature Language="C#" Value="AppIrDABridge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass AppIrDABridge = unsigned int16(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.InterfaceSubClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AppTestMeasurement">
+      <MemberSignature Language="C#" Value="AppTestMeasurement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass AppTestMeasurement = unsigned int16(3)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -30,6 +62,20 @@
     <Member MemberName="AudioControl">
       <MemberSignature Language="C#" Value="AudioControl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass AudioControl = unsigned int16(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.InterfaceSubClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AudioMIDIStreaming">
+      <MemberSignature Language="C#" Value="AudioMIDIStreaming" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass AudioMIDIStreaming = unsigned int16(3)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -58,6 +104,20 @@
     <Member MemberName="CommAbstract">
       <MemberSignature Language="C#" Value="CommAbstract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass CommAbstract = unsigned int16(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.InterfaceSubClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CommATMNetworking">
+      <MemberSignature Language="C#" Value="CommATMNetworking" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass CommATMNetworking = unsigned int16(7)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -167,20 +227,6 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="DFU">
-      <MemberSignature Language="C#" Value="DFU" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass DFU = unsigned int16(1)" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOKit.USB.InterfaceSubClass</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-      </Docs>
-    </Member>
     <Member MemberName="HIDBootInterface">
       <MemberSignature Language="C#" Value="HIDBootInterface" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass HIDBootInterface = unsigned int16(1)" />
@@ -198,20 +244,6 @@
     <Member MemberName="Hub">
       <MemberSignature Language="C#" Value="Hub" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass Hub = unsigned int16(0)" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOKit.USB.InterfaceSubClass</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-      </Docs>
-    </Member>
-    <Member MemberName="IrDABridge">
-      <MemberSignature Language="C#" Value="IrDABridge" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass IrDABridge = unsigned int16(2)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -307,20 +339,6 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="MIDIStreaming">
-      <MemberSignature Language="C#" Value="MIDIStreaming" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass MIDIStreaming = unsigned int16(3)" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOKit.USB.InterfaceSubClass</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-      </Docs>
-    </Member>
     <Member MemberName="ReprogrammableDiagnostic">
       <MemberSignature Language="C#" Value="ReprogrammableDiagnostic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass ReprogrammableDiagnostic = unsigned int16(1)" />
@@ -338,20 +356,6 @@
     <Member MemberName="RFController">
       <MemberSignature Language="C#" Value="RFController" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass RFController = unsigned int16(1)" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOKit.USB.InterfaceSubClass</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-      </Docs>
-    </Member>
-    <Member MemberName="TestMeasurement">
-      <MemberSignature Language="C#" Value="TestMeasurement" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceSubClass TestMeasurement = unsigned int16(3)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

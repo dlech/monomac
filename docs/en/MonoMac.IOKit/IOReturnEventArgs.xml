@@ -10,8 +10,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Event arguments used by some IOKit callbacks to report if the call was successul or not.</summary>
+    <remarks>T</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -25,9 +25,10 @@
         <Parameter Name="result" Type="MonoMac.IOKit.IOReturn" />
       </Parameters>
       <Docs>
-        <param name="result">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="result">The IOReturn status to pass to the event.</param>
+        <summary>Creates a new instance with the specified result.</summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Result">
@@ -41,9 +42,11 @@
         <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>The return status of the call.</summary>
+        <value>
+          <see cref="F:MonoMac.IOKit.IOReturn.Success" /> on success.</value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

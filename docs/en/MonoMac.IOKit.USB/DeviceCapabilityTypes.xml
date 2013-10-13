@@ -9,7 +9,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Used with decoding the Device Capability descriptor
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

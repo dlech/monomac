@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+           Describes different type of HID reports.
+           </summary>
+    <remarks>
+           Used by the IOHIDFamily to identify the type of
+           report being processed.
+           </remarks>
   </Docs>
   <Members>
     <Member MemberName="Feature">
@@ -24,7 +29,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDReportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Feature report.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -38,7 +45,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDReportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Input report.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Output">
@@ -52,7 +61,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDReportType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Output report.
+               </summary>
       </Docs>
     </Member>
   </Members>

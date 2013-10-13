@@ -8,8 +8,15 @@
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Options for opening a device via IOHIDLib.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,7 +31,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDOptionsType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Default option.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="SeizeDevice">
@@ -38,7 +47,11 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDOptionsType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Used to open exclusive
+               communication with the device.  This will prevent the system
+               and other clients from receiving events from the device.
+               </summary>
       </Docs>
     </Member>
   </Members>

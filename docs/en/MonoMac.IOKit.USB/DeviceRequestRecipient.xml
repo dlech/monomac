@@ -9,7 +9,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           This recipient is encoded in the bmRequestType field of a Device Request.
+           It specifies the type of recipient for a request:  the device, the interface, or an endpoint.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

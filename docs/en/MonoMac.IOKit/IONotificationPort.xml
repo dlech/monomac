@@ -30,8 +30,11 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates and returns a IONotificationPort object using the default master port
+               for receiving IOKit notifications of new devices or state changes.</summary>
+        <remarks>Creates the notification object to receive notifications from IOKit of new device arrivals or state changes.
+               The notification object can be supply a CFRunLoopSource, or mach_port_t to be used to listen for events.</remarks>
+        <exception cref="Exception">If the object was not created</exception>
       </Docs>
     </Member>
     <Member MemberName="DispatchCalloutFromMessage">
@@ -48,9 +51,14 @@
         <Parameter Name="messageHeader" Type="MonoMac.Kernel.Mach.MessageHeader" />
       </Parameters>
       <Docs>
-        <param name="messageHeader">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="messageHeader">The message received.</param>
+        <summary>
+               Dispatches callback notifications from a mach message.
+               </summary>
+        <remarks>A notification object may deliver notifications to a mach messaging client,
+               which should call this function to generate the callbacks associated with the notifications arriving on the port.
+               </remarks>
+        <exception cref="T:System.ObjectDisposedException">If the object has been disposed (Handle == 0)</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -142,9 +150,18 @@
         <ReturnType>MonoMac.Kernel.Mach.Port</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Gets a mach_port to be used to listen for notifications.
+               </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>A notification object may deliver notifications to a mach messaging client
+               if they listen for messages on the port obtained from this function.
+               Callbacks associated with the notifications may be delivered by calling
+               IODispatchCalloutFromMessage with messages received.
+              
+               The caller should not release this Mach.Port. It will be releaed when the IONotificationPort
+               object is disposed.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If the object has been disposed (Handle == 0)</exception>
       </Docs>
     </Member>
     <Member MemberName="RunLoopSource">
@@ -158,9 +175,16 @@
         <ReturnType>MonoMac.CoreFoundation.CFRunLoopSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               CFRunLoopSource to be used to listen for notifications.
+               </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>A notification object may deliver notifications to a CFRunLoop
+               by adding the run loop source returned by this function to the run loop.
+              
+               The caller should not release this CFRunLoopSource. It will be releaed when the IONotificationPort
+               object is disposed.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If the object has been disposed (Handle == 0)</exception>
       </Docs>
     </Member>
     <Member MemberName="SetDispatchQueue">
@@ -182,9 +206,12 @@
         <Parameter Name="queue" Type="MonoMac.CoreFoundation.DispatchQueue" />
       </Parameters>
       <Docs>
-        <param name="queue">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="queue">A dispatch queue.</param>
+        <summary>
+               Sets a dispatch queue to be used to listen for notifications.
+               </summary>
+        <remarks>A notification object may deliver notifications to a dispatch client.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If the object has been disposed (Handle == 0)</exception>
       </Docs>
     </Member>
   </Members>

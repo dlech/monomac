@@ -635,8 +635,8 @@
       </Docs>
     </Member>
     <Member MemberName="RequestTimeoutAsync">
-      <MemberSignature Language="C#" Value="public void RequestTimeoutAsync (MonoMac.IOKit.USB.IOUSBDevRequestTO request, MonoMac.IOKit.IOAsyncCallback1 callback);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RequestTimeoutAsync(valuetype MonoMac.IOKit.USB.IOUSBDevRequestTO request, class MonoMac.IOKit.IOAsyncCallback1 callback) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; RequestTimeoutAsync (MonoMac.IOKit.USB.IOUSBDevRequestTO request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; RequestTimeoutAsync(valuetype MonoMac.IOKit.USB.IOUSBDevRequestTO request) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -647,16 +647,15 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="request" Type="MonoMac.IOKit.USB.IOUSBDevRequestTO" />
-        <Parameter Name="callback" Type="MonoMac.IOKit.IOAsyncCallback1" />
       </Parameters>
       <Docs>
         <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -722,23 +721,22 @@
       </Docs>
     </Member>
     <Member MemberName="SendRequestAsync">
-      <MemberSignature Language="C#" Value="public void SendRequestAsync (MonoMac.IOKit.USB.IOUSBDevRequest request, MonoMac.IOKit.IOAsyncCallback1 callback);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendRequestAsync(valuetype MonoMac.IOKit.USB.IOUSBDevRequest request, class MonoMac.IOKit.IOAsyncCallback1 callback) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; SendRequestAsync (MonoMac.IOKit.USB.IOUSBDevRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; SendRequestAsync(valuetype MonoMac.IOKit.USB.IOUSBDevRequest request) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="request" Type="MonoMac.IOKit.USB.IOUSBDevRequest" />
-        <Parameter Name="callback" Type="MonoMac.IOKit.IOAsyncCallback1" />
       </Parameters>
       <Docs>
         <param name="request">To be added.</param>
-        <param name="callback">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

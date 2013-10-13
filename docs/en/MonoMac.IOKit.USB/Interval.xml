@@ -13,9 +13,9 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="_1">
-      <MemberSignature Language="C#" Value="_1" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval _1 = unsigned int8(1)" />
+    <Member MemberName="I1">
+      <MemberSignature Language="C#" Value="I1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval I1 = unsigned int8(1)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -27,9 +27,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="_128">
-      <MemberSignature Language="C#" Value="_128" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval _128 = unsigned int8(128)" />
+    <Member MemberName="I128">
+      <MemberSignature Language="C#" Value="I128" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval I128 = unsigned int8(128)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -41,9 +41,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="_16">
-      <MemberSignature Language="C#" Value="_16" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval _16 = unsigned int8(16)" />
+    <Member MemberName="I16">
+      <MemberSignature Language="C#" Value="I16" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval I16 = unsigned int8(16)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -55,9 +55,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="_2">
-      <MemberSignature Language="C#" Value="_2" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval _2 = unsigned int8(2)" />
+    <Member MemberName="I2">
+      <MemberSignature Language="C#" Value="I2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval I2 = unsigned int8(2)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -69,9 +69,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="_32">
-      <MemberSignature Language="C#" Value="_32" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval _32 = unsigned int8(32)" />
+    <Member MemberName="I32">
+      <MemberSignature Language="C#" Value="I32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval I32 = unsigned int8(32)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -83,9 +83,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="_4">
-      <MemberSignature Language="C#" Value="_4" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval _4 = unsigned int8(4)" />
+    <Member MemberName="I4">
+      <MemberSignature Language="C#" Value="I4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval I4 = unsigned int8(4)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -97,9 +97,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="_64">
-      <MemberSignature Language="C#" Value="_64" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval _64 = unsigned int8(64)" />
+    <Member MemberName="I64">
+      <MemberSignature Language="C#" Value="I64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval I64 = unsigned int8(64)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -111,9 +111,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="_8">
-      <MemberSignature Language="C#" Value="_8" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval _8 = unsigned int8(8)" />
+    <Member MemberName="I8">
+      <MemberSignature Language="C#" Value="I8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Interval I8 = unsigned int8(8)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

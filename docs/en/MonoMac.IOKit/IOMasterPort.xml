@@ -23,8 +23,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new default IOMasterPort port used to initiate communication with IOKit.</summary>
+        <remarks>Methods that don't specify an existing object require the IOMasterPort to be passed.
+               This constructor obtains that port.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If there was an error creating the port.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -38,9 +40,11 @@
         <Parameter Name="bootstrapPort" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="bootstrapPort">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bootstrapPort">The bootstrap port.</param>
+        <summary>Creates a new IOMasterPort used to initiate communication with IOKit.</summary>
+        <remarks>Methods that don't specify an existing object require the IOMasterPort to be passed.
+               This constructor obtains that port.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If there was an error creating the port.</exception>
       </Docs>
     </Member>
     <Member MemberName="BusyState">
@@ -54,9 +58,16 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+               Returns the busyState of all IOServices.
+               </summary>
+        <value>The busyState count.</value>
+        <remarks>Many activities in IOService are asynchronous. When registration, matching,
+               or termination is in progress on an IOService, its busyState is increased by one.
+               Change in busyState to or from zero also changes the IOService's provider's busyState
+               by one, which means that an IOService is marked busy when any of the above activities
+               is ocurring on it or any of its clients. BusyState returns the busy state
+               of the root of the service plane which reflects the busy state of all IOServices.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMatchingDictionaryForBSDName">
@@ -73,10 +84,15 @@
         <Parameter Name="bsdName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bsdName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bsdName">The BSD name.</param>
+        <summary>
+               Create a matching dictionary that specifies an IOService match based on BSD device name using this master port.
+               </summary>
+        <returns>The matching dictionary created, is returned on success, or zero on failure.
+               The dictionary is commonly passed to IOServiceGetMatchingServices or IOServiceAddNotification.
+               It should be released with CFRelease by the caller.</returns>
+        <remarks>IOServices that represent BSD devices have an associated BSD name.
+               This function creates a matching dictionary that will match IOService's with a given BSD name.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateNotificationPort">
@@ -91,9 +107,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates and returns a IONotificationPort object for receiving IOKit notifications
+               of new devices or state changes.</summary>
+        <returns>The notification port object.</returns>
+        <remarks>Creates the notification object to receive notifications from IOKit of new device arrivals or state changes.
+               The notification object can be supply a CFRunLoopSource, or mach_port_t to be used to listen for events.</remarks>
+        <exception cref="T:System.Exception">If the object was not created</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateRootIterator">
@@ -111,11 +130,16 @@
         <Parameter Name="options" Type="MonoMac.IOKit.RegistryIteratorOptions" />
       </Parameters>
       <Docs>
-        <param name="plane">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="plane">The type of plane.</param>
+        <param name="options">RegistryIteratorOptions.Recursive may be set to recurse automatically
+               into each entry as it is returned from IOIteratorNext calls on the registry iterator.</param>
+        <summary>Create an iterator rooted at the registry root using this master port.</summary>
+        <returns>The iterator.</returns>
+        <remarks>This method creates an IORegistryIterator in the kernel that is set up with options
+               to iterate children of the registry root entry, and to recurse automatically into entries as they are returned,
+               or only when instructed with calls to IORegistryIterator.EnterEntry (). The iterator object keeps track of entries
+               that have been recursed into previously to avoid loops.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromPath">
@@ -132,10 +156,11 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path">The path.</param>
+        <summary>Looks up a registry entry by path using this master port.</summary>
+        <returns>The IORegistryEntry witch was found with the path, or <c>null</c> on failure.</returns>
+        <remarks>This function parses paths to lookup registry entries. The path should begin with '&lt;plane name&gt;:'
+               If there are characters remaining unparsed after an entry has been looked up, this is considered an invalid lookup.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingService">
@@ -153,9 +178,16 @@
       </Parameters>
       <Docs>
         <param name="matchingDictionary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+               Look up a registered IOService object that matches a matching dictionary.
+               </summary>
+        <returns>The first service matched is returned on success or null if no services matched.</returns>
+        <remarks>This is the preferred method of finding IOService objects currently registered by IOKit
+               (that is, objects that have had their RegisterService() methods invoked). To find IOService objects
+               that aren't yet registered, use an iterator as created by IORegistryEntry.CreateIterator().
+               IOService.AddMatchingNotification can also supply this information and install a notification of new IOServices.
+               The matching information used in the matching dictionary may vary depending on the class of service being looked up.
+               </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingServices&lt;T&gt;">
@@ -181,9 +213,16 @@
       <Docs>
         <typeparam name="T">To be added.</typeparam>
         <param name="matchingDictionary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+               Look up registered IOService objects that match a matching dictionary.
+               </summary>
+        <returns>A list of matching IOService objects</returns>
+        <remarks>This is the preferred method of finding IOService objects currently registered by IOKit
+               (that is, objects that have had their RegisterService() methods invoked). To find IOService objects that aren't yet registered,
+               use an iterator as created by IORegistryEntry.CreateIterator(). IOService.AddMatchingNotification can also supply this information
+               and install a notification of new IOServices. The matching information used in the matching dictionary may vary depending
+               on the class of service being looked up.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsBusy">
@@ -197,9 +236,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Returns <see langword="true" /> any IOServices are busy; otherwise <langref cref="false" />.
+               </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Many activities in IOService are asynchronous. When registration, matching,
+               or termination is in progress on an IOService, its busyState is increased by one.
+               Change in busyState to or from zero also changes the IOService's provider's busyState
+               by one, which means that an IOService is marked busy when any of the above activities
+               is ocurring on it or any of its clients. BusyState returns the busy state
+               of the root of the service plane which reflects the busy state of all IOServices.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RootEntry">
@@ -213,14 +259,16 @@
         <ReturnType>MonoMac.IOKit.IORegistryEntry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the registry root using this master port.</summary>
+        <value>The IORegistryEntry root instance, or <c>null</c> on failure.</value>
+        <remarks>This method provides an accessor to the root of the registry for the machine.
+               The root may be passed to a registry iterator when iterating a plane,
+               and contains properties that describe the available planes, and diagnostic information for IOKit.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Wait">
-      <MemberSignature Language="C#" Value="public bool Wait (MonoMac.Kernel.Mach.TimeSpec waitTime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(valuetype MonoMac.Kernel.Mach.TimeSpec waitTime) cil managed" />
+      <MemberSignature Language="C#" Value="public bool Wait (double seconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(float64 seconds) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -229,35 +277,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitTime" Type="MonoMac.Kernel.Mach.TimeSpec" />
+        <Parameter Name="seconds" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="waitTime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Wait">
-      <MemberSignature Language="C#" Value="public bool Wait (int seconds, int nanoseconds = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(int32 seconds, int32 nanoseconds) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="seconds" Type="System.Int32" />
-        <Parameter Name="nanoseconds" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="seconds">To be added.</param>
-        <param name="nanoseconds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="seconds">Number of seconds to wait.</param>
+        <summary>
+            Wait until all IOServices are not busy.
+        </summary>
+        <returns>
+          <see langword="true" /> if the method timed out; otherwise <langref cref="false" /></returns>
+        <remarks>Blocks the caller until all IOServices are not busy, see <see cref="P:MonoMac.IOKit.IOMasterPort.BusyState" />.</remarks>
       </Docs>
     </Member>
   </Members>

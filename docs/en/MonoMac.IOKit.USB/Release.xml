@@ -9,13 +9,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Constants relating to USB releases as found in the bcdUSB field of the Device Descriptor.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="_10">
-      <MemberSignature Language="C#" Value="_10" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Release _10 = unsigned int16(256)" />
+    <Member MemberName="R10">
+      <MemberSignature Language="C#" Value="R10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Release R10 = unsigned int16(256)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -27,9 +29,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="_11">
-      <MemberSignature Language="C#" Value="_11" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Release _11 = unsigned int16(272)" />
+    <Member MemberName="R11">
+      <MemberSignature Language="C#" Value="R11" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Release R11 = unsigned int16(272)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -41,9 +43,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="_20">
-      <MemberSignature Language="C#" Value="_20" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Release _20 = unsigned int16(512)" />
+    <Member MemberName="R20">
+      <MemberSignature Language="C#" Value="R20" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Release R20 = unsigned int16(512)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -55,9 +57,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="_30">
-      <MemberSignature Language="C#" Value="_30" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Release _30 = unsigned int16(768)" />
+    <Member MemberName="R30">
+      <MemberSignature Language="C#" Value="R30" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.Release R30 = unsigned int16(768)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

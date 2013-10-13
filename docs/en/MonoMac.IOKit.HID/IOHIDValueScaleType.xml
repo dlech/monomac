@@ -9,7 +9,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Describes different types of scaling that can be performed on element values.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,7 +26,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDValueScaleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Type for value that is scaled with respect to the calibration properties.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Physical">
@@ -38,7 +42,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDValueScaleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Type for value that is scaled with respect to the physical min and physical max of the element.
+               </summary>
       </Docs>
     </Member>
   </Members>

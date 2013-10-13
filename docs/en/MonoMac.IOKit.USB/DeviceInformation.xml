@@ -14,7 +14,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Device information flags. Used by <see cref="P:MonoMac.IOKit.IOUSBDevice.DeviceInformation" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +30,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The hub port to which the USB device is connected has a USB connector on the enclosure
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="IsAttachedToRootHubMask">
@@ -43,7 +46,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The USB device is directly attached to the root hub
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="IsCaptive">
@@ -57,7 +62,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The USB device is directly attached to its hub and cannot be removed.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="IsConnected">
@@ -71,7 +78,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The USB device is connected to its hub
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -85,7 +94,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The hub port to which the USB device is attached is enabled
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="IsInReset">
@@ -99,7 +110,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The hub port to which the USB device is attached is being reset
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="IsInternal">
@@ -113,7 +126,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The USB device is internal to the enclosure (all the hubs it attaches to are captive)
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="IsOnThunderbolt">
@@ -127,7 +142,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The USB device is downstream of a controller that is attached through Thunderbolt
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="IsRemote">
@@ -141,7 +158,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               This device is "attached" to the controller through a remote connection
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="IsRootHub">
@@ -155,7 +174,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The device is the root hub simulation
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="IsSuspended">
@@ -169,7 +190,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The hub port to which the USB device is attached is suspended
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Overcurrent">
@@ -183,7 +206,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The USB device generated an overcurrent
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="PortIsInTestMode">
@@ -197,7 +222,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The hub port to which the USB device is attached is in test mode
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="RootHubIsBuiltIn">
@@ -211,7 +238,10 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               If this is a root hub simulation and it's built into the enclosure, this bit is set.
+               If it's on an expansion card, it will be cleared
+               </summary>
       </Docs>
     </Member>
   </Members>

@@ -28,9 +28,11 @@
         <Parameter Name="client" Type="MonoMac.IOKit.IOConnection" />
       </Parameters>
       <Docs>
-        <param name="client">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="client">Another IOConnection created by IOService.Open ().</param>
+        <summary>
+               Inform a connection of a second connection.
+               </summary>
+        <remarks>This is a generic method to inform a family connection of a second connection, and is rarely used.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -45,8 +47,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+               Close a connection to an IOService.
+               </summary>
+        <remarks>A connection created with IOService.Open () should be closed
+               when the connection is no longer to be used.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been closed or disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -86,7 +93,9 @@
         <ReturnType>MonoMac.IOKit.IOService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Gets the IOService that this instance was opened on.
+               </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,9 +114,18 @@
         <Parameter Name="properties" Type="MonoMac.ObjCRuntime.INativeObject" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="properties">A CF container - commonly a CFDictionary but this is not enforced.
+               The container should consist of objects which are understood by IOKit - these are currently :
+               CFDictionary, CFArray, CFSet, CFString, CFData, CFNumber, CFBoolean, and are passed in the kernel
+               as the corresponding OSDictionary etc. objects.</param>
+        <summary>
+               Set CF container based properties on a connection.
+               </summary>
+        <remarks>This is a generic method to pass a CF container of properties to the connection.
+               The properties are interpreted by the family and commonly represent configuration settings,
+               but may be interpreted as anything.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been closed or disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetCFProperty">
@@ -127,8 +145,14 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+               Set a CF container based property on a connection.
+               </summary>
+        <remarks>This is a generic method to pass a CF property to the connection.
+               The property is interpreted by the family and commonly represent configuration settings,
+               but may be interpreted as anything.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been closed or disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetNotificationPort">
@@ -147,11 +171,15 @@
         <Parameter Name="reference" Type="System.UIntPtr" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <param name="port">To be added.</param>
-        <param name="reference">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="type">The type of notification requested, not interpreted by IOKit and family defined.</param>
+        <param name="port">The port to which to send notifications.</param>
+        <param name="reference">Some families may support passing a reference parameter for the callers use with the notification.</param>
+        <summary>
+               Set a port to receive family specific notifications.
+               </summary>
+        <remarks>This is a generic method to pass a mach port send right to be be used by family specific notifications.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been closed or disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
   </Members>

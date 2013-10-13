@@ -1,0 +1,98 @@
+<Type Name="IOReturnExtensions" FullName="MonoMac.IOKit.IOReturnExtensions">
+  <TypeSignature Language="C#" Value="public static class IOReturnExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IOReturnExtensions extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCode">
+      <MemberSignature Language="C#" Value="public static int GetCode (this MonoMac.IOKit.IOReturn value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetCode(valuetype MonoMac.IOKit.IOReturn value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="MonoMac.IOKit.IOReturn" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMessage">
+      <MemberSignature Language="C#" Value="public static string GetMessage (this MonoMac.IOKit.IOReturn value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetMessage(valuetype MonoMac.IOKit.IOReturn value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="MonoMac.IOKit.IOReturn" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubSystem">
+      <MemberSignature Language="C#" Value="public static int GetSubSystem (this MonoMac.IOKit.IOReturn value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetSubSystem(valuetype MonoMac.IOKit.IOReturn value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="MonoMac.IOKit.IOReturn" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSystem">
+      <MemberSignature Language="C#" Value="public static MonoMac.Kernel.Mach.ErrorSystem GetSystem (this MonoMac.IOKit.IOReturn value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.Kernel.Mach.ErrorSystem GetSystem(valuetype MonoMac.IOKit.IOReturn value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.ErrorSystem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="MonoMac.IOKit.IOReturn" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -26,9 +26,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Create a CF dictionary representation of a registry entry's property table.</summary>
+        <returns>A NSMutableDictionary.</returns>
+        <remarks>This function creates an instantaneous snapshot of a registry entry's property table,
+               creating a CFDictionary analogue in the caller's task. Not every object available in the kernel is
+               represented as a CF container; currently OSDictionary, OSArray, OSSet, OSSymbol, OSString, OSData,
+               OSNumber, OSBoolean are created as their CF counterparts. </remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateCFProperty">
@@ -45,10 +50,15 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="key">The property name.</param>
+        <summary>Create a CF representation of a registry entry's property.</summary>
+        <returns>A CF container is created and returned the caller on success.
+               The caller should release with CFRelease.</returns>
+        <remarks>This function creates an instantaneous snapshot of a registry entry property,
+               creating a CF container analogue in the caller's task. Not every object available in the kernel is
+               represented as a CF container; currently OSDictionary, OSArray, OSSet, OSSymbol, OSString, OSData,
+               OSNumber, OSBoolean are created as their CF counterparts. </remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateIterator">
@@ -66,11 +76,19 @@
         <Parameter Name="options" Type="MonoMac.IOKit.RegistryIteratorOptions" />
       </Parameters>
       <Docs>
-        <param name="plane">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="plane">The registry plane.</param>
+        <param name="options">RegistryIteratorOptions.Recursive may be set to recurse automatically
+               into each entry as it is returned from IOIterator.MoveNext () calls on the registry iterator.
+               RegistryIteratorOptions.IncludeParents may be set to iterate the parents of each entry,
+               by default the children are iterated.</param>
+        <summary>Create an iterator rooted at a given registry entry.</summary>
+        <returns>The iterator.</returns>
+        <remarks>This method creates an IORegistryIterator in the kernel that is set up with options
+               to iterate children or parents of a root entry, and to recurse automatically into entries as they are returned,
+               or only when instructed with calls to IORegistryIterator.EnterEntry (). The iterator object keeps track of entries
+               that have been recursed into previously to avoid loops.</remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateRootIterator">
@@ -88,11 +106,16 @@
         <Parameter Name="options" Type="MonoMac.IOKit.RegistryIteratorOptions" />
       </Parameters>
       <Docs>
-        <param name="plane">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="plane">The registry plane.</param>
+        <param name="options">RegistryIteratorOptions.Recursive may be set to recurse automatically
+               into each entry as it is returned from IOIteratorNext calls on the registry iterator.</param>
+        <summary>Create an iterator rooted at the registry root using the default master port.</summary>
+        <returns>The iterator.</returns>
+        <remarks>This method creates an IORegistryIterator in the kernel that is set up with options
+               to iterate children of the registry root entry, and to recurse automatically into entries as they are returned,
+               or only when instructed with calls to IORegistryIterator.EnterEntry (). The iterator object keeps track of entries
+               that have been recursed into previously to avoid loops.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="FromPath">
@@ -109,10 +132,12 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="path">The path.</param>
+        <summary>Looks up a registry entry by path using the default master port.</summary>
+        <returns>The IORegistryEntry witch was found with the path, or <see langword="null" /> on failure.</returns>
+        <remarks>This function parses paths to lookup registry entries. The path should begin with '&lt;plane name&gt;:'
+               If there are characters remaining unparsed after an entry has been looked up, this is considered an invalid lookup.
+               Paths are further documented in IORegistryEntry.h</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChildEntry">
@@ -129,10 +154,12 @@
         <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
       </Parameters>
       <Docs>
-        <param name="plane">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="plane">The registry plane.</param>
+        <summary>Returns the first child of a registry entry in a plane.</summary>
+        <returns>The first child of the registry entry.</returns>
+        <remarks>This function will return the child which first attached to a registry entry in a plane.</remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetChildIterator">
@@ -149,10 +176,12 @@
         <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
       </Parameters>
       <Docs>
-        <param name="plane">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="plane">The registry plane.</param>
+        <summary>Returns an iterator over an registry entry's child entries in a plane.</summary>
+        <returns>The created iterator over the children of the entry.</returns>
+        <remarks>This method creates an iterator which will return each of a registry entry's child entries in a specified plane.</remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetLocationInPlane">
@@ -169,10 +198,14 @@
         <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
       </Parameters>
       <Docs>
-        <param name="plane">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="plane">The registry plane.</param>
+        <summary>Returns the location assigned to a registry entry, in a specified plane.</summary>
+        <returns>The location.</returns>
+        <remarks>Registry entries can given a location string in a particular plane, or globally.
+               If the entry has had a location set in the specified plane that location string will be returned,
+               otherwise the global location string is returned. If no global location string has been set, an error is returned.</remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNameInPlane">
@@ -189,10 +222,15 @@
         <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
       </Parameters>
       <Docs>
-        <param name="plane">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="plane">The registry plane.</param>
+        <summary>Gets the name assigned to a registry entry, in a specified plane.</summary>
+        <returns>The name.</returns>
+        <remarks>Registry entries can be named in a particular plane, or globally.
+               This function returns the entry's name in the specified plane or global name
+               if it has not been named in that plane. The global name defaults to the entry's
+               meta class name if it has not been named.</remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetParentEntry">
@@ -209,10 +247,12 @@
         <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
       </Parameters>
       <Docs>
-        <param name="plane">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="plane">The registry plane.</param>
+        <summary>Returns the first parent of a registry entry in a plane.</summary>
+        <returns>The first parent of the registry entry.</returns>
+        <remarks>This function will return the parent to which the registry entry was first attached in a plane.</remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetParentIterator">
@@ -229,10 +269,12 @@
         <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
       </Parameters>
       <Docs>
-        <param name="plane">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="plane">The registry plane.</param>
+        <summary>Returns an iterator over an registry entry's parent entries in a plane.</summary>
+        <returns>The created iterator over the parents of the entry.</returns>
+        <remarks>This method creates an iterator which will return each of a registry entry's parent entries in a specified plane.</remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetPathInPlane">
@@ -249,10 +291,15 @@
         <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
       </Parameters>
       <Docs>
-        <param name="plane">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="plane">The registry plane.</param>
+        <summary>Create a path for a registry entry.</summary>
+        <returns>The path.</returns>
+        <remarks>The path describes the entry's attachment in a particular plane, which must be specified.
+               The path begins with the plane name followed by a colon, and then followed by '/' separated path components
+               for each of the entries between the root and the registry entry. An alias may also exist for the entry,
+               and will be returned if available.</remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -266,9 +313,14 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets an ID for the registry entry that is global to all tasks.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>The entry ID returned by IORegistryEntry.EntryID can be used to identify
+               a registry entry across all tasks. A registry entry may be looked up by its EntryID by creating
+               a matching dictionary with IORegistryEntry.CreateIDMatchingDictionary () to be used with the IOKit matching methods.
+               The ID is valid only until the machine reboots.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsInPlane">
@@ -285,10 +337,10 @@
         <Parameter Name="plane" Type="MonoMac.IOKit.RegistryPlane" />
       </Parameters>
       <Docs>
-        <param name="plane">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="plane">The registry plane.</param>
+        <summary>Determines if this registry entry is attached in a plane.</summary>
+        <returns>If the entry has a parent in the plane, true is returned, otherwise false is returned.</returns>
+        <remarks>This method determines if this entry is attached in a plane to any other entry.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -302,9 +354,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the name assigned to this registry entry.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Registry entries can be named in a particular plane, or globally.
+               This function returns the entry's global name. The global name defaults
+               to the entry's meta class name if it has not been named.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="RootEntry">
@@ -318,9 +374,11 @@
         <ReturnType>MonoMac.IOKit.IORegistryEntry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the registry root using the default master port.</summary>
+        <value>The IORegistryEntry root instance, or <see langword="null" /> on failure.</value>
+        <remarks>This method provides an accessor to the root of the registry for the machine.
+               The root may be passed to a registry iterator when iterating a plane,
+               and contains properties that describe the available planes, and diagnostic information for IOKit.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCFProperties">
@@ -337,9 +395,16 @@
         <Parameter Name="properties" Type="MonoMac.ObjCRuntime.INativeObject" />
       </Parameters>
       <Docs>
-        <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="properties">A CF container - commonly a CFDictionary but this is not enforced.
+                   The container should consist of objects which are understood by IOKit - these are currently : CFDictionary, CFArray,
+                   CFSet, CFString, CFData, CFNumber, CFBoolean, and are passed in the kernel as the corresponding
+                   OSDictionary etc. objects.</param>
+        <summary>Set CF container based properties in a registry entry.</summary>
+        <remarks>This is a generic method to pass a CF container of properties to an object in the registry.
+                   Setting properties in a registry entry is not generally supported, it is more common to support IOConnection.SetCFProperties
+                   for connection based property setting. The properties are interpreted by the object.</remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetCFProperty">
@@ -357,10 +422,14 @@
         <Parameter Name="properties" Type="MonoMac.ObjCRuntime.INativeObject" />
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
+        <param name="propertyName">The name of the property.</param>
         <param name="properties">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Set a CF container based property in a registry entry.</summary>
+        <remarks>This is a generic method to pass a CF container as a property to an object in the registry.
+               Setting properties in a registry entry is not generally supported, it is more common to support
+               IOConnecttion.SetCFProperty for connection based property setting. The property is interpreted by the object.</remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown if this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">Thrown if the external method call failed.</exception>
       </Docs>
     </Member>
   </Members>

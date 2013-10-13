@@ -9,7 +9,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Used by <see cref="T:MonoMac.IOKit.IOReceivePort" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,7 +25,9 @@
         <ReturnType>MonoMac.IOKit.OSMessageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               kOSAsyncCompleteMessageID
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Notification">
@@ -38,7 +41,9 @@
         <ReturnType>MonoMac.IOKit.OSMessageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               kOSNotificationMessageID
+               </summary>
       </Docs>
     </Member>
   </Members>

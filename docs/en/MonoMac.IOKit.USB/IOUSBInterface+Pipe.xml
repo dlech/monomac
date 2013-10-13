@@ -299,29 +299,28 @@
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
-      <MemberSignature Language="C#" Value="public void ReadAsync (uint byteCount, MonoMac.IOKit.IOAsyncCallback1 callback);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReadAsync(unsigned int32 byteCount, class MonoMac.IOKit.IOAsyncCallback1 callback) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;byte[]&gt; ReadAsync (uint byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;unsigned int8[]&gt; ReadAsync(unsigned int32 byteCount) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Byte[]&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="byteCount" Type="System.UInt32" />
-        <Parameter Name="callback" Type="MonoMac.IOKit.IOAsyncCallback1" />
       </Parameters>
       <Docs>
         <param name="byteCount">To be added.</param>
-        <param name="callback">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
-      <MemberSignature Language="C#" Value="public void ReadAsync (uint byteCount, uint noDataTimeout, uint completionTimeout, MonoMac.IOKit.IOAsyncCallback1 callback);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReadAsync(unsigned int32 byteCount, unsigned int32 noDataTimeout, unsigned int32 completionTimeout, class MonoMac.IOKit.IOAsyncCallback1 callback) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;byte[]&gt; ReadAsync (uint byteCount, uint noDataTimeout, uint completionTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;unsigned int8[]&gt; ReadAsync(unsigned int32 byteCount, unsigned int32 noDataTimeout, unsigned int32 completionTimeout) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -332,20 +331,19 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Byte[]&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="byteCount" Type="System.UInt32" />
         <Parameter Name="noDataTimeout" Type="System.UInt32" />
         <Parameter Name="completionTimeout" Type="System.UInt32" />
-        <Parameter Name="callback" Type="MonoMac.IOKit.IOAsyncCallback1" />
       </Parameters>
       <Docs>
         <param name="byteCount">To be added.</param>
         <param name="noDataTimeout">To be added.</param>
         <param name="completionTimeout">To be added.</param>
-        <param name="callback">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -362,6 +360,51 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendControlRequestAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; SendControlRequestAsync (MonoMac.IOKit.USB.IOUSBDevRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; SendControlRequestAsync(valuetype MonoMac.IOKit.USB.IOUSBDevRequest request) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="MonoMac.IOKit.USB.IOUSBDevRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendControlRequestAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; SendControlRequestAsync (MonoMac.IOKit.USB.IOUSBDevRequestTO request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; SendControlRequestAsync(valuetype MonoMac.IOKit.USB.IOUSBDevRequestTO request) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(0, 4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="MonoMac.IOKit.USB.IOUSBDevRequestTO" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -517,29 +560,28 @@
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
-      <MemberSignature Language="C#" Value="public void WriteAsync (byte[] bytes, MonoMac.IOKit.IOAsyncCallback1 callback);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAsync(unsigned int8[] bytes, class MonoMac.IOKit.IOAsyncCallback1 callback) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; WriteAsync (byte[] bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; WriteAsync(unsigned int8[] bytes) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="bytes" Type="System.Byte[]" />
-        <Parameter Name="callback" Type="MonoMac.IOKit.IOAsyncCallback1" />
       </Parameters>
       <Docs>
         <param name="bytes">To be added.</param>
-        <param name="callback">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
-      <MemberSignature Language="C#" Value="public void WriteAsync (byte[] bytes, uint noDataTimeout, uint completionTimeout, MonoMac.IOKit.IOAsyncCallback1 callback);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteAsync(unsigned int8[] bytes, unsigned int32 noDataTimeout, unsigned int32 completionTimeout, class MonoMac.IOKit.IOAsyncCallback1 callback) cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; WriteAsync (byte[] bytes, uint noDataTimeout, uint completionTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; WriteAsync(unsigned int8[] bytes, unsigned int32 noDataTimeout, unsigned int32 completionTimeout) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -550,20 +592,19 @@
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="bytes" Type="System.Byte[]" />
         <Parameter Name="noDataTimeout" Type="System.UInt32" />
         <Parameter Name="completionTimeout" Type="System.UInt32" />
-        <Parameter Name="callback" Type="MonoMac.IOKit.IOAsyncCallback1" />
       </Parameters>
       <Docs>
         <param name="bytes">To be added.</param>
         <param name="noDataTimeout">To be added.</param>
         <param name="completionTimeout">To be added.</param>
-        <param name="callback">To be added.</param>
         <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

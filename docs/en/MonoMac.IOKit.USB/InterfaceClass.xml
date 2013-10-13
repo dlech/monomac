@@ -9,13 +9,17 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+           Interface Class
+           </summary>
+    <remarks>
+           Constants for Interface classes (bInterfaceClass).
+           </remarks>
   </Docs>
   <Members>
-    <Member MemberName="ApplicationSpecificInterface">
-      <MemberSignature Language="C#" Value="ApplicationSpecificInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass ApplicationSpecificInterface = unsigned int16(254)" />
+    <Member MemberName="ApplicationSpecific">
+      <MemberSignature Language="C#" Value="ApplicationSpecific" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass ApplicationSpecific = unsigned int16(254)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -27,9 +31,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="AudioInterface">
-      <MemberSignature Language="C#" Value="AudioInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass AudioInterface = unsigned int16(1)" />
+    <Member MemberName="Audio">
+      <MemberSignature Language="C#" Value="Audio" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass Audio = unsigned int16(1)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -41,9 +45,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="ChipSmartCardInterface">
-      <MemberSignature Language="C#" Value="ChipSmartCardInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass ChipSmartCardInterface = unsigned int16(11)" />
+    <Member MemberName="ChipSmartCard">
+      <MemberSignature Language="C#" Value="ChipSmartCard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass ChipSmartCard = unsigned int16(11)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -55,9 +59,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="CommunicationControlInterface">
-      <MemberSignature Language="C#" Value="CommunicationControlInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass CommunicationControlInterface = unsigned int16(2)" />
+    <Member MemberName="CommunicationControl">
+      <MemberSignature Language="C#" Value="CommunicationControl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass CommunicationControl = unsigned int16(2)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -69,9 +73,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="CommunicationDataInterface">
-      <MemberSignature Language="C#" Value="CommunicationDataInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass CommunicationDataInterface = unsigned int16(10)" />
+    <Member MemberName="CommunicationData">
+      <MemberSignature Language="C#" Value="CommunicationData" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass CommunicationData = unsigned int16(10)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -83,9 +87,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="ContentSecurityInterface">
-      <MemberSignature Language="C#" Value="ContentSecurityInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass ContentSecurityInterface = unsigned int16(13)" />
+    <Member MemberName="ContentSecurity">
+      <MemberSignature Language="C#" Value="ContentSecurity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass ContentSecurity = unsigned int16(13)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -97,9 +101,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="DiagnosticDeviceInterface">
-      <MemberSignature Language="C#" Value="DiagnosticDeviceInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass DiagnosticDeviceInterface = unsigned int16(220)" />
+    <Member MemberName="DiagnosticDevice">
+      <MemberSignature Language="C#" Value="DiagnosticDevice" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass DiagnosticDevice = unsigned int16(220)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -125,9 +129,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="HIDInterface">
-      <MemberSignature Language="C#" Value="HIDInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass HIDInterface = unsigned int16(3)" />
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="Image" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass Image = unsigned int16(6)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -139,9 +143,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="ImageInterface">
-      <MemberSignature Language="C#" Value="ImageInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass ImageInterface = unsigned int16(6)" />
+    <Member MemberName="MassStorage">
+      <MemberSignature Language="C#" Value="MassStorage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass MassStorage = unsigned int16(8)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -153,9 +157,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="MassStorageInterface">
-      <MemberSignature Language="C#" Value="MassStorageInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass MassStorageInterface = unsigned int16(8)" />
+    <Member MemberName="PersonalHealthcare">
+      <MemberSignature Language="C#" Value="PersonalHealthcare" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass PersonalHealthcare = unsigned int16(15)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -167,9 +171,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="PersonalHealthcareInterface">
-      <MemberSignature Language="C#" Value="PersonalHealthcareInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass PersonalHealthcareInterface = unsigned int16(15)" />
+    <Member MemberName="Physical">
+      <MemberSignature Language="C#" Value="Physical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass Physical = unsigned int16(5)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -181,9 +185,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="PhysicalInterfac">
-      <MemberSignature Language="C#" Value="PhysicalInterfac" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass PhysicalInterfac = unsigned int16(5)" />
+    <Member MemberName="Printing">
+      <MemberSignature Language="C#" Value="Printing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass Printing = unsigned int16(7)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -195,9 +199,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="PrintingInterface">
-      <MemberSignature Language="C#" Value="PrintingInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass PrintingInterface = unsigned int16(7)" />
+    <Member MemberName="VendorSpecific">
+      <MemberSignature Language="C#" Value="VendorSpecific" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass VendorSpecific = unsigned int16(255)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -209,9 +213,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="VendorSpecificInterface">
-      <MemberSignature Language="C#" Value="VendorSpecificInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass VendorSpecificInterface = unsigned int16(255)" />
+    <Member MemberName="Video">
+      <MemberSignature Language="C#" Value="Video" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass Video = unsigned int16(14)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -223,23 +227,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="VideoInterface">
-      <MemberSignature Language="C#" Value="VideoInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass VideoInterface = unsigned int16(14)" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>MonoMac.IOKit.USB.InterfaceClass</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-      </Docs>
-    </Member>
-    <Member MemberName="WirelessControllerInterface">
-      <MemberSignature Language="C#" Value="WirelessControllerInterface" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass WirelessControllerInterface = unsigned int16(224)" />
+    <Member MemberName="WirelessController">
+      <MemberSignature Language="C#" Value="WirelessController" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.InterfaceClass WirelessController = unsigned int16(224)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

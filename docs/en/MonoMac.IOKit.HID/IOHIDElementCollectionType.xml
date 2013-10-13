@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+           Describes different types of HID collections.
+           </summary>
+    <remarks>
+           Collections identify a relationship between two or more
+           elements.
+           </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -24,7 +29,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Identifies item groups serving different purposes in a single device.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Logical">
@@ -38,7 +45,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Used when a set of data items form a composite data structure.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="NamedArray">
@@ -52,7 +61,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Contains an array of selector usages.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Physical">
@@ -66,7 +77,10 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Used for a set of data items that represent data points
+               collected at one geometric point.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Report">
@@ -80,7 +94,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Wraps all the fields in a report.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="UsageModifier">
@@ -94,7 +110,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Modifies the meaning of the usage attached to the encompassing collection.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="UsageSwitch">
@@ -108,7 +126,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Modifies the meaning of the usage it contains.
+               </summary>
       </Docs>
     </Member>
   </Members>

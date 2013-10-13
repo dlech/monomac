@@ -9,7 +9,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           USB device speed.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,7 +26,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceSpeed</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The device is a full speed device. (kUSBDeviceSpeedFull)
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="High">
@@ -38,7 +42,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceSpeed</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The device is a high speed device. (kUSBDeviceSpeedHigh)
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Low">
@@ -52,7 +58,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceSpeed</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The device is a low speed device. (kUSBDeviceSpeedLow)
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Super">
@@ -66,7 +74,9 @@
         <ReturnType>MonoMac.IOKit.USB.DeviceSpeed</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The device is a SuperSpeed device (kUSBDeviceSpeedSuper)
+               </summary>
       </Docs>
     </Member>
   </Members>

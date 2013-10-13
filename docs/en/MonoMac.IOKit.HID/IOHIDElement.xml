@@ -15,8 +15,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+          /// Describes different types of HID elements.
+          /// </summary>
+    <remarks>
+          /// Used by the IOHIDFamily to identify the type of
+          /// element processed.  Represented by the key kIOHIDElementTypeKey in the
+          /// dictionary describing the element.
+          /// </remarks>
   </Docs>
   <Members>
     <Member MemberName="Attach">

@@ -9,7 +9,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Used with SET/CLEAR_FEATURE requests.
+        </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,7 +26,7 @@
         <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies to Device.</summary>
       </Docs>
     </Member>
     <Member MemberName="EndpointStall">
@@ -38,7 +40,7 @@
         <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies to Endpoint.</summary>
       </Docs>
     </Member>
     <Member MemberName="FunctionSuspend">
@@ -66,7 +68,7 @@
         <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies to Device.</summary>
       </Docs>
     </Member>
     <Member MemberName="TestMode">
@@ -80,7 +82,7 @@
         <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies to Interface.</summary>
       </Docs>
     </Member>
     <Member MemberName="U1Enable">
@@ -94,7 +96,7 @@
         <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies to Device.</summary>
       </Docs>
     </Member>
     <Member MemberName="U2Enable">
@@ -108,7 +110,7 @@
         <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies to Device.</summary>
       </Docs>
     </Member>
   </Members>

@@ -9,8 +9,12 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+           Device Class Codes
+           </summary>
+    <remarks>
+           Constants for USB Device classes (bDeviceClass).
+           </remarks>
   </Docs>
   <Members>
     <Member MemberName="ApplicationSpecific">

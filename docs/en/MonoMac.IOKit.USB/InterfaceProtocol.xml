@@ -9,8 +9,12 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+           Interface protocol.
+           </summary>
+    <remarks>
+           Reported in the bInterfaceProtocol field of the Interface Descriptor.
+           </remarks>
   </Docs>
   <Members>
     <Member MemberName="HIDKeyboardInterface">

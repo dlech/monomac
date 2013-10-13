@@ -209,9 +209,9 @@
         <summary>To be added.</summary>
       </Docs>
     </Member>
-    <Member MemberName="PID">
-      <MemberSignature Language="C#" Value="PID" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage PID = unsigned int16(15)" />
+    <Member MemberName="PhysicalInterfaceDevice">
+      <MemberSignature Language="C#" Value="PhysicalInterfaceDevice" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.UsagePage PhysicalInterfaceDevice = unsigned int16(15)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

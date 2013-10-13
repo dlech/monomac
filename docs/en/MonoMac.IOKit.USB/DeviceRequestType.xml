@@ -9,7 +9,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           This type is encoded in the bmRequestType field of a Device Request.
+           It specifies the type of request: standard, class or vendor specific.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

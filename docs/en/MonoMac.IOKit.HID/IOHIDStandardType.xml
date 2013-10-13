@@ -9,7 +9,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Type to define what industrial standard the device is referencing.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,7 +26,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDStandardType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               ANSI.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="ISO">
@@ -38,7 +42,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDStandardType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               ISO.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="JIS">
@@ -52,7 +58,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDStandardType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               JIS.
+               </summary>
       </Docs>
     </Member>
   </Members>

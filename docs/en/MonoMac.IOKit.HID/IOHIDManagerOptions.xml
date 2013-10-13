@@ -14,7 +14,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Various options that can be supplied to IOHIDManager functions.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +31,10 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               This constant can be supplied to @link IOHIDManagerCreate when you wish to overwrite
+               the persistent properties store without loading it first.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="DoNotSaveProperties">
@@ -43,7 +48,10 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               This constant can be supplied to @link IOHIDManagerCreate @/link when you want to
+               use the persistent property store but do not want to add to it.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -57,7 +65,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               For those times when supplying 0 just isn't explicit enough.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="UsePersistentProperties">
@@ -71,7 +81,10 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               This constant can be supplied to @link IOHIDManagerCreate @/link
+               to create and/or use a persistent properties store.
+               </summary>
       </Docs>
     </Member>
   </Members>

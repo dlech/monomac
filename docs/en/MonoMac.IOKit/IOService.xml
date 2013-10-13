@@ -30,12 +30,18 @@
         <Parameter Name="callback" Type="MonoMac.IOKit.IOService+InterestCallback" />
       </Parameters>
       <Docs>
-        <param name="notifyPort">To be added.</param>
-        <param name="interestType">To be added.</param>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="notifyPort">A IONotificationPort object that controls how messages will be sent when the notification is fired. See <see cref="C:MonoMac.IOKit.IONotificationPort" />.</param>
+        <param name="interestType">
+          <para>Notification type.</para>
+          <para>
+            <see cref="F:MonoMac.IOKit.InterestType.General" />: General state changes delivered via the IOService::message API.</para>
+          <para>
+            <see cref="F:MonoMac.IOKit.InterestType.Busy" />: Delivered when the IOService changes its busy state to or from zero. The message argument contains the new busy state causing the notification.</para>
+        </param>
+        <param name="callback">A callback function called when the notification fires, with messageType and messageArgument for the state change.</param>
+        <summary>Register for notification of state changes in an IOService.</summary>
+        <returns>An IOObject is returned on success, and should be disposed when you no longer want to receive notifications.</returns>
+        <remarks>IOService objects deliver notifications of their state changes to their clients via the IOService::message API, and to other interested parties including callers of this function.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMatchingNotification&lt;T&gt;">
@@ -63,13 +69,25 @@
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="notifyPort">To be added.</param>
-        <param name="notificationType">To be added.</param>
-        <param name="matchingDictionary">To be added.</param>
-        <param name="callback">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="notifyPort">A IONotificationPort object that controls how messages will be sent when the armed notification is fired.
+               When the notification is delivered, the IOIterator&lt;IOService&gt; representing the notification should be iterated through
+                   to pick up all outstanding objects. When the iteration is finished the notification is rearmed.</param>
+        <param name="notificationType">A NotificationType</param>
+        <param name="matchingDictionary">A CF dictionary containing matching information.
+                   IOKit can construct matching dictionaries for common criteria with helper methods
+                   such as <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForClass" />, <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForName" />
+                   and <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForBSDName" />.</param>
+        <param name="callback">A callback function called when the notification fires.</param>
+        <summary>
+               Look up registered IOService objects that match a matching dictionary, and install a notification request of new IOServices that match.
+               </summary>
+        <returns>An IOIterator of matching IOService objects. The notification is armed when the Enumerator is emptied
+               by calls to MoveNext() - when no more objects are returned, the notification is armed. Note the notification is
+               not armed when first created. The notification is unarmed when the IOIterator is disposed.</returns>
+        <remarks>This is the preferred method of finding IOService objects that may arrive at any time.
+                   The type of notification specifies the state change the caller is interested in, on IOService's that match the match dictionary.
+                   The matching information used in the matching dictionary may vary depending on the class of service being looked up.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllBusyState">
@@ -83,9 +101,17 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+               Returns the busyState of all IOServices.
+               </summary>
+        <value>The busyState count.</value>
+        <remarks>Many activities in IOService are asynchronous. When registration, matching,
+               or termination is in progress on an IOService, its busyState is increased by one.
+               Change in busyState to or from zero also changes the IOService's provider's busyState
+               by one, which means that an IOService is marked busy when any of the above activities
+               is ocurring on it or any of its clients. BusyState returns the busy state
+               of the root of the service plane which reflects the busy state of all IOServices.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="BusyState">
@@ -99,9 +125,16 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+               Returns the busyState of an IOService.
+               </summary>
+        <value>The busyState count.</value>
+        <remarks>Many activities in IOService are asynchronous. When registration, matching, or termination is in progress
+               on an IOService, its busyState is increased by one. Change in busyState to or from zero also changes the IOService's
+               provider's busyState by one, which means that an IOService is marked busy when any of the above activities is ocurring
+               on it or any of its clients.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateMatchingDictionaryForBSDName">
@@ -118,10 +151,15 @@
         <Parameter Name="bsdName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bsdName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bsdName">The BSD name.</param>
+        <summary>
+               Create a matching dictionary that specifies an IOService match based on BSD device name using the default master port.
+               </summary>
+        <returns>The matching dictionary created, is returned on success, or <c>null</c> on failure.
+               The dictionary is commonly passed to IOServiceGetMatchingServices or IOServiceAddNotification.
+               </returns>
+        <remarks>IOServices that represent BSD devices have an associated BSD name.
+               This function creates a matching dictionary that will match IOService's with a given BSD name.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMatchingDictionaryForClass&lt;T&gt;">
@@ -143,10 +181,16 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The class. Class matching is successful on IOService's of this class or any subclass.</typeparam>
+        <summary>
+               Create a matching dictionary that specifies an IOService class match.
+               </summary>
+        <returns>The matching dictionary created, is returned on success, or <c>null</c> on failure.
+               The dictionary is commonly passed to IOService.GetMatchingServices or IOService.AddNotification.
+               </returns>
+        <remarks>A very common matching criteria for IOService is based on its class.
+           IOService.CreateMatchingDictionaryForClass will create a matching dictionary
+           that specifies any IOService of a class, or its subclasses.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMatchingDictionaryForName">
@@ -163,10 +207,17 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The IOService name.</param>
+        <summary>
+               Create a matching dictionary that specifies an IOService name match.
+               </summary>
+        <returns>The matching dictionary created, is returned on success, or <c>null</c> on failure.
+               The dictionary is commonly passed to IOServiceGetMatchingServices or IOServiceAddNotification.
+               </returns>
+        <remarks>A common matching criteria for IOService is based on its name.
+               IOService.CreateMatchingDictionaryForName will create a matching dictionary that specifies an IOService with a given name.
+               Some IOServices created from the device tree will perform name matching on the standard compatible,
+               name, model properties.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateMatchingDictionaryForName">
@@ -183,10 +234,16 @@
         <Parameter Name="entryId" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <param name="entryId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="entryId">The registry entry ID to be found.</param>
+        <summary>
+               Create a matching dictionary that specifies an IOService match based on a registry entry ID.
+               </summary>
+        <returns>The matching dictionary created, is returned on success, or <c>null</c> on failure.
+               The dictionary is commonly passed to IOServiceGetMatchingServices or IOServiceAddNotification.
+               </returns>
+        <remarks>This function creates a matching dictionary that will match a registered,
+               active IOService found with the given registry entry ID. The entry ID for a registry entry is
+               returned by IORegistryEntry.ID.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingService">
@@ -203,10 +260,20 @@
         <Parameter Name="matchingDictionary" Type="MonoMac.Foundation.NSDictionary" />
       </Parameters>
       <Docs>
-        <param name="matchingDictionary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="matchingDictionary">A CF dictionary containing matching information.
+               IOKitLib can construct matching dictionaries for common criteria with helper methods
+               such as  <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForClass&lt;T&gt;" />, <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForName(System.String)" />
+               and <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForBSDName" />.</param>
+        <summary>
+               Look up a registered IOService object that matches a matching dictionary using the default master port.
+               </summary>
+        <returns>The first service matched is returned on success or null if no services matched.</returns>
+        <remarks>This is the preferred method of finding IOService objects currently registered by IOKit
+               (that is, objects that have had their RegisterService() methods invoked). To find IOService objects
+               that aren't yet registered, use an iterator as created by IORegistryEntry.CreateIterator().
+               IOService.AddMatchingNotification can also supply this information and install a notification of new IOServices.
+               The matching information used in the matching dictionary may vary depending on the class of service being looked up.
+               </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingServices&lt;T&gt;">
@@ -231,10 +298,20 @@
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="matchingDictionary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="matchingDictionary">A CF dictionary containing matching information.
+               IOKit can construct matching dictionaries for common criteria with helper methods
+               such as <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForClass" />, <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForName" />
+               and <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForBSDName" />.</param>
+        <summary>
+               Look up registered IOService objects that match a matching dictionary using the default master port.
+               </summary>
+        <returns>A list of matching IOService objects</returns>
+        <remarks>This is the preferred method of finding IOService objects currently registered by IOKit
+               (that is, objects that have had their RegisterService() methods invoked). To find IOService objects that aren't yet registered,
+               use an iterator as created by IORegistryEntry.CreateIterator(). IOService.AddMatchingNotification can also supply this information
+               and install a notification of new IOServices. The matching information used in the matching dictionary may vary depending
+               on the class of service being looked up.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsAnyBusy">
@@ -248,9 +325,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Returns <c>true</c> any IOServices are busy; otherwise <c>false</c>.
+               </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>Many activities in IOService are asynchronous. When registration, matching,
+               or termination is in progress on an IOService, its busyState is increased by one.
+               Change in busyState to or from zero also changes the IOService's provider's busyState
+               by one, which means that an IOService is marked busy when any of the above activities
+               is ocurring on it or any of its clients. BusyState returns the busy state
+               of the root of the service plane which reflects the busy state of all IOServices.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsBusy">
@@ -264,9 +349,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+               Gets a value indicating whether this instance is busy.
+               </summary>
+        <value>
+          <c>true</c> if this instance is busy with an asynchronous task; otherwise, <c>false</c>.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="MatchPropertyTable">
@@ -283,10 +373,18 @@
         <Parameter Name="matchingDictionary" Type="MonoMac.Foundation.NSDictionary" />
       </Parameters>
       <Docs>
-        <param name="matchingDictionary">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="matchingDictionary">A CF dictionary containing matching information.
+               IOKit can construct matching dictionaries for common criteria with helper methods
+               such as <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForClass" />, <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForName" />
+               and <see cref="M:MonoMac.IOKit.IOService.CreateMatchingDictionaryForBSDName" />.</param>
+        <summary>
+               Match an IOService objects with matching dictionary.
+               </summary>
+        <returns>
+          <c>true</c> if this service object matches the matching dictionary, otherwise <c>false</c></returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -304,11 +402,17 @@
         <Parameter Name="type" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="owningTask">To be added.</param>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="owningTask">The mach task requesting the connection.</param>
+        <param name="type">A constant specifying the type of connection to be created, interpreted only by the IOService's family.</param>
+        <summary>
+               A request to create a connection to an IOService.
+               </summary>
+        <returns>The IOConnection. </returns>
+        <remarks>A non-kernel client may request a connection be opened via the IOService.Open() method,
+               which will call IOService::newUserClient in the kernel. The rules and capabilities of user level clients
+               are family dependent, the default IOService implementation returns <see cref="F:MonoMac.IOKit.IOReturn.Unsupported" /> (throws IOReturnException).</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="RequestProbe">
@@ -325,14 +429,21 @@
         <Parameter Name="options" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="options">An options mask, interpreted only by the IOService's family.</param>
+        <summary>
+               A request to rescan a bus for device changes.
+               </summary>
+        <remarks>A non-kernel client may request a bus or controller rescan for added or removed devices,
+               if the bus family does automatically notice such changes. For example, SCSI bus controllers do not notice device changes.
+               The implementation of this routine is family dependent, and the default IOService implementation returns
+               <see cref="F:MonoMac.IOKit.IOReturn.Unsupported" /> (throws IOReturnException).</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Wait">
-      <MemberSignature Language="C#" Value="public bool Wait (MonoMac.Kernel.Mach.TimeSpec waitTime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(valuetype MonoMac.Kernel.Mach.TimeSpec waitTime) cil managed" />
+      <MemberSignature Language="C#" Value="public bool Wait (double seconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(float64 seconds) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -341,40 +452,22 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitTime" Type="MonoMac.Kernel.Mach.TimeSpec" />
+        <Parameter Name="seconds" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="waitTime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Wait">
-      <MemberSignature Language="C#" Value="public bool Wait (int seconds, int nanoseconds = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Wait(int32 seconds, int32 nanoseconds) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="seconds" Type="System.Int32" />
-        <Parameter Name="nanoseconds" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="seconds">To be added.</param>
-        <param name="nanoseconds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="seconds">Number of seconds to wait.</param>
+        <summary>
+              Wait until this instance is no longer busy.
+          </summary>
+        <returns>True if the method timed out.</returns>
+        <remarks>Blocks the caller until an IOService is non busy, see <see cref="P:MonoMac.IOKit.IOService.BusyState" />.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If this instance has already been disposed.</exception>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
     <Member MemberName="WaitAll">
-      <MemberSignature Language="C#" Value="public static bool WaitAll (MonoMac.Kernel.Mach.TimeSpec waitTime);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool WaitAll(valuetype MonoMac.Kernel.Mach.TimeSpec waitTime) cil managed" />
+      <MemberSignature Language="C#" Value="public static bool WaitAll (double seconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool WaitAll(float64 seconds) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -383,35 +476,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitTime" Type="MonoMac.Kernel.Mach.TimeSpec" />
+        <Parameter Name="seconds" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="waitTime">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="WaitAll">
-      <MemberSignature Language="C#" Value="public static bool WaitAll (int seconds, int nanoseconds = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool WaitAll(int32 seconds, int32 nanoseconds) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="seconds" Type="System.Int32" />
-        <Parameter Name="nanoseconds" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="seconds">To be added.</param>
-        <param name="nanoseconds">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="seconds">Number of seconds to wait.</param>
+        <summary>
+              Wait until all IOServices are not busy.
+          </summary>
+        <returns>
+          <c>true</c> if the method timed out; otherwise <c>false</c></returns>
+        <remarks>Blocks the caller until all IOServices are not busy, see <see cref="P:MonoMac.IOKit.IOService.BusyState" />.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the method call failed.</exception>
       </Docs>
     </Member>
   </Members>

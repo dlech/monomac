@@ -9,13 +9,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Used to specify what kind of power will be reserved using the IOUSBDevice RequestExtraPower and ReturnExtraPower APIs.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="kUSBPowerDuringSleep">
-      <MemberSignature Language="C#" Value="kUSBPowerDuringSleep" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType kUSBPowerDuringSleep = unsigned int8(0)" />
+    <Member MemberName="DuringSleep">
+      <MemberSignature Language="C#" Value="DuringSleep" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType DuringSleep = unsigned int8(0)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -24,12 +26,14 @@
         <ReturnType>MonoMac.IOKit.USB.PowerRequestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The power is to be used during sleep.
+               </summary>
       </Docs>
     </Member>
-    <Member MemberName="kUSBPowerDuringWake">
-      <MemberSignature Language="C#" Value="kUSBPowerDuringWake" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType kUSBPowerDuringWake = unsigned int8(1)" />
+    <Member MemberName="DuringWake">
+      <MemberSignature Language="C#" Value="DuringWake" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType DuringWake = unsigned int8(1)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -38,12 +42,14 @@
         <ReturnType>MonoMac.IOKit.USB.PowerRequestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The power is to be used while the system is awake (i.e not sleeping)
+               </summary>
       </Docs>
     </Member>
-    <Member MemberName="kUSBPowerDuringWakeRevocable">
-      <MemberSignature Language="C#" Value="kUSBPowerDuringWakeRevocable" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType kUSBPowerDuringWakeRevocable = unsigned int8(6)" />
+    <Member MemberName="DuringWakeRevocable">
+      <MemberSignature Language="C#" Value="DuringWakeRevocable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType DuringWakeRevocable = unsigned int8(6)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -52,12 +58,15 @@
         <ReturnType>MonoMac.IOKit.USB.PowerRequestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               The power is to be used while the system is awake (i.e not sleeping), but can be taken away (via the RequestWakeRelease message).
+               The system can then allocate that extra power to another device.
+               </summary>
       </Docs>
     </Member>
-    <Member MemberName="kUSBPowerDuringWakeUSB3">
-      <MemberSignature Language="C#" Value="kUSBPowerDuringWakeUSB3" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType kUSBPowerDuringWakeUSB3 = unsigned int8(7)" />
+    <Member MemberName="DuringWakeUSB3">
+      <MemberSignature Language="C#" Value="DuringWakeUSB3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType DuringWakeUSB3 = unsigned int8(7)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -66,12 +75,14 @@
         <ReturnType>MonoMac.IOKit.USB.PowerRequestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               This is used by the USB stack to allocate the 400mA extra for USB3, above the 500ma allocated by USB2
+               </summary>
       </Docs>
     </Member>
-    <Member MemberName="kUSBPowerRequestSleepReallocate">
-      <MemberSignature Language="C#" Value="kUSBPowerRequestSleepReallocate" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType kUSBPowerRequestSleepReallocate = unsigned int8(5)" />
+    <Member MemberName="RequestSleepReallocate">
+      <MemberSignature Language="C#" Value="RequestSleepReallocate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType RequestSleepReallocate = unsigned int8(5)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -80,12 +91,14 @@
         <ReturnType>MonoMac.IOKit.USB.PowerRequestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               When used with ReturnExtraPower(), it will send a message to all devices indicating that they can ask for more sleep power, as some device has released it.
+               </summary>
       </Docs>
     </Member>
-    <Member MemberName="kUSBPowerRequestSleepRelease">
-      <MemberSignature Language="C#" Value="kUSBPowerRequestSleepRelease" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType kUSBPowerRequestSleepRelease = unsigned int8(3)" />
+    <Member MemberName="RequestSleepRelease">
+      <MemberSignature Language="C#" Value="RequestSleepRelease" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType RequestSleepRelease = unsigned int8(3)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -94,12 +107,14 @@
         <ReturnType>MonoMac.IOKit.USB.PowerRequestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               When used with ReturnExtraPower(), it will send a message to all devices to return any sleep power if possible.
+               </summary>
       </Docs>
     </Member>
-    <Member MemberName="kUSBPowerRequestWakeReallocate">
-      <MemberSignature Language="C#" Value="kUSBPowerRequestWakeReallocate" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType kUSBPowerRequestWakeReallocate = unsigned int8(4)" />
+    <Member MemberName="RequestWakeReallocate">
+      <MemberSignature Language="C#" Value="RequestWakeReallocate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType RequestWakeReallocate = unsigned int8(4)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -108,12 +123,14 @@
         <ReturnType>MonoMac.IOKit.USB.PowerRequestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               When used with ReturnExtraPower(), it will send a message to all devices indicating that they can ask for more wake power, as some device has released it.
+               </summary>
       </Docs>
     </Member>
-    <Member MemberName="kUSBPowerRequestWakeRelease">
-      <MemberSignature Language="C#" Value="kUSBPowerRequestWakeRelease" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType kUSBPowerRequestWakeRelease = unsigned int8(2)" />
+    <Member MemberName="RequestWakeRelease">
+      <MemberSignature Language="C#" Value="RequestWakeRelease" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.PowerRequestType RequestWakeRelease = unsigned int8(2)" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -122,7 +139,9 @@
         <ReturnType>MonoMac.IOKit.USB.PowerRequestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               When used with ReturnExtraPower(), it will send a message to all devices to return any extra wake power if possible.
+               </summary>
       </Docs>
     </Member>
   </Members>

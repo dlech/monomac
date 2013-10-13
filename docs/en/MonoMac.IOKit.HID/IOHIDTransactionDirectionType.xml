@@ -9,7 +9,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           Direction for an IOHIDDeviceTransactionInterface.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,7 +26,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDTransactionDirectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Transaction direction used for requesting element values from a device.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Output">
@@ -38,7 +42,9 @@
         <ReturnType>MonoMac.IOKit.HID.IOHIDTransactionDirectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Transaction direction used for dispatching element values to a device.
+               </summary>
       </Docs>
     </Member>
   </Members>

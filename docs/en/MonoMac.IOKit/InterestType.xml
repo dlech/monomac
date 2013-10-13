@@ -20,11 +20,6 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Key("IOAppPowerStateInterest")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.IOKit.InterestType</ReturnType>
       </ReturnValue>
@@ -39,16 +34,14 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Key("IOBusyInterest")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.IOKit.InterestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Delivered when the IOService changes its busy state to or from zero.
+               The message argument contains the new busy state causing the notification.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="General">
@@ -58,16 +51,13 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Key("IOGeneralInterest")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.IOKit.InterestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+                General state changes delivered via the IOService::message API.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="PriorityPowerState">
@@ -77,11 +67,6 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Key("IOPriorityPowerStateInterest")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.IOKit.InterestType</ReturnType>
       </ReturnValue>

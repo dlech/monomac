@@ -14,7 +14,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+           IOHID element flags.
+           </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

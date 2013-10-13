@@ -20,16 +20,14 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Key("IOServiceFirstMatch")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.IOKit.NotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Delivered when an IOService has had all matching drivers in the kernel probed and started,
+               but only once per IOService instance. Some IOService's may be reregistered when their state is changed.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="FirstPublish">
@@ -39,16 +37,14 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Key("IOServiceFirstPublish")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.IOKit.NotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Delivered when an IOService is registered, but only once per IOService instance.
+               Some IOService's may be reregistered when their state is changed.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Matched">
@@ -58,16 +54,13 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Key("IOServiceMatched")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.IOKit.NotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Delivered when an IOService has had all matching drivers in the kernel probed and started.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Publish">
@@ -77,16 +70,13 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Key("IOServicePublish")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.IOKit.NotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Delivered when an IOService is registered.
+               </summary>
       </Docs>
     </Member>
     <Member MemberName="Terminated">
@@ -96,16 +86,13 @@
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Key("IOServiceTerminate")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>MonoMac.IOKit.NotificationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+               Delivered after an IOService has been terminated.
+               </summary>
       </Docs>
     </Member>
   </Members>
