@@ -26,6 +26,7 @@
 
 using System;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 using MonoMac.AppKit;
 using MonoMac.Foundation;
 using MonoMac.IOBluetooth;
@@ -36,6 +37,11 @@ namespace MonoMac.IOBluetoothUI
 {
 	public partial class IOBluetoothDeviceSelectorController
 	{
+		const string beginSheetModalDidEndSelectorName = "beginSheetModalForWindowDidEnd:";
+		static readonly Selector beginSheetModalDidEndSelector =
+			new Selector (beginSheetModalDidEndSelectorName);
+		static readonly ModalDelegate modalDelegate = new ModalDelegate ();
+
 		public void BeginSheetModalForWindow (NSWindow sheetWindow,
 		                                      NSObject modalDelegate,
 		                                      Selector didEndSelector,
@@ -46,9 +52,19 @@ namespace MonoMac.IOBluetoothUI
 			IOObject.ThrowIfError (result);
 		}
 
+		public Task<IOBluetoothUIPanelResult> RunSheetModalForWindowAsync (NSWindow sheetWindow)
+		{
+			var completionSource = new TaskCompletionSource<IOBluetoothUIPanelResult> ();
+			var completionSourcePtr = GCHandle.ToIntPtr(GCHandle.Alloc (completionSource));
+			BeginSheetModalForWindow (sheetWindow, modalDelegate,
+			                          beginSheetModalDidEndSelector, completionSourcePtr);
+			return completionSource.Task;
+		}
+
 		public IOBluetoothDeviceSearchAttributes SearchAttributes {
 			get {
-				return (IOBluetoothDeviceSearchAttributes)Marshal.PtrToStructure (searchAttributes, typeof(IOBluetoothDeviceSearchAttributes));
+				return (IOBluetoothDeviceSearchAttributes)Marshal.PtrToStructure (
+					searchAttributes, typeof(IOBluetoothDeviceSearchAttributes));
 			}
 			set {
 				if (value == null) {
@@ -62,6 +78,19 @@ namespace MonoMac.IOBluetoothUI
 				} finally {
 					Marshal.FreeHGlobal (valuePtr);
 				}
+			}
+		}
+
+		class ModalDelegate : NSObject
+		{
+			[Export (beginSheetModalDidEndSelectorName)]
+			void OnBluetoothDeviceSelected (IOBluetoothDeviceSelectorController controller,
+			                                IOBluetoothUIPanelResult returnCode, IntPtr contextInfo)
+			{
+				var completionSourceHandle = GCHandle.FromIntPtr (contextInfo);
+				var completionSource = (TaskCompletionSource<IOBluetoothUIPanelResult>)completionSourceHandle.Target;
+				completionSourceHandle.Free ();
+				completionSource.TrySetResult (returnCode);
 			}
 		}
 	}
