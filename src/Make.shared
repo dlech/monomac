@@ -164,7 +164,6 @@ SHARED_SOURCE = \
 	./IOKit/IOReceivePort.cs                        \
 	./IOKit/IORegistryEntry.cs                      \
 	./IOKit/IORegistryIterator.cs                   \
-	./IOKit/IOReturnException.cs                    \
 	./IOKit/IOService.cs                            \
 	./IOKit/HID/Enums.cs                            \
 	./IOKit/HID/IOHID.cs                            \
