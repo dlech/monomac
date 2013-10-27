@@ -1,0 +1,143 @@
+<Type Name="ErrorSystem" FullName="MonoMac.Kernel.Mach.ErrorSystem">
+  <TypeSignature Language="C#" Value="public enum ErrorSystem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ErrorSystem extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DistributedIPC">
+      <MemberSignature Language="C#" Value="DistributedIPC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Kernel.Mach.ErrorSystem DistributedIPC = int32(7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.ErrorSystem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IOKit">
+      <MemberSignature Language="C#" Value="IOKit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Kernel.Mach.ErrorSystem IOKit = int32(56)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.ErrorSystem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Kernel">
+      <MemberSignature Language="C#" Value="Kernel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Kernel.Mach.ErrorSystem Kernel = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.ErrorSystem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MachIPC">
+      <MemberSignature Language="C#" Value="MachIPC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Kernel.Mach.ErrorSystem MachIPC = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.ErrorSystem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MachIPCCompatibility">
+      <MemberSignature Language="C#" Value="MachIPCCompatibility" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Kernel.Mach.ErrorSystem MachIPCCompatibility = int32(63)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.ErrorSystem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OldIPC">
+      <MemberSignature Language="C#" Value="OldIPC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Kernel.Mach.ErrorSystem OldIPC = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.ErrorSystem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserDefined">
+      <MemberSignature Language="C#" Value="UserDefined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Kernel.Mach.ErrorSystem UserDefined = int32(62)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.ErrorSystem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserSpaceLibrary">
+      <MemberSignature Language="C#" Value="UserSpaceLibrary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Kernel.Mach.ErrorSystem UserSpaceLibrary = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.ErrorSystem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserSpaceServers">
+      <MemberSignature Language="C#" Value="UserSpaceServers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.Kernel.Mach.ErrorSystem UserSpaceServers = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.ErrorSystem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

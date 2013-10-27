@@ -319,8 +319,8 @@ public class MyClass : BaseClass {
       </Docs>
     </Member>
     <Member MemberName="RepresentedObject">
-      <MemberSignature Language="C#" Value="public virtual MonoMac.AppKit.NSTreeNode RepresentedObject { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.AppKit.NSTreeNode RepresentedObject" />
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject RepresentedObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSObject RepresentedObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
@@ -331,7 +331,7 @@ public class MyClass : BaseClass {
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>MonoMac.AppKit.NSTreeNode</ReturnType>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

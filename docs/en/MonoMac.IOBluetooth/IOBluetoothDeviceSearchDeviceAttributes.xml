@@ -1,0 +1,122 @@
+<Type Name="IOBluetoothDeviceSearchDeviceAttributes" FullName="MonoMac.IOBluetooth.IOBluetoothDeviceSearchDeviceAttributes">
+  <TypeSignature Language="C#" Value="public class IOBluetoothDeviceSearchDeviceAttributes" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit IOBluetoothDeviceSearchDeviceAttributes extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDeviceSearchDeviceAttributes (MonoMac.IOBluetooth.BluetoothDeviceAddress address, string name, MonoMac.IOBluetooth.BluetoothServiceClassMajor serviceClassMajor, MonoMac.IOBluetooth.BluetoothDeviceClassMajor deviceClassMajor, MonoMac.IOBluetooth.BluetoothDeviceClassMinor deviceClassMinor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype MonoMac.IOBluetooth.BluetoothDeviceAddress address, string name, valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor serviceClassMajor, valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMajor deviceClassMajor, valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMinor deviceClassMinor) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="address" Type="MonoMac.IOBluetooth.BluetoothDeviceAddress" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="serviceClassMajor" Type="MonoMac.IOBluetooth.BluetoothServiceClassMajor" />
+        <Parameter Name="deviceClassMajor" Type="MonoMac.IOBluetooth.BluetoothDeviceClassMajor" />
+        <Parameter Name="deviceClassMinor" Type="MonoMac.IOBluetooth.BluetoothDeviceClassMinor" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="name">To be added.</param>
+        <param name="serviceClassMajor">To be added.</param>
+        <param name="deviceClassMajor">To be added.</param>
+        <param name="deviceClassMinor">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public MonoMac.IOBluetooth.BluetoothDeviceAddress Address { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothDeviceAddress Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceClassMajor">
+      <MemberSignature Language="C#" Value="public MonoMac.IOBluetooth.BluetoothDeviceClassMajor DeviceClassMajor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMajor DeviceClassMajor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceClassMinor">
+      <MemberSignature Language="C#" Value="public MonoMac.IOBluetooth.BluetoothDeviceClassMinor DeviceClassMinor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMinor DeviceClassMinor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceClassMinor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceClassMajor">
+      <MemberSignature Language="C#" Value="public MonoMac.IOBluetooth.BluetoothServiceClassMajor ServiceClassMajor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor ServiceClassMajor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothServiceClassMajor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

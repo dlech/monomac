@@ -46,6 +46,9 @@ namespace MonoMac.Foundation {
 		static IntPtr ik = Dlfcn.dlopen (Constants.ImageKitLibrary, 1);
 		static IntPtr sb = Dlfcn.dlopen (Constants.ScriptingBridgeLibrary, 1);
 		static IntPtr av = Dlfcn.dlopen (Constants.AVFoundationLibrary, 1);
+		static IntPtr ib = Dlfcn.dlopen (Constants.IOBluetoothLibrary, 1);
+		static IntPtr ibui = Dlfcn.dlopen (Constants.IOBluetoothUILibrary, 1);
+		static IntPtr cb = Dlfcn.dlopen (Constants.CoreBluetoothLibrary, 1);
 	}
 }
 

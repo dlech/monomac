@@ -1,0 +1,402 @@
+<Type Name="IOBluetoothDeviceInquiryDelegate" FullName="MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate">
+  <TypeSignature Language="C#" Value="public class IOBluetoothDeviceInquiryDelegate : MonoMac.Foundation.NSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOBluetoothDeviceInquiryDelegate extends MonoMac.Foundation.NSObject" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.Foundation.NSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Model</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Register("IOBluetoothDeviceInquiryDelegate", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The delegate methods for the <see cref="T:MonoMac.IOBluetooth.IOBluetoothDeviceInquiry" /> class.</summary>
+    <remarks>
+      <para>All methods are optional, but it is highly recommended you implement them all. Do NOT invoke remote name requests on found <see cref="T:MonoMac.IOBluetooth.IOBluetoothDevice" /> objects unless the inquiry object has been stopped. Doing so may deadlock your process.</para>
+      <format type="text/html">
+        <h2 class="jump zMethodsByTask_Name">Tasks</h2>
+      </format>
+      <format type="text/html">
+        <h3 class="tasks">Miscellaneous</h3>
+      </format>
+      <list type="bullet">
+        <item>
+          <term>
+            <c>
+              <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate.Completed(MonoMac.IOBluetooth.IOBluetoothDeviceInquiry,MonoMac.IOKit.IOReturn,System.Boolean)" />
+            </c>
+          </term>
+        </item>
+        <item>
+          <term>
+            <c>
+              <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate.DeviceFound(MonoMac.IOBluetooth.IOBluetoothDeviceInquiry,MonoMac.IOBluetooth.IOBluetoothDevice)" />
+            </c>
+          </term>
+        </item>
+        <item>
+          <term>
+            <c>
+              <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate.DeviceNameUpdated(MonoMac.IOBluetooth.IOBluetoothDeviceInquiry,MonoMac.IOBluetooth.IOBluetoothDevice,System.UInt32)" />
+            </c>
+          </term>
+        </item>
+        <item>
+          <term>
+            <c>
+              <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate.Started(MonoMac.IOBluetooth.IOBluetoothDeviceInquiry)" />
+            </c>
+          </term>
+        </item>
+        <item>
+          <term>
+            <c>
+              <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate.UpdatingDeviceNamesStarted(MonoMac.IOBluetooth.IOBluetoothDeviceInquiry,System.UInt32)" />
+            </c>
+          </term>
+        </item>
+      </list>
+      <format type="text/html">
+        <h2 class="jump">Instance Methods</h2>
+      </format>
+      <format type="text/html">
+        <h3 class="jump instanceMethod">deviceInquiryComplete:error:aborted:</h3>
+      </format>
+      <para />- (void) deviceInquiryComplete:(<format type="text/html"><a href="http://developer.apple.com/iphone/library/documentation/IOBluetooth/Reference/IOBluetoothDeviceInquiry_reference/translated_content/IOBluetoothDeviceInquiry.html#/apple_ref/doc/c_ref/IOBluetoothDeviceInquiry">IOBluetoothDeviceInquiry</a></format>*)<i>sender</i> 
+ error:(<!--a   -->IOReturn<!--/a -->)<i>error</i> aborted:(BOOL)aborted; <format type="text/html"><h5>Parameters</h5></format><format type="text/html"><dl class="termdef"><dt><i>sender</i></dt><dd><para>Inquiry object that sent this delegate message.</para></dd><dt><i>error</i></dt><dd><para>Error code. kIOReturnSuccess if the inquiry completed without incident.</para></dd><dt><i>aborted</i></dt><dd><para>TRUE if user called -stop on the inquiry.</para></dd></dl></format><format type="text/html"><h5>Discussion</h5></format><para>When the inquiry is completely stopped, this delegate method will be invoked. It will supply an error code value, kIOReturnSuccess if the inquiry stopped without problem, otherwise a non-kIOReturnSuccess error code will be supplied.</para><format type="text/html"><h5>Availability</h5></format><list type="bullet"><item><term>Available in OS X v10.4 and later.</term></item><item><term>Available as part of an informal protocol prior to OS X v10.7.</term></item></list><format type="text/html"><h5>See Also</h5></format><list type="bullet"><item><term><c><!--a target="_self"  -->deviceInquiryComplete<!--/a --></c></term></item></list><format type="text/html"><h5>Declared In</h5></format><c>IOBluetoothDeviceInquiry.h</c><format type="text/html"><h3 class="jump instanceMethod">deviceInquiryDeviceFound:device:</h3></format><para />- (void) deviceInquiryDeviceFound:(<format type="text/html"><a href="http://developer.apple.com/iphone/library/documentation/IOBluetooth/Reference/IOBluetoothDeviceInquiry_reference/translated_content/IOBluetoothDeviceInquiry.html#/apple_ref/doc/c_ref/IOBluetoothDeviceInquiry">IOBluetoothDeviceInquiry</a></format>*)<i>sender</i> 
+ device:(<format type="text/html"><a href="http://developer.apple.com/iphone/library/documentation/IOBluetooth/Reference/IOBluetoothDevice_reference/translated_content/IOBluetoothDevice.html#/apple_ref/doc/c_ref/IOBluetoothDevice">IOBluetoothDevice</a></format>*)device; <format type="text/html"><h5>Parameters</h5></format><format type="text/html"><dl class="termdef"><dt><i>sender</i></dt><dd><para>Inquiry object that sent this delegate message.</para></dd><dt><i>device</i></dt><dd><para>IOBluetoothDevice that was found.</para></dd></dl></format><format type="text/html"><h5>Discussion</h5></format><para>A new device has been found. You do not need to retain the device - it will be held in the internal storage of the inquiry, and can be accessed later using -foundDevices.</para><format type="text/html"><h5>Availability</h5></format><list type="bullet"><item><term>Available in OS X v10.4 and later.</term></item><item><term>Available as part of an informal protocol prior to OS X v10.7.</term></item></list><format type="text/html"><h5>See Also</h5></format><list type="bullet"><item><term><c><!--a target="_self"  -->deviceInquiryDeviceFound<!--/a --></c></term></item></list><format type="text/html"><h5>Declared In</h5></format><c>IOBluetoothDeviceInquiry.h</c><format type="text/html"><h3 class="jump instanceMethod">deviceInquiryDeviceNameUpdated:device:devicesRemaining:</h3></format><para />- (void) deviceInquiryDeviceNameUpdated:(<format type="text/html"><a href="http://developer.apple.com/iphone/library/documentation/IOBluetooth/Reference/IOBluetoothDeviceInquiry_reference/translated_content/IOBluetoothDeviceInquiry.html#/apple_ref/doc/c_ref/IOBluetoothDeviceInquiry">IOBluetoothDeviceInquiry</a></format>*)<i>sender</i> 
+ device:(<format type="text/html"><a href="http://developer.apple.com/iphone/library/documentation/IOBluetooth/Reference/IOBluetoothDevice_reference/translated_content/IOBluetoothDevice.html#/apple_ref/doc/c_ref/IOBluetoothDevice">IOBluetoothDevice</a></format>*)<i>device</i> devicesRemaining:(uint32_t)devicesRemaining; <format type="text/html"><h5>Parameters</h5></format><format type="text/html"><dl class="termdef"><dt><i>sender</i></dt><dd><para>Inquiry object that sent this delegate message.</para></dd><dt><i>device</i></dt><dd><para>IOBluetoothDevice that was updated.</para></dd><dt><i>devicesRemaining</i></dt><dd><para>Number of devices remaining to update.</para></dd></dl></format><format type="text/html"><h5>Discussion</h5></format><para>A device name has been retrieved. Also indicates how many devices are left to be updated.</para><format type="text/html"><h5>Availability</h5></format><list type="bullet"><item><term>Available in OS X v10.4 and later.</term></item><item><term>Available as part of an informal protocol prior to OS X v10.7.</term></item></list><format type="text/html"><h5>See Also</h5></format><list type="bullet"><item><term><c><!--a target="_self"  -->deviceInquiryDeviceNameUpdated<!--/a --></c></term></item></list><format type="text/html"><h5>Declared In</h5></format><c>IOBluetoothDeviceInquiry.h</c><format type="text/html"><h3 class="jump instanceMethod">deviceInquiryStarted:</h3></format><para />- (void) deviceInquiryStarted:(<format type="text/html"><a href="http://developer.apple.com/iphone/library/documentation/IOBluetooth/Reference/IOBluetoothDeviceInquiry_reference/translated_content/IOBluetoothDeviceInquiry.html#/apple_ref/doc/c_ref/IOBluetoothDeviceInquiry">IOBluetoothDeviceInquiry</a></format>*)sender; <format type="text/html"><h5>Parameters</h5></format><format type="text/html"><dl class="termdef"><dt><i>sender</i></dt><dd><para>Inquiry object that sent this delegate message.</para></dd></dl></format><format type="text/html"><h5>Discussion</h5></format><para>This message will be delivered when the inquiry actually starts. Since the inquiry could be throttled, this message may not be received immediately after called -start.</para><format type="text/html"><h5>Availability</h5></format><list type="bullet"><item><term>Available in OS X v10.4 and later.</term></item><item><term>Available as part of an informal protocol prior to OS X v10.7.</term></item></list><format type="text/html"><h5>Declared In</h5></format><c>IOBluetoothDeviceInquiry.h</c><format type="text/html"><h3 class="jump instanceMethod">deviceInquiryUpdatingDeviceNamesStarted:devicesRemaining:</h3></format><para />- (void) deviceInquiryUpdatingDeviceNamesStarted:(<format type="text/html"><a href="http://developer.apple.com/iphone/library/documentation/IOBluetooth/Reference/IOBluetoothDeviceInquiry_reference/translated_content/IOBluetoothDeviceInquiry.html#/apple_ref/doc/c_ref/IOBluetoothDeviceInquiry">IOBluetoothDeviceInquiry</a></format>*)<i>sender</i> 
+ devicesRemaining:(uint32_t)devicesRemaining; <format type="text/html"><h5>Parameters</h5></format><format type="text/html"><dl class="termdef"><dt><i>sender</i></dt><dd><para>Inquiry object that sent this delegate message.</para></dd><dt><i>devicesRemaining</i></dt><dd><para>Number of devices remaining to update.</para></dd></dl></format><format type="text/html"><h5>Discussion</h5></format><para>The inquiry has begun updating device names that were found during the search.</para><format type="text/html"><h5>Availability</h5></format><list type="bullet"><item><term>Available in OS X v10.4 and later.</term></item><item><term>Available as part of an informal protocol prior to OS X v10.7.</term></item></list><format type="text/html"><h5>See Also</h5></format><list type="bullet"><item><term><c><!--a target="_self"  -->deviceInquiryUpdatingDeviceNamesStarted<!--/a --></c></term></item></list><format type="text/html"><h5>Declared In</h5></format><c>IOBluetoothDeviceInquiry.h</c></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDeviceInquiryDelegate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDeviceInquiryDelegate (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithCoder:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDeviceInquiryDelegate (MonoMac.Foundation.NSObjectFlag t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="t" Type="MonoMac.Foundation.NSObjectFlag" />
+      </Parameters>
+      <Docs>
+        <param name="t">Unused sentinel value, pass NSObjectFlag.Empty.</param>
+        <summary>Constructor to call on derived classes when the derived class has an [Export] constructor.</summary>
+        <remarks>
+          <para>This constructor should be called by derived classes when they are initialized using an [Export] attribute. The argument value is ignore, typically the chaining would look like this:</para>
+          <example>
+            <code lang="C#">
+public class MyClass : BaseClass {
+    [Export ("initWithFoo:")]
+    public MyClass (string foo) : base (NSObjectFlag.Empty)
+    {
+        ...
+    }
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDeviceInquiryDelegate (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Pointer (handle) to the unmanaged object.</param>
+        <summary>A constructor used when creating managed representations of unmanaged objects;  Called by the runtime.</summary>
+        <remarks>
+          <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="public virtual void Completed (MonoMac.IOBluetooth.IOBluetoothDeviceInquiry sender, MonoMac.IOKit.IOReturn error, bool aborted);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Completed(class MonoMac.IOBluetooth.IOBluetoothDeviceInquiry sender, valuetype MonoMac.IOKit.IOReturn error, bool aborted) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("deviceInquiryComplete:error:aborted:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="MonoMac.IOBluetooth.IOBluetoothDeviceInquiry" />
+        <Parameter Name="error" Type="MonoMac.IOKit.IOReturn" />
+        <Parameter Name="aborted" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="sender">
+          <format type="text/html">
+            <dd>
+              <para>Inquiry object that sent this delegate message.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="error">
+          <format type="text/html">
+            <dd>
+              <para>Error code. <see cref="F:MonoMac.IOKit.IOReturn.Success" /> if the inquiry completed without incident.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="aborted">
+          <format type="text/html">
+            <dd>
+              <para>
+                <c>true</c> if user called <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceInquiry.Stop" /> on the inquiry.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para />
+        </summary>
+        <remarks>
+          <para>When the inquiry is completely stopped, this delegate method will be invoked. It will supply an error code value, <see cref="F:MonoMac.IOKit.IOReturn.Success" /> if the inquiry stopped without problem, otherwise a non-IOReturn.Success error code will be supplied.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceFound">
+      <MemberSignature Language="C#" Value="public virtual void DeviceFound (MonoMac.IOBluetooth.IOBluetoothDeviceInquiry sender, MonoMac.IOBluetooth.IOBluetoothDevice device);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeviceFound(class MonoMac.IOBluetooth.IOBluetoothDeviceInquiry sender, class MonoMac.IOBluetooth.IOBluetoothDevice device) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("deviceInquiryDeviceFound:device:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="MonoMac.IOBluetooth.IOBluetoothDeviceInquiry" />
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothDevice" />
+      </Parameters>
+      <Docs>
+        <param name="sender">
+          <format type="text/html">
+            <dd>
+              <para>Inquiry object that sent this delegate message.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="device">
+          <format type="text/html">
+            <dd>
+              <para>
+                <see cref="T:MonoMac.IOBluetooth.IOBluetoothDevice" /> that was found.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para />
+        </summary>
+        <remarks>
+          <para>A new device has been found. You do not need to retain a reference to the device - it will be held in the internal storage of the inquiry, and can be accessed later using <see cref="P:MonoMac.IOBluetooth.IOBluetoothDevice.FoundDevices" />.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceNameUpdated">
+      <MemberSignature Language="C#" Value="public virtual void DeviceNameUpdated (MonoMac.IOBluetooth.IOBluetoothDeviceInquiry sender, MonoMac.IOBluetooth.IOBluetoothDevice device, uint devicesRemaining);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeviceNameUpdated(class MonoMac.IOBluetooth.IOBluetoothDeviceInquiry sender, class MonoMac.IOBluetooth.IOBluetoothDevice device, unsigned int32 devicesRemaining) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("deviceInquiryDeviceNameUpdated:device:devicesRemaining:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="MonoMac.IOBluetooth.IOBluetoothDeviceInquiry" />
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothDevice" />
+        <Parameter Name="devicesRemaining" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="sender">
+          <format type="text/html">
+            <dd>
+              <para>Inquiry object that sent this delegate message.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="device">
+          <format type="text/html">
+            <dd>
+              <para>IOBluetoothDevice that was updated.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="devicesRemaining">
+          <format type="text/html">
+            <dd>
+              <para>Number of devices remaining to update.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para />
+        </summary>
+        <remarks>
+          <para>A device name has been retrieved. Also indicates how many devices are left to be updated.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Started">
+      <MemberSignature Language="C#" Value="public virtual void Started (MonoMac.IOBluetooth.IOBluetoothDeviceInquiry sender);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Started(class MonoMac.IOBluetooth.IOBluetoothDeviceInquiry sender) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("deviceInquiryStarted:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="MonoMac.IOBluetooth.IOBluetoothDeviceInquiry" />
+      </Parameters>
+      <Docs>
+        <param name="sender">
+          <format type="text/html">
+            <dd>
+              <para>Inquiry object that sent this delegate message.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para />
+        </summary>
+        <remarks>
+          <para>This message will be delivered when the inquiry actually starts. Since the inquiry could be throttled, this message may not be received immediately after calling <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceInquiry.Start" />.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatingDeviceNamesStarted">
+      <MemberSignature Language="C#" Value="public virtual void UpdatingDeviceNamesStarted (MonoMac.IOBluetooth.IOBluetoothDeviceInquiry sender, uint devicesRemaining);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdatingDeviceNamesStarted(class MonoMac.IOBluetooth.IOBluetoothDeviceInquiry sender, unsigned int32 devicesRemaining) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("deviceInquiryUpdatingDeviceNamesStarted:devicesRemaining:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="MonoMac.IOBluetooth.IOBluetoothDeviceInquiry" />
+        <Parameter Name="devicesRemaining" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="sender">
+          <format type="text/html">
+            <dd>
+              <para>Inquiry object that sent this delegate message.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="devicesRemaining">
+          <format type="text/html">
+            <dd>
+              <para>Number of devices remaining to update.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para />
+        </summary>
+        <remarks>
+          <para>The inquiry has begun updating device names that were found during the search.</para>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

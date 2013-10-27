@@ -1,0 +1,707 @@
+<Type Name="IOUSBInterface" FullName="MonoMac.IOKit.USB.IOUSBInterface">
+  <TypeSignature Language="C#" Value="public class IOUSBInterface : MonoMac.IOKit.USB.IOUSBNub" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOUSBInterface extends MonoMac.IOKit.USB.IOUSBNub" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.IOKit.USB.IOUSBNub</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AlternateSetting">
+      <MemberSignature Language="C#" Value="public int AlternateSetting { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AlternateSetting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncEventSource">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreFoundation.CFRunLoopSource AsyncEventSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.CoreFoundation.CFRunLoopSource AsyncEventSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.CFRunLoopSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncPort">
+      <MemberSignature Language="C#" Value="public MonoMac.Kernel.Mach.Port AsyncPort { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Kernel.Mach.Port AsyncPort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.Port</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BandwidthAvailible">
+      <MemberSignature Language="C#" Value="public uint BandwidthAvailible { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 BandwidthAvailible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(2, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.InterfaceClass Class { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOKit.USB.InterfaceClass Class" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.InterfaceClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationValue">
+      <MemberSignature Language="C#" Value="public int ConfigurationValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ConfigurationValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAsyncEventSource">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreFoundation.CFRunLoopSource CreateAsyncEventSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.CoreFoundation.CFRunLoopSource CreateAsyncEventSource() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.CFRunLoopSource</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAsyncPort">
+      <MemberSignature Language="C#" Value="public MonoMac.Kernel.Mach.Port CreateAsyncPort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.Kernel.Mach.Port CreateAsyncPort() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.Port</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPipe">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.IOUSBInterface.Pipe DefaultPipe { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOKit.USB.IOUSBInterface/Pipe DefaultPipe" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.IOUSBInterface+Pipe</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Device">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.IOUSBDevice Device { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOKit.USB.IOUSBDevice Device" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.IOUSBDevice</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <para>If set to <see langword="true" />, the method is invoked directly and will dispose manage and unmanaged resources;   If set to <see langword="false" /> the method is being called by the garbage collector finalizer and should only release unmanaged resources.</para>
+        </param>
+        <summary>Releases the resources used by the IOUSBInterface object.</summary>
+        <remarks>
+          <para>This Dispose method releases the resources used by the IOUSBInterface class.</para>
+          <para>This method is called by both the Dispose() method and the object finalizer (Finalize).    When invoked by the Dispose method, the parameter disposting <paramref name="disposing" /> is set to <see langword="true" /> and any managed object references that this object holds are also disposed or released;  when invoked by the object finalizer, on the finalizer thread the value is set to <see langword="false" />. </para>
+          <para>Calling the Dispose method when you are finished using the IOUSBInterface ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.</para>
+          <para>  For more information on how to override this method and on the Dispose/IDisposable pattern, read the ``Implementing a Dispose Method'' document at http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointCount">
+      <MemberSignature Language="C#" Value="public int EndpointCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EndpointCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindFirstAlternateInterface">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.IIOUSBDescriptor FindFirstAlternateInterface (MonoMac.IOKit.USB.IOUSBFindInterfaceRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.USB.IIOUSBDescriptor FindFirstAlternateInterface(valuetype MonoMac.IOKit.USB.IOUSBFindInterfaceRequest request) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(4, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.IIOUSBDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="MonoMac.IOKit.USB.IOUSBFindInterfaceRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindFirstAssociatedDescriptor">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.IIOUSBDescriptor FindFirstAssociatedDescriptor (MonoMac.IOKit.USB.DescriptorType type = MonoMac.IOKit.USB.DescriptorType.Any);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.USB.IIOUSBDescriptor FindFirstAssociatedDescriptor(valuetype MonoMac.IOKit.USB.DescriptorType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(4, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.IIOUSBDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="MonoMac.IOKit.USB.DescriptorType" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindNextAlternateInterface">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.IIOUSBDescriptor FindNextAlternateInterface (MonoMac.IOKit.USB.IIOUSBDescriptor current, MonoMac.IOKit.USB.IOUSBFindInterfaceRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.USB.IIOUSBDescriptor FindNextAlternateInterface(class MonoMac.IOKit.USB.IIOUSBDescriptor current, valuetype MonoMac.IOKit.USB.IOUSBFindInterfaceRequest request) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(4, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.IIOUSBDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="current" Type="MonoMac.IOKit.USB.IIOUSBDescriptor" />
+        <Parameter Name="request" Type="MonoMac.IOKit.USB.IOUSBFindInterfaceRequest" />
+      </Parameters>
+      <Docs>
+        <param name="current">To be added.</param>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindNextAssociatedDescriptor">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.IIOUSBDescriptor FindNextAssociatedDescriptor (MonoMac.IOKit.USB.IIOUSBDescriptor current, MonoMac.IOKit.USB.DescriptorType type = MonoMac.IOKit.USB.DescriptorType.Any);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.USB.IIOUSBDescriptor FindNextAssociatedDescriptor(class MonoMac.IOKit.USB.IIOUSBDescriptor current, valuetype MonoMac.IOKit.USB.DescriptorType type) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(4, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.IIOUSBDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="current" Type="MonoMac.IOKit.USB.IIOUSBDescriptor" />
+        <Parameter Name="type" Type="MonoMac.IOKit.USB.DescriptorType" />
+      </Parameters>
+      <Docs>
+        <param name="current">To be added.</param>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameListTime">
+      <MemberSignature Language="C#" Value="public uint FrameListTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 FrameListTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(2, 5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBusFrameNumber">
+      <MemberSignature Language="C#" Value="public ulong GetBusFrameNumber (out ulong atTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int64 GetBusFrameNumber(unsigned int64 atTime) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="atTime" Type="System.UInt64&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="atTime">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBusFrameNumberWithTime">
+      <MemberSignature Language="C#" Value="public ulong GetBusFrameNumberWithTime (out ulong atTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int64 GetBusFrameNumberWithTime(unsigned int64 atTime) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(5, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="atTime" Type="System.UInt64&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="atTime">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBusMicroFrameNumber">
+      <MemberSignature Language="C#" Value="public ulong GetBusMicroFrameNumber (out ulong atTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int64 GetBusMicroFrameNumber(unsigned int64 atTime) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(2, 5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="atTime" Type="System.UInt64&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="atTime">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEndpointProperties">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.EndpointProperties GetEndpointProperties (byte alternateSetting, byte endpoint, MonoMac.IOKit.USB.EndpointDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.IOKit.USB.EndpointProperties GetEndpointProperties(unsigned int8 alternateSetting, unsigned int8 endpoint, valuetype MonoMac.IOKit.USB.EndpointDirection direction) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(2, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.EndpointProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="alternateSetting" Type="System.Byte" />
+        <Parameter Name="endpoint" Type="System.Byte" />
+        <Parameter Name="direction" Type="MonoMac.IOKit.USB.EndpointDirection" />
+      </Parameters>
+      <Docs>
+        <param name="alternateSetting">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <param name="direction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEndpointPropertiesV3">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.IOUSBEndpointProperties GetEndpointPropertiesV3 (byte alternateSetting, MonoMac.IOKit.USB.EndpointDirection diretion, byte endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype MonoMac.IOKit.USB.IOUSBEndpointProperties GetEndpointPropertiesV3(unsigned int8 alternateSetting, valuetype MonoMac.IOKit.USB.EndpointDirection diretion, unsigned int8 endpoint) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(8, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.IOUSBEndpointProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="alternateSetting" Type="System.Byte" />
+        <Parameter Name="diretion" Type="MonoMac.IOKit.USB.EndpointDirection" />
+        <Parameter Name="endpoint" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="alternateSetting">To be added.</param>
+        <param name="diretion">To be added.</param>
+        <param name="endpoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterfaceNumber">
+      <MemberSignature Language="C#" Value="public int InterfaceNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 InterfaceNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOUSBFamilyVersion">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.NumVersion IOUSBFamilyVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOKit.USB.NumVersion IOUSBFamilyVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(2, 5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.NumVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOUSBLibVersion">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.NumVersion IOUSBLibVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOKit.USB.NumVersion IOUSBLibVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(2, 5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.NumVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocationID">
+      <MemberSignature Language="C#" Value="public uint LocationID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 LocationID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Open() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenSeize">
+      <MemberSignature Language="C#" Value="public void OpenSeize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OpenSeize() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(1, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pipes">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.IOUSBInterface.Pipe this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOKit.USB.IOUSBInterface/Pipe Pipes(int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.IOUSBInterface+Pipe</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProductId">
+      <MemberSignature Language="C#" Value="public ushort ProductId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 ProductId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Protocol">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.InterfaceProtocol Protocol { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOKit.USB.InterfaceProtocol Protocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.InterfaceProtocol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseNumber">
+      <MemberSignature Language="C#" Value="public ushort ReleaseNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 ReleaseNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubClass">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.InterfaceSubClass SubClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOKit.USB.InterfaceSubClass SubClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.InterfaceSubClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VendorId">
+      <MemberSignature Language="C#" Value="public ushort VendorId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 VendorId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

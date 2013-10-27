@@ -1,0 +1,26 @@
+<Type Name="IOService+InterestCallback" FullName="MonoMac.IOKit.IOService+InterestCallback">
+  <TypeSignature Language="C#" Value="public delegate void IOService.InterestCallback(IOService service, uint messageType, IntPtr messageArgument);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed IOService/InterestCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="service" Type="MonoMac.IOKit.IOService" />
+    <Parameter Name="messageType" Type="System.UInt32" />
+    <Parameter Name="messageArgument" Type="System.IntPtr" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="service">To be added.</param>
+    <param name="messageType">To be added.</param>
+    <param name="messageArgument">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

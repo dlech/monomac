@@ -1,0 +1,248 @@
+<Type Name="DeviceInformation" FullName="MonoMac.IOKit.USB.DeviceInformation">
+  <TypeSignature Language="C#" Value="public enum DeviceInformation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeviceInformation extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+           Device information flags. Used by <see cref="P:MonoMac.IOKit.IOUSBDevice.DeviceInformation" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsAttachedToEnclosure">
+      <MemberSignature Language="C#" Value="IsAttachedToEnclosure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation IsAttachedToEnclosure = unsigned int32(4096)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The hub port to which the USB device is connected has a USB connector on the enclosure
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAttachedToRootHubMask">
+      <MemberSignature Language="C#" Value="IsAttachedToRootHubMask" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation IsAttachedToRootHubMask = unsigned int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The USB device is directly attached to the root hub
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCaptive">
+      <MemberSignature Language="C#" Value="IsCaptive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation IsCaptive = unsigned int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The USB device is directly attached to its hub and cannot be removed.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConnected">
+      <MemberSignature Language="C#" Value="IsConnected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation IsConnected = unsigned int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The USB device is connected to its hub
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="IsEnabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation IsEnabled = unsigned int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The hub port to which the USB device is attached is enabled
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInReset">
+      <MemberSignature Language="C#" Value="IsInReset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation IsInReset = unsigned int32(64)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The hub port to which the USB device is attached is being reset
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInternal">
+      <MemberSignature Language="C#" Value="IsInternal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation IsInternal = unsigned int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The USB device is internal to the enclosure (all the hubs it attaches to are captive)
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOnThunderbolt">
+      <MemberSignature Language="C#" Value="IsOnThunderbolt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation IsOnThunderbolt = unsigned int32(8192)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The USB device is downstream of a controller that is attached through Thunderbolt
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRemote">
+      <MemberSignature Language="C#" Value="IsRemote" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation IsRemote = unsigned int32(2048)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               This device is "attached" to the controller through a remote connection
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRootHub">
+      <MemberSignature Language="C#" Value="IsRootHub" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation IsRootHub = unsigned int32(512)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The device is the root hub simulation
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSuspended">
+      <MemberSignature Language="C#" Value="IsSuspended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation IsSuspended = unsigned int32(32)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The hub port to which the USB device is attached is suspended
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Overcurrent">
+      <MemberSignature Language="C#" Value="Overcurrent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation Overcurrent = unsigned int32(128)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The USB device generated an overcurrent
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PortIsInTestMode">
+      <MemberSignature Language="C#" Value="PortIsInTestMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation PortIsInTestMode = unsigned int32(256)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               The hub port to which the USB device is attached is in test mode
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootHubIsBuiltIn">
+      <MemberSignature Language="C#" Value="RootHubIsBuiltIn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.DeviceInformation RootHubIsBuiltIn = unsigned int32(1024)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.DeviceInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               If this is a root hub simulation and it's built into the enclosure, this bit is set.
+               If it's on an expansion card, it will be cleared
+               </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

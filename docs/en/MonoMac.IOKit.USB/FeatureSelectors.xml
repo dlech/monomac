@@ -1,0 +1,117 @@
+<Type Name="FeatureSelectors" FullName="MonoMac.IOKit.USB.FeatureSelectors">
+  <TypeSignature Language="C#" Value="public enum FeatureSelectors" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FeatureSelectors extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+           Used with SET/CLEAR_FEATURE requests.
+        </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeviceRemoteWakeup">
+      <MemberSignature Language="C#" Value="DeviceRemoteWakeup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.FeatureSelectors DeviceRemoteWakeup = unsigned int8(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Applies to Device.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointStall">
+      <MemberSignature Language="C#" Value="EndpointStall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.FeatureSelectors EndpointStall = unsigned int8(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Applies to Endpoint.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FunctionSuspend">
+      <MemberSignature Language="C#" Value="FunctionSuspend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.FeatureSelectors FunctionSuspend = unsigned int8(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LTMEnable">
+      <MemberSignature Language="C#" Value="LTMEnable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.FeatureSelectors LTMEnable = unsigned int8(50)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Applies to Device.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TestMode">
+      <MemberSignature Language="C#" Value="TestMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.FeatureSelectors TestMode = unsigned int8(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Applies to Interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="U1Enable">
+      <MemberSignature Language="C#" Value="U1Enable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.FeatureSelectors U1Enable = unsigned int8(48)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Applies to Device.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="U2Enable">
+      <MemberSignature Language="C#" Value="U2Enable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.USB.FeatureSelectors U2Enable = unsigned int8(49)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.FeatureSelectors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Applies to Device.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

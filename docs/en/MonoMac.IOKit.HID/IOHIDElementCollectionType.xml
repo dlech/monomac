@@ -1,0 +1,135 @@
+<Type Name="IOHIDElementCollectionType" FullName="MonoMac.IOKit.HID.IOHIDElementCollectionType">
+  <TypeSignature Language="C#" Value="public enum IOHIDElementCollectionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOHIDElementCollectionType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+           Describes different types of HID collections.
+           </summary>
+    <remarks>
+           Collections identify a relationship between two or more
+           elements.
+           </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="Application" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementCollectionType Application = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Identifies item groups serving different purposes in a single device.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Logical">
+      <MemberSignature Language="C#" Value="Logical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementCollectionType Logical = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Used when a set of data items form a composite data structure.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NamedArray">
+      <MemberSignature Language="C#" Value="NamedArray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementCollectionType NamedArray = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Contains an array of selector usages.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Physical">
+      <MemberSignature Language="C#" Value="Physical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementCollectionType Physical = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Used for a set of data items that represent data points
+               collected at one geometric point.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Report">
+      <MemberSignature Language="C#" Value="Report" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementCollectionType Report = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Wraps all the fields in a report.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UsageModifier">
+      <MemberSignature Language="C#" Value="UsageModifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementCollectionType UsageModifier = int32(6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Modifies the meaning of the usage attached to the encompassing collection.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UsageSwitch">
+      <MemberSignature Language="C#" Value="UsageSwitch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementCollectionType UsageSwitch = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Modifies the meaning of the usage it contains.
+               </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

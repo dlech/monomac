@@ -13845,7 +13845,7 @@ namespace MonoMac.AppKit {
 		IntPtr Constructor (NSObject modelObject);
 
 		[Export ("representedObject")]
-		NSTreeNode RepresentedObject { get; }
+		NSObject RepresentedObject { get; }
 
 		[Export ("indexPath")]
 		NSIndexPath IndexPath { get; }
@@ -13891,7 +13891,7 @@ namespace MonoMac.AppKit {
 		NSSortDescriptor [] SortDescriptors { get; set; }
 
 		[Export ("content")]
-		NSTreeController Content { get; set; }
+		NSObject Content { get; set; }
 
 		[Export ("add:")]
 		void Add (NSObject sender);

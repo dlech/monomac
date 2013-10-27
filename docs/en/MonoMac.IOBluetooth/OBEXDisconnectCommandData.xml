@@ -1,0 +1,17 @@
+<Type Name="OBEXDisconnectCommandData" FullName="MonoMac.IOBluetooth.OBEXDisconnectCommandData">
+  <TypeSignature Language="C#" Value="public struct OBEXDisconnectCommandData" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit OBEXDisconnectCommandData extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

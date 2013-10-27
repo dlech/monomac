@@ -1,0 +1,58 @@
+<Type Name="DeviceClassMinorExtension" FullName="MonoMac.IOBluetooth.DeviceClassMinorExtension">
+  <TypeSignature Language="C#" Value="public static class DeviceClassMinorExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DeviceClassMinorExtension extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetPeripheral1">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.BluetoothDeviceClassMinor GetPeripheral1 (this MonoMac.IOBluetooth.BluetoothDeviceClassMinor minorClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMinor GetPeripheral1(valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMinor minorClass) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceClassMinor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="minorClass" Type="MonoMac.IOBluetooth.BluetoothDeviceClassMinor" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="minorClass">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPeripheral2">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.BluetoothDeviceClassMinor GetPeripheral2 (this MonoMac.IOBluetooth.BluetoothDeviceClassMinor minorClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMinor GetPeripheral2(valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMinor minorClass) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceClassMinor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="minorClass" Type="MonoMac.IOBluetooth.BluetoothDeviceClassMinor" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="minorClass">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

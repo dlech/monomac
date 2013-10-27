@@ -1,0 +1,410 @@
+<Type Name="IOBluetoothSDPServiceAttribute" FullName="MonoMac.IOBluetooth.IOBluetoothSDPServiceAttribute">
+  <TypeSignature Language="C#" Value="public class IOBluetoothSDPServiceAttribute : MonoMac.Foundation.NSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOBluetoothSDPServiceAttribute extends MonoMac.Foundation.NSObject" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.Foundation.NSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Register("IOBluetoothSDPServiceAttribute", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>IOBluetoothSDPServiceAttribute represents a single SDP service attribute.</summary>
+    <remarks>
+      <para>IOBluetoothSDPServiceAttribute represents a single SDP service attribute.</para>
+      <para>A service attribute contains two components: an attribute ID and a data element.</para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPServiceAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPServiceAttribute (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithCoder:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPServiceAttribute (MonoMac.Foundation.NSObjectFlag t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="t" Type="MonoMac.Foundation.NSObjectFlag" />
+      </Parameters>
+      <Docs>
+        <param name="t">Unused sentinel value, pass NSObjectFlag.Empty.</param>
+        <summary>Constructor to call on derived classes when the derived class has an [Export] constructor.</summary>
+        <remarks>
+          <para>This constructor should be called by derived classes when they are initialized using an [Export] attribute. The argument value is ignore, typically the chaining would look like this:</para>
+          <example>
+            <code lang="C#">
+public class MyClass : BaseClass {
+    [Export ("initWithFoo:")]
+    public MyClass (string foo) : base (NSObjectFlag.Empty)
+    {
+        ...
+    }
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPServiceAttribute (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Pointer (handle) to the unmanaged object.</param>
+        <summary>A constructor used when creating managed representations of unmanaged objects;  Called by the runtime.</summary>
+        <remarks>
+          <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPServiceAttribute (ushort newAttributeID, MonoMac.Foundation.NSObject attributeElementValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int16 newAttributeID, class MonoMac.Foundation.NSObject attributeElementValue) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithID:attributeElementValue:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="newAttributeID" Type="System.UInt16" />
+        <Parameter Name="attributeElementValue" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="newAttributeID">
+          <format type="text/html">
+            <dd>
+              <para>The attribute ID of the new service attribute.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="attributeElementValue">
+          <format type="text/html">
+            <dd>
+              <para>The data element value of the new service attribute</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initializes a new service attribute with the given ID and element value.</para>
+        </summary>
+        <remarks>
+          <para>See +[IOBluetoothSDPDataElement withElementValue:] for a description of the types that may be passed in as the attributeElementValue.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPServiceAttribute (ushort newAttributeID, MonoMac.IOBluetooth.IOBluetoothSDPDataElement attributeElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int16 newAttributeID, class MonoMac.IOBluetooth.IOBluetoothSDPDataElement attributeElement) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithID:attributeElement:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="newAttributeID" Type="System.UInt16" />
+        <Parameter Name="attributeElement" Type="MonoMac.IOBluetooth.IOBluetoothSDPDataElement" />
+      </Parameters>
+      <Docs>
+        <param name="newAttributeID">
+          <format type="text/html">
+            <dd>
+              <para>The attribute ID of the new service attribute.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="attributeElement">
+          <format type="text/html">
+            <dd>
+              <para>The data element of the new service attribute.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initializes a new service attribute with the given ID and data element.</para>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeID">
+      <MemberSignature Language="C#" Value="public virtual ushort AttributeID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 AttributeID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getAttributeID")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Returns the attribute ID for the target service attribute.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassHandle">
+      <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The handle for this class.</summary>
+        <value>The pointer to the Objective-C class.</value>
+        <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataElement">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothSDPDataElement DataElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothSDPDataElement DataElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getDataElement")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPDataElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Returns the data element for the target service attribute.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <para>If set to <see langword="true" />, the method is invoked directly and will dispose manage and unmanaged resources;   If set to <see langword="false" /> the method is being called by the garbage collector finalizer and should only release unmanaged resources.</para>
+        </param>
+        <summary>Releases the resources used by the IOBluetoothSDPServiceAttribute object.</summary>
+        <remarks>
+          <para>This Dispose method releases the resources used by the IOBluetoothSDPServiceAttribute class.</para>
+          <para>This method is called by both the Dispose() method and the object finalizer (Finalize).    When invoked by the Dispose method, the parameter disposting <paramref name="disposing" /> is set to <see langword="true" /> and any managed object references that this object holds are also disposed or released;  when invoked by the object finalizer, on the finalizer thread the value is set to <see langword="false" />. </para>
+          <para>Calling the Dispose method when you are finished using the IOBluetoothSDPServiceAttribute ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.</para>
+          <para>  For more information on how to override this method and on the Dispose/IDisposable pattern, read the ``Implementing a Dispose Method'' document at http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttributeWithID">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothSDPServiceAttribute GetAttributeWithID (ushort newAttributeID, MonoMac.Foundation.NSObject attributeElementValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothSDPServiceAttribute GetAttributeWithID(unsigned int16 newAttributeID, class MonoMac.Foundation.NSObject attributeElementValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("withID:attributeElementValue:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newAttributeID" Type="System.UInt16" />
+        <Parameter Name="attributeElementValue" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="newAttributeID">
+          <format type="text/html">
+            <dd>
+              <para>The attribute ID of the new service attribute.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="attributeElementValue">
+          <format type="text/html">
+            <dd>
+              <para>The data element value of the new service attribute</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a new service attribute with the given ID and element value.</para>
+        </summary>
+        <returns>
+          <para>Returns the newly allocated service attribute object. Returns nil if there was an error parsing the element value. The returned IOBluetoothSDPDataElement object has been autoreleased, so it is not necessary for the caller to release it. If the object is to be referenced and kept around, retain should be called.</para>
+        </returns>
+        <remarks>
+          <para>See +[IOBluetoothSDPDataElement withElementValue:] for a description of the types that may be passed in as the attributeElementValue.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttributeWithID">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothSDPServiceAttribute GetAttributeWithID (ushort newAttributeID, MonoMac.IOBluetooth.IOBluetoothSDPDataElement attributeElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothSDPServiceAttribute GetAttributeWithID(unsigned int16 newAttributeID, class MonoMac.IOBluetooth.IOBluetoothSDPDataElement attributeElement) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("withID:attributeElement:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newAttributeID" Type="System.UInt16" />
+        <Parameter Name="attributeElement" Type="MonoMac.IOBluetooth.IOBluetoothSDPDataElement" />
+      </Parameters>
+      <Docs>
+        <param name="newAttributeID">
+          <format type="text/html">
+            <dd>
+              <para>The attribute ID of the new service attribute.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="attributeElement">
+          <format type="text/html">
+            <dd>
+              <para>The data element of the new service attribute.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a new service attribute with the given ID and data element.</para>
+        </summary>
+        <returns>
+          <para>Returns the newly allocated service attribute object. Returns nil if there was an error. The returned IOBluetoothSDPDataElement object has been autoreleased, so it is not necessary for the caller to release it. If the object is to be referenced and kept around, retain should be called.</para>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IDDataElement">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothSDPDataElement IDDataElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothSDPDataElement IDDataElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getIDDataElement")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPDataElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Returns the data element representing the attribute ID for the target service attribute.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

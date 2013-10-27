@@ -1,0 +1,86 @@
+<Type Name="CBCentralManagerPeripheralDiscoveryEventArgs" FullName="MonoMac.CoreBluetooth.CBCentralManagerPeripheralDiscoveryEventArgs">
+  <TypeSignature Language="C#" Value="public class CBCentralManagerPeripheralDiscoveryEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CBCentralManagerPeripheralDiscoveryEventArgs extends System.EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CBCentralManagerPeripheralDiscoveryEventArgs (MonoMac.CoreBluetooth.CBPeripheral peripheral, MonoMac.Foundation.NSDictionary advertisementData, MonoMac.Foundation.NSNumber RSSI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.CoreBluetooth.CBPeripheral peripheral, class MonoMac.Foundation.NSDictionary advertisementData, class MonoMac.Foundation.NSNumber RSSI) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="peripheral" Type="MonoMac.CoreBluetooth.CBPeripheral" />
+        <Parameter Name="advertisementData" Type="MonoMac.Foundation.NSDictionary" />
+        <Parameter Name="RSSI" Type="MonoMac.Foundation.NSNumber" />
+      </Parameters>
+      <Docs>
+        <param name="peripheral">To be added.</param>
+        <param name="advertisementData">To be added.</param>
+        <param name="RSSI">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvertisementData">
+      <MemberSignature Language="C#" Value="public MonoMac.Foundation.NSDictionary AdvertisementData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSDictionary AdvertisementData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Peripheral">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreBluetooth.CBPeripheral Peripheral { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.CoreBluetooth.CBPeripheral Peripheral" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreBluetooth.CBPeripheral</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RSSI">
+      <MemberSignature Language="C#" Value="public MonoMac.Foundation.NSNumber RSSI { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSNumber RSSI" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

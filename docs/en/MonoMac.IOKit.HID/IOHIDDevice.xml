@@ -1,0 +1,1012 @@
+<Type Name="IOHIDDevice" FullName="MonoMac.IOKit.HID.IOHIDDevice">
+  <TypeSignature Language="C#" Value="public class IOHIDDevice : MonoMac.CoreFoundation.CFType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOHIDDevice extends MonoMac.CoreFoundation.CFType" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.CoreFoundation.CFType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.ObjCRuntime.Since(5, 0)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOHIDDevice (MonoMac.IOKit.IOService service);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.IOKit.IOService service) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="service" Type="MonoMac.IOKit.IOService" />
+      </Parameters>
+      <Docs>
+        <param name="service">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConformsTo">
+      <MemberSignature Language="C#" Value="public bool ConformsTo (uint usagePage, uint usage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ConformsTo(unsigned int32 usagePage, unsigned int32 usage) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="usagePage" Type="System.UInt32" />
+        <Parameter Name="usage" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="usagePage">To be added.</param>
+        <param name="usage">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CountryCodeKey">
+      <MemberSignature Language="C#" Value="public const string CountryCodeKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CountryCodeKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceKeyboardLanguageKey">
+      <MemberSignature Language="C#" Value="public const string DeviceKeyboardLanguageKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DeviceKeyboardLanguageKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceKeyboardStandardTypeKey">
+      <MemberSignature Language="C#" Value="public const string DeviceKeyboardStandardTypeKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DeviceKeyboardStandardTypeKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceUsage">
+      <MemberSignature Language="C#" Value="public uint DeviceUsage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 DeviceUsage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceUsageKey">
+      <MemberSignature Language="C#" Value="public const string DeviceUsageKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DeviceUsageKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceUsagePage">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.HID.UsagePage DeviceUsagePage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOKit.HID.UsagePage DeviceUsagePage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceUsagePageKey">
+      <MemberSignature Language="C#" Value="public const string DeviceUsagePageKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DeviceUsagePageKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceUsagePairsKey">
+      <MemberSignature Language="C#" Value="public const string DeviceUsagePairsKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DeviceUsagePairsKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <para>If set to <see langword="true" />, the method is invoked directly and will dispose manage and unmanaged resources;   If set to <see langword="false" /> the method is being called by the garbage collector finalizer and should only release unmanaged resources.</para>
+        </param>
+        <summary>Releases the resources used by the IOHIDDevice object.</summary>
+        <remarks>
+          <para>This Dispose method releases the resources used by the IOHIDDevice class.</para>
+          <para>This method is called by both the Dispose() method and the object finalizer (Finalize).    When invoked by the Dispose method, the parameter disposting <paramref name="disposing" /> is set to <see langword="true" /> and any managed object references that this object holds are also disposed or released;  when invoked by the object finalizer, on the finalizer thread the value is set to <see langword="false" />. </para>
+          <para>Calling the Dispose method when you are finished using the IOHIDDevice ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.</para>
+          <para>  For more information on how to override this method and on the Dispose/IDisposable pattern, read the ``Implementing a Dispose Method'' document at http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllElements">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.HID.IOHIDElement[] GetAllElements ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.HID.IOHIDElement[] GetAllElements() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElement[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMatchingElements">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.HID.IOHIDElement[] GetMatchingElements (System.Collections.Generic.IDictionary&lt;string,ValueType&gt; matchingDictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.HID.IOHIDElement[] GetMatchingElements(class System.Collections.Generic.IDictionary`2&lt;string, class System.ValueType&gt; matchingDictionary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElement[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matchingDictionary" Type="System.Collections.Generic.IDictionary&lt;System.String,System.ValueType&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="matchingDictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.HID.IOHIDValue GetValue (MonoMac.IOKit.HID.IOHIDElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class MonoMac.IOKit.HID.IOHIDValue GetValue(class MonoMac.IOKit.HID.IOHIDElement element) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDValue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="MonoMac.IOKit.HID.IOHIDElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;MonoMac.IOKit.HID.IOHIDElement,MonoMac.IOKit.HID.IOHIDValue&gt; GetValues (MonoMac.IOKit.HID.IOHIDElement[] elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IDictionary`2&lt;class MonoMac.IOKit.HID.IOHIDElement, class MonoMac.IOKit.HID.IOHIDValue&gt; GetValues(class MonoMac.IOKit.HID.IOHIDElement[] elements) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;MonoMac.IOKit.HID.IOHIDElement,MonoMac.IOKit.HID.IOHIDValue&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elements" Type="MonoMac.IOKit.HID.IOHIDElement[]" />
+      </Parameters>
+      <Docs>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputReportReceived">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;MonoMac.IOKit.HID.IOHIDReportEventArgs&gt; InputReportReceived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class MonoMac.IOKit.HID.IOHIDReportEventArgs&gt; InputReportReceived" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;MonoMac.IOKit.HID.IOHIDReportEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputValueReceived">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;MonoMac.IOKit.HID.IOHIDValueEventArgs&gt; InputValueReceived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class MonoMac.IOKit.HID.IOHIDValueEventArgs&gt; InputValueReceived" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;MonoMac.IOKit.HID.IOHIDValueEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocationIDKey">
+      <MemberSignature Language="C#" Value="public const string LocationIDKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LocationIDKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Manufacturer">
+      <MemberSignature Language="C#" Value="public string Manufacturer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Manufacturer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManufacturerKey">
+      <MemberSignature Language="C#" Value="public const string ManufacturerKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ManufacturerKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxFeatureReportSize">
+      <MemberSignature Language="C#" Value="public int MaxFeatureReportSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxFeatureReportSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxFeatureReportSizeKey">
+      <MemberSignature Language="C#" Value="public const string MaxFeatureReportSizeKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MaxFeatureReportSizeKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxInputReportSize">
+      <MemberSignature Language="C#" Value="public int MaxInputReportSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxInputReportSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxInputReportSizeKey">
+      <MemberSignature Language="C#" Value="public const string MaxInputReportSizeKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MaxInputReportSizeKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxOutputReportSize">
+      <MemberSignature Language="C#" Value="public int MaxOutputReportSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxOutputReportSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxOutputReportSizeKey">
+      <MemberSignature Language="C#" Value="public const string MaxOutputReportSizeKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MaxOutputReportSizeKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open (MonoMac.IOKit.HID.IOHIDOptionsType options = MonoMac.IOKit.HID.IOHIDOptionsType.None);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Open(valuetype MonoMac.IOKit.HID.IOHIDOptionsType options) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="MonoMac.IOKit.HID.IOHIDOptionsType" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimaryUsage">
+      <MemberSignature Language="C#" Value="public uint PrimaryUsage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 PrimaryUsage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimaryUsageKey">
+      <MemberSignature Language="C#" Value="public const string PrimaryUsageKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PrimaryUsageKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimaryUsagePage">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.HID.UsagePage PrimaryUsagePage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOKit.HID.UsagePage PrimaryUsagePage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.UsagePage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimaryUsagePageKey">
+      <MemberSignature Language="C#" Value="public const string PrimaryUsagePageKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PrimaryUsagePageKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Product">
+      <MemberSignature Language="C#" Value="public string Product { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Product" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProductID">
+      <MemberSignature Language="C#" Value="public uint ProductID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 ProductID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProductIDKey">
+      <MemberSignature Language="C#" Value="public const string ProductIDKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ProductIDKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProductKey">
+      <MemberSignature Language="C#" Value="public const string ProductKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ProductKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public MonoMac.Foundation.NSObject this[string key] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSObject Properties(string)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Removed">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;MonoMac.IOKit.IOReturnEventArgs&gt; Removed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class MonoMac.IOKit.IOReturnEventArgs&gt; Removed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;MonoMac.IOKit.IOReturnEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportDescriptorKey">
+      <MemberSignature Language="C#" Value="public const string ReportDescriptorKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ReportDescriptorKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportIntervalKey">
+      <MemberSignature Language="C#" Value="public const string ReportIntervalKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ReportIntervalKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetKey">
+      <MemberSignature Language="C#" Value="public const string ResetKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ResetKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScheduleWithRunLoop">
+      <MemberSignature Language="C#" Value="public void ScheduleWithRunLoop (MonoMac.CoreFoundation.CFRunLoop runLoop, MonoMac.Foundation.NSString runLoopMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScheduleWithRunLoop(class MonoMac.CoreFoundation.CFRunLoop runLoop, class MonoMac.Foundation.NSString runLoopMode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="runLoop" Type="MonoMac.CoreFoundation.CFRunLoop" />
+        <Parameter Name="runLoopMode" Type="MonoMac.Foundation.NSString" />
+      </Parameters>
+      <Docs>
+        <param name="runLoop">To be added.</param>
+        <param name="runLoopMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendReport">
+      <MemberSignature Language="C#" Value="public void SendReport (MonoMac.IOKit.HID.IOHIDReportType type, int id, byte[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendReport(valuetype MonoMac.IOKit.HID.IOHIDReportType type, int32 id, unsigned int8[] data) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="MonoMac.IOKit.HID.IOHIDReportType" />
+        <Parameter Name="id" Type="System.Int32" />
+        <Parameter Name="data" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="id">To be added.</param>
+        <param name="data">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerialNumber">
+      <MemberSignature Language="C#" Value="public string SerialNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SerialNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerialNumberKey">
+      <MemberSignature Language="C#" Value="public const string SerialNumberKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SerialNumberKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Service">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.IOService Service { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOKit.IOService Service" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInputValueMatching">
+      <MemberSignature Language="C#" Value="public void SetInputValueMatching (MonoMac.Foundation.NSDictionary matchingDictionary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInputValueMatching(class MonoMac.Foundation.NSDictionary matchingDictionary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matchingDictionary" Type="MonoMac.Foundation.NSDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="matchingDictionary">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInputValueMatchingMultiple">
+      <MemberSignature Language="C#" Value="public void SetInputValueMatchingMultiple (MonoMac.Foundation.NSDictionary[] matchingDictionaries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInputValueMatchingMultiple(class MonoMac.Foundation.NSDictionary[] matchingDictionaries) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matchingDictionaries" Type="MonoMac.Foundation.NSDictionary[]" />
+      </Parameters>
+      <Docs>
+        <param name="matchingDictionaries">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public void SetValue (MonoMac.IOKit.HID.IOHIDElement element, MonoMac.IOKit.HID.IOHIDValue value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(class MonoMac.IOKit.HID.IOHIDElement element, class MonoMac.IOKit.HID.IOHIDValue value) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="MonoMac.IOKit.HID.IOHIDElement" />
+        <Parameter Name="value" Type="MonoMac.IOKit.HID.IOHIDValue" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValueMultiple">
+      <MemberSignature Language="C#" Value="public void SetValueMultiple (System.Collections.Generic.IDictionary&lt;MonoMac.IOKit.HID.IOHIDElement,MonoMac.IOKit.HID.IOHIDValue&gt; dictonary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValueMultiple(class System.Collections.Generic.IDictionary`2&lt;class MonoMac.IOKit.HID.IOHIDElement, class MonoMac.IOKit.HID.IOHIDValue&gt; dictonary) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictonary" Type="System.Collections.Generic.IDictionary&lt;MonoMac.IOKit.HID.IOHIDElement,MonoMac.IOKit.HID.IOHIDValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dictonary">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardTypeKey">
+      <MemberSignature Language="C#" Value="public const string StandardTypeKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string StandardTypeKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransportKey">
+      <MemberSignature Language="C#" Value="public const string TransportKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TransportKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeID">
+      <MemberSignature Language="C#" Value="public static uint TypeID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property unsigned int32 TypeID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnscheduleFromRunLoop">
+      <MemberSignature Language="C#" Value="public void UnscheduleFromRunLoop (MonoMac.CoreFoundation.CFRunLoop runLoop, MonoMac.Foundation.NSString runLoopMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnscheduleFromRunLoop(class MonoMac.CoreFoundation.CFRunLoop runLoop, class MonoMac.Foundation.NSString runLoopMode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="runLoop" Type="MonoMac.CoreFoundation.CFRunLoop" />
+        <Parameter Name="runLoopMode" Type="MonoMac.Foundation.NSString" />
+      </Parameters>
+      <Docs>
+        <param name="runLoop">To be added.</param>
+        <param name="runLoopMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VendorID">
+      <MemberSignature Language="C#" Value="public uint VendorID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 VendorID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VendorIDKey">
+      <MemberSignature Language="C#" Value="public const string VendorIDKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string VendorIDKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VendorIDSourceKey">
+      <MemberSignature Language="C#" Value="public const string VendorIDSourceKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string VendorIDSourceKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionNumber">
+      <MemberSignature Language="C#" Value="public uint VersionNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 VersionNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VersionNumberKey">
+      <MemberSignature Language="C#" Value="public const string VersionNumberKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string VersionNumberKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

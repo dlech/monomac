@@ -1,0 +1,872 @@
+<Type Name="IOMessage" FullName="MonoMac.IOKit.IOMessage">
+  <TypeSignature Language="C#" Value="public enum IOMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOMessage extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+           Defines message type constants for several IOKit messaging API's.
+       </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanDevicePowerOff">
+      <MemberSignature Language="C#" Value="CanDevicePowerOff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage CanDevicePowerOff = unsigned int32(3758096896)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Delivered to <c>kIOAppPowerStateInterest</c> clients of
+               devices that implement their own idle timeouts.</summary>
+        <remarks>This message type is almost never used.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSystemPowerOff">
+      <MemberSignature Language="C#" Value="CanSystemPowerOff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage CanSystemPowerOff = unsigned int32(3758096960)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This IOKit message is unused.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSystemSleep">
+      <MemberSignature Language="C#" Value="CanSystemSleep" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage CanSystemSleep = unsigned int32(3758097008)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Announces/Requests permission to proceed to system sleep.
+               Delivered to in-kernel IOKit drivers via <c>kIOGeneralInterest</c>
+               and <c>kIOPriorityPowerStateInterest</c>.
+               Delivered to user clients of <c>IORegisterForSystemPower</c>.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConsoleSecurityChange">
+      <MemberSignature Language="C#" Value="ConsoleSecurityChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage ConsoleSecurityChange = unsigned int32(3758096680)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyClientID">
+      <MemberSignature Language="C#" Value="CopyClientID" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage CopyClientID = unsigned int32(3758097200)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceHasPoweredOff">
+      <MemberSignature Language="C#" Value="DeviceHasPoweredOff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage DeviceHasPoweredOff = unsigned int32(3758096933)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               IOService power mgt does not send kIOMessageDeviceHasPoweredOff.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceHasPoweredOn">
+      <MemberSignature Language="C#" Value="DeviceHasPoweredOn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage DeviceHasPoweredOn = unsigned int32(3758096944)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Indicates the device has just moved to a higher power state.
+               Sent to IOKit interest notification clients of type <c>kIOAppPowerStateInterest</c>
+               and <c>kIOGeneralInterest</c>.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceSignaledWakeup">
+      <MemberSignature Language="C#" Value="DeviceSignaledWakeup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage DeviceSignaledWakeup = unsigned int32(3758097232)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceWillNotPowerOff">
+      <MemberSignature Language="C#" Value="DeviceWillNotPowerOff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage DeviceWillNotPowerOff = unsigned int32(3758096928)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               This IOKit interest notification is largely unused,
+               it's not very interesting.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceWillPowerOff">
+      <MemberSignature Language="C#" Value="DeviceWillPowerOff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage DeviceWillPowerOff = unsigned int32(3758096912)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Indicates the device is about to move to a lower power state.
+               Sent to IOKit interest notification clients of type <c>kIOAppPowerStateInterest</c>
+               and <c>kIOGeneralInterest</c>.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceWillPowerOn">
+      <MemberSignature Language="C#" Value="DeviceWillPowerOn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage DeviceWillPowerOn = unsigned int32(3758096917)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               IOService power mgt does not send kIOMessageDeviceWillPowerOn.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceBusyStateChange">
+      <MemberSignature Language="C#" Value="ServiceBusyStateChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage ServiceBusyStateChange = unsigned int32(3758096672)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceIsAttemptingOpen">
+      <MemberSignature Language="C#" Value="ServiceIsAttemptingOpen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage ServiceIsAttemptingOpen = unsigned int32(3758096641)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceIsRequestingClose">
+      <MemberSignature Language="C#" Value="ServiceIsRequestingClose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage ServiceIsRequestingClose = unsigned int32(3758096640)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceIsResumed">
+      <MemberSignature Language="C#" Value="ServiceIsResumed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage ServiceIsResumed = unsigned int32(3758096432)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceIsSuspended">
+      <MemberSignature Language="C#" Value="ServiceIsSuspended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage ServiceIsSuspended = unsigned int32(3758096416)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceIsTerminated">
+      <MemberSignature Language="C#" Value="ServiceIsTerminated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage ServiceIsTerminated = unsigned int32(3758096400)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServicePropertyChange">
+      <MemberSignature Language="C#" Value="ServicePropertyChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage ServicePropertyChange = unsigned int32(3758096688)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceWasClosed">
+      <MemberSignature Language="C#" Value="ServiceWasClosed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage ServiceWasClosed = unsigned int32(3758096656)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemCapabilityChange">
+      <MemberSignature Language="C#" Value="SystemCapabilityChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage SystemCapabilityChange = unsigned int32(3758097216)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemHasPoweredOn">
+      <MemberSignature Language="C#" Value="SystemHasPoweredOn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage SystemHasPoweredOn = unsigned int32(3758097152)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Announces that the system and its devices have woken up.
+               Delivered to in-kernel IOKit drivers via <code>kIOGeneralInterest</code>
+               and <code>kIOPriorityPowerStateInterest</code>.
+               Delivered to user clients of <code>IORegisterForSystemPower</code>.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemPagingOff">
+      <MemberSignature Language="C#" Value="SystemPagingOff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage SystemPagingOff = unsigned int32(3758096981)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Indicates an imminent system shutdown, paging device now unavailable.
+               Recipients have a limited amount of time to respond, otherwise the
+               system will timeout and shutdown even without a response.
+               Delivered to clients of <c>registerPrioritySleepWakeInterest()),</c>.
+               Never delivered to user space notification clients.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemWillNotPowerOff">
+      <MemberSignature Language="C#" Value="SystemWillNotPowerOff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage SystemWillNotPowerOff = unsigned int32(3758096992)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This IOKit message is unused.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemWillNotSleep">
+      <MemberSignature Language="C#" Value="SystemWillNotSleep" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage SystemWillNotSleep = unsigned int32(3758097040)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Announces that the system has retracted a previous attempt to sleep,
+               it follows <code>kIOMessageCanSystemSleep</code>.
+               Delivered to in-kernel IOKit drivers via <code>kIOGeneralInterest</code>
+               and <code>kIOPriorityPowerStateInterest</code>.
+               Delivered to user clients of <code>IORegisterForSystemPower</code>.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemWillPowerOff">
+      <MemberSignature Language="C#" Value="SystemWillPowerOff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage SystemWillPowerOff = unsigned int32(3758096976)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Indicates an imminent system shutdown. Recipients have a limited
+               amount of time to respond, otherwise the system will timeout and
+               shutdown even without a response.
+               Delivered to in-kernel IOKit drivers via <c>IOService::systemWillShutdown()),</c>)),
+               and to clients of <c>registerPrioritySleepWakeInterest()),</c>.
+               Never delivered to user space notification clients.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemWillPowerOn">
+      <MemberSignature Language="C#" Value="SystemWillPowerOn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage SystemWillPowerOn = unsigned int32(3758097184)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Announces that the system is beginning to power the device tree, most
+               devices are unavailable at this point..
+               Delivered to in-kernel IOKit drivers via <code>kIOGeneralInterest</code>
+               and <code>kIOPriorityPowerStateInterest</code>.
+               Delivered to user clients of <code>IORegisterForSystemPower</code>.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemWillRestart">
+      <MemberSignature Language="C#" Value="SystemWillRestart" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage SystemWillRestart = unsigned int32(3758097168)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Indicates an imminent system restart. Recipients have a limited
+               amount of time to respond)), otherwise the system will timeout and
+               restart even without a response.
+               Delivered to in-kernel IOKit drivers via <c>IOService::systemWillShutdown()),</c>)),
+               and to clients of <c>registerPrioritySleepWakeInterest()),</c>.
+               Never delivered to user space notification clients.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemWillSleep">
+      <MemberSignature Language="C#" Value="SystemWillSleep" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage SystemWillSleep = unsigned int32(3758097024)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Announces that sleep is beginning.
+               Delivered to in-kernel IOKit drivers via <code>kIOGeneralInterest</code>
+               and <code>kIOPriorityPowerStateInterest</code>.
+               Delivered to user clients of <code>IORegisterForSystemPower</code>.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBCompositeDriverReconfigured">
+      <MemberSignature Language="C#" Value="USBCompositeDriverReconfigured" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBCompositeDriverReconfigured = unsigned int32(3758112785)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message from the composite driver indicating that it has finished re-configuring the device after a reset
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBController">
+      <MemberSignature Language="C#" Value="USBController" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBController = unsigned int32(3758112789)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Generic message sent from controller user client to controllers.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDeviceCountExceeded">
+      <MemberSignature Language="C#" Value="USBDeviceCountExceeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBDeviceCountExceeded = unsigned int32(3758112794)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent by a hub when a device cannot be enumerated because the USB controller ran out of resources.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBEndpointCountExceeded">
+      <MemberSignature Language="C#" Value="USBEndpointCountExceeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBEndpointCountExceeded = unsigned int32(3758112793)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a device when endpoints cannot be created because the USB controller ran out of resources.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBExpressCardCantWake">
+      <MemberSignature Language="C#" Value="USBExpressCardCantWake" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBExpressCardCantWake = unsigned int32(3758112784)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message from a driver to a bus that an express card will disconnect on sleep and thus shouldn't wake.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBFromThirdParty">
+      <MemberSignature Language="C#" Value="USBFromThirdParty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBFromThirdParty = unsigned int32(3758112782)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent from a third party.  Uses IOUSBThirdPartyParam to encode the sender's ID.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBHubIsDeviceConnected">
+      <MemberSignature Language="C#" Value="USBHubIsDeviceConnected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBHubIsDeviceConnected = unsigned int32(3758112772)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a hub to inquire whether a particular port has a device connected or not.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBHubIsPortEnabled">
+      <MemberSignature Language="C#" Value="USBHubIsPortEnabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBHubIsPortEnabled = unsigned int32(3758112773)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a hub to inquire whether a particular port is enabled or not.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBHubPortClearTT">
+      <MemberSignature Language="C#" Value="USBHubPortClearTT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBHubPortClearTT = unsigned int32(3758112780)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a hub to clear the transaction translator.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBHubPortDeviceDisconnected">
+      <MemberSignature Language="C#" Value="USBHubPortDeviceDisconnected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBHubPortDeviceDisconnected = unsigned int32(3758112795)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent by a built-in hub when a device was disconnected.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBHubReEnumeratePort">
+      <MemberSignature Language="C#" Value="USBHubReEnumeratePort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBHubReEnumeratePort = unsigned int32(3758112774)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a hub to reenumerate the device attached to a particular port
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBHubResetPort">
+      <MemberSignature Language="C#" Value="USBHubResetPort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBHubResetPort = unsigned int32(3758112769)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a hub to reset a particular port.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBHubResumePort">
+      <MemberSignature Language="C#" Value="USBHubResumePort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBHubResumePort = unsigned int32(3758112771)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a hub to resume a particular port.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBHubSetPortRecoveryTime">
+      <MemberSignature Language="C#" Value="USBHubSetPortRecoveryTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBHubSetPortRecoveryTime = unsigned int32(3758112786)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a hub to set the # of ms required when resuming a particular port.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBHubSuspendPort">
+      <MemberSignature Language="C#" Value="USBHubSuspendPort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBHubSuspendPort = unsigned int32(3758112770)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a hub to suspend a particular port.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBNotEnoughPower">
+      <MemberSignature Language="C#" Value="USBNotEnoughPower" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBNotEnoughPower = unsigned int32(3758112788)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to the clients of the device's hub parent, when a device causes an low power notice to be displayed.
+               The message argument contains the locationID of the device
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBOvercurrentCondition">
+      <MemberSignature Language="C#" Value="USBOvercurrentCondition" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBOvercurrentCondition = unsigned int32(3758112787)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to the clients of the device's hub parent, when a device causes an overcurrent condition.
+               The message argument contains the locationID of the device.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBPortHasBeenReset">
+      <MemberSignature Language="C#" Value="USBPortHasBeenReset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBPortHasBeenReset = unsigned int32(3758112778)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a device indicating that the port it is attached to has been reset.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBPortHasBeenResumed">
+      <MemberSignature Language="C#" Value="USBPortHasBeenResumed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBPortHasBeenResumed = unsigned int32(3758112779)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a device indicating that the port it is attached to has been resumed.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBPortHasBeenSuspended">
+      <MemberSignature Language="C#" Value="USBPortHasBeenSuspended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBPortHasBeenSuspended = unsigned int32(3758112781)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message sent to a device indicating that the port it is attached to has been suspended.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBPortWasNotSuspended">
+      <MemberSignature Language="C#" Value="USBPortWasNotSuspended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBPortWasNotSuspended = unsigned int32(3758112783)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message indicating that the hub driver received a resume request for a port that was not suspended
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBReallocateExtraCurrent">
+      <MemberSignature Language="C#" Value="USBReallocateExtraCurrent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBReallocateExtraCurrent = unsigned int32(3758112792)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message to ask any clients using extra current to attempt to allocate it some more.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBReleaseExtraCurrent">
+      <MemberSignature Language="C#" Value="USBReleaseExtraCurrent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBReleaseExtraCurrent = unsigned int32(3758112791)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Message to ask any clients using extra current to release it if possible.
+           </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USBRootHubWakeEvent">
+      <MemberSignature Language="C#" Value="USBRootHubWakeEvent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.IOMessage USBRootHubWakeEvent = unsigned int32(3758112790)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+                Message from the HC Wakeup code indicating that a Root Hub port has a wake event.
+           </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

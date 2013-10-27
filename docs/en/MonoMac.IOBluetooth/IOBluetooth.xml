@@ -1,0 +1,342 @@
+<Type Name="IOBluetooth" FullName="MonoMac.IOBluetooth.IOBluetooth">
+  <TypeSignature Language="C#" Value="public static class IOBluetooth" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IOBluetooth extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AvailableHIDDevicesCount">
+      <MemberSignature Language="C#" Value="public static long AvailableHIDDevicesCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int64 AvailableHIDDevicesCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets total number of HID devices on the system (Bluetooth + USB).</summary>
+        <value>Number of HID devices.</value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionHandleNone">
+      <MemberSignature Language="C#" Value="public const ushort ConnectionHandleNone = 65535;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 ConnectionHandleNone = (65535)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>65535</MemberValue>
+      <Docs>
+        <summary>Value returned by some methods when a connection is not availible.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRegistryEntriesCount">
+      <MemberSignature Language="C#" Value="public static long GetRegistryEntriesCount (string className);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;/System/Library/Frameworks/IOBluetooth.framework/IOBluetooth&quot; as &quot;IOBluetoothFindNumberOfRegistryEntriesOfClassName&quot; winapi)int64 GetRegistryEntriesCount(string className) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="className">To be added.</param>
+        <summary>Gets the total number of registry entries with the provided device classname. e.g. "IOHIPointing".</summary>
+        <returns>Number of HID devices.</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSecondsFromSlots">
+      <MemberSignature Language="C#" Value="public static double GetSecondsFromSlots (this ushort inSlots);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetSecondsFromSlots(unsigned int16 inSlots) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inSlots" Type="System.UInt16" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="inSlots">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSlotsFromSeconds">
+      <MemberSignature Language="C#" Value="public static ushort GetSlotsFromSeconds (this double inSeconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 GetSlotsFromSeconds(float64 inSeconds) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inSeconds" Type="System.Double" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="inSeconds">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUniqueFileNameAndPath">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString GetUniqueFileNameAndPath (MonoMac.Foundation.NSString name, MonoMac.Foundation.NSString path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;/System/Library/Frameworks/IOBluetooth.framework/IOBluetooth&quot; as &quot;IOBluetoothGetUniqueFileNameAndPath&quot; winapi)class MonoMac.Foundation.NSString GetUniqueFileNameAndPath(class MonoMac.Foundation.NSString name, class MonoMac.Foundation.NSString path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="MonoMac.Foundation.NSString" />
+        <Parameter Name="path" Type="MonoMac.Foundation.NSString" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name of file that needs unique name in the specified path.</param>
+        <param name="path">Path you are trying to put file into.</param>
+        <summary>Gets a unique file name and path.</summary>
+        <returns>String with a unique name appended on it for the provided path.</returns>
+        <remarks>When passed a VALID filename and a VALID path, this routine will return you a the path with the name
+            appended onto it. If it already exist, it will insert a #1, #2, etc. Example:
+            If you pass "TestFile.txt" and "~/Documents", you will get "~/Documents/TestFile.txt".
+            If one already exists, you will be returned: "~/Documents/TestFile #1.txt".</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUniqueFileNameAndPath">
+      <MemberSignature Language="C#" Value="public static string GetUniqueFileNameAndPath (string name, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetUniqueFileNameAndPath(string name, string path) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name of file that needs unique name in the specified path.</param>
+        <param name="path">Path you are trying to put file into.</param>
+        <summary>Gets a unique file name and path.</summary>
+        <returns>String with a unique name appended on it for the provided path.</returns>
+        <remarks>When passed a VALID filename and a VALID path, this routine will return you a the path with the name
+              appended onto it. If it already exist, it will insert a #1, #2, etc. Example:
+              If you pass "TestFile.txt" and "~/Documents", you will get "~/Documents/TestFile.txt".
+              If one already exists, you will be returned: "~/Documents/TestFile #1.txt".</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFileAppleDesignatedPIMData">
+      <MemberSignature Language="C#" Value="public static bool IsFileAppleDesignatedPIMData (this MonoMac.Foundation.NSString fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsFileAppleDesignatedPIMData(class MonoMac.Foundation.NSString fileName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="MonoMac.Foundation.NSString" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Name of file - should include extension!</param>
+        <summary>Apple designated PIM data is classified as: .vcard, .vcal, .vcf, .vnote, .vmsg, .vcs</summary>
+        <returns>
+          <c>true</c> if is it Apple-designated PIM data, otherwise <c>false</c></returns>
+        <remarks>Not much to talk about.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyboardHIDDevicesCount">
+      <MemberSignature Language="C#" Value="public static long KeyboardHIDDevicesCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int64 KeyboardHIDDevicesCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of keyboard HID devices on the system (Bluetooth + USB).</summary>
+        <value>Number of HID devices.</value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointingHIDDevicesCount">
+      <MemberSignature Language="C#" Value="public static long PointingHIDDevicesCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int64 PointingHIDDevicesCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of "pointing" HID devices on the system (Bluetooth + USB).</summary>
+        <value>Number of HID devices.</value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabletHIDDevicesCount">
+      <MemberSignature Language="C#" Value="public static long TabletHIDDevicesCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int64 TabletHIDDevicesCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of "Tablet" HID devices on the system (Bluetooth + USB).</summary>
+        <value>Number of HID devices.</value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDeviceAddress">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.BluetoothDeviceAddress ToDeviceAddress (this MonoMac.Foundation.NSString nameString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.BluetoothDeviceAddress ToDeviceAddress(class MonoMac.Foundation.NSString nameString) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceAddress</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nameString" Type="MonoMac.Foundation.NSString" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="nameString">NSString that contains the data to turn into the device address.</param>
+        <summary>Convenience method to take an NSString and turn it into a BluetoothDeviceAddress structure.</summary>
+        <returns>BluetoothDeviceAddress.</returns>
+        <remarks>Pass in most types of strings, such as "001122334455" or "00-11-22-33-44-55" and the conversion should be successful. Also, you should have 2 characters per byte for the conversion to work properly.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the string cannot be converted to an address.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDeviceAddress">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.BluetoothDeviceAddress ToDeviceAddress (this string nameString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype MonoMac.IOBluetooth.BluetoothDeviceAddress ToDeviceAddress(string nameString) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.BluetoothDeviceAddress</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nameString" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="nameString">String that contains the data to turn into the device address.</param>
+        <summary>Convenience method to take a string and turn it into a BluetoothDeviceAddress structure.</summary>
+        <returns>BluetoothDeviceAddress.</returns>
+        <remarks>Pass in most types of strings, such as "001122334455" or "00-11-22-33-44-55" and the conversion should be successful. Also, you should have 2 characters per byte for the conversion to work properly.</remarks>
+        <exception cref="T:MonoMac.IOKit.IOReturnException">If the string cannot be converted to an address.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToNSString">
+      <MemberSignature Language="C#" Value="public static MonoMac.Foundation.NSString ToNSString (this MonoMac.IOBluetooth.BluetoothDeviceAddress deviceAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.Foundation.NSString ToNSString(valuetype MonoMac.IOBluetooth.BluetoothDeviceAddress deviceAddress) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSString</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceAddress" Type="MonoMac.IOBluetooth.BluetoothDeviceAddress" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="deviceAddress">A valid bluetooth device structure.</param>
+        <summary>Convenience method to take a device address structure and create an NSString.</summary>
+        <returns>The created address string.</returns>
+        <remarks>The resultant string will be in this format: "00-11-22-33-44-55"</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryLaunchHandsFreeAgent">
+      <MemberSignature Language="C#" Value="public static bool TryLaunchHandsFreeAgent (MonoMac.Foundation.NSString deviceAddressString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;/System/Library/Frameworks/IOBluetooth.framework/IOBluetooth&quot; as &quot;IOBluetoothLaunchHandsFreeAgent&quot; winapi)bool TryLaunchHandsFreeAgent(class MonoMac.Foundation.NSString deviceAddressString) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceAddressString" Type="MonoMac.Foundation.NSString" />
+      </Parameters>
+      <Docs>
+        <param name="deviceAddressString">Address of the device you want to connect to. If <c>null</c> or empty, selects a paired hands free gateway.</param>
+        <summary>Connects to the hands free device and creates a service level connection.</summary>
+        <returns>
+          <c>true</c> if we were able to launch the hands free agent successfully, otherwise <c>false</c></returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryLaunchHandsFreeAgent">
+      <MemberSignature Language="C#" Value="public static bool TryLaunchHandsFreeAgent (string deviceAddressString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryLaunchHandsFreeAgent(string deviceAddressString) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceAddressString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="deviceAddressString">Address of the device you want to connect to. If <c>null</c> or empty, selects a paired hands free gateway.</param>
+        <summary>Connects to the hands free device and creates a service level connection.</summary>
+        <returns>
+          <c>true</c> if we were able to launch the hands free agent successfully, otherwise <c>false</c></returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,70 @@
+<Type Name="IOHIDReportType" FullName="MonoMac.IOKit.HID.IOHIDReportType">
+  <TypeSignature Language="C#" Value="public enum IOHIDReportType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOHIDReportType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+           Describes different type of HID reports.
+           </summary>
+    <remarks>
+           Used by the IOHIDFamily to identify the type of
+           report being processed.
+           </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Feature">
+      <MemberSignature Language="C#" Value="Feature" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDReportType Feature = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDReportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Feature report.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="Input" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDReportType Input = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDReportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Input report.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Output">
+      <MemberSignature Language="C#" Value="Output" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDReportType Output = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDReportType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Output report.
+               </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

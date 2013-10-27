@@ -138,6 +138,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CoreBluetoothLibrary">
+      <MemberSignature Language="C#" Value="public const string CoreBluetoothLibrary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CoreBluetoothLibrary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Path to the CoreBluetooth shared library for use with the DllImport attribute.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CoreDataLibrary">
       <MemberSignature Language="C#" Value="public const string CoreDataLibrary;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string CoreDataLibrary" />
@@ -327,6 +343,53 @@
     <Member MemberName="ImageKitLibrary">
       <MemberSignature Language="C#" Value="public const string ImageKitLibrary;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ImageKitLibrary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOBluetoothLibrary">
+      <MemberSignature Language="C#" Value="public const string IOBluetoothLibrary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IOBluetoothLibrary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Path to the IOBluetooth shared library to use with the DllImport attribute.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOBluetoothUILibrary">
+      <MemberSignature Language="C#" Value="public const string IOBluetoothUILibrary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IOBluetoothUILibrary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Path to the IOBluetoothUI shared library to use with the DllImport attribute.</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOKitLibrary">
+      <MemberSignature Language="C#" Value="public const string IOKitLibrary;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IOKitLibrary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>

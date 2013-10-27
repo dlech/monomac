@@ -1,0 +1,158 @@
+<Type Name="CFPlugInCOM" FullName="MonoMac.CoreFoundation.CFPlugInCOM">
+  <TypeSignature Language="C#" Value="public static class CFPlugInCOM" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CFPlugInCOM extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FAILED">
+      <MemberSignature Language="C#" Value="public static bool FAILED (this MonoMac.CoreFoundation.HRESULT result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool FAILED(valuetype MonoMac.CoreFoundation.HRESULT result) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="MonoMac.CoreFoundation.HRESULT" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUuid">
+      <MemberSignature Language="C#" Value="public static MonoMac.CoreFoundation.CFUUID GetUuid (this Type t);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.CoreFoundation.CFUUID GetUuid(class System.Type t) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.CFUUID</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t" Type="System.Type" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="t">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HRESULT_CODE">
+      <MemberSignature Language="C#" Value="public static ushort HRESULT_CODE (this MonoMac.CoreFoundation.HRESULT result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 HRESULT_CODE(valuetype MonoMac.CoreFoundation.HRESULT result) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="MonoMac.CoreFoundation.HRESULT" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HRESULT_FACILITY">
+      <MemberSignature Language="C#" Value="public static ushort HRESULT_FACILITY (this MonoMac.CoreFoundation.HRESULT result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int16 HRESULT_FACILITY(valuetype MonoMac.CoreFoundation.HRESULT result) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="MonoMac.CoreFoundation.HRESULT" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HRESULT_SEVERITY">
+      <MemberSignature Language="C#" Value="public static byte HRESULT_SEVERITY (this MonoMac.CoreFoundation.HRESULT result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 HRESULT_SEVERITY(valuetype MonoMac.CoreFoundation.HRESULT result) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="MonoMac.CoreFoundation.HRESULT" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IS_ERROR">
+      <MemberSignature Language="C#" Value="public static bool IS_ERROR (this MonoMac.CoreFoundation.HRESULT result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IS_ERROR(valuetype MonoMac.CoreFoundation.HRESULT result) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="MonoMac.CoreFoundation.HRESULT" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SUCCEEDED">
+      <MemberSignature Language="C#" Value="public static bool SUCCEEDED (this MonoMac.CoreFoundation.HRESULT result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SUCCEEDED(valuetype MonoMac.CoreFoundation.HRESULT result) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="MonoMac.CoreFoundation.HRESULT" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

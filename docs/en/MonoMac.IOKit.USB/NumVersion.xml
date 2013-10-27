@@ -1,0 +1,78 @@
+<Type Name="NumVersion" FullName="MonoMac.IOKit.USB.NumVersion">
+  <TypeSignature Language="C#" Value="public struct NumVersion" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit NumVersion extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="majorRev">
+      <MemberSignature Language="C#" Value="public byte majorRev;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 majorRev" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="minorAndBugRev">
+      <MemberSignature Language="C#" Value="public byte minorAndBugRev;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 minorAndBugRev" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="nonRelRev">
+      <MemberSignature Language="C#" Value="public byte nonRelRev;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 nonRelRev" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="stage">
+      <MemberSignature Language="C#" Value="public byte stage;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 stage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

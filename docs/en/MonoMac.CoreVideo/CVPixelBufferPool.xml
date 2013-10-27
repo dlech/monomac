@@ -263,14 +263,14 @@
       </Docs>
     </Member>
     <Member MemberName="TypeID">
-      <MemberSignature Language="C#" Value="public int TypeID { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 TypeID" />
+      <MemberSignature Language="C#" Value="public uint TypeID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 TypeID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
+        <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>

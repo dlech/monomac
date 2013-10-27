@@ -1,0 +1,27 @@
+<Type Name="IOCFPlugInInterface+Start" FullName="MonoMac.IOKit.IOCFPlugInInterface+Start">
+  <TypeSignature Language="C#" Value="public delegate MonoMac.IOKit.IOReturn IOCFPlugInInterface.Start(IntPtr thisPointer, IntPtr propertyTable, IntPtr service);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed IOCFPlugInInterface/Start extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="thisPointer" Type="System.IntPtr" />
+    <Parameter Name="propertyTable" Type="System.IntPtr" />
+    <Parameter Name="service" Type="System.IntPtr" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="thisPointer">To be added.</param>
+    <param name="propertyTable">To be added.</param>
+    <param name="service">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

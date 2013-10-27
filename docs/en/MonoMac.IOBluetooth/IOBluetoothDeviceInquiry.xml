@@ -1,0 +1,530 @@
+<Type Name="IOBluetoothDeviceInquiry" FullName="MonoMac.IOBluetooth.IOBluetoothDeviceInquiry">
+  <TypeSignature Language="C#" Value="public class IOBluetoothDeviceInquiry : MonoMac.Foundation.NSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOBluetoothDeviceInquiry extends MonoMac.Foundation.NSObject" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.Foundation.NSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Register("IOBluetoothDeviceInquiry", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Object representing a device inquiry that finds Bluetooth devices in-range of the computer, and (optionally) retrieves name information for them.</summary>
+    <remarks>
+      <para>Object representing a device inquiry that finds Bluetooth devices in-range of the computer, and (optionally) retrieves name information for them.</para>
+      <para>You should only use this object if your application needs to know about in-range devices and cannot use the GUI provided by the IOBluetoothUI framework. It will not let you perform unlimited back-to-back inquiries, but will instead throttle the number of attempted inquiries if too many are attempted within a small window of time. Important Note: DO NOT perform remote name requests on devices from delegate methods or while this object is in use. If you wish to do your own remote name requests on devices, do them after you have stopped this object. If you do not heed this warning, you could potentially deadlock your process.</para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDeviceInquiry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDeviceInquiry (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithCoder:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDeviceInquiry (MonoMac.Foundation.NSObjectFlag t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="t" Type="MonoMac.Foundation.NSObjectFlag" />
+      </Parameters>
+      <Docs>
+        <param name="t">Unused sentinel value, pass NSObjectFlag.Empty.</param>
+        <summary>Constructor to call on derived classes when the derived class has an [Export] constructor.</summary>
+        <remarks>
+          <para>This constructor should be called by derived classes when they are initialized using an [Export] attribute. The argument value is ignore, typically the chaining would look like this:</para>
+          <example>
+            <code lang="C#">
+public class MyClass : BaseClass {
+    [Export ("initWithFoo:")]
+    public MyClass (string foo) : base (NSObjectFlag.Empty)
+    {
+        ...
+    }
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDeviceInquiry (MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate delegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate delegate) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithDelegate:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="delegate" Type="MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="delegate">
+          <format type="text/html">
+            <dd>
+              <para>A delegate object that wishes to receive messages from the inquiry object.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initializes an alloc'd inquiry object, and sets the delegate object.</para>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothDeviceInquiry (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Pointer (handle) to the unmanaged object.</param>
+        <summary>A constructor used when creating managed representations of unmanaged objects;  Called by the runtime.</summary>
+        <remarks>
+          <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassHandle">
+      <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The handle for this class.</summary>
+        <value>The pointer to the Objective-C class.</value>
+        <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearFoundDevices">
+      <MemberSignature Language="C#" Value="public virtual void ClearFoundDevices ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearFoundDevices() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("clearFoundDevices")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <para>Removes all found devices from the inquiry object.</para>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInquiryWithDelegate">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothDeviceInquiry CreateInquiryWithDelegate (MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate delegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothDeviceInquiry CreateInquiryWithDelegate(class MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate delegate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("inquiryWithDelegate:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDeviceInquiry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delegate" Type="MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="delegate">
+          <format type="text/html">
+            <dd>
+              <para>A delegate object that wishes to receive messages from the inquiry object.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Class method to create an inquiry object.</para>
+        </summary>
+        <returns>
+          <para>The created IOBluetoothDeviceInquiry object.</para>
+        </returns>
+        <remarks>
+          <para>The inquiry is NOT automatically started. You musts call <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceInquiry.Start" /> on it to start the search for in-range devices.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delegate">
+      <MemberSignature Language="C#" Value="public MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate Delegate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate Delegate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An instance of the MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate model class which acts as the class delegate.</summary>
+        <value>The instance of the MonoMac.IOBluetooth.IOBluetoothDeviceInquiryDelegate model class</value>
+        <remarks>
+          <para>The delegate instance assigned to this object will be used to handle events or provide data on demand to this class.</para>
+          <para>When setting the Delegate or WeakDelegate values events will be delivered to the specified instance instead of being delivered to the C#-style events</para>
+          <para>This is the strongly typed version of the object, use the WeakDelegate property instead if you want to merely assign a class derived from NSObject that has been decorated with [Export] attributes.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <para>If set to <see langword="true" />, the method is invoked directly and will dispose manage and unmanaged resources;   If set to <see langword="false" /> the method is being called by the garbage collector finalizer and should only release unmanaged resources.</para>
+        </param>
+        <summary>Releases the resources used by the IOBluetoothDeviceInquiry object.</summary>
+        <remarks>
+          <para>This Dispose method releases the resources used by the IOBluetoothDeviceInquiry class.</para>
+          <para>This method is called by both the Dispose() method and the object finalizer (Finalize).    When invoked by the Dispose method, the parameter disposting <paramref name="disposing" /> is set to <see langword="true" /> and any managed object references that this object holds are also disposed or released;  when invoked by the object finalizer, on the finalizer thread the value is set to <see langword="false" />. </para>
+          <para>Calling the Dispose method when you are finished using the IOBluetoothDeviceInquiry ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.</para>
+          <para>  For more information on how to override this method and on the Dispose/IDisposable pattern, read the ``Implementing a Dispose Method'' document at http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FoundDevices">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothDevice[] FoundDevices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothDevice[] FoundDevices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("foundDevices")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Returns found IOBluetoothDevice objects as an array.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Will not return <c>null</c>. If there are no devices found, returns an array with length of 0.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InquiryLength">
+      <MemberSignature Language="C#" Value="public virtual byte InquiryLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 InquiryLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("inquiryLength")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setInquiryLength:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Returns the number of seconds the search will be performed.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>A default of 10 seconds is used, unless a different value is specified using this method. Note that if you have called <see cref="M:MonoMac.IOBluetooth.IOBluetoothDeviceInquiry.Start" /> again too quickly, your inquiry may actually take much longer than what length you specify, as inquiries are throttled in the system. Also note that if you have the inquiry object updating device names for you, the whole inquiry process could be much longer than the specified length, depending on the number of devices found and how responsive to name requests they are. If you -must- have a strict inquiry length, disable name updates. In other words, this "length" only refers to the actual device discovery portion of the whole inquiry process.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchType">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothDeviceSearchTypes SearchType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOBluetooth.IOBluetoothDeviceSearchTypes SearchType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("searchType")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setSearchType:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDeviceSearchTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Returns the search type that will be performed.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>A default of <see cref="F:MonoMac.IOBluetooth.IOBluetoothDeviceSearchTypes.Classic" /> is used, unless a different value is specified using this method.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSearchCriteria">
+      <MemberSignature Language="C#" Value="public virtual void SetSearchCriteria (MonoMac.IOBluetooth.BluetoothServiceClassMajor inServiceClassMajor, MonoMac.IOBluetooth.BluetoothDeviceClassMajor inMajorDeviceClass, MonoMac.IOBluetooth.BluetoothDeviceClassMinor inMinorDeviceClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSearchCriteria(valuetype MonoMac.IOBluetooth.BluetoothServiceClassMajor inServiceClassMajor, valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMajor inMajorDeviceClass, valuetype MonoMac.IOBluetooth.BluetoothDeviceClassMinor inMinorDeviceClass) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setSearchCriteria:majorDeviceClass:minorDeviceClass:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inServiceClassMajor" Type="MonoMac.IOBluetooth.BluetoothServiceClassMajor" />
+        <Parameter Name="inMajorDeviceClass" Type="MonoMac.IOBluetooth.BluetoothDeviceClassMajor" />
+        <Parameter Name="inMinorDeviceClass" Type="MonoMac.IOBluetooth.BluetoothDeviceClassMinor" />
+      </Parameters>
+      <Docs>
+        <param name="inServiceClassMajor">
+          <format type="text/html">
+            <dd>
+              <para>Set the major service class for found devices. Set to <see cref="F:MonoMac.IOBluetooth.BluetoothServiceClassMajor.Any" /> for all devices.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inMajorDeviceClass">
+          <format type="text/html">
+            <dd>
+              <para>Set the major device class for found devices. Set to <see cref="F:MonoMac.IOBluetooth.BluetoothDeviceClassMajor.Any" /> for all devices.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inMinorDeviceClass">
+          <format type="text/html">
+            <dd>
+              <para>Set the minor device class for found devices. Set to <see cref="F:MonoMac.IOBluetooth.BluetoothDeviceClassMinor.Any" /> for all devices.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Use this method to set the criteria for the device search.</para>
+        </summary>
+        <remarks>
+          <para>The default inquiry object will search for all types of devices. If you wish to find only keyboards, for example, you might use this method like this:</para>
+          <code>
+myInquiryObject.SetSearchCriteria (BluetoothServiceClassMajor.Any, BluetoothDeviceClassMajor.Peripheral, BluetoothDeviceClassMinor.Peripheral1Keyboard);
+          </code>
+          <para>However, we recommend only using this if you are certain of the device class you are looking for, as some devices may report a different/unexpected device class, and the search may miss the device you are interested in.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn Start() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("start")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <para>Tells inquiry object to begin the inquiry and name updating process, if specified.</para>
+        </summary>
+        <returns>
+          <para>Returns <see cref="F:MonoMac.IOKit.IOReturn.Success" /> if start was successful. Returns <see cref="F:MonoMac.IOKit.IOReturn.Busy" /> if the object is already in process. May return other IOReturn values, as appropriate.</para>
+        </returns>
+        <remarks>
+          <para>Calling start multiple times in rapid succession or back-to-back will probably not produce the intended results. Inquiries are throttled if they are called too quickly in succession.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn Stop() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("stop")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <para>Halts the inquiry object. Could either stop the search for new devices, or the updating of found device names.</para>
+        </summary>
+        <returns>
+          <para>Returns <see cref="F:MonoMac.IOKit.IOReturn.Success" /> if the inquiry is successfully stopped. Returns <see cref="F:MonoMac.IOKit.IOReturn.NotPermitted" /> if the inquiry object is already stopped. May return other IOReturn values, as appropriate.</para>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateNewDeviceNames">
+      <MemberSignature Language="C#" Value="public virtual bool UpdateNewDeviceNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UpdateNewDeviceNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("updateNewDeviceNames")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setUpdateNewDeviceNames:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Returns whether or the inquiry object will perform remote name requests on found devices.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>The default value for the inquiry object is TRUE, unless this method is used to change it.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WeakDelegate">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject WeakDelegate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSObject WeakDelegate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("delegate")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: MonoMac.Foundation.Export("setDelegate:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An object that can respond to the delegate protocol for this type</summary>
+        <value>The instance that will respond to events and data requests.</value>
+        <remarks>
+          <para>The delegate instance assigned to this object will be used to handle events or provide data on demand to this class.</para>
+          <para>When setting the Delegate or WeakDelegate values events will be delivered to the specified instance instead of being delivered to the C#-style events</para>
+          <para>   Methods must be decorated with the [Export ("selectorName")] attribute to respond to each method from the protocol.   Alternatively use the Delegate method which is strongly typed and does not require the [Export] attributes on methods.</para>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

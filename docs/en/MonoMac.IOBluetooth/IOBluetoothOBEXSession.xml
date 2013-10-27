@@ -1,0 +1,771 @@
+<Type Name="IOBluetoothOBEXSession" FullName="MonoMac.IOBluetooth.IOBluetoothOBEXSession">
+  <TypeSignature Language="C#" Value="public class IOBluetoothOBEXSession : MonoMac.IOBluetooth.OBEXSession" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOBluetoothOBEXSession extends MonoMac.IOBluetooth.OBEXSession" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.IOBluetooth.OBEXSession</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Register("IOBluetoothOBEXSession", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An OBEX Session with a Bluetooth RFCOMM channel as the transport.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothOBEXSession ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothOBEXSession (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithCoder:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothOBEXSession (MonoMac.Foundation.NSObjectFlag t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="t" Type="MonoMac.Foundation.NSObjectFlag" />
+      </Parameters>
+      <Docs>
+        <param name="t">Unused sentinel value, pass NSObjectFlag.Empty.</param>
+        <summary>Constructor to call on derived classes when the derived class has an [Export] constructor.</summary>
+        <remarks>
+          <para>This constructor should be called by derived classes when they are initialized using an [Export] attribute. The argument value is ignore, typically the chaining would look like this:</para>
+          <example>
+            <code lang="C#">
+public class MyClass : BaseClass {
+    [Export ("initWithFoo:")]
+    public MyClass (string foo) : base (NSObjectFlag.Empty)
+    {
+        ...
+    }
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothOBEXSession (MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord inSDPServiceRecord);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord inSDPServiceRecord) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithSDPServiceRecord:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="inSDPServiceRecord" Type="MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord" />
+      </Parameters>
+      <Docs>
+        <param name="inSDPServiceRecord">
+          <format type="text/html">
+            <dd />
+          </format>
+        </param>
+        <summary>
+          <para>Initializes a Bluetooth-based OBEX Session using an SDP service record.</para>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothOBEXSession (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Pointer (handle) to the unmanaged object.</param>
+        <summary>A constructor used when creating managed representations of unmanaged objects;  Called by the runtime.</summary>
+        <remarks>
+          <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothOBEXSession (MonoMac.IOBluetooth.IOBluetoothDevice inDevice, byte inChannelID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.IOBluetooth.IOBluetoothDevice inDevice, unsigned int8 inChannelID) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithDevice:channelID:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="inDevice" Type="MonoMac.IOBluetooth.IOBluetoothDevice" />
+        <Parameter Name="inChannelID" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="inDevice">
+          <format type="text/html">
+            <dd>
+              <para>The bluetooth device on which to open the OBEXSession.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inChannelID">
+          <format type="text/html">
+            <dd>
+              <para>The RFCOMM channel ID to use when opening the connection.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initializes a Bluetooth-based OBEX Session using a Bluetooth device.</para>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothOBEXSession (MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel inChannel, MonoMac.ObjCRuntime.Selector inEventSelector, MonoMac.Foundation.NSObject inEventSelectorTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel inChannel, class MonoMac.ObjCRuntime.Selector inEventSelector, class MonoMac.Foundation.NSObject inEventSelectorTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithIncomingRFCOMMChannel:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="inChannel" Type="MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel" />
+        <Parameter Name="inEventSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inEventSelectorTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inChannel">
+          <format type="text/html">
+            <dd>
+              <para>RFCOMM channel ID of the desired channel to be used.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inEventSelector">
+          <format type="text/html">
+            <dd>
+              <para>The selector to be called when an event is received.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inEventSelectorTarget">
+          <format type="text/html">
+            <dd>
+              <para>The target object that get the selector message.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>caller reference constant, pass whatever you want, it will be returned to you in the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initializes a Bluetooth-based OBEX Session using an incoming RFCOMM channel.</para>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassHandle">
+      <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The handle for this class.</summary>
+        <value>The pointer to the Objective-C class.</value>
+        <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseTransportConnection">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError CloseTransportConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError CloseTransportConnection() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("closeTransportConnection")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <para>An OBEXSession override. When this is called by the session baseclass, we will close the transport connection if it is opened. In our case, it will be the RFCOMM channel that needs closing.</para>
+        </summary>
+        <returns>
+          <para>Success or failure code, describing whether the call succeeded in closing the transport connection successfully.</para>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Device">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothDevice Device { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothDevice Device" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getDevice")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothDevice</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Get the Bluetooth Device being used by the session object.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <para>If set to <see langword="true" />, the method is invoked directly and will dispose manage and unmanaged resources;   If set to <see langword="false" /> the method is being called by the garbage collector finalizer and should only release unmanaged resources.</para>
+        </param>
+        <summary>Releases the resources used by the IOBluetoothOBEXSession object.</summary>
+        <remarks>
+          <para>This Dispose method releases the resources used by the IOBluetoothOBEXSession class.</para>
+          <para>This method is called by both the Dispose() method and the object finalizer (Finalize).    When invoked by the Dispose method, the parameter disposting <paramref name="disposing" /> is set to <see langword="true" /> and any managed object references that this object holds are also disposed or released;  when invoked by the object finalizer, on the finalizer thread the value is set to <see langword="false" />. </para>
+          <para>Calling the Dispose method when you are finished using the IOBluetoothOBEXSession ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.</para>
+          <para>  For more information on how to override this method and on the Dispose/IDisposable pattern, read the ``Implementing a Dispose Method'' document at http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSessionWithDevice">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothOBEXSession GetSessionWithDevice (MonoMac.IOBluetooth.IOBluetoothDevice inDevice, byte inRFCOMMChannelID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.IOBluetooth.IOBluetoothOBEXSession GetSessionWithDevice(class MonoMac.IOBluetooth.IOBluetoothDevice inDevice, unsigned int8 inRFCOMMChannelID) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("withDevice:channelID:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothOBEXSession</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inDevice" Type="MonoMac.IOBluetooth.IOBluetoothDevice" />
+        <Parameter Name="inRFCOMMChannelID" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="inDevice">
+          <format type="text/html">
+            <dd>
+              <para>A valid Bluetooth device describing which device you want to connect to with Bluetooth/OBEX.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inRFCOMMChannelID">
+          <format type="text/html">
+            <dd>
+              <para>An RFCOMM Channel ID numbe that is available on the remote device. This channel will be used when the transport connection is attempted.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a Bluetooth-based OBEX Session using a Bluetooth device and a Bluetooth RFCOMM channel ID.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>Note that this does NOT mean the transport connection was open. It will be opened when OBEXConnect is invoked on the session object.</para>
+          <para>*IMPORTANT NOTE* In Bluetooth framework version 1.0.0, the session returned will NOT be autoreleased as it should be according to objc convention. This has been changed starting in Bluetooth version 1.0.1 and later, so it WILL be autoreleased upon return, so you will need to retain it if you want to reference it later.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSessionWithIncomingRFCOMMChannel">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothOBEXSession GetSessionWithIncomingRFCOMMChannel (MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel inChannel, MonoMac.ObjCRuntime.Selector inEventSelector, MonoMac.Foundation.NSObject inEventSelectorTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class MonoMac.IOBluetooth.IOBluetoothOBEXSession GetSessionWithIncomingRFCOMMChannel(class MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel inChannel, class MonoMac.ObjCRuntime.Selector inEventSelector, class MonoMac.Foundation.NSObject inEventSelectorTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("withIncomingRFCOMMChannel:eventSelector:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothOBEXSession</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inChannel" Type="MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel" />
+        <Parameter Name="inEventSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inEventSelectorTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inChannel">
+          <format type="text/html">
+            <dd>
+              <para>The channel to use to create a connection to a device.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inEventSelector">
+          <format type="text/html">
+            <dd>
+              <para>The selector that gets called when an event occurs on the OBEX Session.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inEventSelectorTarget">
+          <format type="text/html">
+            <dd>
+              <para>The object that is used to call the above selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>The reference constant. Pass whatever you wish - it will be returned to you in the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a Bluetooth-based OBEX Session using an incoming RFCOMM channel.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>*IMPORTANT NOTE* In Bluetooth framework version 1.0.0, the session returned will NOT be autoreleased as it should be according to objc convention. This has been changed starting in Bluetooth version 1.0.1 and later, so it WILL be autoreleased upon return, so you will need to retain it if you want to reference it later.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSessionWithSDPServiceRecord">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothOBEXSession GetSessionWithSDPServiceRecord (MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord inSDPServiceRecord);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothOBEXSession GetSessionWithSDPServiceRecord(class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord inSDPServiceRecord) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("withSDPServiceRecord:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothOBEXSession</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inSDPServiceRecord" Type="MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord" />
+      </Parameters>
+      <Docs>
+        <param name="inSDPServiceRecord">
+          <format type="text/html">
+            <dd>
+              <para>A valid SDP service record describing the service (and RFCOMM channel) you want to connect to with Bluetooth/OBEX.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a Bluetooth-based OBEX Session using an SDP service record, typically obtained from a device/service browser window controller.</para>
+        </summary>
+        <returns>
+          <para>An OBEX session representing the device/rfcomm channel found in the service record. nil if we failed.</para>
+        </returns>
+        <remarks>
+          <para>Note that this does NOT mean the transport connection was open. It will be opened when OBEXConnect is invoked on the session object.</para>
+          <para>*IMPORTANT NOTE* In Bluetooth framework version 1.0.0, the session returned will NOT be autoreleased as it should be according to objc convention. This has been changed starting in Bluetooth version 1.0.1 and later, so it WILL be autoreleased upon return, so you will need to retain it if you want to reference it later.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasOpenTransportConnection">
+      <MemberSignature Language="C#" Value="public virtual bool HasOpenTransportConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasOpenTransportConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("hasOpenTransportConnection")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>An OBEXSession override. When this is called by the session baseclass, we will return whether or not we have a transport connection established to another OBEX server/client. In our case we will tell whether or not the RFCOMM channel to a remote device is still open.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSessionTargetAMac">
+      <MemberSignature Language="C#" Value="public virtual bool IsSessionTargetAMac { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSessionTargetAMac" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("isSessionTargetAMac")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Tells whether the target device is a Mac by checking its service record.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>Tells whether the target device is a Mac by checking its service record.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenTransportConnection">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError OpenTransportConnection (MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inTarget, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError OpenTransportConnection(class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inTarget, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("openTransportConnection:selectorTarget:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inSelector">To be added.</param>
+        <param name="inTarget">To be added.</param>
+        <param name="inUserRefCon">To be added.</param>
+        <summary>
+          <para>An OBEXSession override. When this is called by the session baseclass, we will attempt to open the transport connection. In our case, this would be an RFCOMM channel to another Bluetooth device.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>Your selector should have the following signature:</para>
+          <para>-(void)transportConnectionSelector:(id)refcon status:(OBEXError)status;</para>
+          <para>Thus you could use it with openTransportConnection like this:</para>
+          <para>OBEXError error = [anOBEXSession openTransportConnection:@selector( transportConnectionSelector:status: ) selectorTarget:self refCon:anOBEXSession]; // or whatever you want to pass as a refCon...</para>
+          <para>Be sure to check the status code! Assume the connection was not opened unless status is kOBEXSuccess.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RestartTransmission">
+      <MemberSignature Language="C#" Value="public virtual void RestartTransmission ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RestartTransmission() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("restartTransmission")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <para>If the transmission was stopeed due to the lack of buffers this call restarts it.</para>
+        </summary>
+        <remarks>
+          <para>If the transmission was stopeed due to the lack of buffers this call restarts it.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RFCOMMChannel">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel RFCOMMChannel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel RFCOMMChannel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getRFCOMMChannel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothRFCOMMChannel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Get the Bluetooth RFCOMM channel being used by the session object.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>This could potentially be nil even though you have a valid OBEX session, because the RFCOMM channel is only valid when the session is connected.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendBufferTroughChannel">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOKit.IOReturn SendBufferTroughChannel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOKit.IOReturn SendBufferTroughChannel() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("sendBufferTroughChannel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.IOReturn</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <para>Sends the next block of data trough the rfcomm channel.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+          <para>Since a send in the rfcomm channel is broken in multiple write calls (this actually is true only if the size is grater than the rfcomm MTU). Each write call is performed by sendBufferTroughChannel. This should never need to be overwritten.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendDataToTransport">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.OBEXError SendDataToTransport (IntPtr inDataToSend, UIntPtr inDataLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype MonoMac.IOBluetooth.OBEXError SendDataToTransport(native int inDataToSend, native unsigned int inDataLength) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("sendDataToTransport:dataLength:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.OBEXError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inDataToSend" Type="System.IntPtr" />
+        <Parameter Name="inDataLength" Type="System.UIntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inDataToSend">To be added.</param>
+        <param name="inDataLength">To be added.</param>
+        <summary>
+          <para>An OBEXSession override. When this is called by the session baseclass, we will send the data we are given over our transport connection. If none is open, we could try to open it, or just return an error. In our case, it will be sent over the RFCOMM channel.</para>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOBEXSessionOpenConnectionCallback">
+      <MemberSignature Language="C#" Value="public virtual void SetOBEXSessionOpenConnectionCallback (MonoMac.IOBluetooth.IOBluetoothOBEXSessionOpenConnectionCallback inCallback, IntPtr inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOBEXSessionOpenConnectionCallback(class MonoMac.IOBluetooth.IOBluetoothOBEXSessionOpenConnectionCallback inCallback, native int inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setOBEXSessionOpenConnectionCallback:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inCallback" Type="MonoMac.IOBluetooth.IOBluetoothOBEXSessionOpenConnectionCallback" />
+        <Parameter Name="inUserRefCon" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="inCallback">
+          <format type="text/html">
+            <dd>
+              <para>function to call on the target.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>user's reference constant, will be returned on the callback.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>For C API support. Allows you to set the callback to be invoked when the OBEX connection is actually opened.</para>
+        </summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOpenTransportConnectionAsyncSelector">
+      <MemberSignature Language="C#" Value="public virtual void SetOpenTransportConnectionAsyncSelector (MonoMac.ObjCRuntime.Selector inSelector, MonoMac.Foundation.NSObject inSelectorTarget, MonoMac.Foundation.NSObject inUserRefCon);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOpenTransportConnectionAsyncSelector(class MonoMac.ObjCRuntime.Selector inSelector, class MonoMac.Foundation.NSObject inSelectorTarget, class MonoMac.Foundation.NSObject inUserRefCon) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("setOpenTransportConnectionAsyncSelector:target:refCon:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inSelector" Type="MonoMac.ObjCRuntime.Selector" />
+        <Parameter Name="inSelectorTarget" Type="MonoMac.Foundation.NSObject" />
+        <Parameter Name="inUserRefCon" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="inSelector">
+          <format type="text/html">
+            <dd>
+              <para>Selector to call on the target.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inSelectorTarget">
+          <format type="text/html">
+            <dd>
+              <para>Target to be called with the selector.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="inUserRefCon">
+          <format type="text/html">
+            <dd>
+              <para>User's refCon that will get passed to them when their selector is invoked.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Allows you to set the selector to be used when a transport connection is opened, or fails to open.</para>
+        </summary>
+        <remarks>
+          <para>You do not need to call this on the session typically, unless you have subclassed the OBEXSession to implement a new transport and that transport supports async opening of connections. If it does not support async open, then using this is pointless.</para>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

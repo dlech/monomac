@@ -1,0 +1,51 @@
+<Type Name="IOHIDTransactionDirectionType" FullName="MonoMac.IOKit.HID.IOHIDTransactionDirectionType">
+  <TypeSignature Language="C#" Value="public enum IOHIDTransactionDirectionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOHIDTransactionDirectionType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+           Direction for an IOHIDDeviceTransactionInterface.
+           </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="Input" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDTransactionDirectionType Input = unsigned int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDTransactionDirectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Transaction direction used for requesting element values from a device.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Output">
+      <MemberSignature Language="C#" Value="Output" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDTransactionDirectionType Output = unsigned int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDTransactionDirectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Transaction direction used for dispatching element values to a device.
+               </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

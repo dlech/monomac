@@ -1,0 +1,57 @@
+<Type Name="IOHIDQueueOptionsType" FullName="MonoMac.IOKit.HID.IOHIDQueueOptionsType">
+  <TypeSignature Language="C#" Value="public enum IOHIDQueueOptionsType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOHIDQueueOptionsType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+           Options for creating a queue via IOHIDLib.
+           </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnqueueAll">
+      <MemberSignature Language="C#" Value="EnqueueAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDQueueOptionsType EnqueueAll = unsigned int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDQueueOptionsType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Force the IOHIDQueue
+               to enqueue all events, relative or absolute, regardless of change.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDQueueOptionsType None = unsigned int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDQueueOptionsType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Default option.
+               </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,218 @@
+<Type Name="IONotificationPort" FullName="MonoMac.IOKit.IONotificationPort">
+  <TypeSignature Language="C#" Value="public class IONotificationPort : IDisposable, MonoMac.ObjCRuntime.INativeObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IONotificationPort extends System.Object implements class MonoMac.ObjCRuntime.INativeObject, class System.IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>MonoMac.ObjCRuntime.INativeObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IONotificationPort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns a IONotificationPort object using the default master port
+               for receiving IOKit notifications of new devices or state changes.</summary>
+        <remarks>Creates the notification object to receive notifications from IOKit of new device arrivals or state changes.
+               The notification object can be supply a CFRunLoopSource, or mach_port_t to be used to listen for events.</remarks>
+        <exception cref="Exception">If the object was not created</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatchCalloutFromMessage">
+      <MemberSignature Language="C#" Value="public void DispatchCalloutFromMessage (MonoMac.Kernel.Mach.MessageHeader messageHeader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DispatchCalloutFromMessage(valuetype MonoMac.Kernel.Mach.MessageHeader messageHeader) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageHeader" Type="MonoMac.Kernel.Mach.MessageHeader" />
+      </Parameters>
+      <Docs>
+        <param name="messageHeader">The message received.</param>
+        <summary>
+               Dispatches callback notifications from a mach message.
+               </summary>
+        <remarks>A notification object may deliver notifications to a mach messaging client,
+               which should call this function to generate the callbacks associated with the notifications arriving on the port.
+               </remarks>
+        <exception cref="T:System.ObjectDisposedException">If the object has been disposed (Handle == 0)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases the resources used by the IONotificationPort object.</summary>
+        <remarks>
+          <para>The Dispose method releases the resources used by the IONotificationPort class.</para>
+          <para>Calling the Dispose method when you are finished using the IONotificationPort ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.  For more information on releasing resources see ``Cleaning up Unmananaged Resources'' at http://msdn.microsoft.com/en-us/library/498928w2.aspx</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <para>If set to <see langword="true" />, the method is invoked directly and will dispose manage and unmanaged resources;   If set to <see langword="false" /> the method is being called by the garbage collector finalizer and should only release unmanaged resources.</para>
+        </param>
+        <summary>Releases the resources used by the IONotificationPort object.</summary>
+        <remarks>
+          <para>This Dispose method releases the resources used by the IONotificationPort class.</para>
+          <para>This method is called by both the Dispose() method and the object finalizer (Finalize).    When invoked by the Dispose method, the parameter disposting <paramref name="disposing" /> is set to <see langword="true" /> and any managed object references that this object holds are also disposed or released;  when invoked by the object finalizer, on the finalizer thread the value is set to <see langword="false" />. </para>
+          <para>Calling the Dispose method when you are finished using the IONotificationPort ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.</para>
+          <para>  For more information on how to override this method and on the Dispose/IDisposable pattern, read the ``Implementing a Dispose Method'' document at http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~IONotificationPort ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Finalizer for the IONotificationPort object</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Handle (pointer) to the unmanaged object representation.</summary>
+        <value>A pointer</value>
+        <remarks>This IntPtr is a handle to the underlying unmanaged representation for this object.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MachPort">
+      <MemberSignature Language="C#" Value="public MonoMac.Kernel.Mach.Port MachPort { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Kernel.Mach.Port MachPort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.Kernel.Mach.Port</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Gets a mach_port to be used to listen for notifications.
+               </summary>
+        <value>To be added.</value>
+        <remarks>A notification object may deliver notifications to a mach messaging client
+               if they listen for messages on the port obtained from this function.
+               Callbacks associated with the notifications may be delivered by calling
+               IODispatchCalloutFromMessage with messages received.
+              
+               The caller should not release this Mach.Port. It will be releaed when the IONotificationPort
+               object is disposed.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If the object has been disposed (Handle == 0)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RunLoopSource">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreFoundation.CFRunLoopSource RunLoopSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.CoreFoundation.CFRunLoopSource RunLoopSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.CFRunLoopSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               CFRunLoopSource to be used to listen for notifications.
+               </summary>
+        <value>To be added.</value>
+        <remarks>A notification object may deliver notifications to a CFRunLoop
+               by adding the run loop source returned by this function to the run loop.
+              
+               The caller should not release this CFRunLoopSource. It will be releaed when the IONotificationPort
+               object is disposed.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If the object has been disposed (Handle == 0)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDispatchQueue">
+      <MemberSignature Language="C#" Value="public void SetDispatchQueue (MonoMac.CoreFoundation.DispatchQueue queue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDispatchQueue(class MonoMac.CoreFoundation.DispatchQueue queue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.ObjCRuntime.Since(6, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queue" Type="MonoMac.CoreFoundation.DispatchQueue" />
+      </Parameters>
+      <Docs>
+        <param name="queue">A dispatch queue.</param>
+        <summary>
+               Sets a dispatch queue to be used to listen for notifications.
+               </summary>
+        <remarks>A notification object may deliver notifications to a dispatch client.</remarks>
+        <exception cref="T:System.ObjectDisposedException">If the object has been disposed (Handle == 0)</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

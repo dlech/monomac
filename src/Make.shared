@@ -44,16 +44,22 @@ SHARED_SOURCE = \
 	./CoreAnimation/CALayer.cs			\
 	./CoreAnimation/CATextLayer.cs			\
 	./CoreAnimation/CAMediaTimingFunction.cs	\
+	./CoreBluetooth/CBCentralManager.cs             \
+	./CoreBluetooth/CBPeripheral.cs                 \
+	./CoreBluetooth/CBUUID.cs                       \
 	./CoreFoundation/CFArray.cs                     \
 	./CoreFoundation/CFBoolean.cs                   \
 	./CoreFoundation/CFDictionary.cs                \
 	./CoreFoundation/CFException.cs                 \
+	./CoreFoundation/CFPluginCOM.cs                 \
+	./CoreFoundation/CFSet.cs                       \
 	./CoreFoundation/CFSocket.cs			\
 	./CoreFoundation/CFStream.cs			\
 	./CoreFoundation/CFReadStream.cs		\
 	./CoreFoundation/CFWriteStream.cs		\
-	./CoreFoundation/CFType.cs			\
+	./CoreFoundation/CFUUID.cs                      \
 	./CoreGraphics/CGContextPDF.cs			\
+	./CoreGraphics/CGDataConsumer.cs		\
 	./CoreGraphics/CGDataProvider-2.cs		\
 	./CoreGraphics/CGFunction.cs			\
 	./CoreGraphics/CGPDFArray.cs			\
@@ -144,6 +150,41 @@ SHARED_SOURCE = \
 	./Foundation/ToString.cs			\
 	./ImageIO/CGImageSource.cs			\
 	./ImageIO/CGImageDestination.cs			\
+	./IOBluetooth/IOBluetoothDevice.cs              \
+	./IOBluetooth/IOBluetoothRFCOMMChannel.cs       \
+	./IOBluetooth/IOBluetoothSDPServiceRecord.cs    \
+	./IOBluetooth/NSDictionaryOBEXExtensions.cs     \
+	./IOKit/Enums.cs                                \
+	./IOKit/IOCFPlugin.cs                           \
+	./IOKit/IOConnection.cs                         \
+	./IOKit/IOIterator.cs                           \
+	./IOKit/IOMasterPort.cs                         \
+	./IOKit/IOMessage.cs                            \
+	./IOKit/IONotificationPort.cs                   \
+	./IOKit/IOObject.cs                             \
+	./IOKit/IOReceivePort.cs                        \
+	./IOKit/IORegistryEntry.cs                      \
+	./IOKit/IORegistryIterator.cs                   \
+	./IOKit/IOService.cs                            \
+	./IOKit/HID/Enums.cs                            \
+	./IOKit/HID/IOHID.cs                            \
+	./IOKit/HID/IOHIDDevice.cs                      \
+	./IOKit/HID/IOHIDDeviceEventArgs.cs             \
+	./IOKit/HID/IOHIDElement.cs                     \
+	./IOKit/HID/IOHIDManager.cs                     \
+	./IOKit/HID/IOHIDReportEventArgs.cs             \
+	./IOKit/HID/IOHIDValue.cs                       \
+	./IOKit/HID/IOHIDValueEventArgs.cs              \
+	./IOKit/USB/Enums.cs                            \
+	./IOKit/USB/IOUSB.cs                            \
+	./IOKit/USB/IOUSBDevice.cs                      \
+	./IOKit/USB/IOUSBInterface.cs                   \
+	./IOKit/USB/IOUSBNub.cs                         \
+	./Kernel/Mach/MessageHeader.cs                  \
+	./Kernel/Mach/Port.cs                           \
+	./Kernel/Mach/Task.cs                           \
+	./Kernel/Mach/Time.cs                           \
+	./Kernel/Mach/TimeSpec.cs                       \
 	./ObjCRuntime/CompileFlagsAttribute.cs		\
 	./QuickLook/Thumbnail.cs			\
 	./Security/Enums.cs				\
@@ -163,9 +204,11 @@ SHARED_CORE_SOURCE = \
 	./AudioToolbox/AudioType.cs			\
 	./CoreAnimation/CATransform3D.cs		\
 	./CoreAnimation/CAEnums.cs			\
+	./CoreBluetooth/Enums.cs                        \
 	./CoreData/Enums.cs				\
 	./CoreFoundation/CFAllocator.cs			\
 	./CoreFoundation/CFString.cs                    \
+	./CoreFoundation/CFType.cs                      \
 	./CoreFoundation/CFUrl.cs                       \
 	./CoreFoundation/CFRunLoop.cs                   \
 	./CoreFoundation/Dispatch.cs                    \
@@ -227,6 +270,12 @@ SHARED_CORE_SOURCE = \
 	./Foundation/RegisterAttribute.cs		\
 	./Foundation/PreserveAttribute.cs		\
 	./Foundation/LinkerSafeAttribute.cs		\
+	./IOBluetooth/IOBluetooth.cs                    \
+	./IOBluetooth/Enums.cs                          \
+	./IOKit/IOKit.cs                                \
+	./IOKit/IOReturn.cs                             \
+	./IOKit/IOReturnEventArgs.cs                    \
+	./Kernel/Mach/Error.cs                          \
         ./ObjCRuntime/AdoptsAttribute.cs               	\
         ./ObjCRuntime/ArgumentSemantic.cs               \
         ./ObjCRuntime/AlphaAttribute.cs                 \

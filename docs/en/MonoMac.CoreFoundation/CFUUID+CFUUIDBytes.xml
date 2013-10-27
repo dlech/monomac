@@ -1,0 +1,33 @@
+<Type Name="CFUUID+CFUUIDBytes" FullName="MonoMac.CoreFoundation.CFUUID+CFUUIDBytes">
+  <TypeSignature Language="C#" Value="public struct CFUUID.CFUUIDBytes" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit CFUUID/CFUUIDBytes extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="bytes">
+      <MemberSignature Language="C#" Value="public byte[] bytes;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] bytes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

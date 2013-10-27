@@ -1,0 +1,413 @@
+<Type Name="IOBluetoothHandsFreeDeviceDelegate" FullName="MonoMac.IOBluetooth.IOBluetoothHandsFreeDeviceDelegate">
+  <TypeSignature Language="C#" Value="public class IOBluetoothHandsFreeDeviceDelegate : MonoMac.IOBluetooth.IOBluetoothHandsFreeDelegate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOBluetoothHandsFreeDeviceDelegate extends MonoMac.IOBluetooth.IOBluetoothHandsFreeDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.IOBluetooth.IOBluetoothHandsFreeDelegate</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Model</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Register("IOBluetoothHandsFreeDeviceDelegate", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothHandsFreeDeviceDelegate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothHandsFreeDeviceDelegate (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithCoder:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothHandsFreeDeviceDelegate (MonoMac.Foundation.NSObjectFlag t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="t" Type="MonoMac.Foundation.NSObjectFlag" />
+      </Parameters>
+      <Docs>
+        <param name="t">Unused sentinel value, pass NSObjectFlag.Empty.</param>
+        <summary>Constructor to call on derived classes when the derived class has an [Export] constructor.</summary>
+        <remarks>
+          <para>This constructor should be called by derived classes when they are initialized using an [Export] attribute. The argument value is ignore, typically the chaining would look like this:</para>
+          <example>
+            <code lang="C#">
+public class MyClass : BaseClass {
+    [Export ("initWithFoo:")]
+    public MyClass (string foo) : base (NSObjectFlag.Empty)
+    {
+        ...
+    }
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothHandsFreeDeviceDelegate (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Pointer (handle) to the unmanaged object.</param>
+        <summary>A constructor used when creating managed representations of unmanaged objects;  Called by the runtime.</summary>
+        <remarks>
+          <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BatteryCharge">
+      <MemberSignature Language="C#" Value="public virtual void BatteryCharge (MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, MonoMac.Foundation.NSNumber batteryCharge);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BatteryCharge(class MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, class MonoMac.Foundation.NSNumber batteryCharge) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFree:batteryCharge:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" />
+        <Parameter Name="batteryCharge" Type="MonoMac.Foundation.NSNumber" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="batteryCharge">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallHoldState">
+      <MemberSignature Language="C#" Value="public virtual void CallHoldState (MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, MonoMac.Foundation.NSNumber callHoldState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CallHoldState(class MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, class MonoMac.Foundation.NSNumber callHoldState) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFree:callHoldState:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" />
+        <Parameter Name="callHoldState" Type="MonoMac.Foundation.NSNumber" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="callHoldState">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallSetupMode">
+      <MemberSignature Language="C#" Value="public virtual void CallSetupMode (MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, MonoMac.Foundation.NSNumber callSetupMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CallSetupMode(class MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, class MonoMac.Foundation.NSNumber callSetupMode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFree:callSetupMode:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" />
+        <Parameter Name="callSetupMode" Type="MonoMac.Foundation.NSNumber" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="callSetupMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentCall">
+      <MemberSignature Language="C#" Value="public virtual void CurrentCall (MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, MonoMac.Foundation.NSDictionary currentCall);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CurrentCall(class MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, class MonoMac.Foundation.NSDictionary currentCall) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFree:currentCall:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" />
+        <Parameter Name="currentCall" Type="MonoMac.Foundation.NSDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="currentCall">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncomingSMS">
+      <MemberSignature Language="C#" Value="public virtual void IncomingSMS (MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, MonoMac.Foundation.NSDictionary sms);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IncomingSMS(class MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, class MonoMac.Foundation.NSDictionary sms) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFree:incomingSMS:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" />
+        <Parameter Name="sms" Type="MonoMac.Foundation.NSDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="sms">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCallActive">
+      <MemberSignature Language="C#" Value="public virtual void IsCallActive (MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, MonoMac.Foundation.NSNumber isCallActive);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsCallActive(class MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, class MonoMac.Foundation.NSNumber isCallActive) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFree:isCallActive:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" />
+        <Parameter Name="isCallActive" Type="MonoMac.Foundation.NSNumber" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="isCallActive">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRoaming">
+      <MemberSignature Language="C#" Value="public virtual void IsRoaming (MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, MonoMac.Foundation.NSNumber isRoaming);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsRoaming(class MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, class MonoMac.Foundation.NSNumber isRoaming) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFree:isRoaming:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" />
+        <Parameter Name="isRoaming" Type="MonoMac.Foundation.NSNumber" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="isRoaming">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsServiceAvailable">
+      <MemberSignature Language="C#" Value="public virtual void IsServiceAvailable (MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, MonoMac.Foundation.NSNumber isServiceAvailable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsServiceAvailable(class MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, class MonoMac.Foundation.NSNumber isServiceAvailable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFree:isServiceAvailable:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" />
+        <Parameter Name="isServiceAvailable" Type="MonoMac.Foundation.NSNumber" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="isServiceAvailable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignalStrength">
+      <MemberSignature Language="C#" Value="public virtual void SignalStrength (MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, MonoMac.Foundation.NSNumber signalStrength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SignalStrength(class MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, class MonoMac.Foundation.NSNumber signalStrength) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFree:signalStrength:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" />
+        <Parameter Name="signalStrength" Type="MonoMac.Foundation.NSNumber" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="signalStrength">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscriberNumber">
+      <MemberSignature Language="C#" Value="public virtual void SubscriberNumber (MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, string subscriberNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SubscriberNumber(class MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, string subscriberNumber) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFree:subscriberNumber:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" />
+        <Parameter Name="subscriberNumber" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="subscriberNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnhandledResultCode">
+      <MemberSignature Language="C#" Value="public virtual void UnhandledResultCode (MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, string resultCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnhandledResultCode(class MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice device, string resultCode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("handsFree:unhandledResultCode:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="MonoMac.IOBluetooth.IOBluetoothHandsFreeDevice" />
+        <Parameter Name="resultCode" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="resultCode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

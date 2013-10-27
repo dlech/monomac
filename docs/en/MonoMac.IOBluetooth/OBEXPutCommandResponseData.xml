@@ -1,0 +1,17 @@
+<Type Name="OBEXPutCommandResponseData" FullName="MonoMac.IOBluetooth.OBEXPutCommandResponseData">
+  <TypeSignature Language="C#" Value="public struct OBEXPutCommandResponseData" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit OBEXPutCommandResponseData extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

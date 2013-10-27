@@ -1,0 +1,667 @@
+<Type Name="IOBluetoothSDPDataElement" FullName="MonoMac.IOBluetooth.IOBluetoothSDPDataElement">
+  <TypeSignature Language="C#" Value="public class IOBluetoothSDPDataElement : MonoMac.Foundation.NSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOBluetoothSDPDataElement extends MonoMac.Foundation.NSObject" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.Foundation.NSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>MonoMac.Foundation.Register("IOBluetoothSDPDataElement", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An instance of this class represents a single SDP data element as defined by the Bluetooth SDP spec.</summary>
+    <remarks>
+      <para>An instance of this class represents a single SDP data element as defined by the Bluetooth SDP spec.</para>
+      <para>The data types described by the spec have been mapped onto the base Foundation classes NSNumber, NSArray, NSData as well as IOBluetoothSDPUUID. The number and boolean types (type descriptor 1, 2 and 5) are represented as NSNumber objects with the exception of 128-bit numbers which are represented as NSData objects in their raw format. The UUID type (type descriptor 3) is represented by IOBluetoothSDPUUID. The string and URL types (type descriptor 4 and 8) are represented by NSString. The sequence types (type descriptor 6 and 7) are represented by NSArray.</para>
+      <para>Typically, you will not need to create an IOBluetoothSDPDataElement directly, the system will do that automatically for both client and server operations. However, the current API for adding SDP services to the system does allow the use of an NSDictionary based format for creating new services. The purpose for that is to allow a service to be built up completely in a text file (a plist for example) and then easily imported into an app and added to the system without a lot of tedious code to build up the entire SDP service record.</para>
+      <para>The basis for that NSDictionary structure comes from the IOBluetoothSDPDataElement. At its simplest, a data element is made up of three parts: the type descriptor, the size (from which the size descriptor is generated) and the actual value. To provide a complete representation of a data element, an NSDictionary with three entries can be used. Each of the three entries has a key/value pair representing one of the three attributes of a data element. The first key/value pair has a key 'DataElementType' that contains a number value with the actual type descriptor for the data element. The second pair has a key 'DataElementSize' that contains the actual size of the element in bytes. The size descriptor will be calculated based on the size and type of the element. The third pair is the value itself whose key is 'DataElementValue' and whose type corresponds to the type mapping above.</para>
+      <para>In addition to this complete description of a data element, their are some shortcuts that can be used for some of the common types and sizes.</para>
+      <para>If the 'DataElementType' value is one of the numeric types (1, 2), the 'DataElementValue' can be an NSData instead of an NSNumber. In that case, the numeric data is taken in network byte order (MSB first). Additionally, the 'DataElementSize' parameter may be omitted and the size will be taken from the length of the data object.</para>
+      <para>If the 'DataElementType' value is the nil type (0), no 'DataElementSize' or 'DataElementValue' entries are needed.</para>
+      <para>If the 'DataElementType' value is any of the other types, the 'DataElementSize' entry is not needed since the size will be taken directly from the value (data, array, string).</para>
+      <para>In the case where the element is an unsigned, 32-bit integer (type descriptor 1, size descriptor 4), the value itself may simply be a number (instead of a dictionary as in the previous examples). In the case where the element is a UUID (type descriptor 3), the value itself may be a data object. The UUID type will be inferred and the size taken from the length of the data object.</para>
+      <para>In the case where the element is a text string (type descriptor 4), the value may be a string object. The text string type will be inferred and the size taken from the length of the string.</para>
+      <para>In the case where the element is a data element sequence, the value may be an array object. The type will be inferred and the size taken from the length of the array. Additionally, the array must contain sub-elements that will be parsed out individually.</para>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPDataElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("init")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPDataElement (MonoMac.Foundation.NSCoder coder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSCoder coder) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithCoder:")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="coder" Type="MonoMac.Foundation.NSCoder" />
+      </Parameters>
+      <Docs>
+        <param name="coder">The unarchiver object.</param>
+        <summary>A constructor that initializes the object from the data stored in the unarchiver object.</summary>
+        <remarks>This constructor is provided to allow the class to be initialized from an unarchiver (for example, during NIB deserialization).</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPDataElement (MonoMac.Foundation.NSObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObject element) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithElementValue:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="element" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">
+          <format type="text/html">
+            <dd>
+              <para>The data element value of one of the specified types.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initializes a new IOBluetoothSDPDataElement with the given value.</para>
+        </summary>
+        <remarks>
+          <para>The value must follow the format listed above and must be an instance of NSData, NSString, NSNumber, NSArray, NSDictionary, IOBluetoothSDPUUID.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPDataElement (MonoMac.Foundation.NSObjectFlag t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class MonoMac.Foundation.NSObjectFlag t) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="t" Type="MonoMac.Foundation.NSObjectFlag" />
+      </Parameters>
+      <Docs>
+        <param name="t">Unused sentinel value, pass NSObjectFlag.Empty.</param>
+        <summary>Constructor to call on derived classes when the derived class has an [Export] constructor.</summary>
+        <remarks>
+          <para>This constructor should be called by derived classes when they are initialized using an [Export] attribute. The argument value is ignore, typically the chaining would look like this:</para>
+          <example>
+            <code lang="C#">
+public class MyClass : BaseClass {
+    [Export ("initWithFoo:")]
+    public MyClass (string foo) : base (NSObjectFlag.Empty)
+    {
+        ...
+    }
+</code>
+          </example>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPDataElement (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">Pointer (handle) to the unmanaged object.</param>
+        <summary>A constructor used when creating managed representations of unmanaged objects;  Called by the runtime.</summary>
+        <remarks>
+          <para>This constructor is invoked by the runtime infrastructure (<see cref="M:MonoMac.ObjCRuntime.GetNSObject (System.IntPtr)" />) to create a new managed representation for a pointer to an unmanaged Objective-C object.    You should not invoke this method directly, instead you should call the GetNSObject method as it will prevent two instances of a managed object to point to the same native object.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOBluetoothSDPDataElement (byte newType, byte newSizeDescriptor, uint newSize, MonoMac.Foundation.NSObject newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8 newType, unsigned int8 newSizeDescriptor, unsigned int32 newSize, class MonoMac.Foundation.NSObject newValue) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("initWithType:sizeDescriptor:size:value:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="newType" Type="System.Byte" />
+        <Parameter Name="newSizeDescriptor" Type="System.Byte" />
+        <Parameter Name="newSize" Type="System.UInt32" />
+        <Parameter Name="newValue" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="newType">
+          <format type="text/html">
+            <dd>
+              <para>The type descriptor for the data element.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="newSizeDescriptor">
+          <format type="text/html">
+            <dd>
+              <para>The size descriptor for the data element (verify it matches the size parameter).</para>
+            </dd>
+          </format>
+        </param>
+        <param name="newSize">
+          <format type="text/html">
+            <dd>
+              <para>The size of the data element in bytes (make sure it is a valid size for the given size descriptor).</para>
+            </dd>
+          </format>
+        </param>
+        <param name="newValue">
+          <format type="text/html">
+            <dd>
+              <para>The raw value itself. This must be the base NSString, NSNumber, NSArray or NSData objects. It may not be NSDictionary. If a dictionary format is present, use +withElementValue:.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Initializes a new IOBluetoothSDPDataElement with the given attributes.</para>
+        </summary>
+        <remarks>
+          <para>Warning - be careful using this method. There is next to no error checking done on the attributes. It is entirely possible to construct an invalid data element. It is recommended that +withElementValue: be used instead of this one.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrayValue">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSArray ArrayValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSArray ArrayValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getArrayValue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSArray</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>If the data element is represented by an array object, it returns the value as an NSArray.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>The data types represented by an array object are 6 (data element sequence) and 7 (data element alternative).</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassHandle">
+      <MemberSignature Language="C#" Value="public override IntPtr ClassHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ClassHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The handle for this class.</summary>
+        <value>The pointer to the Objective-C class.</value>
+        <remarks>Each MonoMac class mirrors an unmanaged Objective-C class.   This value contains the pointer to the Objective-C class, it is similar to calling objc_getClass with the object name.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsDataElement">
+      <MemberSignature Language="C#" Value="public virtual bool ContainsDataElement (MonoMac.IOBluetooth.IOBluetoothSDPDataElement dataElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsDataElement(class MonoMac.IOBluetooth.IOBluetoothSDPDataElement dataElement) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("containsDataElement:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataElement" Type="MonoMac.IOBluetooth.IOBluetoothSDPDataElement" />
+      </Parameters>
+      <Docs>
+        <param name="dataElement">
+          <format type="text/html">
+            <dd>
+              <para>The data element to compare with (and search for).</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Checks to see if the target data element is the same as the dataElement parameter or if it contains the dataElement parameter (if its a sequence type).</para>
+        </summary>
+        <returns>
+          <para>Returns TRUE if the target either matches the given data element or if it contains the given data element.</para>
+        </returns>
+        <remarks>
+          <para>If the target data element is not a sequence type, this method simply compares the two data elements. If it is a sequence type, it will search through the sequence (and sub-sequences) for the dataElement parameter.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsValue">
+      <MemberSignature Language="C#" Value="public virtual bool ContainsValue (MonoMac.Foundation.NSObject cmpValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsValue(class MonoMac.Foundation.NSObject cmpValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("containsValue:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cmpValue" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="cmpValue">
+          <format type="text/html">
+            <dd>
+              <para>The value to compare with (and search for).</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Checks to see if the target data element's value is the same as the value parameter or if it contains the value parameter.</para>
+        </summary>
+        <returns>
+          <para>Returns TRUE if the target's value either matches the given value or if it contains the given value.</para>
+        </returns>
+        <remarks>
+          <para>This method works just like -containsDataElement: except that it is comparing the value objects directly.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataValue">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSData DataValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSData DataValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getDataValue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>If the data element is represented by a data object, it returns the value as an NSData.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>The data types represented by a data object are 128-bit versions of 1 (unsigned int) and 2 (signed int).</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <para>If set to <see langword="true" />, the method is invoked directly and will dispose manage and unmanaged resources;   If set to <see langword="false" /> the method is being called by the garbage collector finalizer and should only release unmanaged resources.</para>
+        </param>
+        <summary>Releases the resources used by the IOBluetoothSDPDataElement object.</summary>
+        <remarks>
+          <para>This Dispose method releases the resources used by the IOBluetoothSDPDataElement class.</para>
+          <para>This method is called by both the Dispose() method and the object finalizer (Finalize).    When invoked by the Dispose method, the parameter disposting <paramref name="disposing" /> is set to <see langword="true" /> and any managed object references that this object holds are also disposed or released;  when invoked by the object finalizer, on the finalizer thread the value is set to <see langword="false" />. </para>
+          <para>Calling the Dispose method when you are finished using the IOBluetoothSDPDataElement ensures that all external resources used by this managed object are released as soon as possible.  Once you have invoked the Dispose method, the object is no longer useful and you should no longer make any calls to it.</para>
+          <para>  For more information on how to override this method and on the Dispose/IDisposable pattern, read the ``Implementing a Dispose Method'' document at http://msdn.microsoft.com/en-us/library/fs2xkftw.aspx</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementWithElementValue">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothSDPDataElement GetElementWithElementValue (MonoMac.Foundation.NSObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothSDPDataElement GetElementWithElementValue(class MonoMac.Foundation.NSObject element) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("withElementValue:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPDataElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">
+          <format type="text/html">
+            <dd>
+              <para>The data element value of one of the specified types.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a new IOBluetoothSDPDataElement with the given value.</para>
+        </summary>
+        <returns>
+          <para>Returns the newly allocated data element object. Returns nil if there was an error parsing the element value. The returned IOBluetoothSDPDataElement object has been autoreleased, so it is not necessary for the caller to release it. If the object is to be referenced and kept around, retain should be called.</para>
+        </returns>
+        <remarks>
+          <para>The value must follow the format listed above and must be an instance of NSData, NSString, NSNumber, NSArray, NSDictionary, IOBluetoothSDPUUID.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementWithType">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothSDPDataElement GetElementWithType (byte type, byte newSizeDescriptor, uint newSize, MonoMac.Foundation.NSObject newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothSDPDataElement GetElementWithType(unsigned int8 type, unsigned int8 newSizeDescriptor, unsigned int32 newSize, class MonoMac.Foundation.NSObject newValue) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>MonoMac.Foundation.Export("withType:sizeDescriptor:size:value:")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPDataElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Byte" />
+        <Parameter Name="newSizeDescriptor" Type="System.Byte" />
+        <Parameter Name="newSize" Type="System.UInt32" />
+        <Parameter Name="newValue" Type="MonoMac.Foundation.NSObject" />
+      </Parameters>
+      <Docs>
+        <param name="type">
+          <format type="text/html">
+            <dd>
+              <para>The type descriptor for the data element.</para>
+            </dd>
+          </format>
+        </param>
+        <param name="newSizeDescriptor">
+          <format type="text/html">
+            <dd>
+              <para>The size descriptor for the data element (verify it matches the size parameter).</para>
+            </dd>
+          </format>
+        </param>
+        <param name="newSize">
+          <format type="text/html">
+            <dd>
+              <para>The size of the data element in bytes (make sure it is a valid size for the given size descriptor).</para>
+            </dd>
+          </format>
+        </param>
+        <param name="newValue">
+          <format type="text/html">
+            <dd>
+              <para>The raw value itself. This must be the base NSString, NSNumber, NSArray or NSData objects. It may not be NSDictionary. If a dictionary format is present, use +withElementValue:.</para>
+            </dd>
+          </format>
+        </param>
+        <summary>
+          <para>Creates a new IOBluetoothSDPDataElement with the given attributes.</para>
+        </summary>
+        <returns>
+          <para>Returns the newly allocated data element object. Returns nil if an error is encountered (not likely due to the limited error checking currently done). The returned IOBluetoothSDPDataElement object has been autoreleased, so it is not necessary for the caller to release it. If the object is to be referenced and kept around, retain should be called.</para>
+        </returns>
+        <remarks>
+          <para>Warning - be careful using this method. There is next to no error checking done on the attributes. It is entirely possible to construct an invalid data element. It is recommended that +withElementValue: be used instead of this one.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberValue">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSNumber NumberValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSNumber NumberValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getNumberValue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>If the data element is represented by a number, it returns the value as an NSNumber.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>The data types represented by a number are 1 (unsigned int), 2 (signed int) and 5 (boolean) except for 128-bit versions of 1 and 2.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public virtual uint Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getSize")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Returns the size in bytes of the target data element.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>The size is valid whether the data element has a fixed or variable size descriptor.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeDescriptor">
+      <MemberSignature Language="C#" Value="public virtual byte SizeDescriptor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 SizeDescriptor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getSizeDescriptor")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Returns the SDP spec defined data element size descriptor for the target data element.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringValue">
+      <MemberSignature Language="C#" Value="public virtual string StringValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StringValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getStringValue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>If the data element is represented by a string object, it returns the value as an NSString.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>The data types represented by a string object are 4 (text string) and 8 (URL).</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeDescriptor">
+      <MemberSignature Language="C#" Value="public virtual byte TypeDescriptor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 TypeDescriptor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getTypeDescriptor")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Returns the SDP spec defined data element type descriptor for the target data element.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UUIDValue">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.IOBluetooth.IOBluetoothSDPUUID UUIDValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.IOBluetooth.IOBluetoothSDPUUID UUIDValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getUUIDValue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPUUID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>If the data element is a UUID (type 3), it returns the value as an IOBluetoothSDPUUID.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public virtual MonoMac.Foundation.NSObject Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class MonoMac.Foundation.NSObject Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: MonoMac.Foundation.Export("getValue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>MonoMac.Foundation.NSObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Returns the object value of the data element.</para>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+          <para>The value returned may be an NSNumber, NSString, NSData, NSArray or IOBluetoothSDPDataElement depending on the type of the data element.</para>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

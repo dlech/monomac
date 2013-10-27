@@ -1,4 +1,4 @@
-MACCORE=../../maccore/tools/docfixer
+MACCORE=../maccore/tools/docfixer
 
 .PHONY: assemble docs update-docs clean-docs install-docs
 
@@ -59,22 +59,27 @@ populate: populate.exe
 populate.exe: populate.cs
 	dmcs populate.cs -r:../src/MonoMac.dll -r:System.Xml.Linq
 
-docfixer.exe: $(MACCORE)/docfixer.cs $(MACCORE)/docfixer.mm.cs AgilityPack.dll
-	gmcs -out:$@ -debug+ $(MACCORE)/docfixer.cs $(MACCORE)/docfixer.mm.cs -r:AgilityPack.dll -r:../src/MonoMac.dll -r:System.Xml.Linq -r:System.Xml
+docfixer.exe: $(MACCORE)/AppleDocKnownIssues.cs $(MACCORE)/AppleDocMerger.cs $(MACCORE)/docfixer.cs $(MACCORE)/docfixer.mm.cs $(MACCORE)/MDocArchive.cs $(MACCORE)/Options.cs $(MACCORE)/samples.cs $(MACCORE)/SQLite.cs AgilityPack.dll
+	cp $(MACCORE)/*.dll .
+	dmcs -out:$@ -debug+ $(MACCORE)/AppleDocKnownIssues.cs $(MACCORE)/AppleDocMerger.cs $(MACCORE)/docfixer.cs $(MACCORE)/docfixer.mm.cs $(MACCORE)/MDocArchive.cs $(MACCORE)/Options.cs $(MACCORE)/samples.cs $(MACCORE)/SQLite.cs \
+	-r:AgilityPack.dll -r:../src/MonoMac.dll -r:System.Xml.Linq -r:System.Xml -r:Ionic.Zip.dll -r:Mono.Cecil.dll
 
 dgc: document-generated-code
 
 document-generated-code: document-generated-code.exe
 	MONO_PATH=../src mono --debug document-generated-code.exe ../src/temp.dll .
 
-document-generated-code.exe: $(MACCORE)/document-generated-code.cs AgilityPack.dll $(MACCORE)/docfixer.cs $(MACCORE)/docfixer.mm.cs
-	dmcs -debug -main:DocumentGeneratedCode -out:document-generated-code.exe $(MACCORE)/document-generated-code.cs $(MACCORE)/docfixer.cs $(MACCORE)/docfixer.mm.cs -r:System.Xml.Linq -r:../src/_bmac.exe -r:../src/core.dll -define:MONOMAC -r:AgilityPack.dll
+document-generated-code.exe: $(MACCORE)/AppleDocKnownIssues.cs $(MACCORE)/AppleDocMerger.cs $(MACCORE)/document-generated-code.cs $(MACCORE)/docfixer.cs $(MACCORE)/docfixer.mm.cs $(MACCORE)/AgilityPack.dll
+	cp $(MACCORE)/*.dll .
+	dmcs -debug -main:DocumentGeneratedCode -out:document-generated-code.exe \
+	$(MACCORE)/AppleDocKnownIssues.cs $(MACCORE)/AppleDocMerger.cs $(MACCORE)/document-generated-code.cs $(MACCORE)/docfixer.cs $(MACCORE)/docfixer.mm.cs $(MACCORE)/MDocArchive.cs $(MACCORE)/Options.cs $(MACCORE)/samples.cs $(MACCORE)/SQLite.cs \
+	-r:System.Xml.Linq -r:../src/_bmac.exe -r:../src/core.dll -define:MONOMAC -r:AgilityPack.dll -r:Ionic.Zip.dll -r:Mono.Cecil.dll
 
 run: docfixer.exe 
 	-mkdir deploy
 	rsync -a en deploy
 	chmod -R +rw deploy
-	MONO_PATH=../src mono --debug docfixer.exe --summary deploy
+	MONO_PATH=../src mono --debug docfixer.exe --apple-doc-dir=/Users/david/Documents/DocSets/com.apple.adc.documentation.AppleOSX10_8.CoreReference.docset --reference-assembly=../src/MonoMac.dll --ns-prefix=MonoMac --use-raw-doc deploy
 
 #
 # this second stage documents other bits, using the metadata from the API definition file, not the resulting assembly

@@ -1,0 +1,113 @@
+<Type Name="RegistryPlane" FullName="MonoMac.IOKit.RegistryPlane">
+  <TypeSignature Language="C#" Value="public enum RegistryPlane" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistryPlane extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Audio">
+      <MemberSignature Language="C#" Value="Audio" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.RegistryPlane Audio = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.RegistryPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               kIOAudioPlane
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceTree">
+      <MemberSignature Language="C#" Value="DeviceTree" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.RegistryPlane DeviceTree = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.RegistryPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               kIODeviceTreePlane
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FireWire">
+      <MemberSignature Language="C#" Value="FireWire" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.RegistryPlane FireWire = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.RegistryPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               kIOFireWirePlane
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Power">
+      <MemberSignature Language="C#" Value="Power" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.RegistryPlane Power = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.RegistryPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               kIOPowerPlane.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Service">
+      <MemberSignature Language="C#" Value="Service" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.RegistryPlane Service = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.RegistryPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               kIOServicePlane
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="USB">
+      <MemberSignature Language="C#" Value="USB" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.RegistryPlane USB = int32(5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.RegistryPlane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               kIOUSBPlane
+               </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

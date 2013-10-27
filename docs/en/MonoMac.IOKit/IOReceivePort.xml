@@ -1,0 +1,39 @@
+<Type Name="IOReceivePort" FullName="MonoMac.IOKit.IOReceivePort">
+  <TypeSignature Language="C#" Value="public class IOReceivePort : MonoMac.Kernel.Mach.Port" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IOReceivePort extends MonoMac.Kernel.Mach.Port" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>MonoMac.Kernel.Mach.Port</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOReceivePort (MonoMac.IOKit.OSMessageID msgType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype MonoMac.IOKit.OSMessageID msgType) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="msgType" Type="MonoMac.IOKit.OSMessageID" />
+      </Parameters>
+      <Docs>
+        <param name="msgType">Type of message to be sent to this port.</param>
+        <summary>
+               Creates a mach port suitable for receiving IOKit messages of the specified type.
+            </summary>
+        <remarks>In the future IOKit may use specialized messages and ports
+               instead of the standard ports created by mach_port_allocate(). Use this
+               function instead of mach_port_allocate() to ensure compatibility with future
+               revisions of IOKit.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

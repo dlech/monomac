@@ -1,0 +1,91 @@
+<Type Name="IOHIDManagerOptions" FullName="MonoMac.IOKit.HID.IOHIDManagerOptions">
+  <TypeSignature Language="C#" Value="public enum IOHIDManagerOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOHIDManagerOptions extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+           Various options that can be supplied to IOHIDManager functions.
+           </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DoNotLoadProperties">
+      <MemberSignature Language="C#" Value="DoNotLoadProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDManagerOptions DoNotLoadProperties = unsigned int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDManagerOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               This constant can be supplied to @link IOHIDManagerCreate when you wish to overwrite
+               the persistent properties store without loading it first.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoNotSaveProperties">
+      <MemberSignature Language="C#" Value="DoNotSaveProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDManagerOptions DoNotSaveProperties = unsigned int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDManagerOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               This constant can be supplied to @link IOHIDManagerCreate @/link when you want to
+               use the persistent property store but do not want to add to it.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDManagerOptions None = unsigned int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDManagerOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               For those times when supplying 0 just isn't explicit enough.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UsePersistentProperties">
+      <MemberSignature Language="C#" Value="UsePersistentProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDManagerOptions UsePersistentProperties = unsigned int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDManagerOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               This constant can be supplied to @link IOHIDManagerCreate @/link
+               to create and/or use a persistent properties store.
+               </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

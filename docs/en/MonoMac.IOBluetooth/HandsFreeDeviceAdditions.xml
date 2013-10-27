@@ -1,0 +1,138 @@
+<Type Name="HandsFreeDeviceAdditions" FullName="MonoMac.IOBluetooth.HandsFreeDeviceAdditions">
+  <TypeSignature Language="C#" Value="public static class HandsFreeDeviceAdditions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit HandsFreeDeviceAdditions extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetHandsFreeAudioGatewayDriverID">
+      <MemberSignature Language="C#" Value="public static string GetHandsFreeAudioGatewayDriverID (this MonoMac.IOBluetooth.IOBluetoothDevice This);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetHandsFreeAudioGatewayDriverID(class MonoMac.IOBluetooth.IOBluetoothDevice This) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.IOBluetooth.IOBluetoothDevice" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHandsFreeAudioGatewayServiceRecord">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord GetHandsFreeAudioGatewayServiceRecord (this MonoMac.IOBluetooth.IOBluetoothDevice This);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord GetHandsFreeAudioGatewayServiceRecord(class MonoMac.IOBluetooth.IOBluetoothDevice This) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.IOBluetooth.IOBluetoothDevice" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHandsFreeDeviceDriverID">
+      <MemberSignature Language="C#" Value="public static string GetHandsFreeDeviceDriverID (this MonoMac.IOBluetooth.IOBluetoothDevice This);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetHandsFreeDeviceDriverID(class MonoMac.IOBluetooth.IOBluetoothDevice This) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.IOBluetooth.IOBluetoothDevice" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHandsFreeDeviceServiceRecord">
+      <MemberSignature Language="C#" Value="public static MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord GetHandsFreeDeviceServiceRecord (this MonoMac.IOBluetooth.IOBluetoothDevice This);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord GetHandsFreeDeviceServiceRecord(class MonoMac.IOBluetooth.IOBluetoothDevice This) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOBluetooth.IOBluetoothSDPServiceRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.IOBluetooth.IOBluetoothDevice" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsHandsFreeAudioGateway">
+      <MemberSignature Language="C#" Value="public static bool GetIsHandsFreeAudioGateway (this MonoMac.IOBluetooth.IOBluetoothDevice This);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsHandsFreeAudioGateway(class MonoMac.IOBluetooth.IOBluetoothDevice This) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.IOBluetooth.IOBluetoothDevice" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsHandsFreeDevice">
+      <MemberSignature Language="C#" Value="public static bool GetIsHandsFreeDevice (this MonoMac.IOBluetooth.IOBluetoothDevice This);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsHandsFreeDevice(class MonoMac.IOBluetooth.IOBluetoothDevice This) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="This" Type="MonoMac.IOBluetooth.IOBluetoothDevice" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="This">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

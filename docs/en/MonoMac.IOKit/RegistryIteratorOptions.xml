@@ -1,0 +1,72 @@
+<Type Name="RegistryIteratorOptions" FullName="MonoMac.IOKit.RegistryIteratorOptions">
+  <TypeSignature Language="C#" Value="public enum RegistryIteratorOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistryIteratorOptions extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+           Options for <see cref="M:MonoMac.IOKit.IORegistry.CreateIterator" />, <see cref="M:MonoMac.IOKit.IORegistryEntry.CreateIterator" /> and
+            <see cref="M:MonoMac.IOKit.IORegistryEntry.SearchCFProperty" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IncludeParents">
+      <MemberSignature Language="C#" Value="IncludeParents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.RegistryIteratorOptions IncludeParents = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.RegistryIteratorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               kIORegistryIterateParents
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.RegistryIteratorOptions None = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.RegistryIteratorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               No flags are set.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Recusive">
+      <MemberSignature Language="C#" Value="Recusive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.RegistryIteratorOptions Recusive = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.RegistryIteratorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               kIORegistryIterateRecursively
+               </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

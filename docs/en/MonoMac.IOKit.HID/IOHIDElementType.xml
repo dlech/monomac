@@ -1,0 +1,136 @@
+<Type Name="IOHIDElementType" FullName="MonoMac.IOKit.HID.IOHIDElementType">
+  <TypeSignature Language="C#" Value="public enum IOHIDElementType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOHIDElementType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+           Describes different types of HID elements.
+           </summary>
+    <remarks>
+           Used by the IOHIDFamily to identify the type of
+           element processed.  Represented by the key kIOHIDElementTypeKey in the
+           dictionary describing the element.
+           </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Collection">
+      <MemberSignature Language="C#" Value="Collection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType Collection = int32(513)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Element used to identify a relationship between two or more elements.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Feature">
+      <MemberSignature Language="C#" Value="Feature" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType Feature = int32(257)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Describes input and output elements not intended for
+               consumption by the end user.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InputAxis">
+      <MemberSignature Language="C#" Value="InputAxis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType InputAxis = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Input data field used to represent an axis.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InputButton">
+      <MemberSignature Language="C#" Value="InputButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType InputButton = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               One bit input data field.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InputMisc">
+      <MemberSignature Language="C#" Value="InputMisc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType InputMisc = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Misc input data field or varying size.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InputScanCodes">
+      <MemberSignature Language="C#" Value="InputScanCodes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType InputScanCodes = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Input data field used to represent a scan code or usage selector.
+               </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Output">
+      <MemberSignature Language="C#" Value="Output" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype MonoMac.IOKit.HID.IOHIDElementType Output = int32(129)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.HID.IOHIDElementType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+               Used to represent an output data field in a report.
+               </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

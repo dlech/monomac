@@ -1,0 +1,120 @@
+<Type Name="IOUSBFindInterfaceRequest" FullName="MonoMac.IOKit.USB.IOUSBFindInterfaceRequest">
+  <TypeSignature Language="C#" Value="public struct IOUSBFindInterfaceRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit IOUSBFindInterfaceRequest extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IOUSBFindInterfaceRequest (MonoMac.IOKit.USB.InterfaceClass interfaceClass = (MonoMac.IOKit.USB.InterfaceClass) 65535, MonoMac.IOKit.USB.InterfaceSubClass interfaceSubClass = (MonoMac.IOKit.USB.InterfaceSubClass) 65535, MonoMac.IOKit.USB.InterfaceProtocol interfaceProtocol = (MonoMac.IOKit.USB.InterfaceProtocol) 65535, ushort alternateSetting = 65535);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype MonoMac.IOKit.USB.InterfaceClass interfaceClass, valuetype MonoMac.IOKit.USB.InterfaceSubClass interfaceSubClass, valuetype MonoMac.IOKit.USB.InterfaceProtocol interfaceProtocol, unsigned int16 alternateSetting) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="interfaceClass" Type="MonoMac.IOKit.USB.InterfaceClass" />
+        <Parameter Name="interfaceSubClass" Type="MonoMac.IOKit.USB.InterfaceSubClass" />
+        <Parameter Name="interfaceProtocol" Type="MonoMac.IOKit.USB.InterfaceProtocol" />
+        <Parameter Name="alternateSetting" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="interfaceClass">To be added.</param>
+        <param name="interfaceSubClass">To be added.</param>
+        <param name="interfaceProtocol">To be added.</param>
+        <param name="alternateSetting">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlternateSetting">
+      <MemberSignature Language="C#" Value="public ushort AlternateSetting { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int16 AlternateSetting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DontCare">
+      <MemberSignature Language="C#" Value="public const ushort DontCare = 65535;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 DontCare = (65535)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>65535</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterfaceClass">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.InterfaceClass InterfaceClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOKit.USB.InterfaceClass InterfaceClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.InterfaceClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterfaceProtocol">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.InterfaceProtocol InterfaceProtocol { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOKit.USB.InterfaceProtocol InterfaceProtocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.InterfaceProtocol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterfaceSubClass">
+      <MemberSignature Language="C#" Value="public MonoMac.IOKit.USB.InterfaceSubClass InterfaceSubClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype MonoMac.IOKit.USB.InterfaceSubClass InterfaceSubClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.IOKit.USB.InterfaceSubClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -18,6 +18,7 @@ CORE_SOURCES =	$(EXTRA_CORE_SOURCES)			\
 	./Foundation/EnumDesktop.cs			\
 	./Foundation/NSObject.cs			\
 	./ImageKit/Enums.cs				\
+	./IOBluetoothUI/Enums.cs                        \
 	./ObjCRuntime/Class.cs				\
 	./ObjCRuntime/Messaging.cs			\
 	./ObjCRuntime/NativeConstructorBuilder.cs	\
@@ -97,6 +98,10 @@ MONOMAC_SOURCES = $(EXTRA_MONOMAC_SOURCES) \
         ./AppKit/NSWindow.cs				\
 	./CoreVideo/CVDisplayLink.cs			\
 	./Foundation/ObjCException.cs			\
+	./IOBluetoothUI/IOBluetoothDeviceSelectorController.cs \
+	./IOBluetoothUI/IOBluetoothObjectPushUIController.cs \
+	./IOBluetoothUI/IOBluetoothPairingController.cs      \
+	./IOBluetoothUI/IOBluetoothServiceBrowserController.cs \
 	./QTKit/QTCaptureDevice.cs			\
 	./QTKit/QTMovie.cs				\
 	./WebKit/DomNode.cs				\
@@ -176,11 +181,13 @@ SHARED_API = \
 	./avfoundation.cs	\
 	./foundation.cs		\
 	./coreanimation.cs	\
+	./corebluetooth.cs	\
 	./coredata.cs		\
 	./coreimage.cs		\
 	./coremidi.cs		\
 	./corelocation.cs	\
 	./imageio.cs		\
+	./iobluetooth.cs	\
 	./quicklook.cs
 
 SHARED_SOURCES = $(patsubst %,$(MACCORE_DIR)/src/%,$(SHARED_SOURCE))
@@ -196,6 +203,7 @@ APIS = \
 	corewlan.cs		\
 	foundation-desktop.cs 	\
 	imagekit.cs		\
+	iobluetoothui.cs	\
 	qtkit.cs		\
 	pdfkit.cs		\
 	webkit.cs		\

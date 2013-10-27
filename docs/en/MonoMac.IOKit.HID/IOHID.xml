@@ -1,0 +1,49 @@
+<Type Name="IOHID" FullName="MonoMac.IOKit.HID.IOHID">
+  <TypeSignature Language="C#" Value="public static class IOHID" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IOHID extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeviceKey">
+      <MemberSignature Language="C#" Value="public const string DeviceKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DeviceKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This is used to find HID Devices in the IORegistry.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementKey">
+      <MemberSignature Language="C#" Value="public const string ElementKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ElementKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Keys that represents an element property.</summary>
+        <remarks>Property for a HID Device or element dictionary.
+            Elements can be heirarchical, so they can contain other elements.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

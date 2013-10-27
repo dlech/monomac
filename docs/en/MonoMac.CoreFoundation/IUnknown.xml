@@ -1,0 +1,91 @@
+<Type Name="IUnknown" FullName="MonoMac.CoreFoundation.IUnknown">
+  <TypeSignature Language="C#" Value="public abstract class IUnknown" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi abstract beforefieldinit IUnknown extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>MonoMac</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected IUnknown ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="addRef">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreFoundation.IUnknown.AddRef addRef;" />
+      <MemberSignature Language="ILAsm" Value=".field public class MonoMac.CoreFoundation.IUnknown/AddRef addRef" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.IUnknown+AddRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="queryInterface">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreFoundation.IUnknown.QueryInterface queryInterface;" />
+      <MemberSignature Language="ILAsm" Value=".field public class MonoMac.CoreFoundation.IUnknown/QueryInterface queryInterface" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.IUnknown+QueryInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="release">
+      <MemberSignature Language="C#" Value="public MonoMac.CoreFoundation.IUnknown.Release release;" />
+      <MemberSignature Language="ILAsm" Value=".field public class MonoMac.CoreFoundation.IUnknown/Release release" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>MonoMac.CoreFoundation.IUnknown+Release</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="reserved">
+      <MemberSignature Language="C#" Value="public IntPtr reserved;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int reserved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
