@@ -51,6 +51,7 @@ SHARED_SOURCE = \
 	./CoreFoundation/CFBoolean.cs                   \
 	./CoreFoundation/CFDictionary.cs                \
 	./CoreFoundation/CFException.cs                 \
+	./CoreFoundation/CFFileSecurity.cs              \
 	./CoreFoundation/CFPluginCOM.cs                 \
 	./CoreFoundation/CFSet.cs                       \
 	./CoreFoundation/CFSocket.cs			\
@@ -112,6 +113,7 @@ SHARED_SOURCE = \
 	./Foundation/NSError.cs				\
 	./Foundation/NSErrorException.cs	\
 	./Foundation/NSFileManager.cs			\
+	./Foundation/NSFileSecurity.cs			\
 	./Foundation/NSHttpCookie.cs			\
 	./Foundation/NSHttpCookieStorage.cs		\
 	./Foundation/NSIndexPath.cs			\

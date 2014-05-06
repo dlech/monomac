@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>10.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{B2CF2180-203D-4462-A6AD-8430EAB6583C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>MonoMac</RootNamespace>
@@ -5201,9 +5199,12 @@
     <Compile Include="src\qtkit.cs" />
     <Compile Include="src\scriptingbridge.cs" />
     <Compile Include="src\webkit.cs" />
+    <Compile Include="maccore\src\CoreFoundation\CFFileSecurity.cs" />
+    <Compile Include="maccore\src\Foundation\NSFileSecurity.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Drawing" />
     <Reference Include="System" />
+    <Reference Include="Mono.Posix" />
   </ItemGroup>
 </Project>
