@@ -204,25 +204,25 @@ namespace MonoMac.CoreWlan {
 		bool IsEqualToInterface (CWInterface intface);
 
 		[Export ("setPower:error:")]
-		bool SetPower (bool power, out NSError error);
+		bool TrySetPower (bool power, out NSError error);
 
 		[Export ("setChannel:error:")]
-		bool SetChannel (uint channel, out NSError error);
+		bool TrySetChannel (uint channel, out NSError error);
 
 		[Export ("scanForNetworksWithParameters:error:")]
-		CWNetwork[] ScanForNetworksWithParameters([NullAllowed] NSDictionary parameters, out NSError error);
+		CWNetwork[] TryScanForNetworksWithParameters([NullAllowed] NSDictionary parameters, out NSError error);
 
 		[Export ("associateToNetwork:parameters:error:")]
-		bool AssociateToNetwork(CWNetwork network, [NullAllowed] NSDictionary parameters, out NSError error);
+		bool TryAssociateToNetwork(CWNetwork network, [NullAllowed] NSDictionary parameters, out NSError error);
 
 		[Export ("disassociate")]
 		void Disassociate ();
 
 		[Export ("enableIBSSWithParameters:error:")]
-		bool EnableIBSSWithParameters([NullAllowed] NSDictionary parameters, out NSError error);
+		bool TryEnableIBSSWithParameters([NullAllowed] NSDictionary parameters, out NSError error);
 
 		[Export ("commitConfiguration:error:")]
-		bool CommitConfiguration (CWConfiguration config, out NSError error);
+		bool TryCommitConfiguration (CWConfiguration config, out NSError error);
 
 	}
 

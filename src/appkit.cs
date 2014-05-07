@@ -3719,34 +3719,34 @@ namespace MonoMac.AppKit {
 		 void RevertDocumentToSaved (NSObject sender);
 
 		 [Export ("revertToContentsOfURL:ofType:error:")]
-		 bool RevertToContentsOfUrl (NSUrl url, string typeName, out NSError outError);
+		bool TryRevertToContentsOfUrl (NSUrl url, string typeName, out NSError outError);
 
 		[Export ("readFromURL:ofType:error:")]
-		bool ReadFromUrl (NSUrl url, string typeName, out NSError outError);
+		bool TryReadFromUrl (NSUrl url, string typeName, out NSError outError);
 
 		[Export ("readFromFileWrapper:ofType:error:")]
-		bool ReadFromFileWrapper (NSFileWrapper fileWrapper, string typeName, out NSError outError);
+		bool TryReadFromFileWrapper (NSFileWrapper fileWrapper, string typeName, out NSError outError);
 
 		[Export ("readFromData:ofType:error:")]
-		bool ReadFromData (NSData data, string typeName, out NSError outError);
+		bool TryReadFromData (NSData data, string typeName, out NSError outError);
 
 		[Export ("writeToURL:ofType:error:")]
-		bool WriteToUrl (NSUrl url, string typeName, out NSError outError);
+		bool TryWriteToUrl (NSUrl url, string typeName, out NSError outError);
 
 		[Export ("fileWrapperOfType:error:")]
-		NSFileWrapper GetAsFileWrapper (string typeName, out NSError outError);
+		NSFileWrapper TryGetAsFileWrapper (string typeName, out NSError outError);
 
 		[Export ("dataOfType:error:")]
-		NSData GetAsData (string typeName, out NSError outError);
+		NSData TryGetAsData (string typeName, out NSError outError);
 
 		[Export ("writeSafelyToURL:ofType:forSaveOperation:error:")]
-		bool WriteSafelyToUrl (NSUrl url, string typeName, NSSaveOperationType saveOperation, out NSError outError);
+		bool TryWriteSafelyToUrl (NSUrl url, string typeName, NSSaveOperationType saveOperation, out NSError outError);
 
 		[Export ("writeToURL:ofType:forSaveOperation:originalContentsURL:error:")]
-		bool WriteToUrl (NSUrl url, string typeName, NSSaveOperationType saveOperation, NSUrl absoluteOriginalContentsUrl, out NSError outError);
+		bool TryWriteToUrl (NSUrl url, string typeName, NSSaveOperationType saveOperation, NSUrl absoluteOriginalContentsUrl, out NSError outError);
 
 		[Export ("fileAttributesToWriteToURL:ofType:forSaveOperation:originalContentsURL:error:")]
-		NSDictionary FileAttributesToWrite (NSUrl toUrl, string typeName, NSSaveOperationType saveOperation, NSUrl absoluteOriginalContentsUrl, out NSError outError);
+		NSDictionary TryGetFileAttributesToWrite (NSUrl toUrl, string typeName, NSSaveOperationType saveOperation, NSUrl absoluteOriginalContentsUrl, out NSError outError);
 
 		[Export ("keepBackupFile")]
 		bool KeepBackupFile ();
@@ -3782,7 +3782,7 @@ namespace MonoMac.AppKit {
 		void SaveToUrl (NSUrl url, string typeName, NSSaveOperationType saveOperation, NSObject delegateObject, Selector didSaveSelector, IntPtr contextInfo);
 
 		[Export ("saveToURL:ofType:forSaveOperation:error:")]
-		bool SaveToUrl (NSUrl url, string typeName, NSSaveOperationType saveOperation, out NSError outError);
+		bool TrySaveToUrl (NSUrl url, string typeName, NSSaveOperationType saveOperation, out NSError outError);
 
 		[Export ("hasUnautosavedChanges")]
 		bool HasUnautosavedChanges { get; }
@@ -3818,7 +3818,7 @@ namespace MonoMac.AppKit {
 		void PrintDocument (NSDictionary printSettings, bool showPrintPanel, NSObject delegateObject, Selector didPrintSelector, IntPtr contextInfo);
 
 		[Export ("printOperationWithSettings:error:")]
-		NSPrintOperation PrintOperation (NSDictionary printSettings, out NSError outError);
+		NSPrintOperation TryGetPrintOperation (NSDictionary printSettings, out NSError outError);
 
 		[Export ("runModalPrintOperation:delegate:didRunSelector:contextInfo:")]
 		void RunModalPrintOperation (NSPrintOperation printOperation, NSObject delegateObject, Selector didRunSelector, IntPtr contextInfo);
@@ -3949,7 +3949,7 @@ namespace MonoMac.AppKit {
 		bool CanWriteAsynchronously (NSUrl toUrl, string typeName, NSSaveOperationType saveOperation);
 
 		[Lion, Export ("checkAutosavingSafetyAndReturnError:")]
-		bool CheckAutosavingSafety (out NSError outError);
+		bool TryCheckAutosavingSafety (out NSError outError);
 
 		[Lion, Export ("scheduleAutosaving")]
 		void ScheduleAutosaving ();
@@ -3972,7 +3972,7 @@ namespace MonoMac.AppKit {
 		void _DuplicateDocument ([NullAllowed] NSObject cbackobject, [NullAllowed] Selector didDuplicateSelector, IntPtr contextInfo);
 
 		[Lion, Export ("duplicateAndReturnError:")]
-		NSDocument Duplicate (out NSError outError);
+		NSDocument TryDuplicate (out NSError outError);
 
 		[Lion, Export ("isInViewingMode")]
 		bool IsInViewingMode { get; }
@@ -4040,10 +4040,10 @@ namespace MonoMac.AppKit {
 		void NewDocument ([NullAllowed] NSObject sender);
 
 		[Export ("openUntitledDocumentAndDisplay:error:")]
-		NSObject OpenUntitledDocument (bool displayDocument, out NSError outError);
+		NSObject TryOpenUntitledDocument (bool displayDocument, out NSError outError);
 
 		[Export ("makeUntitledDocumentOfType:error:")]
-		NSObject MakeUntitledDocument (string typeName, out NSError error);
+		NSObject TryMakeUntitledDocument (string typeName, out NSError error);
 
 		[Export ("openDocument:")]
 		void OpenDocument ([NullAllowed] NSObject sender);
@@ -4055,20 +4055,20 @@ namespace MonoMac.AppKit {
 		int RunModalOpenPanel (NSOpenPanel openPanel, string [] types);
 
 		[Export ("openDocumentWithContentsOfURL:display:error:")]
-		NSObject OpenDocument (NSUrl url, bool displayDocument, out NSError outError);
+		NSObject TryOpenDocument (NSUrl url, bool displayDocument, out NSError outError);
 
 		[Lion]
 		[Export ("openDocumentWithContentsOfURL:display:completionHandler:")]
 		void OpenDocument (NSUrl url, bool display, OpenDocumentCompletionHandler completionHandler);
 
 		[Export ("makeDocumentWithContentsOfURL:ofType:error:")]
-		NSObject MakeDocument (NSUrl url, string typeName, out NSError outError);
+		NSObject TryMakeDocument (NSUrl url, string typeName, out NSError outError);
 
 		[Export ("reopenDocumentForURL:withContentsOfURL:error:")]
-		bool ReopenDocument (NSUrl url, NSUrl contentsUrl, out NSError outError);
+		bool TryReopenDocument (NSUrl url, NSUrl contentsUrl, out NSError outError);
 
 		[Export ("makeDocumentForURL:withContentsOfURL:ofType:error:")]
-		NSObject MakeDocument ([NullAllowed] NSUrl urlOrNil, NSUrl contentsUrl, string typeName, out NSError outError);
+		NSObject TryMakeDocument ([NullAllowed] NSUrl urlOrNil, NSUrl contentsUrl, string typeName, out NSError outError);
 
 		[Export ("saveAllDocuments:")]
 		void SaveAllDocuments ([NullAllowed] NSObject sender);
@@ -4635,15 +4635,15 @@ namespace MonoMac.AppKit {
 
 		[Static]
 		[Export ("showFontCollection:withName:visibility:error:")]
-		bool ShowFontCollection (NSFontCollection fontCollection, string name, NSFontCollectionVisibility visibility, out NSError error);
+		bool TryShowFontCollection (NSFontCollection fontCollection, string name, NSFontCollectionVisibility visibility, out NSError error);
 
 		[Static]
 		[Export ("hideFontCollectionWithName:visibility:error:")]
-		bool HideFontCollection (string name, NSFontCollectionVisibility visibility, out NSError error);
+		bool TryHideFontCollection (string name, NSFontCollectionVisibility visibility, out NSError error);
 
 		[Static]
 		[Export ("renameFontCollectionWithName:visibility:toName:error:")]
-		bool RenameFontCollection (string fromName, NSFontCollectionVisibility visibility, string toName, out NSError error);
+		bool TryRenameFontCollection (string fromName, NSFontCollectionVisibility visibility, string toName, out NSError error);
 
 		[Static]
 		[Export ("allFontCollectionNames")]
@@ -6304,7 +6304,7 @@ namespace MonoMac.AppKit {
 		bool ShouldEnableUrl (NSSavePanel panel, NSUrl url);
 
 		[Export ("panel:validateURL:error:"), DelegateName ("NSOpenSavePanelValidate"), DefaultValue (true)]
-		bool ValidateUrl (NSSavePanel panel, NSUrl url, out NSError outError);
+		bool TryValidateUrl (NSSavePanel panel, NSUrl url, out NSError outError);
 
 		[Export ("panel:didChangeToDirectoryURL:"), EventArgs ("NSOpenSavePanelUrl")]
 		void DidChangeToDirectory (NSSavePanel panel, NSUrl newDirectoryUrl);
@@ -10102,10 +10102,10 @@ namespace MonoMac.AppKit {
 		string PhonemesFromText (string text);
 
 		[Export ("objectForProperty:error:")]
-		NSObject ObjectForProperty (string property, out NSError outError);
+		NSObject TryGetObjectForProperty (string property, out NSError outError);
 
 		[Export ("setObject:forProperty:error:")]
-		bool SetObjectforProperty (NSObject theObject, string property, out NSError outError);
+		bool TrySetObjectforProperty (NSObject theObject, string property, out NSError outError);
 
 		[Static]
 		[Export ("isAnyApplicationSpeaking")]
@@ -15050,7 +15050,7 @@ namespace MonoMac.AppKit {
 		bool UnmountAndEjectDevice(string path);
 
 		[Export ("unmountAndEjectDeviceAtURL:error:")]
-		bool UnmountAndEjectDevice (NSUrl url, out NSError error);
+		bool TryUnmountAndEjectDevice (NSUrl url, out NSError error);
 		
 		[Export ("extendPowerOffBy:")]
 		int ExtendPowerOffBy (int requested);
@@ -15086,7 +15086,7 @@ namespace MonoMac.AppKit {
 		NSDictionary ActiveApplication { get; }
 		
 		[Export ("typeOfFile:error:")]
-		string TypeOfFile (string absoluteFilePath, out NSError outError);
+		string TryGetTypeOfFile (string absoluteFilePath, out NSError outError);
 		
 		[Export ("localizedDescriptionForType:")]
 		string LocalizedDescription (string typeName);
