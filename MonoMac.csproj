@@ -4315,10 +4315,14 @@
     <Compile Include="src\webkit.cs" />
     <Compile Include="maccore\src\CoreFoundation\CFFileSecurity.cs" />
     <Compile Include="maccore\src\Foundation\NSFileSecurity.cs" />
+    <Compile Include="maccore\src\IOKit\Serial\IOSerialBSDClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Drawing" />
     <Reference Include="System" />
     <Reference Include="Mono.Posix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="maccore\src\IOKit\Serial\" />
   </ItemGroup>
 </Project>

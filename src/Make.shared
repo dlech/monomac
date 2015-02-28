@@ -177,6 +177,7 @@ SHARED_SOURCE = \
 	./IOKit/HID/IOHIDReportEventArgs.cs             \
 	./IOKit/HID/IOHIDValue.cs                       \
 	./IOKit/HID/IOHIDValueEventArgs.cs              \
+	./IOKit/Serial/IOSerialBSDClient.cs             \
 	./IOKit/USB/Enums.cs                            \
 	./IOKit/USB/IOUSB.cs                            \
 	./IOKit/USB/IOUSBDevice.cs                      \
